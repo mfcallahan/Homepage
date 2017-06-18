@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace MattWeb
+namespace Homepage
 {
     public class BundleConfig
     {

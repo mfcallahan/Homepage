@@ -133,7 +133,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\IpLocation.cs" />
+    <Compile Include="Models\DTOs.cs" />
     <Compile Include="Models\Visitor.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -247,9 +247,9 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52762</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/Homepage.Web</IISUrl>
+          <IISUrl>http://localhost/Homepage</IISUrl>
           <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://localhost.mfcallahan.com/Homepage</IISAppRootUrl>
+          <IISAppRootUrl>http://localhost/Homepage</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

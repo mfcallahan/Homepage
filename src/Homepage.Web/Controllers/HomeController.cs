@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Web.Mvc;
-using MattWeb.Queries;
+using Homepage.Queries;
 
-namespace MattWeb.Controllers
+namespace Homepage.Controllers
 {
     public class HomeController : Controller
     {

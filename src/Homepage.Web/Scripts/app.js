@@ -1,6 +1,6 @@
 ﻿
 function Hello () {
-        
+
     $.ajax({
         url: '/Home/Hello',
         type: 'POST'        
@@ -9,7 +9,7 @@ function Hello () {
 }
 
 $(document).ready(function () {
-    //Hello();
+    Hello();
 
     //set columns in a row to equal heights
     var heights = $(".equal-heght").map(function () {

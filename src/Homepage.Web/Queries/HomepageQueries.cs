@@ -1,9 +1,10 @@
 ﻿using System;
-using MattWeb.Models;
+using Homepage.Models;
 using System.Net;
 using Newtonsoft.Json;
+using Homepage.Dtos;
 
-namespace MattWeb.Queries
+namespace Homepage.Queries
 {
     public class HomepageQueries
     {
@@ -40,7 +41,7 @@ namespace MattWeb.Queries
         }
 
         //ip-api: http://ip-api.com/docs/
-        public static IpLocation GetIpInfo(string ip)
+        static IpLocation GetIpInfo(string ip)
         {
             if (string.IsNullOrEmpty(ip))            
                 return null;

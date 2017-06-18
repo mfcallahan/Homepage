@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MattWeb.Models
+namespace Homepage.Models
 {
     using System;
     using System.Collections.Generic;

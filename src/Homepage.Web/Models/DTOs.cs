@@ -1,5 +1,5 @@
 ﻿
-namespace MattWeb.Models
+namespace Homepage.Dtos
 {
     public class IpLocation
     {
