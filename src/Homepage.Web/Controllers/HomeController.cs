@@ -12,6 +12,11 @@ namespace Homepage.Controllers
             return View();
         }
 
+        public ActionResult TestPage()
+        {
+            return View();
+        }
+
         [HttpPost]
         public void Hello()
         {

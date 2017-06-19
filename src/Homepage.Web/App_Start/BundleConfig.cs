@@ -24,7 +24,11 @@ namespace Homepage
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/app.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css", "~/Content/bootstrap.min.css","~/Content/font-awesome.min.css"));            
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                "~/Content/site.css",
+                "~/Content/resume.css",
+                "~/Content/bootstrap.min.css",
+                "~/Content/font-awesome.min.css"));            
         }
     }
 }
