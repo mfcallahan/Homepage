@@ -47,8 +47,8 @@ namespace Homepage.Queries
                 return null;
             
             var url = "http://ip-api.com/json/" + ip;
-            var syncClient = new WebClient();
-            dynamic result = JsonConvert.DeserializeObject(syncClient.DownloadString(url));
+            var client = new WebClient();
+            dynamic result = JsonConvert.DeserializeObject(client.DownloadString(url));
 
             if (result.status == "success")
             {
@@ -66,6 +66,7 @@ namespace Homepage.Queries
                     TimeZone = result.timezone,
                     PostalCode = result.zip
                 };
+
                 return loc;                
             } 
 

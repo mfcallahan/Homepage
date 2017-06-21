@@ -15,10 +15,14 @@ namespace Homepage.Controllers
         [HttpPost]
         public void Hello()
         {
-            string ip = Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
+            string ip = Request.ServerVariables["HTTP_X_FORWARDED_FOR"];            
 
             if (string.IsNullOrEmpty(ip))
                 ip = Request.ServerVariables["REMOTE_ADDR"];
+
+            //for testing
+            //if (ip == "127.0.0.1" || ip == null)
+            //    ip = "8.8.8.8"; //google
 
             string rawIp = ip;
 
