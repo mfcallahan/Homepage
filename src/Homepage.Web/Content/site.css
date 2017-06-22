@@ -1,5 +1,5 @@
 ﻿* {
-    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-family: "Century Gothic", CenturyGothic, "Avant Garde", Avantgarde, "AppleGothic", sans-serif;
 }
 
 body {
@@ -11,6 +11,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+footer {
+    color: #E6E6E6 !important;
+}
+
 h1,
 h2,
 h3,
@@ -19,23 +23,6 @@ h5,
 h6 {
     font-weight: 700;
 }
-
-/*a {
-    color: #E6E6E6 !important;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-}
-
-    a:hover {
-        text-decoration: underline;
-        color: #284860 !important;
-    }
-
-    a:focus {
-        text-decoration: none;
-    }*/
 
 p {
     line-height: 1.5;
@@ -115,6 +102,8 @@ p {
         font-weight: 900;
         margin-top: 0;
         margin-bottom: 10px;
+        font-family: Verdana, Tahoma, Geneva, sans-serif;
+        color: #F2F2F2;
     }
 
     .sidebar-wrapper .tagline {
@@ -122,6 +111,7 @@ p {
         font-weight: 400;
         margin-top: 0;
         margin-bottom: 0;
+        color: #E6E6E6;
     }
 
     .sidebar-wrapper .profile {
@@ -152,8 +142,10 @@ p {
 
     .sidebar-wrapper .container-block-title {
         font-size: 20px;
+        font-weight: 600;
         margin-top: 0;
         margin-bottom: 10px;
+        font-family: Verdana, Tahoma, Geneva, sans-serif;
     }
 
     .sidebar-wrapper .moreinfo {
@@ -205,6 +197,7 @@ p {
         position: relative;
         margin-top: 0;
         margin-bottom: 20px;
+        font-family: Verdana, Tahoma, Geneva, sans-serif;
     }
 
         .main-wrapper .section-title .fa {
