@@ -3,13 +3,12 @@
 }
 
 body {
-    background-color: #e6e6e6 !important;
-    color: #545E6C;
+    background-color: #1E1E1E !important;
+    color: #E6E6E6 !important;
     font-size: 14px;
     padding: 30px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 
 h1,
@@ -21,8 +20,8 @@ h6 {
     font-weight: 700;
 }
 
-a {
-    color: #2d7788;
+/*a {
+    color: #E6E6E6 !important;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
@@ -31,16 +30,17 @@ a {
 
     a:hover {
         text-decoration: underline;
-        color: #1a454f;
+        color: #284860 !important;
     }
 
     a:focus {
         text-decoration: none;
-    }
+    }*/
 
 p {
     line-height: 1.5;
 }
+
 
 @media (min-width: 768px) {
     .row.equal {
@@ -59,8 +59,13 @@ p {
     margin: 0 !important;
 }
 
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
 .main-col {
-    background-color: white;
+    background-color: #696969;
 }
 
 .sidebar-col {
@@ -79,11 +84,23 @@ p {
 
 .sidebar-wrapper {
     background: #4285F4;
-    color: #fff;
 }
-
+        
     .sidebar-wrapper a {
-        color: #fff;
+        color: #E6E6E6 !important;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+    }
+
+    .sidebar-wrapper a:hover {
+        text-decoration: underline;
+        color: #284860 !important;
+    }
+
+    .sidebar-wrapper a:focus {
+        text-decoration: none;
     }
 
     .sidebar-wrapper .profile-container {
@@ -101,7 +118,6 @@ p {
     }
 
     .sidebar-wrapper .tagline {
-        color: rgba(255, 255, 255, 0.6);
         font-size: 16px;
         font-weight: 400;
         margin-top: 0;
@@ -140,7 +156,7 @@ p {
         margin-bottom: 10px;
     }
 
-    .sidebar-wrapper .degree {
+    .sidebar-wrapper .moreinfo {
         font-size: 14px;
         margin-top: 0;
         margin-bottom: 5px;
@@ -155,21 +171,37 @@ p {
         }
 
     .sidebar-wrapper .education-container .meta {
-        color: rgba(255, 255, 255, 0.6);
         font-weight: 500;
         margin-bottom: 0px;
         margin-top: 0;
     }
 
 .main-wrapper {
-    background: white;
+    background: #696969;
     padding: 60px;
-    /*padding-left: 360px;*/
 }
+
+    .main-wrapper a {
+        color: #4ddbff !important;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+    }
+
+    .main-wrapper a:hover {
+        text-decoration: underline;
+        color: #00a3cc !important;
+    }
+
+    .main-wrapper a:focus {
+        text-decoration: none;
+    }
+
     .main-wrapper .section-title {
         font-size: 22px;
         font-weight: 800;
-        color: #2c3e50;
+        color: #E6E6E6;
         position: relative;
         margin-top: 0;
         margin-bottom: 20px;
@@ -180,7 +212,7 @@ p {
             height: 30px;
             margin-right: 8px;
             display: inline-block;
-            color: #fff;
+            color: #E6E6E6;
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             -ms-border-radius: 50%;
