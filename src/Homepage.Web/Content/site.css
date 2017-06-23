@@ -1,8 +1,4 @@
-﻿* {
-    font-family: "Century Gothic", CenturyGothic, "Avant Garde", Avantgarde, "AppleGothic", sans-serif;
-}
-
-body {
+﻿body {
     background-color: #1E1E1E !important;
     color: #E6E6E6 !important;
     font-size: 14px;
@@ -26,14 +22,20 @@ h6 {
 
 p {
     line-height: 1.5;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "Avant Garde", Futura, sans-serif;
 }
-
 
 @media (min-width: 768px) {
     .row.equal {
         display: flex;
         flex-wrap: wrap;
     }
+}
+
+@media (max-width: 425px) {
+    .condensed {
+        letter-spacing: -1px;
+    }    
 }
 
 .equal > div[class*='col-'] {  
@@ -57,6 +59,10 @@ p {
 
 .sidebar-col {
     background-color: #4285F4;
+}
+
+.last-item {
+    margin-bottom: 30px;
 }
 
 .wrapper {
@@ -97,16 +103,21 @@ p {
         color: #fff;
     }
 
+    .sidebar-wrapper .contact-container {
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "Avant Garde", Futura, sans-serif;
+    }
+
     .sidebar-wrapper .name {
+        font-family: Verdana, Tahoma, Segoe, Geneva, sans-serif;
+        font-weight: 700;
         font-size: 28px;
-        font-weight: 900;
         margin-top: 0;
         margin-bottom: 10px;
-        font-family: Verdana, Tahoma, Geneva, sans-serif;
         color: #F2F2F2;
     }
 
     .sidebar-wrapper .tagline {
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "Avant Garde", Futura, sans-serif;
         font-size: 16px;
         font-weight: 400;
         margin-top: 0;
@@ -128,6 +139,7 @@ p {
 
     .sidebar-wrapper .contact-list li {
         margin-bottom: 10px;
+        word-wrap: break-word;        
     }
 
         .sidebar-wrapper .contact-list li:last-child {
@@ -137,7 +149,7 @@ p {
     .sidebar-wrapper .container-block {
         padding-left: 30px;
         padding-right: 30px;
-        padding-top: 30px;        
+        padding-top: 30px;
     }
 
     .sidebar-wrapper .container-block-title {
@@ -148,25 +160,22 @@ p {
         font-family: Verdana, Tahoma, Geneva, sans-serif;
     }
 
+    .sidebar-wrapper .container-block-about {
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "Avant Garde", Futura, sans-serif;
+    }
+
     .sidebar-wrapper .moreinfo {
         font-size: 14px;
         margin-top: 0;
         margin-bottom: 5px;
-    }
-
-    .sidebar-wrapper .education-container .item {
-        margin-bottom: 15px;
-    }
-
-        .sidebar-wrapper .education-container .item:last-child {
-            margin-bottom: 0px;
-        }
+    }    
 
     .sidebar-wrapper .education-container .meta {
         font-weight: 500;
         margin-bottom: 0px;
         margin-top: 0;
     }
+
 
 .main-wrapper {
     background: #696969;
@@ -191,13 +200,13 @@ p {
     }
 
     .main-wrapper .section-title {
+        font-family: Verdana, Tahoma, Geneva, sans-serif;
         font-size: 22px;
         font-weight: 800;
         color: #E6E6E6;
         position: relative;
         margin-top: 0;
         margin-bottom: 20px;
-        font-family: Verdana, Tahoma, Geneva, sans-serif;
     }
 
         .main-wrapper .section-title .fa {
@@ -222,10 +231,10 @@ p {
         }
 
     .main-wrapper .section {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
-    .main-wrapper .last-item {
+    .main-wrapper .section:last-of-type {
         margin-bottom: 0px;
     }
 
@@ -243,28 +252,3 @@ p {
     .main-wrapper .projects-section .intro {
         margin-bottom: 30px;
     }
-
-    .main-wrapper .projects-section .item {
-        margin-bottom: 15px;
-    }
-
-.skillset .item {
-    margin-bottom: 15px;
-    overflow: hidden;
-}
-
-.skillset .level-title {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 12px;
-}
-
-.skillset .level-bar {
-    height: 12px;
-    background: #f5f5f5;
-}
-
-.skillset .level-bar-inner {
-    height: 12px;
-    background: #7bc2d3;
-}
