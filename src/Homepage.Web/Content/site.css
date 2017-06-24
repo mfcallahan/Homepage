@@ -32,9 +32,10 @@ p {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 460px) {
     .condensed {
         letter-spacing: -1px;
+        font-family: sans-serif;
     }    
 }
 
