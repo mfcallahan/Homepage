@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Homepage.Models
+namespace Homepage.Web.Data
 {
     using System;
     using System.Data.Entity;
@@ -15,8 +15,7 @@ namespace Homepage.Models
     
     public partial class adhocEntities1 : DbContext
     {
-        public adhocEntities1()
-            : base("name=adhocEntities1")
+        public adhocEntities1() : base("name=adhocEntities1")
         {
         }
     

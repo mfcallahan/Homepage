@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Map";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="http://js.arcgis.com/3.20/esri/css/esri.css">
+<script src="http://js.arcgis.com/3.20/"></script>
+
+@Scripts.Render("~/bundles/map")
+
+@* <!-- ArcGIS Online web map -->*@
+@*<div class="embed-container">
+    <iframe width="800" height="800" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="HomepageMap" src="//www.arcgis.com/apps/Embed/index.html?webmap=abdfc23f102b47e5bbaba67d290a2e35&amp;extent=-112.4933,33.2365,-111.4791,33.7176&amp;zoom=true&amp;scale=true&amp;disable_scroll=false&amp;theme=light"></iframe>
+</div>*@
+
+@* <!-- ArcGIS JS API map -->*@
+<div id="map"></div>
+
+

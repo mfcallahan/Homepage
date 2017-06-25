@@ -4,7 +4,6 @@ namespace Homepage
 {
     public class BundleConfig
     {
-        // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {          
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
@@ -22,12 +21,23 @@ namespace Homepage
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/app").Include("~/Scripts/app.js"));
+            // app scripts
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                "~/Scripts/app.js"));
 
+            // app styles
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/site.css",
                 "~/Content/bootstrap.min.css",
-                "~/Content/font-awesome.min.css"));            
+                "~/Content/font-awesome.min.css"));
+
+            // ArcGIS
+            bundles.Add(new ScriptBundle("~/bundles/map").Include(
+                "~/Scripts/map.js"));
+            //bundles.Add(new ScriptBundle("~/bundles/arcgis", "http://js.arcgis.com/3.20/init.js").Include(
+            //    "~/Scripts/init.js"));
+            //bundles.Add(new StyleBundle("~/bundles/arcgis-css", "http://js.arcgis.com/3.20/esri/css/esri.css").Include(
+            //    "~/Content/esri.css"));
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\GitHub\MattWeb\src\MattWeb\Models\Visitor.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\GitHub\Homepage\src\Homepage.Web\Data\Visitor.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
