@@ -5,19 +5,28 @@ namespace Homepage.Dtos
 {
     public class ApiResponseHello
     {
+        public string Status { get; set; }
+        public string Message { get; set; }
+
         public ApiResponseHello(string status, string message)
         {
             Status = status;
             Message = message;
         }
-
-        public string Status { get; set; }
-        public string Message { get; set; }
-
     }
 
     public class ApiResponseBusinessCard
     {
+        public string Name { get; set; }
+        public string Title { get; set; }
+        public string Address { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+        public string ResumeUrl { get; set; }
+        public string LinkedInUrl { get; set; }
+        public string GitHubUrl { get; set; }
+        public string GeoNetUrl { get; set; }
+
         public ApiResponseBusinessCard()
         {
             Name = ConfigurationManager.AppSettings["devInfoName"].ToString();
@@ -30,16 +39,6 @@ namespace Homepage.Dtos
             GitHubUrl = ConfigurationManager.AppSettings["devInfoGitHubUrl"].ToString();
             GeoNetUrl = ConfigurationManager.AppSettings["devInfoGeoNetUrl"].ToString();
         }
-
-        public string Name { get; set; }
-        public string Title { get; set; }
-        public string Address { get; set; }
-        public string Phone { get; set; }
-        public string Email { get; set; }
-        public string ResumeUrl { get; set; }
-        public string LinkedInUrl { get; set; }
-        public string GitHubUrl { get; set; }
-        public string GeoNetUrl { get; set; }
     }
 
     public class IpLocation

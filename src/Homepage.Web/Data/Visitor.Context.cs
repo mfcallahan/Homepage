@@ -15,8 +15,7 @@ namespace Homepage.Web.Data
     
     public partial class adhocEntities1 : DbContext
     {
-        public adhocEntities1()
-            : base("name=adhocEntities1")
+        public adhocEntities1() : base("name=adhocEntities1")
         {
         }
     

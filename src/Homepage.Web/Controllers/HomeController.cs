@@ -7,7 +7,14 @@ namespace Homepage.Controllers
 {
     public class HomeController : Controller
     {
+        //mfcallahan.com
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        //mfcallahan.com/Map
+        public ActionResult Map()
         {
             return View();
         }
