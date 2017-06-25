@@ -28,15 +28,25 @@ p {
 @media (min-width: 768px) {
     .row.equal {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap;        
     }
 }
 
-@media (max-width: 460px) {
-    .condensed {
-        letter-spacing: -1px;
-        font-family: sans-serif;
-    }    
+/*when screen is less than 460px wide*/
+@media (max-width: 437px) {
+    .display-full {
+        display: none;
+    }
+
+    .uw-logo, .ms-badge {
+        display: none;
+    }
+}
+/*when screen is greater than 461px wide*/
+@media (min-width: 438px) {
+    .display-short {
+        display: none;
+    }
 }
 
 .equal > div[class*='col-'] {  

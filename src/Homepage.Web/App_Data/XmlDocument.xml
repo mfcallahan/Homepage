@@ -483,10 +483,10 @@
         </member>
         <member name="M:Homepage.Web.Controllers.WebApiController.Hello">
             <summary>
-            Verifies that the API is up and responding.
+            Returns a message verifing the API is up and responding.
             </summary>
         </member>
-        <member name="M:Homepage.Web.Controllers.WebApiController.AboutMattCallahan">
+        <member name="M:Homepage.Web.Controllers.WebApiController.About">
             <summary>
             Returns information about the author of this website.
             </summary>

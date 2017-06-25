@@ -10,7 +10,7 @@ namespace Homepage.Web.Controllers
     public class WebApiController : ApiController
     {
         /// <summary>
-        /// Verifies that the API is up and responding.
+        /// Returns a message verifing the API is up and responding.
         /// </summary>
         //mfcallahan.com/api/Hello
         [HttpGet]
@@ -30,10 +30,10 @@ namespace Homepage.Web.Controllers
         /// <summary>
         /// Returns information about the author of this website.
         /// </summary>
-        //mfcallahan.com/api/AboutMattCallahan
+        //mfcallahan.com/api/About
         [HttpGet]
-        [Route("api/AboutMattCallahan")]
-        public HttpResponseMessage AboutMattCallahan()
+        [Route("api/About")]
+        public HttpResponseMessage About()
         {
             HttpResponseMessage httpResponseMsg = Request.CreateResponse();
 
