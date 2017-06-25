@@ -1,8 +1,8 @@
 ﻿using System;
-using Homepage.Models;
 using System.Net;
 using Newtonsoft.Json;
 using Homepage.Dtos;
+using Homepage.Web.Data;
 
 namespace Homepage.Queries
 {

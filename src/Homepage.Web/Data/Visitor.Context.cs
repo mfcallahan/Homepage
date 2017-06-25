@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Homepage.Models
+namespace Homepage.Web.Data
 {
     using System;
     using System.Data.Entity;
