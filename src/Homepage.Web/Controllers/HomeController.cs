@@ -3,6 +3,7 @@ using System.Linq;
 using System.Web.Mvc;
 using Homepage.Queries;
 
+#pragma warning disable 1591
 namespace Homepage.Controllers
 {
     public class HomeController : Controller
@@ -45,3 +46,4 @@ namespace Homepage.Controllers
         }        
     }
 }
+#pragma warning restore 1591

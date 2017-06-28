@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using Homepage.Dtos;
 using Homepage.Web.Data;
 
+#pragma warning disable 1591
 namespace Homepage.Queries
 {
     public class HomepageQueries
@@ -75,3 +76,4 @@ namespace Homepage.Queries
 
     }
 }
+#pragma warning restore 1591

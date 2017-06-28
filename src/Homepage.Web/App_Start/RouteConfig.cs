@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
+#pragma warning disable 1591
 namespace Homepage
 {
     public class RouteConfig
@@ -23,3 +24,4 @@ namespace Homepage
         }
     }
 }
+#pragma warning restore 1591

@@ -3,6 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
+#pragma warning disable 1591
 namespace Homepage.Web.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
@@ -37,3 +38,4 @@ namespace Homepage.Web.Areas.HelpPage
         }
     }
 }
+#pragma warning restore 1591

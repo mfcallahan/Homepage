@@ -7,6 +7,7 @@ using System.Web.Http.Description;
 using System.Xml.XPath;
 using Homepage.Web.Areas.HelpPage.ModelDescriptions;
 
+#pragma warning disable 1591
 namespace Homepage.Web.Areas.HelpPage
 {
     /// <summary>
@@ -159,3 +160,4 @@ namespace Homepage.Web.Areas.HelpPage
         }
     }
 }
+#pragma warning restore 1591

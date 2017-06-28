@@ -32,19 +32,15 @@ p {
     }
 }
 
-/*when screen is less than 460px wide*/
+/*when screen is less than 438px wide*/
 @media (max-width: 437px) {
-    .display-full {
-        display: none;
-    }
-
-    .uw-logo, .ms-badge {
+    .display-wide {
         display: none;
     }
 }
-/*when screen is greater than 461px wide*/
+/*when screen is greater than 437px wide*/
 @media (min-width: 438px) {
-    .display-short {
+    .display-narrow {
         display: none;
     }
 }
