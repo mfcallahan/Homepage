@@ -10,9 +10,16 @@ namespace Homepage
         {
             //mfcallahan.com/WeatherMap
             routes.MapRoute(
-                "WeatherMap",
-                "WeatherMap", 
+                name: "WeatherMap",
+                url: "WeatherMap", 
                 defaults: new { controller = "Home", action = "WeatherMap" }
+            );
+
+            //mfcallahan.com/Gallery
+            routes.MapRoute(
+                name: "Gallery",
+                url: "Gallery",
+                defaults: new { controller = "Home", action = "Gallery" }
             );
 
             //mfcallahan.com

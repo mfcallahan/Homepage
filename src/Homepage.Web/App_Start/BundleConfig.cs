@@ -31,7 +31,9 @@ namespace Homepage
 
             // featherlight
             bundles.Add(new ScriptBundle("~/bundles/featherlight").Include(
-                "~/Scripts/featherlight.min.js"));
+                "~/Scripts/featherlight.min.js",
+                "~/Scripts/featherlight.gallery.min.js"
+                ));
 
             // app scripts
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
@@ -42,7 +44,8 @@ namespace Homepage
                 "~/Content/site.css",
                 "~/Content/bootstrap.min.css",
                 "~/Content/font-awesome.min.css",
-                "~/Content/featherlight.min.css"));            
+                "~/Content/featherlight.min.css",
+                "~/Content/featherlight.gallery.min.css"));            
         }
     }
 }

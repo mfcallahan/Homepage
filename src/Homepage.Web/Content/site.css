@@ -266,8 +266,9 @@ p {
         margin-bottom: 30px;
     }
 
+/*WeatherMap*/
 #map {
-    height: 85vh;
+    height: 90vh;
 }
 
 #homeButton {
@@ -275,4 +276,10 @@ p {
     top: 115px;
     left: 21px;
     z-index: 50;
+}
+
+/*Gallery*/
+.gallery-wrapper {
+    background: #696969;
+    padding: 40px;
 }
