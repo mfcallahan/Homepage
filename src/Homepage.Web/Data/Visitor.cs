@@ -7,6 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+#pragma warning disable 1591
 namespace Homepage.Web.Data
 {
     using System;
@@ -30,3 +31,4 @@ namespace Homepage.Web.Data
         public string VisitorName { get; set; }
     }
 }
+#pragma warning restore 1591

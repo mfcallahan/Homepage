@@ -3,18 +3,19 @@ using System.Linq;
 using System.Web.Mvc;
 using Homepage.Queries;
 
+#pragma warning disable 1591
 namespace Homepage.Controllers
 {
     public class HomeController : Controller
     {
-        //mfcallahan.com
+        //url: mfcallahan.com
         public ActionResult Index()
         {
             return View();
         }
 
-        //mfcallahan.com/Map
-        public ActionResult Map()
+        //url: mfcallahan.com/WeatherMap
+        public ActionResult WeatherMap()
         {
             return View();
         }
@@ -45,3 +46,4 @@ namespace Homepage.Controllers
         }        
     }
 }
+#pragma warning restore 1591

@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Text;
 
+#pragma warning disable 1591
 namespace Homepage.Web.Data
 {
     public class Tools
@@ -12,3 +13,4 @@ namespace Homepage.Web.Data
         }
     }
 }
+#pragma warning restore 1591

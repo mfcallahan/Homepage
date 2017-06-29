@@ -5,6 +5,7 @@ using System.Web.Http;
 using Homepage.Dtos;
 using Homepage.Web.Data;
 
+#pragma warning disable 1591
 namespace Homepage.Web.Controllers
 {
     public class WebApiController : ApiController
@@ -12,6 +13,15 @@ namespace Homepage.Web.Controllers
         /// <summary>
         /// Returns a message verifing the API is up and responding.
         /// </summary>
+        /// <returns>
+        /// This API method returns a string with message verifing the API is up and responding. Messgae: "Hello. The API at mfcallahan.com is responding."
+        /// </returns>
+        /// <value>
+        /// value msg here.
+        /// </value>
+        /// <example>
+        /// example msg here.
+        /// </example>
         //mfcallahan.com/api/Hello
         [HttpGet]
         [Route("api/Hello")]
@@ -30,6 +40,9 @@ namespace Homepage.Web.Controllers
         /// <summary>
         /// Returns information about the author of this website.
         /// </summary>
+        /// <returns>
+        /// This API method returns a JSON object containing contact and other information about the author of this website.
+        /// </returns> 
         //mfcallahan.com/api/About
         [HttpGet]
         [Route("api/About")]
@@ -58,19 +71,22 @@ namespace Homepage.Web.Controllers
         [Route("api/Geocode")]
         public HttpResponseMessage Geocode(string address = "", string city = "", string stateProv = "", string postalCode = "", string country = "")
         {
+            Bing bing = new Bing();
+            bing.Geocode(address, city, stateProv, postalCode, country);
             return null;
         }
 
-        /// <summary>
-        /// Locates an array of input address, returning coordinates of each address as
-        /// well as information about the accuracy of the output locations.
-        /// </summary>        
-        //mfcallahan.com/api/BatchGeocode
-        [HttpPost]
-        [Route("api/BatchGeocode")]
-        public HttpResponseMessage BatchGeocode()
-        {
-            return null;
-        }
+        ///// <summary>
+        ///// Locates an array of input address, returning coordinates of each address as
+        ///// well as information about the accuracy of the output locations.
+        ///// </summary>        
+        ////mfcallahan.com/api/BatchGeocode
+        //[HttpPost]
+        //[Route("api/BatchGeocode")]
+        //public HttpResponseMessage BatchGeocode()
+        //{
+        //    return null;
+        //}
     }
 }
+#pragma warning restore 1591

@@ -485,11 +485,23 @@
             <summary>
             Returns a message verifing the API is up and responding.
             </summary>
+            <returns>
+            This API method returns a string with message verifing the API is up and responding. Messgae: "Hello. The API at mfcallahan.com is responding."
+            </returns>
+            <value>
+            value msg here.
+            </value>
+            <example>
+            example msg here.
+            </example>
         </member>
         <member name="M:Homepage.Web.Controllers.WebApiController.About">
             <summary>
             Returns information about the author of this website.
             </summary>
+            <returns>
+            This API method returns a JSON object containing contact and other information about the author of this website.
+            </returns> 
         </member>
         <member name="M:Homepage.Web.Controllers.WebApiController.Geocode(System.String,System.String,System.String,System.String,System.String)">
             <summary>
@@ -501,12 +513,6 @@
             <param name="stateProv">The input city, ex: Wisconsin</param>
             <param name="postalCode">The input city, ex: 53703</param>
             <param name="country">The input city, ex: USA</param>
-        </member>
-        <member name="M:Homepage.Web.Controllers.WebApiController.BatchGeocode">
-            <summary>
-            Locates an array of input address, returning coordinates of each address as
-            well as information about the accuracy of the output locations.
-            </summary>        
         </member>
     </members>
 </doc>

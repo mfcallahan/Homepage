@@ -1,5 +1,6 @@
 using System;
 
+#pragma warning disable 1591
 namespace Homepage.Web.Areas.HelpPage
 {
     /// <summary>
@@ -35,3 +36,4 @@ namespace Homepage.Web.Areas.HelpPage
         }
     }
 }
+#pragma warning restore 1591
