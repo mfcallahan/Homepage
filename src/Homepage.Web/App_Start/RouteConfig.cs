@@ -8,11 +8,11 @@ namespace Homepage
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            //mfcallahan.com/Map
+            //mfcallahan.com/WeatherMap
             routes.MapRoute(
-                "map", 
-                "map", 
-                defaults: new { controller = "Home", action = "Map" }
+                "WeatherMap",
+                "WeatherMap", 
+                defaults: new { controller = "Home", action = "WeatherMap" }
             );
 
             //mfcallahan.com

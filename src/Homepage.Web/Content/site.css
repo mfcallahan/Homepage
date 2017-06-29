@@ -20,9 +20,15 @@ h6 {
     font-weight: 700;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
     line-height: 1.5;
-    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "Avant Garde", Futura, sans-serif;
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "Avant Garde", Futura, sans-serif !important;
 }
 
 @media (min-width: 768px) {
@@ -259,3 +265,14 @@ p {
     .main-wrapper .projects-section .intro {
         margin-bottom: 30px;
     }
+
+#map {
+    height: 85vh;
+}
+
+#homeButton {
+    position: relative;
+    top: 115px;
+    left: 21px;
+    z-index: 50;
+}

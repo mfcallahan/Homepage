@@ -8,14 +8,14 @@ namespace Homepage.Controllers
 {
     public class HomeController : Controller
     {
-        //mfcallahan.com
+        //url: mfcallahan.com
         public ActionResult Index()
         {
             return View();
         }
 
-        //mfcallahan.com/Map
-        public ActionResult Map()
+        //url: mfcallahan.com/WeatherMap
+        public ActionResult WeatherMap()
         {
             return View();
         }
