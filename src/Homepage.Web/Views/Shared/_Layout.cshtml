@@ -6,19 +6,17 @@
     <meta name="google" content="notranslate" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
+
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryval")
-    @Scripts.Render("~/bundles/bootstrap")    
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/featherlight")    
     @Scripts.Render("~/bundles/app")    
 </head>
 <body>
     <div class="container body-content">
         @RenderBody()
-        <br/>
-        <footer>
-            <p>&copy; @DateTime.Now.Year mfcallahan.com</p>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
