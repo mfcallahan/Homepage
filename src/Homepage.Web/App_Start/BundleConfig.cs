@@ -21,6 +21,18 @@ namespace Homepage
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+            // ArcGIS
+            bundles.Add(new ScriptBundle("~/bundles/map").Include(
+                "~/Scripts/map.js"));
+            //bundles.Add(new ScriptBundle("~/bundles/arcgis", "http://js.arcgis.com/3.20/init.js").Include(
+            //    "~/Scripts/init.js"));
+            //bundles.Add(new StyleBundle("~/bundles/arcgis-css", "http://js.arcgis.com/3.20/esri/css/esri.css").Include(
+            //    "~/Content/esri.css"));
+
+            // featherlight
+            bundles.Add(new ScriptBundle("~/bundles/featherlight").Include(
+                "~/Scripts/featherlight.min.js"));
+
             // app scripts
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/Scripts/app.js"));
@@ -29,15 +41,8 @@ namespace Homepage
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/site.css",
                 "~/Content/bootstrap.min.css",
-                "~/Content/font-awesome.min.css"));
-
-            // ArcGIS
-            bundles.Add(new ScriptBundle("~/bundles/map").Include(
-                "~/Scripts/map.js"));
-            //bundles.Add(new ScriptBundle("~/bundles/arcgis", "http://js.arcgis.com/3.20/init.js").Include(
-            //    "~/Scripts/init.js"));
-            //bundles.Add(new StyleBundle("~/bundles/arcgis-css", "http://js.arcgis.com/3.20/esri/css/esri.css").Include(
-            //    "~/Content/esri.css"));
+                "~/Content/font-awesome.min.css",
+                "~/Content/featherlight.min.css"));            
         }
     }
 }
