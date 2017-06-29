@@ -211,6 +211,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\img\me.png" />
     <Content Include="Content\img\mta.png" />
+    <Content Include="Content\img\qbasic.png" />
     <Content Include="Content\img\ti83.png" />
     <Content Include="Content\img\uw.png" />
     <Content Include="favicon.ico" />
