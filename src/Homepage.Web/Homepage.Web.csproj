@@ -249,6 +249,7 @@
     <Content Include="Content\img\truck9.png" />
     <Content Include="Content\img\truck9.thumb.png" />
     <Content Include="Content\img\uw.png" />
+    <Content Include="Content\map.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

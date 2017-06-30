@@ -15,18 +15,31 @@
 </div>*@
 
 @* <!-- ArcGIS JS API map -->*@
-<div class="row">
-    <div class="col-md-3">
-        <h3>Current Weather</h3>
-        layer controls here
-    </div>
-    <div class="col-md-9">
-        <div id="map">            
-            <div id="homeButton"></div>
+
+<div class="container-fluid">
+    <div class="row equal">
+        <div class="col-md-3 no-padding map-wrapper">
+            <div class="map-title">
+                <h3 class="section-title">Current Weather</h3>                
+            </div>
+            <div class="map-about">
+                <h4>This map uses data from blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </h4>
+            </div>
+            <div class="layer-controls">
+                <input type="checkbox" checked data-toggle="toggle">
+            </div>
         </div>
+        <div class="col-md-9 no-padding">
+            <div id="map">
+                <div id="homeButton"></div>
+            </div>
+        </div>
+
     </div>
 </div>
 
-
+<footer>
+    <h5 class="pull-right">Map created using the <a href="https://developers.arcgis.com/javascript/" target="_blank">ArcGIS Online JavaScript API</a></h5>
+</footer>
 
 

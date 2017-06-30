@@ -8,7 +8,7 @@
 }
 
 footer {
-    color: #E6E6E6 !important;
+    color: #A6A6A6 !important;
 }
 
 h1,
@@ -266,20 +266,12 @@ p {
         margin-bottom: 30px;
     }
 
-/*WeatherMap*/
-#map {
-    height: 90vh;
-}
-
-#homeButton {
-    position: relative;
-    top: 115px;
-    left: 21px;
-    z-index: 50;
-}
 
 /*Gallery*/
 .gallery-wrapper {
     background: #696969;
-    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 25px;
+    /*padding: 30px;*/
 }
