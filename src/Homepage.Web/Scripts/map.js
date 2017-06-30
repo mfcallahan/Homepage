@@ -63,7 +63,7 @@ function addFeatureLayers() {
                 }
             });
 
-            on(dom.byId("layer0CheckBox"), "change", toggleLayer);
+            //on(dom.byId("layer0CheckBox"), "change", toggleLayer);
         });
     });
 }
@@ -93,7 +93,7 @@ function addKmlLayers() {
 
 function toggleLayer() {
 
-    layer.layerObject.setVisibility(true)
+    //layer.layerObject.setVisibility(true)
 }
 
 $(document).ready(function () {
