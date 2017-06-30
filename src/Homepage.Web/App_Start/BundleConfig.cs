@@ -18,7 +18,7 @@ namespace Homepage
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/bootstrap.min.js",
                       "~/Scripts/respond.js"));
 
             // ArcGIS
@@ -31,7 +31,9 @@ namespace Homepage
 
             // featherlight
             bundles.Add(new ScriptBundle("~/bundles/featherlight").Include(
-                "~/Scripts/featherlight.min.js"));
+                "~/Scripts/featherlight.min.js",
+                "~/Scripts/featherlight.gallery.min.js"
+                ));
 
             // app scripts
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
@@ -40,9 +42,11 @@ namespace Homepage
             // app styles
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/site.css",
+                "~/Content/map.css",
                 "~/Content/bootstrap.min.css",
                 "~/Content/font-awesome.min.css",
-                "~/Content/featherlight.min.css"));            
+                "~/Content/featherlight.min.css",
+                "~/Content/featherlight.gallery.min.css"));            
         }
     }
 }

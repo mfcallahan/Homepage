@@ -62,6 +62,8 @@ function addFeatureLayers() {
                     radarLayer.setOpacity(0.5);
                 }
             });
+
+            //on(dom.byId("layer0CheckBox"), "change", toggleLayer);
         });
     });
 }
@@ -87,6 +89,11 @@ function addKmlLayers() {
         });
 
     });
+}
+
+function toggleLayer() {
+
+    //layer.layerObject.setVisibility(true)
 }
 
 $(document).ready(function () {

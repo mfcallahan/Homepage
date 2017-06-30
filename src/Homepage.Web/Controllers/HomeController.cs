@@ -20,6 +20,12 @@ namespace Homepage.Controllers
             return View();
         }
 
+        //url: mfcallahan.com/Gallery
+        public ActionResult Gallery()
+        {
+            return View();
+        }
+
         [HttpPost]
         public void Hello()
         {
