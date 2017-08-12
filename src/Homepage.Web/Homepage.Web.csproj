@@ -279,6 +279,7 @@
       <DependentUpon>Visitor.edmx</DependentUpon>
       <LastGenOutput>Visitor1.cs</LastGenOutput>
     </Content>
+    <Content Include="robots.txt" />
     <Content Include="Scripts\app.js" />
     <EntityDeploy Include="Data\Visitor.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
