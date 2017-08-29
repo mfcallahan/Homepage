@@ -8,6 +8,7 @@
 }
 
 $(document).ready(function () {
-    Hello();
+    //disabled becasue SQL serves are expen$ive...
+    //Hello();
 });
 

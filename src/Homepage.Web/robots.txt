@@ -1,4 +1,4 @@
-﻿# robots.txt for http://www.mfcallahan.com/
-
-User-agent: *
+﻿User-agent: *
 Disallow: /Content/
+Disallow: /api/
+Disallow: /Home/Hello/
