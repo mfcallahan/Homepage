@@ -46,9 +46,10 @@ namespace Homepage.Controllers
                 ip = ip.Split(',').Last().Trim();
             }               
 
-            string url = Request.Url.GetLeftPart(UriPartial.Authority);            
+            string url = Request.Url.GetLeftPart(UriPartial.Authority);
 
-            HomepageQueries.LogVisitorInfo(ip, rawIp, url);
+            //disabled becasue SQL serves are expen$ive...
+            //HomepageQueries.LogVisitorInfo(ip, rawIp, url);
         }        
     }
 }
