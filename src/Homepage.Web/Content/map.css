@@ -7,6 +7,11 @@
     position: absolute !important;
 }
 
+/*Camping*/
+.camping-map {
+    height: 90vh;
+}
+
 #homeButton {
     position: relative;
     top: 85px;

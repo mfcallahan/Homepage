@@ -26,6 +26,12 @@ namespace Homepage.Controllers
             return View();
         }
 
+        //url: mfcallahan.com/Camping
+        public ActionResult Camping()
+        {
+            return View();
+        }
+
         [HttpPost]
         public void Hello()
         {
