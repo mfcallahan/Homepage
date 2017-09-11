@@ -22,7 +22,14 @@ namespace Homepage
                 defaults: new { controller = "Home", action = "Gallery" }
             );
 
-            //mfcallahan.com
+            //mfcallahan.com/Camping
+            routes.MapRoute(
+                name: "Camping",
+                url: "Camping",
+                defaults: new { controller = "Home", action = "Camping" }
+            );
+
+            //homepage: mfcallahan.com
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}",
