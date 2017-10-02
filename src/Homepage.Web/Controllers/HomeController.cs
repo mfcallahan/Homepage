@@ -32,6 +32,12 @@ namespace Homepage.Controllers
             return View();
         }
 
+        //url: mfcallahan.com/Radio
+        public ActionResult Radio()
+        {
+            return View();
+        }
+
         [HttpPost]
         public void Hello()
         {
