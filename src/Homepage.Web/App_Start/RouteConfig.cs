@@ -29,6 +29,13 @@ namespace Homepage
                 defaults: new { controller = "Home", action = "Camping" }
             );
 
+            //mfcallahan.com/Radio
+            routes.MapRoute(
+                name: "Radio",
+                url: "Radio",
+                defaults: new { controller = "Home", action = "Radio" }
+            );
+
             //homepage: mfcallahan.com
             routes.MapRoute(
                 name: "Default",

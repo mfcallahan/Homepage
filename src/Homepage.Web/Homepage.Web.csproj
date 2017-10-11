@@ -322,9 +322,7 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Content\docs\Matthew_Callahan_resume.pdf" />
-    <None Include="Properties\PublishProfiles\HomepageWeb20170623090819 - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\iis-publish.pubxml" />
-    <None Include="Properties\PublishProfiles\matt-dev.pubxml" />
+    <None Include="Properties\PublishProfiles\mfcallahan-homepage-prod - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -362,6 +360,7 @@
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\Camping.cshtml" />
+    <Content Include="Views\Home\Radio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\HelpPage\Views\Shared\" />
