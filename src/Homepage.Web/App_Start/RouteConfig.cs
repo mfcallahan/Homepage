@@ -8,32 +8,32 @@ namespace Homepage
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
-            //mfcallahan.com/WeatherMap
-            routes.MapRoute(
-                name: "WeatherMap",
-                url: "WeatherMap", 
-                defaults: new { controller = "Home", action = "WeatherMap" }
-            );
-
-            //mfcallahan.com/Gallery
+            //mfcallahan.com/gallery
             routes.MapRoute(
                 name: "Gallery",
                 url: "Gallery",
                 defaults: new { controller = "Home", action = "Gallery" }
             );
 
-            //mfcallahan.com/Camping
+            //mfcallahan.com/camping
             routes.MapRoute(
                 name: "Camping",
                 url: "Camping",
                 defaults: new { controller = "Home", action = "Camping" }
             );
 
-            //mfcallahan.com/Radio
+            //mfcallahan.com/radiomap
             routes.MapRoute(
-                name: "Radio",
-                url: "Radio",
-                defaults: new { controller = "Home", action = "Radio" }
+                name: "RadioMap",
+                url: "RadioMap",
+                defaults: new { controller = "Home", action = "RadioMap" }
+            );
+
+            //mfcallahan.com/gmrs
+            routes.MapRoute(
+                name: "GMRS",
+                url: "gmrs",
+                defaults: new { controller = "Home", action = "GMRS" }
             );
 
             //homepage: mfcallahan.com

@@ -3,3 +3,6 @@ Disallow: /Content/
 Disallow: /api/
 Disallow: /Home/Hello/
 Disallow: /Camping/
+Disallow: /Gallery/
+Disallow: /Radio/
+Disallow: /RadioMap/

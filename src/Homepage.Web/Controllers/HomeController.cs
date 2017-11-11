@@ -14,26 +14,26 @@ namespace Homepage.Controllers
             return View();
         }
 
-        //url: mfcallahan.com/WeatherMap
-        public ActionResult WeatherMap()
-        {
-            return View();
-        }
-
-        //url: mfcallahan.com/Gallery
+        //url: mfcallahan.com/gallery
         public ActionResult Gallery()
         {
             return View();
         }
 
-        //url: mfcallahan.com/Camping
+        //url: mfcallahan.com/camping
         public ActionResult Camping()
         {
             return View();
         }
 
-        //url: mfcallahan.com/Radio
-        public ActionResult Radio()
+        //url: mfcallahan.com/radiomap
+        public ActionResult RadioMap()
+        {
+            return View();
+        }
+
+        //url: mfcallahan.com/gmrs
+        public ActionResult GMRS()
         {
             return View();
         }

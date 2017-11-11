@@ -211,6 +211,12 @@
     <Content Include="Content\featherlight.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\img\antenna-icon-black.png" />
+    <Content Include="Content\img\antenna-icon-blue.png" />
+    <Content Include="Content\img\antenna-icon-gray.png" />
+    <Content Include="Content\img\antenna-icon-green.png" />
+    <Content Include="Content\img\antenna-icon-red.png" />
+    <Content Include="Content\img\antenna-icon-yellow.png" />
     <Content Include="Content\img\cat1.png" />
     <Content Include="Content\img\cat1.thumb.png" />
     <Content Include="Content\img\cat2.png" />
@@ -355,12 +361,12 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="_Web.config" />
-    <Content Include="Views\Home\WeatherMap.cshtml" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\Camping.cshtml" />
-    <Content Include="Views\Home\Radio.cshtml" />
+    <Content Include="Views\Home\RadioMap.cshtml" />
+    <Content Include="Views\Home\GMRS.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\HelpPage\Views\Shared\" />
