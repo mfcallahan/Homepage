@@ -212,6 +212,7 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\img\antenna-icon-black.png" />
+    <Content Include="Content\img\antenna-icon-blue-sm.png" />
     <Content Include="Content\img\antenna-icon-blue.png" />
     <Content Include="Content\img\antenna-icon-gray.png" />
     <Content Include="Content\img\antenna-icon-green.png" />
@@ -246,8 +247,14 @@
     <Content Include="Content\img\matt7.png" />
     <Content Include="Content\img\matt7.thumb.png" />
     <Content Include="Content\img\me.png" />
+    <Content Include="Content\img\me2.png" />
     <Content Include="Content\img\mta.png" />
     <Content Include="Content\img\qbasic.png" />
+    <Content Include="Content\img\scanner-homepage.png" />
+    <Content Include="Content\img\shack1.png" />
+    <Content Include="Content\img\shack1.thumb.png" />
+    <Content Include="Content\img\shack2.png" />
+    <Content Include="Content\img\shack2.thumb.png" />
     <Content Include="Content\img\ti83.png" />
     <Content Include="Content\img\truck1.png" />
     <Content Include="Content\img\truck1.thumb.png" />
@@ -368,6 +375,7 @@
     <Content Include="Views\Home\RadioMap.cshtml" />
     <Content Include="Views\Home\GMRS.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
+    <Content Include="Views\Home\Radio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\HelpPage\Views\Shared\" />

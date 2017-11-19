@@ -26,6 +26,12 @@ namespace Homepage.Controllers
             return View();
         }
 
+        //url: mfcallahan.com/radio
+        public ActionResult Radio()
+        {
+            return View();
+        }
+
         //url: mfcallahan.com/radiomap
         public ActionResult RadioMap()
         {

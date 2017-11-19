@@ -1,7 +1,6 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-#pragma warning disable 1591
 namespace Homepage
 {
     public class RouteConfig
@@ -20,6 +19,20 @@ namespace Homepage
                 name: "Camping",
                 url: "Camping",
                 defaults: new { controller = "Home", action = "Camping" }
+            );
+
+            //mfcallahan.com/radio
+            routes.MapRoute(
+                name: "Radio",
+                url: "Radio",
+                defaults: new { controller = "Home", action = "Radio" }
+            );
+
+            //mfcallahan.com/WRAA720
+            routes.MapRoute(
+                name: "WRAA720",
+                url: "WRAA720",
+                defaults: new { controller = "Home", action = "Radio" }
             );
 
             //mfcallahan.com/radiomap
@@ -52,4 +65,3 @@ namespace Homepage
         }
     }
 }
-#pragma warning restore 1591
