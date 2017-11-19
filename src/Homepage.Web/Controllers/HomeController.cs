@@ -38,6 +38,12 @@ namespace Homepage.Controllers
             return View();
         }
 
+        //url: mfcallahan.com/blog
+        public ActionResult Blog()
+        {
+            return View();
+        }
+
         [HttpPost]
         public void Hello()
         {

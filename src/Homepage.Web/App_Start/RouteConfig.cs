@@ -36,6 +36,13 @@ namespace Homepage
                 defaults: new { controller = "Home", action = "GMRS" }
             );
 
+            //mfcallahan.com/blog
+            routes.MapRoute(
+                name: "blog",
+                url: "blog",
+                defaults: new { controller = "Home", action = "Blog" }
+            );
+
             //homepage: mfcallahan.com
             routes.MapRoute(
                 name: "Default",

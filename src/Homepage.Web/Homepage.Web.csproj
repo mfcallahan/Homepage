@@ -367,6 +367,7 @@
     <Content Include="Views\Home\Camping.cshtml" />
     <Content Include="Views\Home\RadioMap.cshtml" />
     <Content Include="Views\Home\GMRS.cshtml" />
+    <Content Include="Views\Home\Blog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\HelpPage\Views\Shared\" />
