@@ -1,0 +1,100 @@
+﻿.sidebar-wrapper-radio {
+    background: #038387;
+}
+
+    .sidebar-wrapper-radio a {
+        color: #E6E6E6 !important;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+    }
+
+        .sidebar-wrapper-radio a:hover {
+            text-decoration: underline;
+            color: #284860 !important;
+        }
+
+        .sidebar-wrapper-radio a:focus {
+            text-decoration: none;
+        }
+
+    .sidebar-wrapper-radio .profile-container {
+        padding: 30px;
+        background: rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: #fff;
+    }
+
+    .sidebar-wrapper-radio .contact-container {
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "Avant Garde", Futura, sans-serif;
+    }
+
+    .sidebar-wrapper-radio .name {
+        font-family: Verdana, Tahoma, Segoe, Geneva, sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: #F2F2F2;
+    }
+
+    .sidebar-wrapper-radio .tagline {
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "Avant Garde", Futura, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #E6E6E6;
+    }
+
+    .sidebar-wrapper-radio .profile {
+        margin-bottom: 15px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .sidebar-wrapper-radio .contact-list .fa {
+        margin-right: 5px;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+
+    .sidebar-wrapper-radio .contact-list li {
+        margin-bottom: 10px;
+        word-wrap: break-word;
+    }
+
+        .sidebar-wrapper-radio .contact-list li:last-child {
+            margin-bottom: 0;
+        }
+
+    .sidebar-wrapper-radio .container-block {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+    }
+
+    .sidebar-wrapper-radio .container-block-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-family: Verdana, Tahoma, Geneva, sans-serif;
+    }
+
+    .sidebar-wrapper-radio .container-block-about {
+        font-family: "Century Gothic", "Apple Gothic", AppleGothic, "Avant Garde", Futura, sans-serif;
+    }
+
+    .sidebar-wrapper-radio .moreinfo {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+
+    .sidebar-wrapper-radio .education-container .meta {
+        font-weight: 500;
+        margin-bottom: 0px;
+        margin-top: 0;
+    }

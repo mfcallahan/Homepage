@@ -211,6 +211,8 @@
     <Content Include="Content\featherlight.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\home.css" />
+    <Content Include="Content\img\antenna-icon-black-sm.png" />
     <Content Include="Content\img\antenna-icon-black.png" />
     <Content Include="Content\img\antenna-icon-blue-sm.png" />
     <Content Include="Content\img\antenna-icon-blue.png" />
@@ -232,6 +234,7 @@
     <Content Include="Content\img\cat6.thumb.png" />
     <Content Include="Content\img\cat7.png" />
     <Content Include="Content\img\cat7.thumb.png" />
+    <Content Include="Content\img\homer-radio.png" />
     <Content Include="Content\img\matt1.png" />
     <Content Include="Content\img\matt1.thumb.png" />
     <Content Include="Content\img\matt2.png" />
@@ -249,12 +252,15 @@
     <Content Include="Content\img\me.png" />
     <Content Include="Content\img\me2.png" />
     <Content Include="Content\img\mta.png" />
+    <Content Include="Content\img\pro71.png" />
     <Content Include="Content\img\qbasic.png" />
     <Content Include="Content\img\scanner-homepage.png" />
     <Content Include="Content\img\shack1.png" />
     <Content Include="Content\img\shack1.thumb.png" />
     <Content Include="Content\img\shack2.png" />
     <Content Include="Content\img\shack2.thumb.png" />
+    <Content Include="Content\img\shack3.png" />
+    <Content Include="Content\img\shack3.thumb.png" />
     <Content Include="Content\img\ti83.png" />
     <Content Include="Content\img\truck1.png" />
     <Content Include="Content\img\truck1.thumb.png" />
@@ -278,6 +284,7 @@
     <Content Include="Content\img\truck9.thumb.png" />
     <Content Include="Content\img\uw.png" />
     <Content Include="Content\map.css" />
+    <Content Include="Content\radio.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

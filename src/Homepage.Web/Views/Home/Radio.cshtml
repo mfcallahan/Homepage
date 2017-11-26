@@ -4,63 +4,135 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@Styles.Render("~/Content/style-radio")
+
 <div class="container-fluid">
     <div class="row equal">
-        <div class="col-md-12 no-padding main-col">
-            <div class="main-wrapper">
-
-                <div class="row equal">
-                    <div class="col-sm-4">
-                        <img class="center-block" src="~/Content/img/scanner-homepage.png" alt="" />                        
-                    </div>
-                    <div class="col-sm-8">
-                        <section class="section summary-section">
-                            <h2 class="section-title"><img src="~/Content/img/antenna-icon-blue-sm.png" />&nbsp;&nbsp;Matt Callahan Radio Homepage</h2>
-                            <div class="summary">
-                                <p>
-                                    Welcome to my radio homepage.  I am a licensed GMRS radio opearator, callsign WRAA720, and a licesnsed
-                                    amateur radio operator, call sign AB9ZYX.
-                                </p>
-                            </div>
-                        </section>
-                        <section class="section summary-section">
-                            <h2 class="section-title"><i class="fa fa-link"></i>Radio Links</h2>
-                            <div class="summary">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">Arizona GMRS Repeater Club</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.radioreference.com/" target="_blank" rel="noopener">Radio Reference</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.mygmrs.com/" target="_blank" rel="noopener">MyGMRS</a>                                        
-                                    </li>
-                                </ul>
-              
-                            </div>
-                        </section>
-                        <section class="section summary-section">
-                            <h2 class="section-title"><i class="fa fa-camera"></i>Radio Gallery</h2>
-                            <div class="summary">
-                                <p>
-                                    <div data-featherlight-gallery data-featherlight-filter="a">
-                                        <a href="~/Content/img/shack1.png"><img src="~/Content/img/shack1.thumb.png" /></a>
-                                        <a href="~/Content/img/shack2.png"><img src="~/Content/img/shack2.thumb.png" /></a>
-                                        <a href="~/Content/img/shack3.png"><img src="~/Content/img/shack3.thumb.png" /></a>
-                                    </div>
-                                </p>
-                            </div>
-                        </section>
-                    </div>
+        <div class="col-md-4 no-padding sidebar-col">
+            <div class="sidebar-wrapper-radio">
+                <div class="profile-container">
+                    <img class="profile" src="~/Content/img/scanner-homepage.png" alt="" />
+                    <h1 class="name">AB9ZYX/WRAA72</h1>
+                    <h3 class="tagline">Phoenix, AZ</h3>
                 </div>
+                <div class="contact-container container-block last-item">
+                    <h2 class="container-block-title text-center">QSL</h2>
+                    <ul class="list-unstyled contact-list condensed">
+                        <li>
+                            <span class="display-wide">
+                                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto: matthew.callahan@outlook.com">matthew.callahan@outlook.com</a>
+                            </span>
+                            <span class="display-narrow">
+                                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto: matthew.callahan@outlook.com">Email</a>
+                            </span>
 
+                        </li>   
+                        <li>
+                            <span class="display-wide">
+                                <i class="fa fa-home"></i>&nbsp;&nbsp;<a href="http://mfcallahan.com/" target="_blank" rel="noopener">mfcallahan.com homepage</a>
+                            </span>
+                            <span class="display-narrow">
+                                <i class="fa fa-home"></i>&nbsp;&nbsp;<a href="http://mfcallahan.com/" target="_blank" rel="noopener">mfcallahan.com</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="display-wide">
+                                <span class="glyphicon glyphicon-volme-up"></span>&nbsp;&nbsp;<a href="https://www.gmrs1900.net/blog/89-announcements/101-travel-tone-tuesday-begins" target="_blank" rel="noopener">Tuesdays, 8:00 AM, 462.5500 MHz (141.3 Hz)</a>
+                            </span>
+                            <span class="display-narrow">
+                                <span class="glyphicon glyphicon-volme-up"></span>&nbsp;&nbsp;<a href="https://www.gmrs1900.net/blog/89-announcements/101-travel-tone-tuesday-begins" target="_blank" rel="noopener">462.5500 Mhz</a>
+                            </span>
+                        </li>                        
+                    </ul>
+                    <h2 class="container-block-title text-center">Links</h2>
+                    <ul class="list-unstyled contact-list condensed">
+                        <li>
+                            <span class="display-wide">
+                                <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">Arizona GMRS Repeater Club</a>
+                            </span>
+                            <span class="display-narrow">
+                                <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">AGRC</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="display-wide">
+                                <a href="https://www.radioreference.com/apps/user/call_sign_null" target="_blank" rel="noopener">RadioReference.com Profile</a>
+                            </span>
+                            <span class="display-narrow">
+                                <a href="https://www.radioreference.com/apps/user/call_sign_null" target="_blank" rel="noopener">RadioReference</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="display-wide">
+                                <a href="https://www.mygmrs.com/users?username=mcallahan" target="_blank" rel="noopener">MyGMRS.com Profile</a>
+                            </span>
+                            <span class="display-narrow">
+                                <a href="https://www.mygmrs.com/users?username=mcallahan" target="_blank" rel="noopener">MyGMRS.com</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </div>
 
+        <div class="col-md-8 no-padding main-col">
+            <div class="main-wrapper">
+                <section class="section summary-section">
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <img src="~/Content/img/antenna-icon-black-sm.png" />
+                        </div>
+                        <div class="col-md-9 text-center">
+                            <h2 class="section-title text-center">Matt Callahan Radio Homepage</h2>
+                        </div>
+                    </div>
+                </section>
+                <section class="section summary-section">                    
+                    <div class="row">                        
+                        <div class="col-md-8">
+                            <div class="summary">
+                                <p>
+                                    Welcome to my radio homepage.  In addition to computers and programming, my other geeky hobby is radio. I am a
+                                    licensed GMRS radio opearator, callsign WRAA720, and a licesnsed amateur radio operator, call sign AB9ZYX. In
+                                    the late 90s I bought my first scanner from Radio Shack (<a href="~/Content/img/pro71.png" data-featherlight="image">a Pro-71</a>)
+                                    I was hooked.  I'm a member of the Arizona GMRS Repeater Club, check out our homepage <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">here</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-responsive" src="~/Content/img/homer-radio.png" />
+                        </div>
+                    </div>                    
+                </section>
+                <section class="section summary-section">
+                    <h2 class="section-title"><i class="fa fa-wordpress"></i>Recent blog posts</h2>
+                    <div class="summary">
+                        <h4><a href="https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/" target="_blank" rel="noopener">BTECH GMRS-V1 Review</a></h4>
+                    </div>
+                </section>
+                <section class="section summary-section">
+                    <h2 class="section-title"><i class="fa fa-camera"></i>Radio Gallery</h2>
+                    <div class="summary text-center">
+                        <p style="color: red">
+                            <div data-featherlight-gallery data-featherlight-filter="a">
+                                <a href="~/Content/img/truck1.png" alt="Mobile shack: 2013 F-150"><img src="~/Content/img/truck1.thumb.png" alt="Mobile shack: 2013 F-150"/></a>
+                                <a href="~/Content/img/shack1.png"><img src="~/Content/img/shack1.thumb.png" /></a>
+                                <a href="~/Content/img/shack2.png"><img src="~/Content/img/shack2.thumb.png" /></a>
+                                <a href="~/Content/img/shack3.png"><img src="~/Content/img/shack3.thumb.png" /></a>
+                            </div>
+                        </p>
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
 </div>
 
-<footer>
-    <h5><a href="http://mfcallahan.com">mfcallahan.com home</a></h5>
-</footer>
+
+<script>
+    $.featherlightGallery.prototype.afterContent = function () {
+        var caption = this.$currentTarget.find('img').attr('alt');
+        this.$instance.find('.caption').remove();
+        $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
+    };
+</script>

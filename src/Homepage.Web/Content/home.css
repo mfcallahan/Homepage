@@ -1,98 +1,4 @@
-﻿body {
-    background-color: #1E1E1E !important;
-    color: #E6E6E6 !important;
-    font-size: 14px;
-    padding: 30px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-footer {
-    color: #A6A6A6 !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    line-height: 1.5;
-    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "Avant Garde", Futura, sans-serif !important;
-}
-
-a {
-    color: #4ddbff !important;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-}
-
-.img {
-    display: inline-block;
-    height: auto;
-    max-width: 100%;
-}
-
-@media (min-width: 768px) {
-    .row.equal {
-        display: flex;
-        flex-wrap: wrap;        
-    }
-}
-
-/*when screen is less than 438px wide*/
-@media (max-width: 437px) {
-    .display-wide {
-        display: none;
-    }
-}
-/*when screen is greater than 437px wide*/
-@media (min-width: 438px) {
-    .display-narrow {
-        display: none;
-    }
-}
-
-.equal > div[class*='col-'] {  
-  display: flex;
-  flex-direction: column;
-}
-
-.no-padding {
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-.vertical-align {
-    display: flex;
-    align-items: center;
-}
-
-.main-col {
-    background-color: #696969;
-}
-
-.sidebar-col {
-    background-color: #4285F4;
-}
-
-.last-item {
-    margin-bottom: 30px;
-}
-
-.wrapper {
+﻿.wrapper {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
@@ -105,7 +11,7 @@ a {
 .sidebar-wrapper {
     background: #4285F4;
 }
-        
+
     .sidebar-wrapper a {
         color: #E6E6E6 !important;
         -webkit-transition: all 0.4s ease-in-out;
@@ -114,14 +20,14 @@ a {
         -o-transition: all 0.4s ease-in-out;
     }
 
-    .sidebar-wrapper a:hover {
-        text-decoration: underline;
-        color: #284860 !important;
-    }
+        .sidebar-wrapper a:hover {
+            text-decoration: underline;
+            color: #284860 !important;
+        }
 
-    .sidebar-wrapper a:focus {
-        text-decoration: none;
-    }
+        .sidebar-wrapper a:focus {
+            text-decoration: none;
+        }
 
     .sidebar-wrapper .profile-container {
         padding: 30px;
@@ -166,7 +72,7 @@ a {
 
     .sidebar-wrapper .contact-list li {
         margin-bottom: 10px;
-        word-wrap: break-word;        
+        word-wrap: break-word;
     }
 
         .sidebar-wrapper .contact-list li:last-child {
@@ -195,14 +101,13 @@ a {
         font-size: 14px;
         margin-top: 0;
         margin-bottom: 5px;
-    }    
+    }
 
     .sidebar-wrapper .education-container .meta {
         font-weight: 500;
         margin-bottom: 0px;
         margin-top: 0;
     }
-
 
 .main-wrapper {
     background: #696969;
@@ -217,14 +122,14 @@ a {
         -o-transition: all 0.4s ease-in-out;
     }
 
-    .main-wrapper a:hover {
-        text-decoration: underline;
-        color: #00a3cc !important;
-    }
+        .main-wrapper a:hover {
+            text-decoration: underline;
+            color: #00a3cc !important;
+        }
 
-    .main-wrapper a:focus {
-        text-decoration: none;
-    }
+        .main-wrapper a:focus {
+            text-decoration: none;
+        }
 
     .main-wrapper .section-title {
         font-family: Verdana, Tahoma, Geneva, sans-serif;
@@ -261,9 +166,9 @@ a {
         margin-bottom: 40px;
     }
 
-    .main-wrapper .section:last-of-type {
-        margin-bottom: 0px;
-    }
+        .main-wrapper .section:last-of-type {
+            margin-bottom: 0px;
+        }
 
     .main-wrapper .experiences-section .item {
         margin-bottom: 30px;

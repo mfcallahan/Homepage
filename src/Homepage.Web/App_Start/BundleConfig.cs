@@ -5,48 +5,45 @@ namespace Homepage
     public class BundleConfig
     {
         public static void RegisterBundles(BundleCollection bundles)
-        {          
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
-
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
-
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.min.js",
-                      "~/Scripts/respond.js"));
-
-            // ArcGIS
-            bundles.Add(new ScriptBundle("~/bundles/map").Include(
-                "~/Scripts/map.js"));
+        {   
             //bundles.Add(new ScriptBundle("~/bundles/arcgis", "http://js.arcgis.com/3.20/init.js").Include(
             //    "~/Scripts/init.js"));
             //bundles.Add(new StyleBundle("~/bundles/arcgis-css", "http://js.arcgis.com/3.20/esri/css/esri.css").Include(
             //    "~/Content/esri.css"));
 
-            // featherlight
-            bundles.Add(new ScriptBundle("~/bundles/featherlight").Include(
+            // site scripts
+            bundles.Add(new ScriptBundle("~/bundles/scripts-site").Include(
+                "~/Scripts/jquery-{version}.js",
+                "~/Scripts/jquery.validate*",
+                "~/Scripts/bootstrap.min.js",
+                "~/Scripts/respond.js",
                 "~/Scripts/featherlight.min.js",
-                "~/Scripts/featherlight.gallery.min.js"
-                ));
-
-            // app scripts
-            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                "~/Scripts/featherlight.gallery.min.js",
                 "~/Scripts/app.js"));
 
-            // app styles
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                "~/Content/site.css",
-                "~/Content/map.css",
+            // site styles
+            bundles.Add(new StyleBundle("~/Content/style-site").Include(                
                 "~/Content/bootstrap.min.css",
                 "~/Content/font-awesome.min.css",
                 "~/Content/featherlight.min.css",
-                "~/Content/featherlight.gallery.min.css"));            
+                "~/Content/featherlight.gallery.min.css",
+                "~/Content/site.css"));
+
+            // homepage style
+            bundles.Add(new StyleBundle("~/Content/style-home").Include(
+                "~/Content/home.css"));
+
+            // radio style
+            bundles.Add(new StyleBundle("~/Content/style-radio").Include(
+                "~/Content/radio.css"));
+
+            // map scripts
+            bundles.Add(new ScriptBundle("~/bundles/scripts-map").Include(
+                "~/Scripts/map.js"));
+
+            // map style
+            bundles.Add(new StyleBundle("~/Content/style-map").Include(
+                "~/Content/map.css"));
         }
     }
 }
