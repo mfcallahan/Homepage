@@ -1,10 +1,9 @@
-﻿
-@{
-    ViewBag.Title = "Radio";
+﻿@{
+    ViewBag.Title = "AB9ZYX|WRAA720";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@Styles.Render("~/Content/style-radio")
+@Styles.Render("~/Content/radio-style")
 
 <div class="container-fluid">
     <div class="row equal">
@@ -37,10 +36,10 @@
                         </li>   
                         <li>
                             <span class="display-wide">
-                                <i class="fa fa-home"></i>&nbsp;&nbsp;<a href="http://mfcallahan.com/" target="_blank" rel="noopener">mfcallahan.com homepage</a>
+                                <i class="fa fa-home"></i>&nbsp;&nbsp;<a href="@Url.Action("Index", "Home")" target="_blank" rel="noopener">mfcallahan.com homepage</a>
                             </span>
                             <span class="display-narrow">
-                                <i class="fa fa-home"></i>&nbsp;&nbsp;<a href="http://mfcallahan.com/" target="_blank" rel="noopener">mfcallahan.com</a>
+                                <i class="fa fa-home"></i>&nbsp;&nbsp;<a href="@Url.Action("Index", "Home")" target="_blank" rel="noopener">mfcallahan.com</a>
                             </span>
                         </li>                        
                         <li>
@@ -120,20 +119,19 @@
                                 Welcome to my radio homepage.  In addition to computers and programming, my other nerdy hobby is radio. I am a
                                 licensed GMRS radio opearator (<a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3959322" target="_blank" rel="noopener">WRAA720</a>) 
                                 and a licesnsed amateur radio operator (AB9ZYX). When I was 16, I bought my first scanner from Radio 
-                                Shack, <a href="~/Content/img/pro71.png" data-featherlight="image">a Pro-71</a>, and I've been listening 
+                                Shack, <a href="@Url.Content("~/Content/img/pro71.png")" data-featherlight="image">a Pro-71</a>, and I've been listening 
                                 ever since.
                             </p>
                             <p>
                                 Radio is most useful to me when I'm camping and exploring the Arizona back country.  I monitor state
-                                and US Forest Service fire comms during wildfire season, and I rely on VHF and UHF radios for
-                                communications when traveling Arizona highways and forest roads. I'm also a member of the 
-                                <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">Arizona GMRS Repeater Club</a>.
+                                and US Forest Service comms during wildfire season, and I rely on VHF and UHF radios for off-road
+                                communications. I'm also a member of the <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">Arizona GMRS Repeater Club</a>.
                             </p>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <a href="https://www.mygmrs.com/view?id=1793" target="_blank" rel="noopener">
-                            <img class="img-responsive center-block" src="~/Content/img/scanner-homepage.png" />
+                            <img class="img-responsive center-block" src="@Url.Content("~/Content/img/scanner-homepage.png")" />
                         </a>
                     </div>
                 </div>
@@ -143,7 +141,7 @@
                         <div class="summary">
                             <ul class="list-unstyled contact-list condensed">
                                 <li>
-                                    <h5><a href="http://mfcallahan.com/gmrs" target="_blank" rel="noopener">Arizona GMRS Repeater Map</a></h5>
+                                    <h5><a href="@Url.Action("GMRS", "Home")" target="_blank" rel="noopener">Arizona GMRS Repeater Map</a></h5>
                                 </li>
                                 <li>
                                     <h5><a href="https://www.gmrs1900.net/about-us/repeaters" target="_blank" rel="noopener">AGRC Repeater Map</a></h5>
@@ -181,10 +179,10 @@
                     <div class="col-sm-12">
                         <h2 class="main-title text-center"><i class="fa fa-camera"></i>&nbsp;&nbsp;Shack Photos</h2>
                         <div class="text-center" data-featherlight-gallery data-featherlight-filter="a">
-                            <a href="~/Content/img/truck11.png" alt="Mobile shack: 2013 F-150"><img src="~/Content/img/truck11.thumb.png" alt="Mobile shack: 2013 F-150" /></a>
-                            <a href="~/Content/img/shack1.png"><img src="~/Content/img/shack1.thumb.png" /></a>
-                            <a href="~/Content/img/shack2.png"><img src="~/Content/img/shack2.thumb.png" /></a>
-                            <a href="~/Content/img/shack3.png"><img src="~/Content/img/shack3.thumb.png" /></a>
+                            <a href="@Url.Content("~/Content/img/truck11.png")"><img src="@Url.Content("~/Content/img/truck11.thumb.png")"  /></a>
+                            <a href="@Url.Content("~/Content/img/shack1.png")"><img src="@Url.Content("~/Content/img/shack1.thumb.png")" /></a>
+                            <a href="@Url.Content("~/Content/img/shack2.png")"><img src="@Url.Content("~/Content/img/shack2.thumb.png")" /></a>
+                            <a href="@Url.Content("~/Content/img/shack3.png")"><img src="@Url.Content("~/Content/img/shack3.thumb.png")" /></a>
                         </div>
                     </div>                    
                 </div>
