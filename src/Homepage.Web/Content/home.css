@@ -1,11 +1,11 @@
-﻿.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+﻿h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+.sidebar-col {
+    background-color: #4285F4;
 }
 
 .sidebar-wrapper {
@@ -109,88 +109,23 @@
         margin-top: 0;
     }
 
-.main-wrapper {
-    background: #696969;
-    padding: 60px;
-}
-
-    .main-wrapper a {
-        color: #4ddbff !important;
-        -webkit-transition: all 0.4s ease-in-out;
-        -moz-transition: all 0.4s ease-in-out;
-        -ms-transition: all 0.4s ease-in-out;
-        -o-transition: all 0.4s ease-in-out;
-    }
-
-        .main-wrapper a:hover {
-            text-decoration: underline;
-            color: #00a3cc !important;
-        }
-
-        .main-wrapper a:focus {
-            text-decoration: none;
-        }
-
-    .main-wrapper .section-title {
-        font-family: Verdana, Tahoma, Geneva, sans-serif;
-        font-size: 22px;
-        font-weight: 800;
+    .main-wrapper .section-title .fa {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        display: inline-block;
         color: #E6E6E6;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        background: #2c3e50;
+        text-align: center;
+        padding-top: 6px;
+        font-size: 18px;
         position: relative;
-        margin-top: 0;
-        margin-bottom: 20px;
     }
-
-        .main-wrapper .section-title .fa {
-            width: 30px;
-            height: 30px;
-            margin-right: 8px;
-            display: inline-block;
-            color: #E6E6E6;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            border-radius: 50%;
-            -moz-background-clip: padding;
-            -webkit-background-clip: padding-box;
-            background-clip: padding-box;
-            background: #2c3e50;
-            text-align: center;
-            padding-top: 6px;
-            font-size: 18px;
-            position: relative;
-        }
-
-    .main-wrapper .section {
-        margin-bottom: 40px;
-    }
-
-        .main-wrapper .section:last-of-type {
-            margin-bottom: 0px;
-        }
-
-    .main-wrapper .experiences-section .item {
-        margin-bottom: 30px;
-    }
-
-    .main-wrapper .project-title {
-        font-size: 16px;
-        font-weight: 400;
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-
-    .main-wrapper .projects-section .intro {
-        margin-bottom: 30px;
-    }
-
-
-/*Gallery*/
-.gallery-wrapper {
-    background: #696969;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    margin-bottom: 25px;
-    /*padding: 30px;*/
-}

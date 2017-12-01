@@ -1,5 +1,13 @@
-﻿.sidebar-wrapper-radio {
-    background: #038387;
+﻿.row {
+    margin-bottom: 30px
+}
+
+.sidebar-col {
+    background-color: #567C73;
+}
+
+.sidebar-wrapper-radio {
+    /*background: #038387;*/
 }
 
     .sidebar-wrapper-radio a {
@@ -21,7 +29,7 @@
 
     .sidebar-wrapper-radio .profile-container {
         padding: 30px;
-        background: rgba(0, 0, 0, 0.2);
+        background-color: #486860;
         text-align: center;
         color: #fff;
     }
@@ -54,11 +62,11 @@
         max-height: 100%;
     }
 
-    .sidebar-wrapper-radio .contact-list .fa {
+    /*.sidebar-wrapper-radio .contact-list .fa {
         margin-right: 5px;
         font-size: 18px;
         vertical-align: middle;
-    }
+    }*/
 
     .sidebar-wrapper-radio .contact-list li {
         margin-bottom: 10px;
@@ -98,3 +106,33 @@
         margin-bottom: 0px;
         margin-top: 0;
     }
+
+.main-title {
+    font-family: Verdana, Tahoma, Geneva, sans-serif;
+    font-size: 22px;
+    color: #E6E6E6;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+    /*.main-title .fa {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        display: inline-block;
+        color: #E6E6E6;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        background: #1F1F1F;
+        text-align: center;
+        padding-top: 6px;
+        font-size: 18px;
+        position: relative;
+    }*/

@@ -266,6 +266,8 @@
     <Content Include="Content\img\truck1.thumb.png" />
     <Content Include="Content\img\truck10.png" />
     <Content Include="Content\img\truck10.thumb.png" />
+    <Content Include="Content\img\truck11.png" />
+    <Content Include="Content\img\truck11.thumb.png" />
     <Content Include="Content\img\truck2.png" />
     <Content Include="Content\img\truck2.thumb.png" />
     <Content Include="Content\img\truck3.png" />
@@ -342,6 +344,7 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Content\docs\Matthew_Callahan_resume.pdf" />
+    <Content Include="Content\docs\spectrum-allocations-poster.pdf" />
     <None Include="Properties\PublishProfiles\mfcallahan-homepage-prod - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />

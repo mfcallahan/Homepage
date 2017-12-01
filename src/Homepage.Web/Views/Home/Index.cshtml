@@ -3,8 +3,7 @@
     ViewBag.Title = "Matt Callahan";
 }
 
-@Styles.Render("~/Content/home")
-@Scripts.Render("~/bundles/app")
+@Styles.Render("~/Content/style-home")
 
 <div class="container-fluid">
     <div class="row equal">
@@ -85,7 +84,7 @@
                     </div>
 
                 </div>
-                <div class="education-container container-block">
+                <div class="education-container container-block last-item">
                     <h2 class="container-block-title">Certifications</h2>
                     <div class="container-block-about">
                         <div class="row vertical-align">
@@ -104,7 +103,7 @@
                         </div>                                                            
                     </div>
                 </div>
-                <div class="education-container container-block last-item">
+                @*<div class="education-container container-block last-item">
                     <h2 class="container-block-title">Certifications in Progress</h2>
                     <div class="container-block-about">
                         <p>
@@ -114,7 +113,7 @@
                             <h4 class="moreinfo"><a href="https://www.esri.com/training/catalog/576622b95afc2ce509542a3f/arcgis-desktop-developer-associate-10.4/" target="_blank" rel="noopener">ArcGIS Desktop Developer Associate 10.4</a></h4>
                         </p>
                     </div>
-                </div>
+                </div>*@
             </div>
         </div>
 
@@ -133,9 +132,7 @@
                             My interest in programming extended through college, where my Geographic Information Systems major introduced me 
                             to Java and Flash/ActionScript.  If I'm not at my keyboard, you'll find me enjoying the Arizona 
                             outdoors - exploring the scenic back roads, bicycling, fishing, camping, swimming, and skiing (yes, there's 
-                            skiing in <a href="https://www.arizonasnowbowl.com/" target="_blank" rel="noopener">Arizona</a>).  I'm also a GMRS 
-                            radio operator - call sign WRAA720.  Visit the <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">Arizona GMRS Repeater Club</a> 
-                            and listen in on 462.5500 MHz in the Phoenix Metro area!
+                            skiing in <a href="https://www.arizonasnowbowl.com/" target="_blank" rel="noopener">Arizona</a>).
                         </p>
                     </div>                    
                 </section>
@@ -161,6 +158,21 @@
                                 staff. I am very fortunate to work in an environment that provides a wide array of data to process, 
                                 visualize, and make accessible to clients in meaningful ways. I work with a great GIS and development 
                                 team, and we thrive solving unique problems and providing tools that help clients make informed decisions.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section experiences-section">
+                    <h2 class="section-title"><i class="fa fa-volume-up" aria-hidden="true"></i>Radio</h2>
+                    <div class="item">
+                        <div class="details">
+                            <p>
+                                In addition to computers and programming, my other nerdy hobby is radio.  I am a licensed GMRS radio opearator 
+                                (call sign <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3959322" target="_blank" rel="noopener">WRAA720</a>)
+                                and a licesnsed amateur radio operator (call sign AB9ZYX).   I rely on VHF and UHF <a href="~/Content/img/shack1.png" data-featherlight="image">two-way radios</a>
+                                for communications when I'm camping in Arizona's back country and exploring forest roads. 
+                                Check out my <a href="https://www.cbre.com/about/tech-vantage/dimension/" target="_blank" rel="noopener">radio homepage here</a>.
                             </p>
                         </div>
                     </div>
