@@ -4,6 +4,16 @@ using System.Configuration;
 #pragma warning disable 1591
 namespace Homepage.Dtos
 {
+    public class ApiResponseRandom
+    {
+        public string RandomString { get; set; }
+
+        public ApiResponseRandom(string str)
+        {
+            RandomString = str;
+        }
+    }
+
     public class ApiResponseHello
     {
         public string Status { get; set; }
