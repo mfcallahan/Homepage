@@ -1,5 +1,0 @@
-﻿User-agent: *
-Disallow: /Content/
-Disallow: /api/
-Disallow: /Home/Hello/
-Disallow: /Camping/

@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "GMRS";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Styles.Render("~/Content/map-styles")
+@*@Scripts.Render("~/bundles/map-scripts")*@
+
+@* <!-- ArcGIS Online -->*@
+<div class="container-fluid">
+    <div class="row equal">
+        <div class="col-sm-12 no-padding">
+            @* <!-- GMRS web app (c_sharp_dotnet) -->*@
+            <iframe style="height: 93vh" src='http://www.arcgis.com/apps/View/index.html?appid=681c574231b74718a76fd8d3a8e425a7' frameborder='0' scrolling='no'></iframe>
+        </div>
+    </div>
+</div>
+
