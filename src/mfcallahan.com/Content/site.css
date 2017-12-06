@@ -52,6 +52,14 @@ a {
     font-family: "Century Gothic", "Apple Gothic", AppleGothic, "Avant Garde", Futura, sans-serif !important;
 }
 
+.table {
+    font-family: "Century Gothic", "Apple Gothic", AppleGothic, "Avant Garde", Futura, sans-serif !important;
+}
+
+.font-monospace {
+    font-family: Consolas, "Lucida Console", "Lucida Sans Typewriter", Monaco, "Andale Mono WT", "Andale Mono", "Courier New", monospace !important;
+}
+
 @media (min-width: 768px) {
     .row.equal {
         display: flex;

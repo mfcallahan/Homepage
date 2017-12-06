@@ -4,11 +4,32 @@ using System.Text;
 using System.Web.Http;
 using Homepage.Dtos;
 using Homepage.Data;
+using Homepage.Queries;
 
 namespace Homepage.Controllers
 {
     public class WebApiController : ApiController
     {
+        /// <summary>
+        /// Returns information about the author of this website.
+        /// </summary>
+        /// <returns>
+        /// This API method returns a JSON object containing contact and other information about the author of this website.
+        /// </returns> 
+        // mfcallahan.com/api/About
+        [HttpGet]
+        [Route("api/About")]
+        public HttpResponseMessage About()
+        {
+            HttpResponseMessage httpResponseMsg = Request.CreateResponse();
+            httpResponseMsg.StatusCode = HttpStatusCode.OK;
+
+            ApiResponseBusinessCard apiResponse = new ApiResponseBusinessCard();
+            Tools.SerializeApiResponse(ref httpResponseMsg, ref apiResponse);
+
+            return httpResponseMsg;
+        }
+
         /// <summary>
         /// Returns a message verifing the API is up and responding.
         /// </summary>
@@ -27,34 +48,14 @@ namespace Homepage.Controllers
         public HttpResponseMessage Hello()
         {
             StringBuilder msg = new StringBuilder();
-            msg.Append("Hello. The API at mfcallahan.com is responding.");            
+            msg.Append("Hello. The API at mfcallahan.com is responding.");
 
             ApiResponseHello apiResponse = new ApiResponseHello("200", msg.ToString());
             HttpResponseMessage httpResponseMsg = Request.CreateResponse(HttpStatusCode.OK);
             Tools.SerializeApiResponse(ref httpResponseMsg, ref apiResponse);
 
             return httpResponseMsg;
-        }
-
-        /// <summary>
-        /// Returns information about the author of this website.
-        /// </summary>
-        /// <returns>
-        /// This API method returns a JSON object containing contact and other information about the author of this website.
-        /// </returns> 
-        // mfcallahan.com/api/About
-        [HttpGet]
-        [Route("api/About")]
-        public HttpResponseMessage About()
-        {
-            HttpResponseMessage httpResponseMsg = Request.CreateResponse();
-
-            httpResponseMsg.StatusCode = HttpStatusCode.OK;
-            ApiResponseBusinessCard apiResponse = new ApiResponseBusinessCard();
-            Tools.SerializeApiResponse(ref httpResponseMsg, ref apiResponse);
-
-            return httpResponseMsg;
-        }
+        }        
 
         /// <summary>
         /// Returns a string of random charcaters 
@@ -70,10 +71,9 @@ namespace Homepage.Controllers
         public HttpResponseMessage RandomString(int length, bool useNums)
         {
             HttpResponseMessage httpResponseMsg = Request.CreateResponse();
-
             httpResponseMsg.StatusCode = HttpStatusCode.OK;
-            ApiResponseRandom rnd = new ApiResponseRandom(Tools.GenerateRandonString(length, useNums));
 
+            var rnd = new { value = Tools.GenerateRandonString(length, useNums) };
             Tools.SerializeApiResponse(ref httpResponseMsg, ref rnd);
 
             return httpResponseMsg;
@@ -98,6 +98,31 @@ namespace Homepage.Controllers
             bing.Geocode(address, city, stateProv, postalCode, country);
 
             return null;
+        }
+
+        /// <summary>
+        /// Returns information about an IP address
+        /// </summary>
+        /// <returns>
+        /// This API method returns information about an IP address.
+        /// </returns>
+        /// <value>
+        /// value msg here.
+        /// </value>
+        /// <example>
+        /// example msg here.
+        /// </example>
+        // mfcallahan.com/api/IpInfo
+        [HttpGet]
+        [Route("api/IpInfo")]
+        public HttpResponseMessage IpInfo(string ip)
+        {
+            IpLocation loc = HomepageQueries.GetIpInfo(ip);
+            HttpResponseMessage httpResponseMsg = Request.CreateResponse(HttpStatusCode.OK);
+
+            Tools.SerializeApiResponse(ref httpResponseMsg, ref loc);
+
+            return httpResponseMsg;
         }
     }
 }

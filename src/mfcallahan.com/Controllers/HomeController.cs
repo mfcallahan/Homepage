@@ -1,54 +1,55 @@
 ﻿using System;
 using System.Linq;
 using System.Web.Mvc;
-using Homepage.Queries;
+//using Homepage.Queries;
 
 namespace Homepage.Controllers
 {
     public class HomeController : Controller
     {
-        //url: mfcallahan.com
+        // mfcallahan.com
         public ActionResult Index()
         {
             return View();
         }
 
-        //url: mfcallahan.com/gallery
+        // mfcallahan.com/gallery
         public ActionResult Gallery()
         {
             return View();
         }
 
-        //url: mfcallahan.com/camping
+        // mfcallahan.com/camping
         public ActionResult Camping()
         {
             return View();
         }
 
-        //url: mfcallahan.com/radio
+        // mfcallahan.com/radio
         public ActionResult Radio()
         {
             return View();
         }
 
-        //url: mfcallahan.com/radiomap
+        // mfcallahan.com/radiomap
         public ActionResult RadioMap()
         {
             return View();
         }
 
-        //url: mfcallahan.com/gmrs
+        // mfcallahan.com/gmrs
         public ActionResult GMRS()
         {
             return View();
         }
 
-        //url: mfcallahan.com/blog
+        // mfcallahan.com/blog
         public ActionResult Blog()
         {
             return View();
         }
 
+        // Log a info from homepage visitor
         [HttpPost]
         public void Hello()
         {
@@ -57,7 +58,7 @@ namespace Homepage.Controllers
             if (string.IsNullOrEmpty(ip))
                 ip = Request.ServerVariables["REMOTE_ADDR"];
 
-            //for testing
+            // for testing
             //if (ip == "127.0.0.1" || ip == null)
             //    ip = "8.8.8.8"; //google
 
@@ -71,7 +72,7 @@ namespace Homepage.Controllers
 
             string url = Request.Url.GetLeftPart(UriPartial.Authority);
 
-            //disabled becasue SQL serves are expen$ive...
+            // disabled becasue SQL serves are expen$ive...
             //HomepageQueries.LogVisitorInfo(ip, rawIp, url);
         }        
     }

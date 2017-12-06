@@ -2,6 +2,7 @@
 Disallow: /Content/
 Disallow: /Scripts/
 Disallow: /api/
+Disallow: /ApiDocumentation/Api/
 Disallow: /Home/Hello/
 Disallow: /Camping/
 Disallow: /Gallery/

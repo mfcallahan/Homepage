@@ -6,11 +6,6 @@ namespace Homepage
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            //bundles.Add(new ScriptBundle("~/bundles/arcgis", "http://js.arcgis.com/3.20/init.js").Include(
-            //    "~/Scripts/init.js"));
-            //bundles.Add(new StyleBundle("~/bundles/arcgis-css", "http://js.arcgis.com/3.20/esri/css/esri.css").Include(
-            //    "~/Content/esri.css"));
-
             // site styles
             bundles.Add(new StyleBundle("~/Content/site-styles").Include(
                 "~/Content/bootstrap.min.css",
@@ -29,7 +24,7 @@ namespace Homepage
                 "~/Scripts/featherlight.gallery.min.js",
                 "~/Scripts/app.js"));
 
-            // homepage style
+            // homepage styles
             bundles.Add(new StyleBundle("~/Content/home-styles").Include(
                 "~/Content/home.css"));
 
@@ -37,17 +32,27 @@ namespace Homepage
             bundles.Add(new ScriptBundle("~/bundles/home-scripts").Include(
                 "~/Scripts/home.js"));
 
-            // radio style
+            // radio styles
             bundles.Add(new StyleBundle("~/Content/radio-styles").Include(
                 "~/Content/radio.css"));
 
-            // map style
+            // radio scripts
+            bundles.Add(new ScriptBundle("~/bundles/radio-scripts").Include(
+                "~/Scripts/radio.js"));
+
+            // map styles
             bundles.Add(new StyleBundle("~/Content/map-styles").Include(
                 "~/Content/map.css"));
 
             // map scripts
             bundles.Add(new ScriptBundle("~/bundles/map-scripts").Include(
                 "~/Scripts/map.js"));
+
+            // ArcGIS Online
+            //bundles.Add(new ScriptBundle("~/bundles/arcgis", "http://js.arcgis.com/3.20/init.js").Include(
+            //    "~/Scripts/init.js"));
+            //bundles.Add(new StyleBundle("~/bundles/arcgis-css", "http://js.arcgis.com/3.20/esri/css/esri.css").Include(
+            //    "~/Content/esri.css"));
         }
     }
 }

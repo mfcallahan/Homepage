@@ -11,6 +11,7 @@ namespace Homepage
         {
             config.MapHttpAttributeRoutes();
 
+            // mfcallahan.com/api
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",

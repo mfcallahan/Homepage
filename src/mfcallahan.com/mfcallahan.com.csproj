@@ -236,6 +236,7 @@
     <Content Include="Content\img\cat6.thumb.png" />
     <Content Include="Content\img\cat7.png" />
     <Content Include="Content\img\cat7.thumb.png" />
+    <Content Include="Content\img\cell-coverage.png" />
     <Content Include="Content\img\clock.png" />
     <Content Include="Content\img\fcc.png" />
     <Content Include="Content\img\homer-radio.png" />
@@ -352,6 +353,11 @@
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Content\docs\Matthew_Callahan_resume.pdf" />
     <Content Include="Content\docs\spectrum-allocations-poster.pdf" />
+    <Content Include="Content\docs\KI7SJQ-Authorization.pdf" />
+    <Content Include="Content\docs\WRAA720-Authorization.pdf" />
+    <Content Include="Content\docs\WRAA72-band-plan.csv" />
+    <Content Include="Content\docs\WRAA720-BF888S.img" />
+    <Content Include="Content\docs\WRAA720-GMRS-V1.img" />
     <None Include="Properties\PublishProfiles\mfcallahan-homepage-prod - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -373,6 +379,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\map.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\radio.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

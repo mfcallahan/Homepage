@@ -12,7 +12,6 @@ namespace Homepage.Data
             response.Content = new StringContent(JsonConvert.SerializeObject(apiResponse), Encoding.UTF8, "application/json");
         }
 
-
         // Generate a cryptographically secure random string of length 'len'
         public static string GenerateRandonString(int len, bool useNums)
         {
@@ -36,15 +35,15 @@ namespace Homepage.Data
                 chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
             }
 
-            // RNGCryptoServiceProvider Class: Implements a cryptographic Random Number Generator (RNG) 
-            // using the implementation provided by the cryptographic service provider (CSP).
+            // RNGCryptoServiceProvider Class: Implements a cryptographic Random Number Generator (RNG) using
+            // the implementation provided by the cryptographic service provider (CSP).
             // https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rngcryptoserviceprovider
 
-            using (RNGCryptoServiceProvider crypto = new RNGCryptoServiceProvider())
+            using (RNGCryptoServiceProvider c = new RNGCryptoServiceProvider())
             {
-                crypto.GetNonZeroBytes(data);
+                c.GetNonZeroBytes(data);
                 data = new byte[len];
-                crypto.GetNonZeroBytes(data);
+                c.GetNonZeroBytes(data);
             }
 
             StringBuilder result = new StringBuilder(len);
