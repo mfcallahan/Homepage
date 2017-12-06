@@ -1,27 +1,29 @@
 ﻿using System.Collections.Generic;
 using System.Configuration;
 
+// Data transfer object classes the encapsulate app Controller and internal/external API data
 namespace Homepage.Dtos
 {
-    public class ApiResponseRandom
-    {
-        public string RandomString { get; set; }
-
-        public ApiResponseRandom(string str)
-        {
-            RandomString = str;
-        }
-    }
-
+    #region API
     public class ApiResponseHello
     {
         public string Status { get; set; }
         public string Message { get; set; }
+        public IList<string> Methods { get; set; } 
 
         public ApiResponseHello(string status, string message)
         {
             Status = status;
             Message = message;
+
+            Methods = new List<string>
+            {
+                "mfcallahan.com/api/About",
+                "mfcallahan.com/api/Hello",
+                "mfcallahan.com/api/IpInfo?ip={ip}",
+                "mfcallahan.com/api/RandomString?length={length}&useNums={useNums}",
+                "mfcallahan.com/api/Geocode?address={address}&city={city}&stateProv={stateProv}&postalCode={postalCode}&country={country}"
+            };
         }
     }
 
@@ -85,6 +87,7 @@ namespace Homepage.Dtos
         public float Longitude { get; set; }
 
     }
+    #endregion API
 
     #region Bing
     public class BingGeocodeOutput

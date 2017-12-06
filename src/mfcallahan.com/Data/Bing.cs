@@ -13,18 +13,26 @@ namespace Homepage.Data
         RestClient Client;
 
         public Bing()
-        {
+        {            
             BingKey = ConfigurationManager.AppSettings["bingKey"].ToString();
             BingUrl = ConfigurationManager.AppSettings["bingUrl"].ToString();
+
+            CheckLimit();
+
 
             Client = new RestClient(BingUrl);
             Client.AddDefaultParameter("key", BingKey);
         }
 
+        bool CheckLimit()
+        {
+            return true;
+        }
+
         public ApiResponseGeocode Geocode(string address, string city, string stateProv, string postalCode, string country)
         {           
             RestRequest request = new RestRequest(Method.GET);
-            //request.AddParameter("key", BingKey);
+            request.AddParameter("key", BingKey);
 
             if (!string.IsNullOrEmpty(address))
                 request.AddParameter("addressLine", address);
@@ -35,8 +43,7 @@ namespace Homepage.Data
             if (!string.IsNullOrEmpty(postalCode))
                 request.AddParameter("postalCode", postalCode);
             if (!string.IsNullOrEmpty(country))
-                request.AddParameter("countryRegion", country);
-            
+                request.AddParameter("countryRegion", country);            
 
             var response = Client.Execute(request);
 

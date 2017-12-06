@@ -6,7 +6,7 @@ using Homepage.Data;
 
 namespace Homepage.Queries
 {
-    public class HomepageQueries
+    public static class HomepageQueries
     {
         public static void LogVisitorInfo(string ip, string rawIp, string appUrl)
         {          
@@ -40,8 +40,8 @@ namespace Homepage.Queries
             db.SaveChanges();
         }
 
-        //ip-api: http://ip-api.com/docs/
-        static IpLocation GetIpInfo(string ip)
+        // ip-api: http://ip-api.com/docs/
+        public static IpLocation GetIpInfo(string ip)
         {
             if (string.IsNullOrEmpty(ip))            
                 return null;
@@ -72,6 +72,5 @@ namespace Homepage.Queries
 
             return null;
         }
-
     }
 }

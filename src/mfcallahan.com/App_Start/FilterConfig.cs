@@ -7,7 +7,8 @@ namespace Homepage
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
-            //require https
+
+            // require https
             //filters.Add(new RequireHttpsAttribute());
         }
     }

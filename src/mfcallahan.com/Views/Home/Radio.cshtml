@@ -1,59 +1,72 @@
 ﻿@{
-    ViewBag.Title = "AB9ZYX";
+    ViewBag.Title = "KI7SJQ | WRAA720";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @Styles.Render("~/Content/radio-styles")
+@Scripts.Render("~/bundles/radio-scripts")
 
 <div class="container-fluid">
     <div class="row equal">
-        <div class="col-md-4 no-padding sidebar-col">
+        @*<!-- left col (green)  -->*@
+        <div class="col-md-4 no-padding sidebar-col">            
             <div class="sidebar-wrapper-radio">
+                @*<!-- homer  -->*@
                 <div class="profile-container">
                     <img class="profile" src="@Url.Content("~/Content/img/homer-radio.png")" alt="" />
-                    <h1 class="name">AB9ZYX|WRAA720</h1>
+                    <h1 class="name font-monospace">
+                        <span class="display-wide">KI7SJQ | WRAA720</span>
+                        <span class="display-narrow">KI7SJQ</span>
+                    </h1>
                     <h3 class="tagline">Phoenix, AZ</h3>
-                </div>
+                </div>                
                 <div class="contact-container container-block last-item">
+                    @*<!-- contact  -->*@
                     <h2 class="container-block-title text-center">Contact</h2>
-                    <ul class="list-unstyled contact-list condensed">
-                        <li>
-                            <span class="display-wide">
-                                <i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.gmrs1900.net/blog/89-announcements/101-travel-tone-tuesday-begins" target="_blank" rel="noopener">462.550 MHz (141.3 Hz) Tuesdays, 8:00 AM</a>
-                            </span>
-                            <span class="display-narrow">
-                                <i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.gmrs1900.net/blog/89-announcements/101-travel-tone-tuesday-begins" target="_blank" rel="noopener">462.550 Mhz (141.3 Hz)</a>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="display-wide">
-                                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto: matthew.callahan@outlook.com">matthew.callahan@outlook.com</a>
-                            </span>
-                            <span class="display-narrow">
-                                <i class="fa fa-envelope"></i>&nbsp;&nbsp;<a href="mailto: matthew.callahan@outlook.com">Email</a>
-                            </span>
+                    <div class="row vertical-align">
+                        <div class="col-sm-12">
+                            <ul class="list-unstyled contact-list condensed">
+                                <li>
+                                    <span class="display-wide">
+                                        <i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.gmrs1900.net/blog/89-announcements/101-travel-tone-tuesday-begins" target="_blank" rel="noopener">462.550 MHz (141.3 Hz) Tuesdays, 08:00</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;<a href="https://www.gmrs1900.net/blog/89-announcements/101-travel-tone-tuesday-begins" target="_blank" rel="noopener">462.550 Mhz (141.3 Hz)</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="display-wide">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto: matthew.callahan@outlook.com">matthew.callahan@outlook.com</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;<a href="mailto: matthew.callahan@outlook.com">Email</a>
+                                    </span>
 
-                        </li>   
-                        <li>
-                            <span class="display-wide">
-                                <i class="fa fa-home"></i>&nbsp;&nbsp;<a href="@Url.Action("Index", "Home")" target="_blank" rel="noopener">mfcallahan.com homepage</a>
-                            </span>
-                            <span class="display-narrow">
-                                <i class="fa fa-home"></i>&nbsp;&nbsp;<a href="@Url.Action("Index", "Home")" target="_blank" rel="noopener">mfcallahan.com</a>
-                            </span>
-                        </li>                        
-                        <li>
-                            <span class="display-wide">
-                                <a href="https://www.radioreference.com/apps/user/call_sign_null" target="_blank" rel="noopener">radioreference.com - call_sign_null</a>
-                            </span>
-                            <span class="display-narrow">
-                                <a href="https://www.radioreference.com/apps/user/call_sign_null" target="_blank" rel="noopener">RadioReference.com Profile</a>
-                            </span>
-                        </li>
-                        <li>
-                            <a href="https://www.mygmrs.com/users?username=mcallahan" target="_blank" rel="noopener">mygmrs.com - mcallahan</a>
-                        </li>
-                    </ul>
+                                </li>
+                                <li>
+                                    <span class="display-wide">
+                                        <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="@Url.Action("Index", "Home")" target="_blank" rel="noopener">mfcallahan.com homepage</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="@Url.Action("Index", "Home")" target="_blank" rel="noopener">mfcallahan.com</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="https://www.radioreference.com/apps/user/call_sign_null" target="_blank" rel="noopener">radioreference.com - call_sign_null</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="https://www.radioreference.com/apps/user/call_sign_null" target="_blank" rel="noopener">RadioReference.com Profile</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="https://www.mygmrs.com/users?username=mcallahan" target="_blank" rel="noopener">mygmrs.com - mcallahan</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>                    
+                    @*<!-- clubs  -->*@     
                     <h2 class="container-block-title text-center">Clubs</h2>
                     <div class="row vertical-align">
                         <div class="col-sm-3 display-wide">
@@ -66,80 +79,156 @@
                                 <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">Arizona GMRS Repeater Club</a>
                             </h4>
                         </div>
-                    </div>                    
+                    </div>       
+                    @*<!-- links  -->*@
                     <h2 class="container-block-title text-center">Links</h2>
-                    <ul class="list-unstyled contact-list condensed">
-                        <li>
-                            <span class="display-wide">
-                                <a href="http://www.azrepeaters.net/" target="_blank" rel="noopener">Arizona Repeaters Directory</a>
-                            </span>
-                            <span class="display-narrow">
-                                <a href="http://www.azrepeaters.net/" target="_blank" rel="noopener">AZ Repeaters Directory</a>
-                            </span>
-                        </li>
-                        <li>
-                            <a href="https://www.radioreference.com/apps/db/?stid=4" target="_blank" rel="noopener">RadioReference.com - AZ Database</a>
-                        </li>
-                        <li>
-                            <span class="display-wide">
-                                <a href="https://forums.radioreference.com/arizona-radio-discussion-forum/" target="_blank" rel="noopener">RadioReference.com - AZ Discussion Forum </a>
-                            </span>
-                            <span class="display-narrow">
-                                <a href="https://forums.radioreference.com/arizona-radio-discussion-forum/" target="_blank" rel="noopener">RadioReference.com - AZ Forum</a>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="display-wide">
-                                <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/searchAdvanced.jsp" target="_blank" rel="noopener">FCC License/Call Sign Search</a>
-                            </span>
-                            <span class="display-narrow">
-                                <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/searchAdvanced.jsp" target="_blank" rel="noopener">FCC Search</a>
-                            </span>
-                        </li>
-                        <li>
-                            <span class="display-wide">
-                                <a href="http://www.miklor.com/" target="_blank" rel="noopener">miklor.com - Radio Information & Support Site</a>
-                            </span>
-                            <span class="display-narrow">
-                                <a href="http://www.miklor.com/" target="_blank" rel="noopener">miklor.com</a>
-                            </span>
-                        </li>                        
-                        <li>
-                            <span class="display-wide">
-                                <a href="https://www.scannermaster.com/" target="_blank" rel="noopener">ScannerMaster.com - The scanner experts!</a>
-                            </span>
-                            <span class="display-narrow">
-                                <a href="https://www.scannermaster.com/" target="_blank" rel="noopener">ScannerMaster.com</a>
-                            </span>                            
-                        </li>
-                    </ul>
+                    <div class="row vertical-align">    
+                        <div class="col-sm-12">
+                            <ul class="list-unstyled contact-list condensed">
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="http://www.azrepeaters.net/" target="_blank" rel="noopener">Arizona Repeaters Directory</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="http://www.azrepeaters.net/" target="_blank" rel="noopener">AZ Repeaters Directory</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="https://www.w7ara.org/" target="_blank" rel="noopener">Arizona Repeater Association</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="https://www.w7ara.org/" target="_blank" rel="noopener">AZ Repeater Association</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <a href="https://www.radioreference.com/apps/db/?stid=4" target="_blank" rel="noopener">RadioReference.com - AZ Database</a>
+                                </li>
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="https://forums.radioreference.com/arizona-radio-discussion-forum/" target="_blank" rel="noopener">RadioReference.com - AZ Discussion Forum </a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="https://forums.radioreference.com/arizona-radio-discussion-forum/" target="_blank" rel="noopener">RadioReference.com - AZ Forum</a>
+                                    </span>
+                                </li>                                
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="http://www.arrl.org/frequency-allocations" target="_blank" rel="noopener">US Amateur Radio Frequency Allocations</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="http://www.arrl.org/frequency-allocations" target="_blank" rel="noopener">Amateur Frequency Allocations</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="https://www.radioreference.com/apps/db/?aid=7771" target="_blank" rel="noopener">US Nationwide Amateur Frequencies</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="https://www.radioreference.com/apps/db/?aid=7771" target="_blank" rel="noopener">Nat'l Ham Frequencies</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="https://wiki.radioreference.com/index.php/FRS/GMRS_combined_channel_chart" target="_blank" rel="noopener">FRS/GMRS combined channel chart</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="https://wiki.radioreference.com/index.php/FRS/GMRS_combined_channel_chart" target="_blank" rel="noopener">FRS/GMRS channels</a>
+                                    </span>
+                                </li>                                
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/searchAdvanced.jsp" target="_blank" rel="noopener">FCC License/Call Sign Search</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/searchAdvanced.jsp" target="_blank" rel="noopener">FCC Search</a>
+                                    </span>
+                                </li>                                
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="https://www.theantennafarm.com/catalog/index.php?main_page=antenna_tutorial_page" target="_blank" rel="noopener">The Antenna Farm: Antenna Tutorial</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="https://www.theantennafarm.com/catalog/index.php?main_page=antenna_tutorial_page" target="_blank" rel="noopener">TheAntennaFarm.com Tutorial</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="http://www.qsl.net/kd4sai/distance.html" target="_blank" rel="noopener">KD4SAI's VHF/UHF Line of Sight Calculator</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="http://www.qsl.net/kd4sai/distance.html" target="_blank" rel="noopener">Line of Sight Calculator</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="https://chirp.danplanet.com/projects/chirp/wiki/Home" target="_blank" rel="noopener">CHIRP - open source radio programming software</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="https://chirp.danplanet.com/projects/chirp/wiki/Home" target="_blank" rel="noopener">chirp.danplanet.com</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="http://www.miklor.com/" target="_blank" rel="noopener">miklor.com - Radio Information & Support Site</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="http://www.miklor.com/" target="_blank" rel="noopener">miklor.com</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="display-wide">
+                                        <a href="https://www.scannermaster.com/" target="_blank" rel="noopener">ScannerMaster.com - The scanner experts!</a>
+                                    </span>
+                                    <span class="display-narrow">
+                                        <a href="https://www.scannermaster.com/" target="_blank" rel="noopener">ScannerMaster.com</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>                        
+                    </div>
+                    @*<!-- Downloads  -->*@
+                    @*<h2 class="container-block-title text-center">Downloads</h2>
+                    <div class="row vertical-align">
+                        <div class="col-sm-12">
+                            <ul class="list-unstyled contact-list condensed">
+                                <li>
+                                    <a href="@Url.Content("~/Content/docs/WRAA720-band-plan.csv")" target="_blank" rel="noopener">WRAA720-band-plan.csv</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>*@
                 </div>
             </div>
         </div>
-
+        @*<!-- right col (gray)  -->*@
         <div class="col-md-8 no-padding main-col">
             <div class="main-wrapper">
                 <div class="row text-center">
                     <h2>Matt Callahan Radio Homepage</h2>
                 </div>
+                @*<!-- about  -->*@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="summary">
                             <p>
                                 Welcome to my radio homepage.  In addition to computers and programming, my other nerdy hobby is radio. I am a
-                                licensed GMRS radio opearator (<a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3959322" target="_blank" rel="noopener">WRAA720</a>) 
-                                and a licesnsed amateur radio operator (AB9ZYX). When I was 16, I bought my first scanner from Radio 
-                                Shack, <a href="@Url.Content("~/Content/img/pro71.png")" data-featherlight="image">a Pro-71</a>, and I've been listening 
-                                ever since.
+                                licensed amateur radio operator (<a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3980800" target="_blank" rel="noopener">KI7SJQ</a>) 
+                                and a licesnsed GMRS radio opearator (<a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3959322" target="_blank" rel="noopener">WRAA720</a>). 
+                                When I was 16, I bought my first scanner from Radio Shack, <a href="@Url.Content("~/Content/img/pro71.png")" data-featherlight="image">a Pro-71</a>, 
+                                and I've been listening ever since.
                             </p>
                             <p>
-                                Radio is most useful to me when I'm camping and exploring the Arizona back country.  I monitor state
-                                and US Forest Service comms during wildfire season, and I rely on VHF and UHF radios for off-road mobile
-                                communications. I'm also a member of the <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">Arizona GMRS Repeater Club</a>.
+                                But why radio?! We have cell phones in @DateTime.Now.Year, right? We do have cell phones, but they 
+                                <a href="@Url.Content("~/Content/img/cell-coverage.png")" data-featherlight="image">don't work everywhere in Arizona</a>. 
+                                Radio is most useful to me when I'm camping and exploring the Arizona back country, miles away from cell phone service.
+                                I monitor state and US Forest Service radio communications during wildfire season, and I rely on VHF and UHF two-way radios for 
+                                off-road mobile communications.
                             </p>
                         </div>
                     </div>
                     <div class="col-sm-6">
+                        @*<!-- scanner pic  -->*@
                         <a href="https://www.mygmrs.com/view?id=1793" target="_blank" rel="noopener">
                             <img class="img-responsive center-block" src="@Url.Content("~/Content/img/scanner-homepage.png")" />
                         </a>
@@ -147,7 +236,8 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <h2 class="main-title"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Maps</h2>
+                        @*<!-- maps  -->*@
+                        <h2 class="main-title"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Maps</h2>
                         <div class="summary">
                             <ul class="list-unstyled contact-list condensed">
                                 <li>
@@ -172,7 +262,8 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <h2 class="main-title"><i class="fa fa-wordpress"></i>&nbsp;&nbsp;Blog</h2>
+                        @*<!-- blog  -->*@
+                        <h2 class="main-title"><i class="fa fa-wordpress" aria-hidden="true"></i>&nbsp;&nbsp;Blog</h2>
                         <div class="summary">
                             <ul class="list-unstyled contact-list condensed">
                                 <li>
@@ -188,27 +279,191 @@
                         </div>
                     </div>
                 </div>
+                @*<!-- shack  -->*@
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2 class="main-title text-center"><i class="fa fa-camera"></i>&nbsp;&nbsp;Shack Photos</h2>
+                        <h2 class="main-title text-center"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Shack Photos</h2>
                         <div class="text-center" data-featherlight-gallery data-featherlight-filter="a">
-                            <a href="@Url.Content("~/Content/img/truck11.png")"><img src="@Url.Content("~/Content/img/truck11.thumb.png")" alt="The mobile shack: 2013 Ford F-150 3.5 EB 4x4 Lariat.  Photo taken near Knoll Lake, AZ" /></a>
-                            <a href="@Url.Content("~/Content/img/shack1.png")"><img src="@Url.Content("~/Content/img/shack1.thumb.png")" alt="Inside my F-150: Motorola CDM1250 UHF (GMRS)."/></a>
+                            <a href="@Url.Content("~/Content/img/truck11.png")"><img src="@Url.Content("~/Content/img/truck11.thumb.png")" alt="The mobile shack: 2013 Ford F-150 3.5 EB 4x4 Lariat.  Photo taken near Knoll Lake, AZ." /></a>
+                            <a href="@Url.Content("~/Content/img/shack1.png")"><img src="@Url.Content("~/Content/img/shack1.thumb.png")" alt="Inside my F-150: Motorola CDM1250 UHF 50W (GMRS)."/></a>
                             <a href="@Url.Content("~/Content/img/shack2.png")"><img src="@Url.Content("~/Content/img/shack2.thumb.png")" alt="Some of my handhelds, a BTECH GMRS-V1 and a Uniden BC125AT."/></a>
                             @*<a href="@Url.Content("~/Content/img/shack3.png")"><img src="@Url.Content("~/Content/img/shack3.thumb.png")" alt="My old mobile shack: A 1999 GMC Sierra with a Uniden BC355N VHF/UHF scanner and a Sirius XM satellite Radio."/></a>*@
                         </div>
                     </div>                    
                 </div>
+                @*<!-- band plan  -->*@
+                <span class="display-wide">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="main-title text-center"><i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;WRAA720 GMRS Band Plan</h2>
+                            <p>
+                                This is my personal band plan for UHF two way radio, used primarily for outdoor recreational activities - 4x4 exploration,
+                                camping, fishing, etc.  This plan allows for compatability with bubble-pack FRS radios and unlicensed users for short range
+                                communications, as well as full power operation on GMRS channels for use with family and other licensed GMRS stations.
+                            </p>
+                            <table class="table table-bordered table-condensed">
+                                <thead>
+                                    <tr style="background-color: #1F1F1F;">
+                                        <th class="text-center">Ch</th>
+                                        <th class="text-center">Name</th>
+                                        <th class="text-center">Frequency</th>
+                                        <th class="text-center">Tone</th>
+                                        <th class="text-center">W/N</th>
+                                        <th class="text-center">Power</th>
+                                        <th class="text-center">Notes</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                        <td class="text-center">1</td>
+                                        <td>Ch 1 Simplex</td>
+                                        <td>462.5625 MHz</td>
+                                        <td></td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">Low</td>
+                                        <td>FRS 1/Nat'l Simplex</td>
+                                    </tr>
+                                    <tr style="background-color: #989391; color: #0D0D0D">
+                                        <td class="text-center">2</td>
+                                        <td>Ch 2 Simplex</td>
+                                        <td>462.5875 MHz</td>
+                                        <td></td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">Low</td>
+                                        <td>FRS 2</td>
+                                    </tr>
+                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                        <td class="text-center">3</td>
+                                        <td>Ch 3 Simplex</td>
+                                        <td>462.6125 MHz</td>
+                                        <td></td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">Low</td>
+                                        <td>FRS 3</td>
+                                    </tr>
+                                    <tr style="background-color: #989391; color: #0D0D0D">
+                                        <td class="text-center">4</td>
+                                        <td>Ch 4 Simplex</td>
+                                        <td>462.6375 MHz</td>
+                                        <td></td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">Low</td>
+                                        <td>FRS 4</td>
+                                    </tr>
+                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                        <td class="text-center">5</td>
+                                        <td>Ch 5 Simplex</td>
+                                        <td>462.6675 MHz</td>
+                                        <td></td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">Low</td>
+                                        <td>FRS 5</td>
+                                    </tr>
+                                    <tr style="background-color: #989391; color: #0D0D0D">
+                                        <td class="text-center">6</td>
+                                        <td>Ch 6 Simplex</td>
+                                        <td>462.6875 MHz</td>
+                                        <td></td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">Low</td>
+                                        <td>FRS 6</td>
+                                    </tr>
+                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                        <td class="text-center">7</td>
+                                        <td>Ch 7 Simplex</td>
+                                        <td>462.7125 MHz</td>
+                                        <td></td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">Low</td>
+                                        <td>FRS 7</td>
+                                    </tr>
+                                    <tr style="background-color: #989391; color: #0D0D0D">
+                                        <td class="text-center">8</td>
+                                        <td>Ch 8 Simplex</td>
+                                        <td>462.5500 MHz</td>
+                                        <td>141.3 Hz</td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">High</td>
+                                        <td>GMRS15/PHX 550 T</td>
+                                    </tr>
+                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                        <td class="text-center">8</td>
+                                        <td>Ch 9 Simplex</td>
+                                        <td>462.5750 MHz</td>
+                                        <td>141.3 Hz</td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">High</td>
+                                        <td>GMRS16</td>
+                                    </tr>
+                                    <tr style="background-color: #989391; color: #0D0D0D">
+                                        <td class="text-center">10</td>
+                                        <td>Ch 10 Simplex</td>
+                                        <td>462.6000 MHz</td>
+                                        <td>71.9 Hz</td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">High</td>
+                                        <td>GMRS17</td>
+                                    </tr>
+                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                        <td class="text-center">11</td>
+                                        <td>Ch 11 Simplex</td>
+                                        <td>462.6250 MHz</td>
+                                        <td>D072N</td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">High</td>
+                                        <td>GMRS18</td>
+                                    </tr>
+                                    <tr style="background-color: #989391; color: #0D0D0D">
+                                        <td class="text-center">12</td>
+                                        <td>Ch 12 Simplex</td>
+                                        <td>462.6500 MHz</td>
+                                        <td>141.3 Hz</td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">High</td>
+                                        <td>GMRS19/Nat'l Simplex</td>
+                                    </tr>
+                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                        <td class="text-center">13</td>
+                                        <td>Ch 13 Simplex</td>
+                                        <td>462.6750 MHz</td>
+                                        <td>141.3 Hz</td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">High</td>
+                                        <td>GMRS20</td>
+                                    </tr>
+                                    <tr style="background-color: #989391; color: #0D0D0D">
+                                        <td class="text-center">14</td>
+                                        <td>Ch 14 Simplex</td>
+                                        <td>462.7000 MHz</td>
+                                        <td>D423N</td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">High</td>
+                                        <td>GMRS21/<b>Camping Alpha</b></td>
+                                    </tr>
+                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                        <td class="text-center">15</td>
+                                        <td>Ch 15 Simplex</td>
+                                        <td>462.7250 MHz</td>
+                                        <td>199.5 Hz</td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">High</td>
+                                        <td>GMRS22/<b>Camping Bravo</b></td>
+                                    </tr>
+                                    <tr style="background-color: #989391; color: #0D0D0D">
+                                        <td class="text-center">16</td>
+                                        <td>Ch 16 Simplex</td>
+                                        <td>462.5750 MHz</td>
+                                        <td>141.3 Hz</td>
+                                        <td class="text-center">N</td>
+                                        <td class="text-center">High</td>
+                                        <td>GMRS16/<b>4x4 Off-Road Channel</b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </span>
             </div>
         </div>
     </div>
 </div>
-
-
-<script>
-    $.featherlightGallery.prototype.afterContent = function () {
-        var caption = this.$currentTarget.find('img').attr('alt');
-        this.$instance.find('.caption').remove();
-        $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
-    };
-</script>

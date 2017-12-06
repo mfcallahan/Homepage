@@ -481,6 +481,14 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
+        <member name="M:Homepage.Controllers.WebApiController.About">
+            <summary>
+            Returns information about the author of this website.
+            </summary>
+            <returns>
+            This API method returns a JSON object containing contact and other information about the author of this website.
+            </returns> 
+        </member>
         <member name="M:Homepage.Controllers.WebApiController.Hello">
             <summary>
             Returns a message verifing the API is up and responding.
@@ -494,14 +502,6 @@
             <example>
             example msg here.
             </example>
-        </member>
-        <member name="M:Homepage.Controllers.WebApiController.About">
-            <summary>
-            Returns information about the author of this website.
-            </summary>
-            <returns>
-            This API method returns a JSON object containing contact and other information about the author of this website.
-            </returns> 
         </member>
         <member name="M:Homepage.Controllers.WebApiController.RandomString(System.Int32,System.Boolean)">
             <summary>
@@ -523,6 +523,20 @@
             <param name="stateProv">The input city, ex: Wisconsin</param>
             <param name="postalCode">The input city, ex: 53703</param>
             <param name="country">The input city, ex: USA</param>
+        </member>
+        <member name="M:Homepage.Controllers.WebApiController.IpInfo(System.String)">
+            <summary>
+            Returns information about an IP address
+            </summary>
+            <returns>
+            This API method returns information about an IP address.
+            </returns>
+            <value>
+            value msg here.
+            </value>
+            <example>
+            example msg here.
+            </example>
         </member>
     </members>
 </doc>

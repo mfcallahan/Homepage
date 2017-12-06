@@ -8,8 +8,10 @@
 
 <div class="container-fluid">
     <div class="row equal">
+        @*<!-- left column (blue) -->*@
         <div class="col-md-4 no-padding sidebar-col">
             <div class="sidebar-wrapper">
+                @*<!-- profile pic  -->*@
                 <div class="profile-container">
                     <a href="@Url.Content("~/Content/img/matt2.png")" data-featherlight="image">
                         <img class="profile" src="@Url.Content("~/Content/img/me.png")" alt="" />
@@ -17,6 +19,7 @@
                     <h1 class="name">Matthew Callahan</h1>
                     <h3 class="tagline">Software Developer in Phoenix, AZ</h3>
                 </div>
+                @*<!-- contact  -->*@
                 <div class="contact-container container-block">
                     <ul class="list-unstyled contact-list condensed">                        
                         <li>
@@ -70,11 +73,12 @@
                         </li>
                     </ul>
                 </div>
+                @*<!-- education  -->*@
                 <div class="education-container container-block">
                     <h2 class="container-block-title">Education</h2>
                     <div class="container-block-about">
-                        <div class="row vertical-align">
-                            <div class="col-sm-3 display-wide text-center">
+                        <div class="row vertical-align text-center">
+                            <div class="col-sm-3 display-wide">
                                 <a href="https://wisc.edu/" target="_blank" rel="noopener">
                                     <img class="img-responsive" src="@Url.Content("~/Content/img/uw.png")" alt="" />
                                 </a>
@@ -85,13 +89,13 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
+                @*<!-- certifications  -->*@
                 <div class="education-container container-block">
                     <h2 class="container-block-title">Certifications & Licenses</h2>
                     <div class="container-block-about">
-                        <div class="row vertical-align">
-                            <div class="col-sm-5 display-wide text-center">
+                        <div class="row vertical-align text-center">
+                            <div class="col-sm-5 display-wide">
                                 <a href="https://www.youracclaim.com/badges/637f3b5b-ff54-4815-901a-34081bf83e79/" target="_blank" rel="noopener">
                                     <img class="img-responsive" src="@Url.Content("~/Content/img/mta.png")" alt="" />
                                 </a>
@@ -104,22 +108,32 @@
                                 </h4>
                             </div>
                         </div>
-                        <div class="row vertical-align">
-                            <div class="col-sm-5 display-wide text-center">
-                                <a href="h" target="_blank" rel="noopener">
+                        <div class="row vertical-align text-center">
+                            <div class="col-sm-5 display-wide">
+                                <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3980800" target="_blank" rel="noopener">
                                     <img class="img-responsive" src="@Url.Content("~/Content/img/fcc.png")" alt="" />
                                 </a>
                             </div>
                             <div class="col-sm-7">
-                                <h4 class="moreinfo">
-                                    <a href="" target="_blank" rel="noopener">
-                                        AB9ZYX|WRAA720
+                                <h4 class="moreinfo">                                    
+                                    <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3980800" target="_blank" rel="noopener">
+                                        Amateur Radio License: Technican Class
                                     </a>
                                 </h4>
                             </div>
                         </div>
                     </div>
                 </div>
+                @*<!-- links  -->*@
+                @*<div class="education-container container-block">
+                    <h2 class="container-block-title">Links</h2>
+                    <div class="container-block-about">
+                        <div class="row vertical-align">
+                            
+                        </div>
+                    </div>
+                </div>*@
+                @*<!-- clock  -->*@
                 @*<div class="education-container container-block last-item">
                     <div id="clock">
                         <div id="clockHr" style="transform: rotate(334.5deg);"><img src="@Url.Content("~/Content/img/hour-hand.png")"></div>
@@ -129,9 +143,10 @@
                 </div>*@
             </div>
         </div>
-
+        @*<!-- right column (gray)  -->*@
         <div class="col-md-8 no-padding main-col">
             <div class="main-wrapper">
+                @*<!-- about  -->*@
                 <section class="section summary-section">
                     <h2 class="section-title"><i class="fa fa-user"></i>About Me</h2>
                     <div class="summary">
@@ -149,6 +164,7 @@
                         </p>
                     </div>                    
                 </section>
+                @*<!-- dev  -->*@
                 <section class="section experiences-section">
                     <h2 class="section-title"><i class="fa fa-code"></i>Software Development</h2>
                     <div class="item">
@@ -166,14 +182,15 @@
                             <p>
                                 I am currently an Application Developer at <a href="https://www.cbre.com/" target="_blank" rel="noopener">CBRE</a>, helping 
                                 to build modern applications that power <a href="https://www.cbre.com/about/tech-vantage/dimension/" target="_blank" rel="noopener">CBRE Dimension</a>, 
-                                a suite of applications that deliver spatial data and analysis tools to service real estate brokers and 
+                                a software suite that delivers spatial data and analysis tools to service real estate brokers and 
                                 staff. I am very fortunate to work in an environment that provides a wide array of data to process, 
                                 visualize, and make accessible to clients in meaningful ways. I work with a great GIS and development 
                                 team, and we thrive solving unique problems and providing tools that help clients make informed decisions.
                             </p>
                         </div>
                     </div>
-                </section>                
+                </section>   
+                @*<!-- radio  -->*@
                 <section class="section experiences-section">
                     <h2 class="section-title"><i class="fa fa-volume-up" aria-hidden="true"></i>Radio</h2>
                     <div class="item">
@@ -181,19 +198,20 @@
                             <p>
                                 In addition to computers and programming, my other nerdy hobby is radio.  I am a licensed GMRS radio opearator 
                                 (call sign <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3959322" target="_blank" rel="noopener">WRAA720</a>)
-                                and a licesnsed amateur radio operator (call sign AB9ZYX).   I rely on VHF and UHF <a href="@Url.Content("~/Content/img/shack1.png")"  data-featherlight="image">two-way radios</a>
+                                and a licesnsed amateur radio operator (call sign <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3980800" target="_blank" rel="noopener">KI7SJQ</a>).   I rely on VHF and UHF <a href="@Url.Content("~/Content/img/shack1.png")"  data-featherlight="image">two-way radios</a>
                                 for communications when I'm camping and exploring Arizona's back country. Check out my 
                                 <a href="@Url.Action("Radio", "Home")" target="_blank" rel="noopener">radio homepage here</a>.
                             </p>
                         </div>
                     </div>
                 </section>
+                @*<!-- projects  -->*@
                 <section class="section projects-section">
                     <h2 class="section-title"><i class="fa fa-code-fork"></i>Projects</h2>
                     <div class="intro">
                         <p>
-                            While most of the code I write in my day to day work is stored in private repositories, here are some sample
-                            projects that demonstrate the types of software development I do.
+                            Here are some sample projects that demonstrate the types of software development I enjoy.  Check out
+                            all my public code repositories <a href="https://github.com/mfcallahan?tab=repositories" target="_blank" rel="noopener">here</a>.
                         </p>
                     </div>                    
                     <div class="item">
@@ -202,7 +220,18 @@
                             <span class="project-tagline">
                                 This site includes a demo HTTP service created with ASP.NET Web API 2. Click 
                                 <a href="@Url.Content("~/ApiDocumentation")" target="_blank" rel="noopener">here</a> for the API documentation.  Example: 
-                                <a href="@Url.Content("~/api/About")" target="_blank" rel="noopener">mfcallahan.com/api/About</a>
+                                <a href="@Url.Content("~/api/Hello")" target="_blank" rel="noopener">mfcallahan.com/api/Hello</a>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <p>
+                            <span class="project-title"><a href="https://github.com/mfcallahan/Homepage" target="_blank" rel="noopener">mfcallahan.com Source </a>&nbsp;&nbsp;</span>
+                            <span class="project-tagline">
+                                This website serves as both a personal homepage and as a showcase for the flavors software development
+                                I enjoy.  I used various frameworks, libraries, and APIs including ASP.NET, Entity Framework, jQuery,
+                                Bootstrap, ArcGIS Online, Bing, and others to create this site and all the included functionality.  Check out
+                                the source code <a href="https://github.com/mfcallahan/Homepage" target="_blank" rel="noopener">here</a>.
                             </span>
                         </p>
                     </div>
@@ -219,23 +248,13 @@
                             <span class="project-title"><a href="@Url.Action("Gallery", "Home")" target="_blank" rel="noopener">Image Gallery</a>&nbsp;&nbsp;</span>
                             <span class="project-tagline">An image gallery demo built with Featherlight.js.</span>
                         </p>
-                    </div>
-                    <div class="item">
-                        <p>
-                            <span class="project-title"><a href="https://github.com/mfcallahan/Homepage" target="_blank" rel="noopener">mfcallahan.com Source </a>&nbsp;&nbsp;</span>
-                            <span class="project-tagline">
-                                This website serves as both a personal homepage and as a showcase for the flavors software development
-                                I enjoy.  I used various frameworks, libraries, and APIs including ASP.NET, Entity Framework, jQuery, 
-                                Bootstrap, ArcGIS Online, and others to create this site and all the included functionality.  Check out 
-                                the source code here.
-                            </span>
-                        </p>
-                    </div>
+                    </div>                    
                     <div class="item">
                         <p>
                             <span class="project-title"><a href="https://github.com/mfcallahan/MB_Utils" target="_blank" rel="noopener">MB Utils</a>&nbsp;&nbsp;</span>
                             <span class="project-tagline">
-                                A MapBasic module and .NET library that extends MapInfo MBX programming functionality by exposing .NET and 
+                                A <a href="https://en.wikipedia.org/wiki/MapBasic" target="_blank" rel="noopener">MapBasic</a> module and 
+                                .NET library that extends MapInfo MBX programming functionality by exposing .NET and 
                                 Win32 API calls as easy to use MapBasic functions and subs.  This project was the first library I ever wrote
                                 and was a great learning experience in how to document, release, and support an open source software project, 
                                 albeit on a small scale.  And while the code may be outdated and could perhaps use some refactoring, I'm 
@@ -245,7 +264,7 @@
                     </div>
                     <div class="item">
                         <p>
-                            <span class="project-title"><a href="https://github.com/mfcallahan/adhoc" target="_blank" rel="noopener">Miscellaneous code</a>&nbsp;&nbsp;</span>
+                            <span class="project-title"><a href="https://github.com/mfcallahan/adhoc" target="_blank" rel="noopener">Miscellaneous Code</a>&nbsp;&nbsp;</span>
                             <span class="project-tagline">
                                 This repository houses all my miscellaneous code: one-off scripts, useful stuff I refer back to once in a while, and
                                 anything else I've deemed useful enought to hang on to for a while.
