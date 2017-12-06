@@ -22,7 +22,7 @@ namespace Homepage
                 "~/Scripts/respond.js",
                 "~/Scripts/featherlight.min.js",
                 "~/Scripts/featherlight.gallery.min.js",
-                "~/Scripts/app.js"));
+                "~/Scripts/site.js"));
 
             // homepage styles
             bundles.Add(new StyleBundle("~/Content/home-styles").Include(

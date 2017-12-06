@@ -269,6 +269,12 @@
     <Content Include="Content\img\shack2.thumb.png" />
     <Content Include="Content\img\shack3.png" />
     <Content Include="Content\img\shack3.thumb.png" />
+    <Content Include="Content\img\shack4.png" />
+    <Content Include="Content\img\shack4.thumb.png" />
+    <Content Include="Content\img\shack5.png" />
+    <Content Include="Content\img\shack5.thumb.png" />
+    <Content Include="Content\img\shack6.png" />
+    <Content Include="Content\img\shack6.thumb.png" />
     <Content Include="Content\img\ti83.png" />
     <Content Include="Content\img\truck1.png" />
     <Content Include="Content\img\truck1.thumb.png" />
@@ -311,7 +317,7 @@
       <LastGenOutput>Visitor1.cs</LastGenOutput>
     </Content>
     <Content Include="robots.txt" />
-    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\site.js" />
     <EntityDeploy Include="Data\Visitor.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Visitor.Designer.cs</LastGenOutput>

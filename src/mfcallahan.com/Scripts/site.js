@@ -16,5 +16,7 @@ $.featherlightGallery.prototype.afterContent = function() {
 $(document).ready(function () {
     // disabled becasue SQL serves are expen$ive...
     //Hello();
+
+    //$('[data-toggle="tooltip"]').tooltip();
 });
 

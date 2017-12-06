@@ -29,6 +29,6 @@ $(function () {
     }
 
     setInterval(function () {
-        clockAngle(prop)
+        //clockAngle(prop)
     }, 100);
 });

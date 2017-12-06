@@ -13,7 +13,10 @@
             <div class="sidebar-wrapper-radio">
                 @*<!-- homer  -->*@
                 <div class="profile-container">
-                    <img class="profile" src="@Url.Content("~/Content/img/homer-radio.png")" alt="" />
+                    <a href="http://www.simpsonsworld.com/video/317662275581" target="_blank" rel="noopener">
+                        <img class="profile" src="@Url.Content("~/Content/img/homer-radio.png")" alt="" />
+                    </a>
+                    
                     <h1 class="name font-monospace">
                         <span class="display-wide">KI7SJQ | WRAA720</span>
                         <span class="display-narrow">KI7SJQ</span>
@@ -79,7 +82,27 @@
                                 <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">Arizona GMRS Repeater Club</a>
                             </h4>
                         </div>
-                    </div>       
+                    </div>
+                    @*<!-- Get Licensed  -->*@
+                    @*<h2 class="container-block-title text-center">Get Licensed!</h2>
+                    <div class="row vertical-align">
+                        <div class="col-sm-12">
+                            <ul class="list-unstyled contact-list condensed">
+                                <li>
+                                    <a href="https://hamstudy.org/" target="_blank" rel="noopener">hamstudy.org</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener">GMRS link here</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener">ARRL ham exam link here</a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener">Superstition ARC ham exam link here</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>*@
                     @*<!-- links  -->*@
                     <h2 class="container-block-title text-center">Links</h2>
                     <div class="row vertical-align">    
@@ -284,10 +307,13 @@
                     <div class="col-sm-12">
                         <h2 class="main-title text-center"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Shack Photos</h2>
                         <div class="text-center" data-featherlight-gallery data-featherlight-filter="a">
-                            <a href="@Url.Content("~/Content/img/truck11.png")"><img src="@Url.Content("~/Content/img/truck11.thumb.png")" alt="The mobile shack: 2013 Ford F-150 3.5 EB 4x4 Lariat.  Photo taken near Knoll Lake, AZ." /></a>
+                            <a href="@Url.Content("~/Content/img/truck11.png")"><img src="@Url.Content("~/Content/img/truck11.thumb.png")" alt="The mobile shack: 2013 Ford F-150 4x4, 3.5 EcoBoost.  Photo taken near Knoll Lake, AZ." /></a>
                             <a href="@Url.Content("~/Content/img/shack1.png")"><img src="@Url.Content("~/Content/img/shack1.thumb.png")" alt="Inside my F-150: Motorola CDM1250 UHF 50W (GMRS)."/></a>
                             <a href="@Url.Content("~/Content/img/shack2.png")"><img src="@Url.Content("~/Content/img/shack2.thumb.png")" alt="Some of my handhelds, a BTECH GMRS-V1 and a Uniden BC125AT."/></a>
-                            @*<a href="@Url.Content("~/Content/img/shack3.png")"><img src="@Url.Content("~/Content/img/shack3.thumb.png")" alt="My old mobile shack: A 1999 GMC Sierra with a Uniden BC355N VHF/UHF scanner and a Sirius XM satellite Radio."/></a>*@
+                            <a href="@Url.Content("~/Content/img/shack3.png")"><img src="@Url.Content("~/Content/img/shack3.thumb.png")" alt="My old truck - 1999 GMC Sierra; Uniden BC355N." /></a>
+                            <a href="@Url.Content("~/Content/img/shack4.png")"><img src="@Url.Content("~/Content/img/shack4.thumb.png")" alt="My old truck - 2011 Nissan Frontier; Uniden BC355N + Midland 75-822 CB." /></a>
+                            <a href="@Url.Content("~/Content/img/shack5.png")"><img src="@Url.Content("~/Content/img/shack5.thumb.png")" alt="Radio Shack 'Sputnik' antenna atop my old apartment balcony - Executive Towers in Midtown Phoenix." /></a>
+                            <a href="@Url.Content("~/Content/img/shack6.png")"><img src="@Url.Content("~/Content/img/shack6.thumb.png")" alt="A weird scanner I bought around 2001 - a Sony Wavehawk ICF-SC1."/></a>
                         </div>
                     </div>                    
                 </div>
@@ -384,7 +410,7 @@
                                         <td>141.3 Hz</td>
                                         <td class="text-center">N</td>
                                         <td class="text-center">High</td>
-                                        <td>GMRS15/PHX 550 T</td>
+                                        <td>GMRS 15/PHX 550 T</td>
                                     </tr>
                                     <tr style="background-color: #CBC6C4; color: #0D0D0D">
                                         <td class="text-center">8</td>
@@ -393,7 +419,7 @@
                                         <td>141.3 Hz</td>
                                         <td class="text-center">N</td>
                                         <td class="text-center">High</td>
-                                        <td>GMRS16</td>
+                                        <td>GMRS 16</td>
                                     </tr>
                                     <tr style="background-color: #989391; color: #0D0D0D">
                                         <td class="text-center">10</td>
@@ -402,7 +428,7 @@
                                         <td>71.9 Hz</td>
                                         <td class="text-center">N</td>
                                         <td class="text-center">High</td>
-                                        <td>GMRS17</td>
+                                        <td>GMRS 17</td>
                                     </tr>
                                     <tr style="background-color: #CBC6C4; color: #0D0D0D">
                                         <td class="text-center">11</td>
@@ -411,7 +437,7 @@
                                         <td>D072N</td>
                                         <td class="text-center">N</td>
                                         <td class="text-center">High</td>
-                                        <td>GMRS18</td>
+                                        <td>GMRS 18</td>
                                     </tr>
                                     <tr style="background-color: #989391; color: #0D0D0D">
                                         <td class="text-center">12</td>
@@ -420,7 +446,7 @@
                                         <td>141.3 Hz</td>
                                         <td class="text-center">N</td>
                                         <td class="text-center">High</td>
-                                        <td>GMRS19/Nat'l Simplex</td>
+                                        <td>GMRS 19/Nat'l Simplex</td>
                                     </tr>
                                     <tr style="background-color: #CBC6C4; color: #0D0D0D">
                                         <td class="text-center">13</td>
@@ -429,7 +455,7 @@
                                         <td>141.3 Hz</td>
                                         <td class="text-center">N</td>
                                         <td class="text-center">High</td>
-                                        <td>GMRS20</td>
+                                        <td>GMRS 20</td>
                                     </tr>
                                     <tr style="background-color: #989391; color: #0D0D0D">
                                         <td class="text-center">14</td>
@@ -438,7 +464,7 @@
                                         <td>D423N</td>
                                         <td class="text-center">N</td>
                                         <td class="text-center">High</td>
-                                        <td>GMRS21/<b>Camping Alpha</b></td>
+                                        <td>GMRS 21/<b>Camping Alpha</b></td>
                                     </tr>
                                     <tr style="background-color: #CBC6C4; color: #0D0D0D">
                                         <td class="text-center">15</td>
@@ -447,7 +473,7 @@
                                         <td>199.5 Hz</td>
                                         <td class="text-center">N</td>
                                         <td class="text-center">High</td>
-                                        <td>GMRS22/<b>Camping Bravo</b></td>
+                                        <td>GMRS 22/<b>Camping Bravo</b></td>
                                     </tr>
                                     <tr style="background-color: #989391; color: #0D0D0D">
                                         <td class="text-center">16</td>
@@ -456,7 +482,7 @@
                                         <td>141.3 Hz</td>
                                         <td class="text-center">N</td>
                                         <td class="text-center">High</td>
-                                        <td>GMRS16/<b>4x4 Off-Road Channel</b></td>
+                                        <td>GMRS 16/<b>4x4 Off-Road Channel</b></td>
                                     </tr>
                                 </tbody>
                             </table>
