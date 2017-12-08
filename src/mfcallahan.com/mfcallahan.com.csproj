@@ -361,7 +361,7 @@
     <Content Include="Content\docs\spectrum-allocations-poster.pdf" />
     <Content Include="Content\docs\KI7SJQ-Authorization.pdf" />
     <Content Include="Content\docs\WRAA720-Authorization.pdf" />
-    <Content Include="Content\docs\WRAA72-band-plan.csv" />
+    <Content Include="Content\docs\WRAA720-band-plan.csv" />
     <Content Include="Content\docs\WRAA720-BF888S.img" />
     <Content Include="Content\docs\WRAA720-GMRS-V1.img" />
     <None Include="Properties\PublishProfiles\mfcallahan-homepage-prod - Web Deploy.pubxml" />

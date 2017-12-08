@@ -84,10 +84,44 @@ a {
     font-size: 1.2em;
 }
 
-.equal > div[class*='col-'] {  
+.row [class*="col-"] {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+/*.row {
+    display: table;
+}
+
+[class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}*/
+
+/*.equal > div[class*='col-'] {  
   display: flex;
   flex-direction: column;
+}*/
+
+/*.equal [class*="col-"] {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
 }
+
+.row {
+    overflow: hidden;
+}*/
 
 .no-padding {
     padding: 0 !important;

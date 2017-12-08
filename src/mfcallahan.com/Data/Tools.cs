@@ -12,7 +12,7 @@ namespace Homepage.Data
             response.Content = new StringContent(JsonConvert.SerializeObject(apiResponse), Encoding.UTF8, "application/json");
         }
 
-        // Generate a cryptographically secure random string of length 'len'
+        // generate a cryptographically secure random string
         public static string GenerateRandonString(int len, bool useNums)
         {
             if (len < 0)

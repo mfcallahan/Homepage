@@ -12,8 +12,8 @@ namespace Homepage
                 "~/Content/font-awesome.min.css",
                 "~/Content/featherlight.min.css",
                 "~/Content/featherlight.gallery.min.css",
-
                 "~/Content/site.css"));
+
             // site scripts
             bundles.Add(new ScriptBundle("~/bundles/site-scripts").Include(
                 "~/Scripts/jquery-{version}.js",
