@@ -95,10 +95,15 @@ namespace Homepage.Controllers
         [Route("api/Geocode")]
         public HttpResponseMessage Geocode(string address = "", string city = "", string stateProv = "", string postalCode = "", string country = "")
         {
-            Bing bing = new Bing();
-            bing.Geocode(address, city, stateProv, postalCode, country);
+            ApiInputAddress inputAdr = new ApiInputAddress(address, city, stateProv, postalCode, country);
 
-            return null;
+            Bing bing = new Bing();
+            bing.GeocodeAddress(inputAdr);
+
+            HttpResponseMessage httpResponseMsg = Request.CreateResponse(HttpStatusCode.OK);
+            Tools.SerializeApiResponse(ref httpResponseMsg, ref inputAdr);
+
+            return httpResponseMsg;
         }
 
         /// <summary>

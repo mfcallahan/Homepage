@@ -57,35 +57,39 @@ namespace Homepage.Dtos
         }
     }
 
-    public class ApiResponseGeocode
+    public class ApiInputAddress
     {
-        public ApiResponseGeocode()
+        public ApiInputAddress(string address, string city, string stateProv, string postalCode, string country)
         {
-
+            Address = address;
+            City = city;
+            StateProv = stateProv;
+            PostalCode = postalCode;
+            Country = country;
+            OutputAddresses = new List<ApiOutputAddress>();
         }
 
-        public ApiResponseGeocode(BingGeocodeOutput bing)
-        {
-            
-        }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public string StateProv { get; set; }
+        public string PostalCode { get; set; }
+        public string Country { get; set; }
+        public IList<ApiOutputAddress> OutputAddresses { get; set; }
+    }
 
-        public string InputAddress { get; set; }
-        public string InputCity { get; set; }
-        public string InputStateProv { get; set; }
-        public string InputPostalCode { get; set; }
-        public string InputCountry { get; set; }
-
-        public string OutputAddress { get; set; }
+    public class ApiOutputAddress
+    {
+        public string OutputAddress { get; set; }        
         public string OutputCity { get; set; }
         public string OutputStateProv { get; set; }
         public string OutputPostalCode { get; set; }
         public string OutputCountry { get; set; }
-
-        public string OutputAccuracy { get; set; }
-        public string OutputPrecision { get; set; }
-        public float Latitude { get; set; }
-        public float Longitude { get; set; }
-
+        //public string Accuracy { get; set; }
+        //public string Precision { get; set; }
+        public string Confidence { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+        public string Source { get; set; }
     }
 
     public class IpLocation
