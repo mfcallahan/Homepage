@@ -14,15 +14,15 @@ namespace Homepage.Dtos
         public ApiResponseHello(string status, string message)
         {
             Status = status;
-            Message = message;
+            Message = message;             
 
             Methods = new List<string>
             {
                 "mfcallahan.com/api/About",
                 "mfcallahan.com/api/Hello",
-                "mfcallahan.com/api/IpInfo?ip={ip}",
-                "mfcallahan.com/api/RandomString?length={length}&useNums={useNums}",
-                "mfcallahan.com/api/Geocode?address={address}&city={city}&stateProv={stateProv}&postalCode={postalCode}&country={country}"
+                "mfcallahan.com/api/IpInfo?ip={}",
+                "mfcallahan.com/api/RandomString?length={}&useNums={}",
+                "mfcallahan.com/api/Geocode?address={}&city={}&stateProv={}&postalCode={}&country={}"
             };
         }
     }
