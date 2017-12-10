@@ -35,6 +35,13 @@ namespace Homepage
                 defaults: new { controller = "Home", action = "Radio" }
             );
 
+            // mfcallahan.com/KI7SJQ
+            routes.MapRoute(
+                name: "KI7SJQ",
+                url: "KI7SJQ",
+                defaults: new { controller = "Home", action = "Radio" }
+            );
+
             // mfcallahan.com/radiomap
             routes.MapRoute(
                 name: "RadioMap",

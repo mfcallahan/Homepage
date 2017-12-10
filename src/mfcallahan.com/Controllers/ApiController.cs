@@ -115,9 +115,9 @@ namespace Homepage.Controllers
         // mfcallahan.com/api/IpInfo
         [HttpGet]
         [Route("api/IpInfo")]
-        public HttpResponseMessage IpInfo(string ip)
+        public HttpResponseMessage IpInfo(string ipAdr)
         {
-            IpLocation loc = HomepageQueries.GetIpInfo(ip);
+            IpLocation loc = HomepageQueries.GetIpInfo(ipAdr);
             HttpResponseMessage httpResponseMsg = Request.CreateResponse(HttpStatusCode.OK);
 
             Tools.SerializeApiResponse(ref httpResponseMsg, ref loc);

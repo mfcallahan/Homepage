@@ -43,7 +43,7 @@
     }
 
 .sidebar-col {
-    background-color: #16A086;
+    background-color: #4285F4;
 }
 
 .sidebar-wrapper-radio {
@@ -69,7 +69,8 @@
 
     .sidebar-wrapper-radio .profile-container {
         padding: 30px;
-        background-color: #128671;
+        /*background-color: #128671;*/
+        background: rgba(0, 0, 0, 0.2);
         text-align: center;
         color: #fff;
     }

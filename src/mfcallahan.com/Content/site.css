@@ -84,11 +84,6 @@ a {
     font-size: 1.2em;
 }
 
-.equal > div[class*='col-'] {  
-  display: flex;
-  flex-direction: column;
-}
-
 .no-padding {
     padding: 0 !important;
     margin: 0 !important;
@@ -100,7 +95,7 @@ a {
 }
 
 .main-col {
-    background-color: #696969;
+    background-color: #606060;
 }
 
 .last-item {
@@ -119,7 +114,7 @@ a {
 }
 
 .main-wrapper {
-    background: #696969;
+    background: #606060;
     padding: 60px;
 }
 
