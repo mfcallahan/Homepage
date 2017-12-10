@@ -7,7 +7,7 @@
 @Scripts.Render("~/bundles/home-scripts")
 
 <div class="container-fluid">
-    <div class="row equal">
+    <div class="row" style="background: #4285F4;">
         @*<!-- left column (blue) -->*@
         <div class="col-md-4 no-padding sidebar-col">
             <div class="sidebar-wrapper">
@@ -156,12 +156,12 @@
         <div class="col-md-8 no-padding main-col">
             <div class="main-wrapper">
                 @*<!-- about  -->*@
-                <section class="section summary-section">
+                <section class="section summary-section">                    
                     <h2 class="section-title"><i class="fa fa-user"></i>About Me</h2>
                     <div class="summary">
                         <p>
                             Hi, I’m Matt Callahan and I am a software developer in Phoenix, Arizona.  Computers have been my hobby since 
-                            my dad brought home our first family computer 30 years ago, a  286 PC running MS-DOS. I 
+                            my dad brought home our first family computer 30 years ago - a  286 PC running MS-DOS. I 
                             found <a href="@Url.Content("~/Content/img/qbasic.png")" data-featherlight="image">QBasic</a> and began teaching myself 
                             how to program - without Google or StackOverflow! After receiving a <a href="@Url.Content("~/Content/img/ti83.png")" data-featherlight="image">TI-83</a> 
                             graphing calculator for algebra class in 6th grade, I quickly began making games and homework cheat programs with 
@@ -174,20 +174,26 @@
                     </div>                    
                 </section>
                 @*<!-- dev  -->*@
-                <section class="section experiences-section">
-                    <h2 class="section-title"><i class="fa fa-code"></i>Software Development</h2>
+                <section class="section experiences-section">                    
+                    <h2 class="section-title"><i class="fa fa-code"></i>Software Development</h2>                    
                     <div class="item">
                         <div class="details">
                             <p>
-                                My main area of interest is desktop and web development using the Microsoft 
+                                My main area of interest in programming is desktop and web development using the Microsoft 
                                 <a href="https://docs.microsoft.com/en-us/dotnet/framework/get-started/overview" target="_blank" rel="noopener">.NET framework</a>. 
-                                C# is my primary tool of choice when I need to develop a custom solution.  It is an amazing and powerful 
-                                language with a robust base class library and awesome features like LINQ, garbage collection, and asynchronous 
-                                programming.  But sometimes I just don't need the overhead of the massive 
-                                .NET framework, and <a href="https://www.python.org/doc/essays/blurb/" target="_blank" rel="noopener">Python</a> is my 
+                                C# is my tool of choice when I need to develop a custom solution.  It is an amazing and powerful 
+                                language with a robust base class library, and awesome features like LINQ, garbage collection, and asynchronous 
+                                programming.  But sometimes I just don't need the overhead of the massive .NET framework, and 
+                                <a href="https://www.python.org/doc/essays/blurb/" target="_blank" rel="noopener">Python</a> is my 
                                 second tool of choice. Python is perfect for when I need to automate tedious or repetitive tasks, or I 
-                                need to process large batches of data.  
-                            </p>
+                                need to process large batches of data.  Pyhton is also what I strongly recommend as a first lanaguge 
+                                for programming beginners. 
+                            </p>                            
+                            <p>
+                                <span class="display-wide">
+                                    <img class="img-responsive" src="@Url.Content("~/Content/img/git-banner.png")" alt="" />
+                                </span>                                
+                            </p>                            
                             <p>
                                 I am currently an Application Developer at <a href="https://www.cbre.com/" target="_blank" rel="noopener">CBRE</a>, helping 
                                 to build modern applications that power <a href="https://www.cbre.com/about/tech-vantage/dimension/" target="_blank" rel="noopener">CBRE Dimension</a>, 
@@ -230,7 +236,25 @@
                                 This site includes a demo HTTP service created with ASP.NET Web API 2. Click 
                                 <a href="@Url.Content("~/ApiDocumentation")" target="_blank" rel="noopener">here</a> for the API documentation.  Example: 
                                 <a href="@Url.Content("~/api/Hello")" target="_blank" rel="noopener">mfcallahan.com/api/Hello</a>
-                            </span>
+                            </span>                            
+                        </p>
+                        <p>
+<pre><code class="javascript">$.get("http://mfcallahan.com/api/Hello", function (data) {
+    console.log(data);
+});
+
+// API response
+{
+    "Status": "200",
+    "Message": "Hello. The API at mfcallahan.com is responding.",
+    "Methods": [
+        "mfcallahan.com/api/About",
+        "mfcallahan.com/api/Hello",
+        "mfcallahan.com/api/IpInfo?ipAdr={}",
+        "mfcallahan.com/api/RandomString?length={}&useNums={}",
+        "mfcallahan.com/api/Geocode?address={}&city={}&stateProv={}&postalCode={}&country={}"
+    ]
+}</code></pre>
                         </p>
                     </div>
                     <div class="item">
@@ -265,8 +289,8 @@
                                 A MapBasic module and .NET library that extends MapInfo <a href="https://en.wikipedia.org/wiki/MapBasic" target="_blank" rel="noopener">MBX</a> 
                                 programming functionality by exposing .NET and Win32 API calls as easy to use MapBasic functions and subs.  This 
                                 project was the first library I ever wrote and was a great learning experience in how to document, release, 
-                                and support an open source software project, albeit on a small scale.  And while the code may be outdated and 
-                                could perhaps use some refactoring, I'm sharing this here to show how my career has progressed.
+                                and support an open source software project, albeit on a small scale.  I'm sharing this here to show how my career 
+                                and code quality has progressed.
                             </span>
                         </p>
                     </div>

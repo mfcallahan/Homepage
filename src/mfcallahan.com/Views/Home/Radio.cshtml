@@ -7,8 +7,8 @@
 @Scripts.Render("~/bundles/radio-scripts")
 
 <div class="container-fluid">
-    <div class="row equal">
-        @*<!-- left col (green)  -->*@
+    <div class="row" style="background: #4285F4;">
+        @*<!-- left col (blue)  -->*@
         <div class="col-md-4 no-padding sidebar-col">
             <div class="sidebar-wrapper-radio">
                 @*<!-- homer  -->*@
@@ -318,178 +318,176 @@
                         </div>
                     </div>
                 </div>
-                @*<!-- band plan  -->*@
-                <span class="display-wide">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h2 class="main-title text-center"><i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;WRAA720 GMRS Band Plan</h2>
-                            <p>
-                                This is my personal band plan for UHF two way radio, used primarily for outdoor recreational activities - 4x4 exploration,
-                                camping, fishing, etc.  This plan allows for compatability with bubble-pack FRS radios and unlicensed users for short range
-                                communications, as well as full power operation on GMRS channels for use with family and other licensed GMRS stations.
-                            </p>
-                            <table class="table table-bordered table-condensed">
-                                <thead>
-                                    <tr style="background-color: #1F1F1F;">
-                                        <th class="text-center">Ch</th>
-                                        <th class="text-center">Name</th>
-                                        <th class="text-center">Frequency</th>
-                                        <th class="text-center">Tone</th>
-                                        <th class="text-center">W/N</th>
-                                        <th class="text-center">Power</th>
-                                        <th class="text-center">Notes</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
-                                        <td class="text-center">1</td>
-                                        <td>Ch 1 Simplex</td>
-                                        <td>462.5625 MHz</td>
-                                        <td></td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">Low</td>
-                                        <td>FRS 1/Nat'l Simplex</td>
-                                    </tr>
-                                    <tr style="background-color: #989391; color: #0D0D0D">
-                                        <td class="text-center">2</td>
-                                        <td>Ch 2 Simplex</td>
-                                        <td>462.5875 MHz</td>
-                                        <td></td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">Low</td>
-                                        <td>FRS 2</td>
-                                    </tr>
-                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
-                                        <td class="text-center">3</td>
-                                        <td>Ch 3 Simplex</td>
-                                        <td>462.6125 MHz</td>
-                                        <td></td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">Low</td>
-                                        <td>FRS 3</td>
-                                    </tr>
-                                    <tr style="background-color: #989391; color: #0D0D0D">
-                                        <td class="text-center">4</td>
-                                        <td>Ch 4 Simplex</td>
-                                        <td>462.6375 MHz</td>
-                                        <td></td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">Low</td>
-                                        <td>FRS 4</td>
-                                    </tr>
-                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
-                                        <td class="text-center">5</td>
-                                        <td>Ch 5 Simplex</td>
-                                        <td>462.6675 MHz</td>
-                                        <td></td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">Low</td>
-                                        <td>FRS 5</td>
-                                    </tr>
-                                    <tr style="background-color: #989391; color: #0D0D0D">
-                                        <td class="text-center">6</td>
-                                        <td>Ch 6 Simplex</td>
-                                        <td>462.6875 MHz</td>
-                                        <td></td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">Low</td>
-                                        <td>FRS 6</td>
-                                    </tr>
-                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
-                                        <td class="text-center">7</td>
-                                        <td>Ch 7 Simplex</td>
-                                        <td>462.7125 MHz</td>
-                                        <td></td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">Low</td>
-                                        <td>FRS 7</td>
-                                    </tr>
-                                    <tr style="background-color: #989391; color: #0D0D0D">
-                                        <td class="text-center">8</td>
-                                        <td>Ch 8 Simplex</td>
-                                        <td>462.5500 MHz</td>
-                                        <td>141.3 Hz</td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">High</td>
-                                        <td>GMRS 15/PHX 550 T</td>
-                                    </tr>
-                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
-                                        <td class="text-center">8</td>
-                                        <td>Ch 9 Simplex</td>
-                                        <td>462.5750 MHz</td>
-                                        <td>141.3 Hz</td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">High</td>
-                                        <td>GMRS 16</td>
-                                    </tr>
-                                    <tr style="background-color: #989391; color: #0D0D0D">
-                                        <td class="text-center">10</td>
-                                        <td>Ch 10 Simplex</td>
-                                        <td>462.6000 MHz</td>
-                                        <td>71.9 Hz</td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">High</td>
-                                        <td>GMRS 17</td>
-                                    </tr>
-                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
-                                        <td class="text-center">11</td>
-                                        <td>Ch 11 Simplex</td>
-                                        <td>462.6250 MHz</td>
-                                        <td>D072N</td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">High</td>
-                                        <td>GMRS 18</td>
-                                    </tr>
-                                    <tr style="background-color: #989391; color: #0D0D0D">
-                                        <td class="text-center">12</td>
-                                        <td>Ch 12 Simplex</td>
-                                        <td>462.6500 MHz</td>
-                                        <td>141.3 Hz</td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">High</td>
-                                        <td>GMRS 19/Nat'l Simplex</td>
-                                    </tr>
-                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
-                                        <td class="text-center">13</td>
-                                        <td>Ch 13 Simplex</td>
-                                        <td>462.6750 MHz</td>
-                                        <td>141.3 Hz</td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">High</td>
-                                        <td>GMRS 20</td>
-                                    </tr>
-                                    <tr style="background-color: #989391; color: #0D0D0D">
-                                        <td class="text-center">14</td>
-                                        <td>Ch 14 Simplex</td>
-                                        <td>462.7000 MHz</td>
-                                        <td>D423N</td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">High</td>
-                                        <td>GMRS 21/<b>Camping Alpha</b></td>
-                                    </tr>
-                                    <tr style="background-color: #CBC6C4; color: #0D0D0D">
-                                        <td class="text-center">15</td>
-                                        <td>Ch 15 Simplex</td>
-                                        <td>462.7250 MHz</td>
-                                        <td>199.5 Hz</td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">High</td>
-                                        <td>GMRS 22/<b>Camping Bravo</b></td>
-                                    </tr>
-                                    <tr style="background-color: #989391; color: #0D0D0D">
-                                        <td class="text-center">16</td>
-                                        <td>Ch 16 Simplex</td>
-                                        <td>462.5750 MHz</td>
-                                        <td>141.3 Hz</td>
-                                        <td class="text-center">N</td>
-                                        <td class="text-center">High</td>
-                                        <td>GMRS 16/<b>4x4 Off-Road Channel</b></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                @*<!-- band plan  -->*@  
+                <div class="row display-wide">
+                    <div class="col-sm-12">
+                        <h2 class="main-title text-center"><i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;WRAA720 GMRS Band Plan</h2>
+                        <p>
+                            This is my personal band plan for UHF two way radio, used primarily for outdoor recreational activities - 4x4 exploration,
+                            camping, fishing, etc.  This plan allows for compatability with bubble-pack FRS radios and unlicensed users for short range
+                            communications, as well as full power operation on GMRS channels for use with family and other licensed GMRS stations.
+                        </p>
+                        <table class="table table-bordered table-condensed">
+                            <thead>
+                                <tr style="background-color: #1F1F1F;">
+                                    <th class="text-center">Ch</th>
+                                    <th class="text-center">Name</th>
+                                    <th class="text-center">Frequency</th>
+                                    <th class="text-center">Tone</th>
+                                    <th class="text-center">W/N</th>
+                                    <th class="text-center">Power</th>
+                                    <th class="text-center">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                    <td class="text-center">1</td>
+                                    <td>Ch 1 Simplex</td>
+                                    <td>462.5625 MHz</td>
+                                    <td></td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">Low</td>
+                                    <td>FRS 1/Nat'l Simplex</td>
+                                </tr>
+                                <tr style="background-color: #989391; color: #0D0D0D">
+                                    <td class="text-center">2</td>
+                                    <td>Ch 2 Simplex</td>
+                                    <td>462.5875 MHz</td>
+                                    <td></td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">Low</td>
+                                    <td>FRS 2</td>
+                                </tr>
+                                <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                    <td class="text-center">3</td>
+                                    <td>Ch 3 Simplex</td>
+                                    <td>462.6125 MHz</td>
+                                    <td></td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">Low</td>
+                                    <td>FRS 3</td>
+                                </tr>
+                                <tr style="background-color: #989391; color: #0D0D0D">
+                                    <td class="text-center">4</td>
+                                    <td>Ch 4 Simplex</td>
+                                    <td>462.6375 MHz</td>
+                                    <td></td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">Low</td>
+                                    <td>FRS 4</td>
+                                </tr>
+                                <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                    <td class="text-center">5</td>
+                                    <td>Ch 5 Simplex</td>
+                                    <td>462.6675 MHz</td>
+                                    <td></td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">Low</td>
+                                    <td>FRS 5</td>
+                                </tr>
+                                <tr style="background-color: #989391; color: #0D0D0D">
+                                    <td class="text-center">6</td>
+                                    <td>Ch 6 Simplex</td>
+                                    <td>462.6875 MHz</td>
+                                    <td></td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">Low</td>
+                                    <td>FRS 6</td>
+                                </tr>
+                                <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                    <td class="text-center">7</td>
+                                    <td>Ch 7 Simplex</td>
+                                    <td>462.7125 MHz</td>
+                                    <td></td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">Low</td>
+                                    <td>FRS 7</td>
+                                </tr>
+                                <tr style="background-color: #989391; color: #0D0D0D">
+                                    <td class="text-center">8</td>
+                                    <td>Ch 8 Simplex</td>
+                                    <td>462.5500 MHz</td>
+                                    <td>141.3 Hz</td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">High</td>
+                                    <td>GMRS 15/PHX 550 T</td>
+                                </tr>
+                                <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                    <td class="text-center">8</td>
+                                    <td>Ch 9 Simplex</td>
+                                    <td>462.5750 MHz</td>
+                                    <td>141.3 Hz</td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">High</td>
+                                    <td>GMRS 16</td>
+                                </tr>
+                                <tr style="background-color: #989391; color: #0D0D0D">
+                                    <td class="text-center">10</td>
+                                    <td>Ch 10 Simplex</td>
+                                    <td>462.6000 MHz</td>
+                                    <td>71.9 Hz</td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">High</td>
+                                    <td>GMRS 17</td>
+                                </tr>
+                                <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                    <td class="text-center">11</td>
+                                    <td>Ch 11 Simplex</td>
+                                    <td>462.6250 MHz</td>
+                                    <td>D072N</td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">High</td>
+                                    <td>GMRS 18</td>
+                                </tr>
+                                <tr style="background-color: #989391; color: #0D0D0D">
+                                    <td class="text-center">12</td>
+                                    <td>Ch 12 Simplex</td>
+                                    <td>462.6500 MHz</td>
+                                    <td>141.3 Hz</td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">High</td>
+                                    <td>GMRS 19/Nat'l Simplex</td>
+                                </tr>
+                                <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                    <td class="text-center">13</td>
+                                    <td>Ch 13 Simplex</td>
+                                    <td>462.6750 MHz</td>
+                                    <td>141.3 Hz</td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">High</td>
+                                    <td>GMRS 20</td>
+                                </tr>
+                                <tr style="background-color: #989391; color: #0D0D0D">
+                                    <td class="text-center">14</td>
+                                    <td>Ch 14 Simplex</td>
+                                    <td>462.7000 MHz</td>
+                                    <td>D423N</td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">High</td>
+                                    <td>GMRS 21/<b>Camping Alpha</b></td>
+                                </tr>
+                                <tr style="background-color: #CBC6C4; color: #0D0D0D">
+                                    <td class="text-center">15</td>
+                                    <td>Ch 15 Simplex</td>
+                                    <td>462.7250 MHz</td>
+                                    <td>199.5 Hz</td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">High</td>
+                                    <td>GMRS 22/<b>Camping Bravo</b></td>
+                                </tr>
+                                <tr style="background-color: #989391; color: #0D0D0D">
+                                    <td class="text-center">16</td>
+                                    <td>Ch 16 Simplex</td>
+                                    <td>462.5750 MHz</td>
+                                    <td>141.3 Hz</td>
+                                    <td class="text-center">N</td>
+                                    <td class="text-center">High</td>
+                                    <td>GMRS 16/<b>4x4 Off-Road Channel</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </span>
+                </div>
             </div>
         </div>
     </div>

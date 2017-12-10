@@ -24,13 +24,18 @@ namespace Homepage
                 "~/Scripts/featherlight.gallery.min.js",
                 "~/Scripts/site.js"));
 
+            // highlight.pack.js, {style}.css - custom package from https://highlightjs.org/download/
             // homepage styles
             bundles.Add(new StyleBundle("~/Content/home-styles").Include(
-                "~/Content/home.css"));
+                "~/Content/home.css",
+                "~/Content/atelier-forest-dark.css"
+            ));
 
             // homepage scripts
             bundles.Add(new ScriptBundle("~/bundles/home-scripts").Include(
-                "~/Scripts/home.js"));
+                "~/Scripts/home.js",
+                "~/Scripts/highlight.pack.js"
+            ));
 
             // radio styles
             bundles.Add(new StyleBundle("~/Content/radio-styles").Include(

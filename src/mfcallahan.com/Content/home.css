@@ -8,6 +8,10 @@ h3 {
     margin-bottom: 20px;
 }
 
+pre {
+    padding: 1px !important;
+}
+
 .sidebar-col {
     background-color: #4285F4;
 }

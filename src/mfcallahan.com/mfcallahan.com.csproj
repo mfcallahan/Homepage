@@ -202,6 +202,7 @@
   <ItemGroup>
     <Content Include="App_Data\XmlDocument.xml" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\atelier-forest-dark.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -220,6 +221,7 @@
     <Content Include="Content\img\antenna-icon-green.png" />
     <Content Include="Content\img\antenna-icon-red.png" />
     <Content Include="Content\img\antenna-icon-yellow.png" />
+    <Content Include="Content\img\api.png" />
     <Content Include="Content\img\cat1.png" />
     <Content Include="Content\img\cat1.thumb.png" />
     <Content Include="Content\img\cat2.png" />
@@ -237,6 +239,7 @@
     <Content Include="Content\img\cell-coverage.png" />
     <Content Include="Content\img\clock.png" />
     <Content Include="Content\img\fcc.png" />
+    <Content Include="Content\img\git-banner.png" />
     <Content Include="Content\img\homer-radio.png" />
     <Content Include="Content\img\hour-hand.png" />
     <Content Include="Content\img\matt1.png" />
@@ -316,6 +319,7 @@
     </Content>
     <Content Include="robots.txt" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="Scripts\highlight.pack.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
     <Content Include="Scripts\jquery-3.2.1.slim.js" />
