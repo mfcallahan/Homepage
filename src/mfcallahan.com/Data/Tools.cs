@@ -17,7 +17,6 @@ namespace Homepage.Data
         {
             if (len < 0)
                 len = 0;
-
             if (len > 1000)
                 len = 1000;
 

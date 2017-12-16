@@ -234,6 +234,7 @@
     <Content Include="Content\img\cell-coverage.png" />
     <Content Include="Content\img\clock.png" />
     <Content Include="Content\img\fcc.png" />
+    <Content Include="Content\img\git-banner-sm.png" />
     <Content Include="Content\img\git-banner.png" />
     <Content Include="Content\img\homer-radio.png" />
     <Content Include="Content\img\hour-hand.png" />
@@ -251,6 +252,8 @@
     <Content Include="Content\img\matt6.thumb.png" />
     <Content Include="Content\img\matt7.png" />
     <Content Include="Content\img\matt7.thumb.png" />
+    <Content Include="Content\img\matt8.png" />
+    <Content Include="Content\img\matt8.thumb.png" />
     <Content Include="Content\img\me.png" />
     <Content Include="Content\img\me2.png" />
     <Content Include="Content\img\min-hand.png" />
@@ -387,7 +390,9 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\radio.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
