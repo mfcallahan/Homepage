@@ -52,7 +52,7 @@ namespace Homepage.Queries
 
             if (result.status == "success")
             {
-                var loc = new IpLocation
+                return new IpLocation
                 {
                     Name = result.@as,
                     IpAddress = ip,
@@ -66,8 +66,6 @@ namespace Homepage.Queries
                     TimeZone = result.timezone,
                     PostalCode = result.zip
                 };
-
-                return loc;                
             } 
 
             return null;

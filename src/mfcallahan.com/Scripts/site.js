@@ -6,7 +6,7 @@ function Hello() {
     });
 }
 
-// add caption to gallery image with 'alt' tag on <img> element
+// add caption to gallery image using 'alt' tag on <img> element
 $.featherlightGallery.prototype.afterContent = function() {
   var caption = this.$currentTarget.find('img').attr('alt');
   this.$instance.find('.caption').remove();

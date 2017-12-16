@@ -5,6 +5,7 @@ using System.Web.Http;
 using Homepage.Dtos;
 using Homepage.Data;
 using Homepage.Queries;
+using System;
 
 namespace Homepage.Controllers
 {
@@ -68,7 +69,7 @@ namespace Homepage.Controllers
         // mfcallahan.com/api/RandomString
         [HttpGet]
         [Route("api/RandomString")]
-        public HttpResponseMessage RandomString(int length, bool useNums)
+        public HttpResponseMessage RandomString(int length, bool useNums = true)
         {
             HttpResponseMessage httpResponseMsg = Request.CreateResponse();
             httpResponseMsg.StatusCode = HttpStatusCode.OK;
@@ -84,6 +85,10 @@ namespace Homepage.Controllers
         /// Locates a single input address, returning coordinates of the address as
         /// well as information about the accuracy of the output location.
         /// </summary>
+        /// <yo>
+        ///  Hi! If you're looking through my code right now, you obviously have the same 
+        ///  passion for software development as I do.  Cool.  Hit me up: matthew.callahan@outlook.com
+        /// </yo>
         /// <param name="address">The input address, ex: 703 E Johnson St</param>
         /// <param name="city">The input city, ex: Madison</param>
         /// <param name="stateProv">The input city, ex: Wisconsin</param>
@@ -94,10 +99,15 @@ namespace Homepage.Controllers
         [Route("api/Geocode")]
         public HttpResponseMessage Geocode(string address = "", string city = "", string stateProv = "", string postalCode = "", string country = "")
         {
-            Bing bing = new Bing();
-            bing.Geocode(address, city, stateProv, postalCode, country);
+            ApiInputAddress inputAdr = new ApiInputAddress(address, city, stateProv, postalCode, country);
 
-            return null;
+            Bing bing = new Bing();
+            bing.GeocodeAddress(inputAdr);
+
+            HttpResponseMessage httpResponseMsg = Request.CreateResponse(HttpStatusCode.OK);
+            Tools.SerializeApiResponse(ref httpResponseMsg, ref inputAdr);
+
+            return httpResponseMsg;
         }
 
         /// <summary>

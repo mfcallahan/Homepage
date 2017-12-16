@@ -19,7 +19,6 @@ namespace Homepage.Data
 
             CheckLimit();
 
-
             Client = new RestClient(BingUrl);
             Client.AddDefaultParameter("key", BingKey);
         }
@@ -29,27 +28,41 @@ namespace Homepage.Data
             return true;
         }
 
-        public ApiResponseGeocode Geocode(string address, string city, string stateProv, string postalCode, string country)
-        {           
+        public void GeocodeAddress(ApiInputAddress inputAdr)
+        {
             RestRequest request = new RestRequest(Method.GET);
             request.AddParameter("key", BingKey);
 
-            if (!string.IsNullOrEmpty(address))
-                request.AddParameter("addressLine", address);
-            if (!string.IsNullOrEmpty(city))
-                request.AddParameter("locality", city);
-            if (!string.IsNullOrEmpty(stateProv))
-                request.AddParameter("adminDistrict", stateProv);
-            if (!string.IsNullOrEmpty(postalCode))
-                request.AddParameter("postalCode", postalCode);
-            if (!string.IsNullOrEmpty(country))
-                request.AddParameter("countryRegion", country);            
+            if (!string.IsNullOrEmpty(inputAdr.Address))
+                request.AddParameter("addressLine", inputAdr.Address);
+            if (!string.IsNullOrEmpty(inputAdr.City))
+                request.AddParameter("locality", inputAdr.City);
+            if (!string.IsNullOrEmpty(inputAdr.StateProv))
+                request.AddParameter("adminDistrict", inputAdr.StateProv);
+            if (!string.IsNullOrEmpty(inputAdr.PostalCode))
+                request.AddParameter("inputAdr.PostalCode", inputAdr.PostalCode);
+            if (!string.IsNullOrEmpty(inputAdr.Country))
+                request.AddParameter("countryRegion", inputAdr.Country);            
 
-            var response = Client.Execute(request);
+            var response = Client.Execute(request);           
 
             BingGeocodeOutput output = JsonConvert.DeserializeObject<BingGeocodeOutput>(response.Content);
 
-            return null;
+            foreach (var r in output.resourceSets[0].resources)
+            {
+                ApiOutputAddress o = new ApiOutputAddress();               
+                o.OutputAddress = r.address.addressLine;
+                o.OutputCity = r.address.locality;
+                o.OutputStateProv = r.address.adminDistrict;
+                o.OutputPostalCode = r.address.postalCode;
+                o.OutputCountry = r.address.countryRegion;
+                o.Confidence = r.confidence;
+                o.Longitude = r.geocodePoints[0].coordinates[0];
+                o.Latitude = r.geocodePoints[0].coordinates[1];
+                o.Source = "Bing";
+
+                inputAdr.OutputAddresses.Add(o);
+            }
         }
     }
 }
