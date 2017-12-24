@@ -298,6 +298,7 @@
     <Content Include="Content\img\truck9.png" />
     <Content Include="Content\img\truck9.thumb.png" />
     <Content Include="Content\img\uw.png" />
+    <Content Include="Content\map-radio.css" />
     <Content Include="Content\map.css" />
     <Content Include="Content\radio.css" />
     <Content Include="favicon.ico" />
@@ -342,6 +343,7 @@
     <Content Include="Scripts\jquery-3.2.1.min.js" />
     <Content Include="Scripts\jquery-3.2.1.slim.js" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
+    <Content Include="Scripts\map-radio.js" />
     <Content Include="Scripts\site.js" />
     <EntityDeploy Include="Data\Visitor.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
