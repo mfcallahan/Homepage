@@ -3,8 +3,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@Styles.Render("~/Content/radio-styles")
-@Scripts.Render("~/bundles/radio-scripts")
+@Styles.Render("~/Content/style-radio")
+@Scripts.Render("~/bundles/scripts-radio")
 
 <div class="container-fluid">
     <div class="row" style="background: #4285F4;">
@@ -235,11 +235,11 @@
                     <div class="col-sm-6">
                         <div class="summary">
                             <p>
-                                Welcome to my radio homepage.  In addition to computers and programming, my other nerdy hobby is radio. I am a
-                                licensed amateur radio operator (<a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3980800" target="_blank" rel="noopener">KI7SJQ</a>)
-                                and a licesnsed GMRS radio opearator (<a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3959322" target="_blank" rel="noopener">WRAA720</a>).
-                                When I was 16, I bought my first scanner from Radio Shack, <a href="@Url.Content("~/Content/img/pro71.png")" data-featherlight="image">a Pro-71</a>,
-                                and I've been listening ever since.
+                                Welcome to my radio homepage.  In addition to computers and programming, my other nerdy hobby is radio. When 
+                                I was 16, I bought my first scanner from Radio Shack, <a href="@Url.Content("~/Content/img/pro71.png")" data-featherlight="image">a Pro-71</a>, 
+                                and I've been listening ever since. I am a licensed amateur radio operator (<a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3980800" target="_blank" rel="noopener">KI7SJQ</a>),
+                                a licesnsed GMRS radio opearator (<a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3959322" target="_blank" rel="noopener">WRAA720</a>),
+                                and I am currently a board member at <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">Arizona GMRS Repeater Club</a>.
                             </p>
                             <p>
                                 But why radio?! We have cell phones in @DateTime.Now.Year, right? We do have cell phones, but they

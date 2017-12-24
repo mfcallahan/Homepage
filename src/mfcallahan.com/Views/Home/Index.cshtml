@@ -3,8 +3,8 @@
     ViewBag.Title = "Matt Callahan";
 }
 
-@Styles.Render("~/Content/home-styles")
-@Scripts.Render("~/bundles/home-scripts")
+@Styles.Render("~/Content/style-home")
+@Scripts.Render("~/bundles/scripts-home")
 
 <div class="container-fluid">
     <div class="row" style="background: #4285F4;">
@@ -117,7 +117,7 @@
                             <div class="col-sm-7">
                                 <h4 class="moreinfo">
                                     <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3980800" target="_blank" rel="noopener">
-                                        Amateur Radio License: Technican Class
+                                        Amateur Radio License: Technician Class
                                     </a>
                                 </h4>
                             </div>
@@ -231,7 +231,7 @@
                                 programming.  But sometimes I just don't need the overhead of the massive .NET framework, and 
                                 <a href="https://www.python.org/doc/essays/blurb/" target="_blank" rel="noopener">Python</a> is my 
                                 second tool of choice. Python is perfect for when I need to automate tedious or repetitive tasks, or I 
-                                need to process large batches of data.  Pyhton is also what I strongly recommend as a first lanaguge 
+                                need to process large batches of data.  Python is also what I strongly recommend as a first lanaguge 
                                 for programming beginners. 
                             </p>                            
                             <p>
@@ -258,12 +258,12 @@
                     <div class="item">
                         <div class="details">
                             <p>
-                                In addition to computers and programming, my other nerdy hobby is radio.  I am a licensed GMRS radio opearator 
+                                In addition to computers and programming, my other nerdy hobby is radio.  I am a licensed GMRS radio opearator
                                 (call sign <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3959322" target="_blank" rel="noopener">WRAA720</a>)
-                                and a licesnsed amateur radio operator (call sign <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3980800" target="_blank" rel="noopener">KI7SJQ</a>).   I rely on VHF and UHF <a href="@Url.Content("~/Content/img/shack1.png")"  data-featherlight="image">two-way radios</a>
-                                for communications when I'm camping and exploring Arizona's back country. Check out my 
+                                and a licesnsed amateur radio operator (call sign <a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3980800" target="_blank" rel="noopener">KI7SJQ</a>).   I rely on VHF and UHF <a href="@Url.Content("~/Content/img/shack1.png")" data-featherlight="image">two-way radios</a>
+                                for communications when I'm camping and exploring Arizona's back country. Check out my
                                 <a href="@Url.Action("Radio", "Home")" target="_blank" rel="noopener">radio homepage here</a>.
-                            </p>
+                            </p>                            
                         </div>
                     </div>
                 </section>
@@ -287,8 +287,7 @@
                         </p>
                         <div class="display-wide">
                             <p>
-<pre><code class="javascript">// jQuery get()
-$.get("http://mfcallahan.com/api/Hello", function (data) {
+<pre><code class="javascript">$.get("http://mfcallahan.com/api/Hello", function (data) {
     console.log(data);
 });
 

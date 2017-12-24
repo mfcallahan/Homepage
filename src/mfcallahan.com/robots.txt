@@ -2,9 +2,8 @@
 Disallow: /Content/
 Disallow: /Scripts/
 Disallow: /api/
-Disallow: /ApiDocumentation/Api/
+Disallow: /ApiDocumentation/
 Disallow: /Home/Hello/
-Disallow: /Camping/
 Disallow: /Gallery/
 Disallow: /RadioMap/
 Disallow: /GMRS/
