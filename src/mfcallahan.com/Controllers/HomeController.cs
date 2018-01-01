@@ -46,7 +46,7 @@ namespace Homepage.Controllers
         // mfcallahan.com/blog
         public ActionResult Blog()
         {
-            return View();
+            return Redirect("https://seesharpdotnet.wordpress.com/");
         }
 
         // Log a info from homepage visitor

@@ -48,19 +48,17 @@ namespace Homepage
 
             // map styles
             bundles.Add(new StyleBundle("~/Content/style-map").Include(
+                "~/Content/leaflet.css",
                 "~/Content/map.css"));
 
             // map scripts
             bundles.Add(new ScriptBundle("~/bundles/scripts-map").Include(
+                "~/Scripts/leaflet.js",
                 "~/Scripts/map.js"));
 
-            // radio map styles
-            bundles.Add(new StyleBundle("~/Content/style-radiomap").Include(
-                "~/Content/map-radio.css"));
-
-            // radio map scripts
-            bundles.Add(new ScriptBundle("~/bundles/scripts-radiomap").Include(
-                "~/Scripts/map-radio.js"));            
+            // gmrs map scripts
+            bundles.Add(new ScriptBundle("~/bundles/scripts-gmrs").Include(
+                "~/Scripts/map-gmrs.js"));            
 
             // ArcGIS Online
             //bundles.Add(new ScriptBundle("~/bundles/scripts-arcgis", "https://js.arcgis.com/4.6/init.js").Include(

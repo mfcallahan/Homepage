@@ -49,13 +49,6 @@ namespace Homepage
                 defaults: new { controller = "Home", action = "Radio" }
             );
 
-            // mfcallahan.com/radiomap
-            routes.MapRoute(
-                name: "RadioMap",
-                url: "RadioMap",
-                defaults: new { controller = "Home", action = "RadioMap" }
-            );
-
             // mfcallahan.com/gmrs
             routes.MapRoute(
                 name: "GMRS",

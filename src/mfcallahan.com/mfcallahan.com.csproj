@@ -170,7 +170,9 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\ApiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MapController.cs" />
     <Compile Include="Data\Bing.cs" />
+    <Compile Include="Data\Esri.cs" />
     <Compile Include="Data\Tools.cs" />
     <Compile Include="Data\Visitor1.cs">
       <AutoGen>True</AutoGen>
@@ -303,7 +305,6 @@
     <Content Include="Content\images\truck9.thumb.png" />
     <Content Include="Content\images\uw.png" />
     <Content Include="Content\leaflet.css" />
-    <Content Include="Content\map-radio.css" />
     <Content Include="Content\map.css" />
     <Content Include="Content\radio.css" />
     <Content Include="favicon.ico" />
@@ -350,7 +351,7 @@
     <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
     <Content Include="Scripts\leaflet-src.js" />
     <Content Include="Scripts\leaflet.js" />
-    <Content Include="Scripts\map-radio.js" />
+    <Content Include="Scripts\map-gmrs.js" />
     <Content Include="Scripts\site.js" />
     <EntityDeploy Include="Data\Visitor.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -397,7 +398,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\map.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\radio.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -414,13 +414,14 @@
     <Content Include="_Web.config" />
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\Camping.cshtml" />
-    <Content Include="Views\Home\RadioMap.cshtml" />
     <Content Include="Views\Home\GMRS.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
     <Content Include="Views\Home\Radio.cshtml" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\Map\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
