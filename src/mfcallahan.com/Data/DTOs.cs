@@ -4,8 +4,33 @@ using System.Configuration;
 // Data transfer object classes the encapsulate app Controller data and internal/external API data
 namespace Homepage.Dtos
 {
+    #region map features
+    public class GmrsRepeater
+    {
+        private string urlMyGRMS;
+        private string rX_Frequency;
+        private double? lat;
+        private double? lon;
+
+        public string Name { get; set; }
+        public string UrlMyGmrs { get; set; }
+        public string RxFrequency { get; set; }
+        public double? Latitude { get; set; }
+        public double? Longitude { get; set; }
+
+        public GmrsRepeater(string name, string urlMyGMrs, string rxFrequency, double? latitude, double? longitude)
+        {
+            Name = name;
+            UrlMyGmrs = urlMyGMrs;
+            RxFrequency = rxFrequency;
+            Latitude = latitude;
+            Longitude = longitude;
+        }
+    }
+    #endregion
+
     #region AGOL
-    public class GmrsRepeaters
+    public class FeatureLayer
     {
         public bool showLegend { get; set; }
         public bool visibility { get; set; }

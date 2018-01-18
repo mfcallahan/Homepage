@@ -1,20 +1,23 @@
-﻿var gmrsMap;
+﻿var map;
 
-function GetRepeaters() {
+function GetGmrsRepeaters() {
 
     var success = function (result) {
-        debugger;
-        
+        SetMap();
+
+        for (var i = 0; i < result.length; i++) {
+            marker = new L.marker([result[i].Latitude, result[i].Longitude]).addTo(map);
+        }
     };
 
     var error = function (result) {
-        debugger;
-        
+        SetMap();
+        console.log(result);
+        alert("Error fetching points.");
     };
-
-    debugger;
+    
     $.ajax({
-        url: window.location.origin + "/Map/GetGmrsRepeaters",
+        url: "Gmrs/GetGmrsRepeaters",
         type: "POST",
         success: success,
         error: error,
@@ -24,11 +27,12 @@ function GetRepeaters() {
     });
 }
 
-function SetupMap() {
-    
-    GetRepeaters();
+function Setup() {
+    GetGmrsRepeaters();
+}
 
-    gmrsMap = L.map('mapid').setView([51.505, -0.09], 13);
+function SetMap() {
+    map = L.map("gmrsMap").setView([34.3, -111.6], 7);
 
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
         maxZoom: 18,
@@ -36,12 +40,10 @@ function SetupMap() {
         '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
         'Imagery © <a href="http://mapbox.com">Mapbox</a>',
         id: 'mapbox.streets'
-    }).addTo(gmrsMap);
+    }).addTo(map);
 }
 
 
-
-
 $(document).ready(function () {
-    SetupMap();
+    Setup();
 });

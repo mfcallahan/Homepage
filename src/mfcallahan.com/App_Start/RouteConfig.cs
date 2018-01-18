@@ -28,32 +28,11 @@ namespace Homepage
                 defaults: new { controller = "Home", action = "Radio" }
             );
 
-            // mfcallahan.com/WRAA720
-            routes.MapRoute(
-                name: "WRAA720",
-                url: "WRAA720",
-                defaults: new { controller = "Home", action = "Radio" }
-            );
-
-            // mfcallahan.com/K7MFC
-            routes.MapRoute(
-                name: "K7MFC",
-                url: "K7MFC",
-                defaults: new { controller = "Home", action = "Radio" }
-            );
-
-            // mfcallahan.com/KI7SJQ
-            routes.MapRoute(
-                name: "KI7SJQ",
-                url: "KI7SJQ",
-                defaults: new { controller = "Home", action = "Radio" }
-            );
-
             // mfcallahan.com/gmrs
             routes.MapRoute(
-                name: "GMRS",
+                name: "Gmrs",
                 url: "gmrs",
-                defaults: new { controller = "Home", action = "GMRS" }
+                defaults: new { controller = "Gmrs", action = "Index" }
             );
 
             // mfcallahan.com/blog

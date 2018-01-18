@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Homepage.Dtos;
+using Newtonsoft.Json;
+using RestSharp;
+using System;
+using System.Configuration;
 using System.Linq;
 using System.Web.Mvc;
 //using Homepage.Queries;
@@ -31,25 +35,12 @@ namespace Homepage.Controllers
             return View();
         }
 
-        // mfcallahan.com/radiomap
-        public ActionResult RadioMap()
-        {
-            return View();
-        }
-
-        // mfcallahan.com/gmrs
-        public ActionResult GMRS()
-        {
-            return View();
-        }
-
         // mfcallahan.com/blog
         public ActionResult Blog()
         {
             return Redirect("https://seesharpdotnet.wordpress.com/");
         }
 
-        // Log a info from homepage visitor
         [HttpPost]
         public void Hello()
         {

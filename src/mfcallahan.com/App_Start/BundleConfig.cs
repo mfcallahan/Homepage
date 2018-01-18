@@ -53,8 +53,7 @@ namespace Homepage
 
             // map scripts
             bundles.Add(new ScriptBundle("~/bundles/scripts-map").Include(
-                "~/Scripts/leaflet.js",
-                "~/Scripts/map.js"));
+                "~/Scripts/leaflet.js"));
 
             // gmrs map scripts
             bundles.Add(new ScriptBundle("~/bundles/scripts-gmrs").Include(

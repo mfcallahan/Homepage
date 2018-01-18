@@ -170,7 +170,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\ApiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\MapController.cs" />
+    <Compile Include="Controllers\GmrsController.cs" />
     <Compile Include="Data\Bing.cs" />
     <Compile Include="Data\Esri.cs" />
     <Compile Include="Data\Tools.cs" />
@@ -280,6 +280,8 @@
     <Content Include="Content\images\shack5.thumb.png" />
     <Content Include="Content\images\shack6.png" />
     <Content Include="Content\images\shack6.thumb.png" />
+    <Content Include="Content\images\shack7.png" />
+    <Content Include="Content\images\shack7.thumb.png" />
     <Content Include="Content\images\ti83.png" />
     <Content Include="Content\images\truck1.png" />
     <Content Include="Content\images\truck1.thumb.png" />
@@ -381,14 +383,11 @@
     <Content Include="Content\docs\WRAA720-BF888S.img" />
     <Content Include="Content\docs\WRAA720-GMRS-V1.img" />
     <None Include="Properties\PublishProfiles\mfcallahan-homepage-prod - Web Deploy.pubxml" />
-    <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\featherlight.gallery.min.js" />
     <Content Include="Scripts\featherlight.min.js" />
     <Content Include="Scripts\home.js" />
-    <Content Include="Scripts\jquery-2.1.4.min.js" />
-    <Content Include="Scripts\jquery-2.1.4.min.map" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -396,7 +395,6 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\map.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config">
@@ -414,14 +412,12 @@
     <Content Include="_Web.config" />
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\Camping.cshtml" />
-    <Content Include="Views\Home\GMRS.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
     <Content Include="Views\Home\Radio.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Gmrs\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\Map\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
