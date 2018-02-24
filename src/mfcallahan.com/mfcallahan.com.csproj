@@ -12,7 +12,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Homepage.Web</RootNamespace>
-    <AssemblyName>Homepage.Web</AssemblyName>
+    <AssemblyName>Homepage</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
@@ -409,7 +409,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="_Web.config" />
+    <None Include="Web.config_" />
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\Camping.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />

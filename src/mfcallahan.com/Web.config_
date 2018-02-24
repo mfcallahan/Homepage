@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  For more information on how to configure your ASP.NET application, please visit
+  http://go.microsoft.com/fwlink/?LinkId=301880
+  -->
 <configuration>
   <configSections>
+
     <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
   </configSections>
   <connectionStrings>
     <add name="adhocEntities1" connectionString="metadata=res://*/Data.Visitor.csdl|res://*/Data.Visitor.ssdl|res://*/Data.Visitor.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=************.database.windows.net;initial catalog=adhoc;persist security info=True;user id=*******;password=****************;multipleactiveresultsets=True;application name=EntityFramework&quot;" providerName="System.Data.EntityClient" />
   </connectionStrings>
   <appSettings>
+
     <add key="webpages:Version" value="3.0.0.0" />
     <add key="webpages:Enabled" value="false" />
     <add key="ClientValidationEnabled" value="true" />
     <add key="UnobtrusiveJavaScriptEnabled" value="true" />
 
-    <!-- AGOL -->
-    <add key="gmrsLayerUrl" value="********************************************************" />
-    <add key="campingLayerUrl" value="********************************************************" />
-    
-    <!-- Bing -->
-    <add key="bingKey" value="********************************************************" />
-    <add key="bingUrl" value="https://dev.virtualearth.net/REST/v1/Locations" />
-
-    <!-- API: GetDeveloperInfo() -->
-    <add key="devInfoName" value="Matthew Callahan" />
-    <add key="devInfoTitle" value="Software Developer" />
-    <add key="devInfoAddress" value="Phoenix, AZ" />
-    <add key="devInfoPhone" value="**********" />
-    <add key="devInfoEmail" value="****************" />
-    <add key="callSignHam" value="*****" />
-    <add key="callSignGmrs" value="*******" />
-    <add key="devInfoResumeUrl" value="***************" />
-    <add key="devInfoLinkedInUrl" value="***************" />
-    <add key="devInfoGitHubUrl" value="***************" />
-    <add key="devInfoGeoNetUrl" value="***************" />
-
   </appSettings>
+  <!--
+    For a description of web.config changes see http://go.microsoft.com/fwlink/?LinkId=235367.
+
+    The following attributes can be set on the <httpRuntime> tag.
+      <system.Web>
+        <httpRuntime targetFramework="4.7" />
+      </system.Web>
+  -->
   <system.web>
     <authentication mode="None" />
     <compilation debug="true" targetFramework="4.7" />
