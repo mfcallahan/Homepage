@@ -13,7 +13,8 @@ namespace Homepage.Areas.HelpPage.Controllers
     {
         private const string ErrorViewName = "Error";
 
-        public HelpController() : this(GlobalConfiguration.Configuration)
+        public HelpController()
+            : this(GlobalConfiguration.Configuration)
         {
         }
 
@@ -24,7 +25,6 @@ namespace Homepage.Areas.HelpPage.Controllers
 
         public HttpConfiguration Configuration { get; private set; }
 
-        //mfcallahan.com/Help
         public ActionResult Index()
         {
             ViewBag.DocumentationProvider = Configuration.Services.GetDocumentationProvider();
