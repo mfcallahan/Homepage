@@ -1,4 +1,5 @@
 ﻿User-agent: *
+Disallow: /App_Data/
 Disallow: /Content/
 Disallow: /Scripts/
 Disallow: /api/

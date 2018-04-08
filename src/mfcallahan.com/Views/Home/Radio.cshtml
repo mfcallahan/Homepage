@@ -14,7 +14,7 @@
                 @*<!-- homer  -->*@
                 <div class="profile-container">
                     <a href="http://www.simpsonsworld.com/video/317662275581" target="_blank" rel="noopener">
-                        <img class="profile" src="@Url.Content("~/Content/img/homer-radio.png")" alt="" />
+                        <img class="profile" src="@Url.Content("~/Content/images/homer-radio.png")" alt="" />
                     </a>
 
                     <h1 class="name font-monospace">
@@ -74,7 +74,7 @@
                     <div class="row vertical-align">
                         <div class="col-sm-3 display-wide">
                             <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">
-                                <img class="img-responsive center-block" src="@Url.Content("~/Content/img/agrc-sm.png")" alt="" />
+                                <img class="img-responsive center-block" src="@Url.Content("~/Content/images/agrc-sm.png")" alt="" />
                             </a>
                         </div>
                         <div class="col-sm-9">
@@ -84,25 +84,22 @@
                         </div>
                     </div>
                     @*<!-- Get Licensed  -->*@
-                    @*<h2 class="container-block-title text-center">Get Licensed!</h2>
+                    <h2 class="container-block-title text-center">Get Licensed!</h2>
                         <div class="row vertical-align">
                             <div class="col-sm-12">
                                 <ul class="list-unstyled contact-list condensed">
                                     <li>
-                                        <a href="https://hamstudy.org/" target="_blank" rel="noopener">hamstudy.org</a>
+                                        <a href="https://hamstudy.org/" target="_blank" rel="noopener">hamstudy.org - My favorite ham radio exam preparation resource</a>
                                     </li>
                                     <li>
-                                        <a href="" target="_blank" rel="noopener">GMRS link here</a>
+                                        <a href="http://www.arrl.org/find-an-amateur-radio-license-exam-session" target="_blank" rel="noopener">ARRL - Find an amateur radio exam session</a>
                                     </li>
                                     <li>
-                                        <a href="" target="_blank" rel="noopener">ARRL ham exam link here</a>
-                                    </li>
-                                    <li>
-                                        <a href="" target="_blank" rel="noopener">Superstition ARC ham exam link here</a>
+                                        <a href="https://wireless2.fcc.gov/UlsEntry/licManager/login.jsp" target="_blank" rel="noopener">FCC Universal Licensing System</a>
                                     </li>
                                 </ul>
                             </div>
-                        </div>*@
+                        </div>
                     @*<!-- links  -->*@
                     <h2 class="container-block-title text-center">Links</h2>
                     <div class="row vertical-align">
@@ -235,15 +232,15 @@
                     <div class="col-sm-6">
                         <div class="summary">
                             <p>
-                                Welcome to my radio homepage.  In addition to computers and programming, my other nerdy hobby is radio. When 
-                                I was 16, I bought my first scanner from Radio Shack, <a href="@Url.Content("~/Content/img/pro71.png")" data-featherlight="image">a Pro-71</a>, 
+                                Welcome to my radio homepage.  In addition to computers and programming, my other nerdy hobby is radio. When
+                                I was 16, I bought my first scanner from Radio Shack, <a href="@Url.Content("~/Content/images/pro71.png")" data-featherlight="image">a Pro-71</a>,
                                 and I've been listening ever since. I am a licensed amateur radio operator (<a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3987237" target="_blank" rel="noopener">K7MFC</a>),
-                                a licesnsed GMRS radio opearator (<a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3959322" target="_blank" rel="noopener">WRAA720</a>),
-                                and I am currently a board member at <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">Arizona GMRS Repeater Club</a>.
+                                a licensed GMRS radio opearator (<a href="http://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3959322" target="_blank" rel="noopener">WRAA720</a>),
+                                and I am currently a <a href="https://www.gmrs1900.net/about-us/our-team" target="_blank" rel="noopener">board member</a> at Arizona GMRS Repeater Club.
                             </p>
                             <p>
-                                But why radio?! We have cell phones in @DateTime.Now.Year, right? We do have cell phones, but they
-                                <a href="@Url.Content("~/Content/img/cell-coverage.png")" data-featherlight="image">don't work everywhere in Arizona</a>.
+                                But why radio?! We have cell phones in @DateTime.Now.Year, right? We do, but they
+                                <a href="@Url.Content("~/Content/images/cell-coverage.png")" data-featherlight="image">don't work everywhere in Arizona</a>.
                                 Radio is most useful to me when I'm camping and exploring the Arizona back country, miles away from cell phone service.
                                 I monitor state and US Forest Service radio communications during wildfire season, and I rely on VHF and UHF two-way radios for
                                 off-road mobile communications.
@@ -253,7 +250,7 @@
                     <div class="col-sm-6">
                         @*<!-- scanner pic  -->*@
                         <a href="https://www.mygmrs.com/view?id=1793" target="_blank" rel="noopener">
-                            <img class="img-responsive center-block" src="@Url.Content("~/Content/img/scanner-homepage.png")" />
+                            <img class="img-responsive center-block" src="@Url.Content("~/Content/images/scanner-homepage.png")" />
                         </a>
                     </div>
                 </div>
@@ -264,9 +261,9 @@
                         <h2 class="main-title"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Maps</h2>
                         <div class="summary">
                             <ul class="list-unstyled contact-list condensed">
-                                <li>
+                                @*<li>
                                     <h5><a href="@Url.Action("GMRS", "Home")" target="_blank" rel="noopener">Arizona GMRS Repeater Map</a></h5>
-                                </li>
+                                </li>*@
                                 <li>
                                     <h5><a href="https://www.gmrs1900.net/about-us/repeaters" target="_blank" rel="noopener">AGRC Repeater Map</a></h5>
                                 </li>
@@ -308,17 +305,18 @@
                     <div class="col-sm-12">
                         <h2 class="main-title text-center"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Shack Photos</h2>
                         <div class="text-center" data-featherlight-gallery data-featherlight-filter="a">
-                            <a href="@Url.Content("~/Content/img/truck11.png")"><img src="@Url.Content("~/Content/img/truck11.thumb.png")" alt="The mobile shack: 2013 Ford F-150 4x4, 3.5 EcoBoost.  Photo taken near Knoll Lake, AZ." /></a>
-                            <a href="@Url.Content("~/Content/img/shack1.png")"><img src="@Url.Content("~/Content/img/shack1.thumb.png")" alt="Inside my F-150: Motorola CDM1250 UHF 50W (GMRS)." /></a>
-                            <a href="@Url.Content("~/Content/img/shack2.png")"><img src="@Url.Content("~/Content/img/shack2.thumb.png")" alt="Some of my handhelds, a BTECH GMRS-V1 and a Uniden BC125AT." /></a>
-                            <a href="@Url.Content("~/Content/img/shack3.png")"><img src="@Url.Content("~/Content/img/shack3.thumb.png")" alt="My old truck - 1999 GMC Sierra; Uniden BC355N." /></a>
-                            <a href="@Url.Content("~/Content/img/shack4.png")"><img src="@Url.Content("~/Content/img/shack4.thumb.png")" alt="My old truck - 2011 Nissan Frontier; Uniden BC355N + Midland 75-822 CB." /></a>
-                            <a href="@Url.Content("~/Content/img/shack5.png")"><img src="@Url.Content("~/Content/img/shack5.thumb.png")" alt="Radio Shack 'Sputnik' antenna atop my old apartment balcony - Executive Towers in Midtown Phoenix." /></a>
-                            <a href="@Url.Content("~/Content/img/shack6.png")"><img src="@Url.Content("~/Content/img/shack6.thumb.png")" alt="A weird scanner I bought around 2001 - a Sony Wavehawk ICF-SC1." /></a>
+                            <a href="@Url.Content("~/Content/images/truck11.png")"><img src="@Url.Content("~/Content/images/truck11.thumb.png")" alt="The mobile shack: 2013 Ford F-150 4x4, 3.5 EcoBoost.  Photo taken near Knoll Lake, AZ" /></a>
+                            <a href="@Url.Content("~/Content/images/shack1.png")"><img src="@Url.Content("~/Content/images/shack1.thumb.png")" alt="Inside my F-150: Motorola CDM1250 UHF 50W" /></a>
+                            <a href="@Url.Content("~/Content/images/shack2.png")"><img src="@Url.Content("~/Content/images/shack2.thumb.png")" alt="Some of my handhelds, a BTECH GMRS-V1 and a Uniden BC125AT" /></a>
+                            <a href="@Url.Content("~/Content/images/shack3.png")"><img src="@Url.Content("~/Content/images/shack3.thumb.png")" alt="My old truck - 1999 GMC Sierra; Uniden BC355N" /></a>
+                            <a href="@Url.Content("~/Content/images/shack4.png")"><img src="@Url.Content("~/Content/images/shack4.thumb.png")" alt="My old truck - 2011 Nissan Frontier; Uniden BC355N + Midland 75-822 CB" /></a>
+                            <a href="@Url.Content("~/Content/images/shack5.png")"><img src="@Url.Content("~/Content/images/shack5.thumb.png")" alt="Radio Shack 'Sputnik' antenna atop my old apartment balcony - Executive Towers in Midtown Phoenix" /></a>
+                            <a href="@Url.Content("~/Content/images/shack6.png")"><img src="@Url.Content("~/Content/images/shack6.thumb.png")" alt="A weird scanner I bought around 2001 - a Sony Wavehawk ICF-SC1" /></a>
+                            <a href="@Url.Content("~/Content/images/shack7.png")"><img src="@Url.Content("~/Content/images/shack7.thumb.png")" alt="My camping radio go box - filled with cheap Bauflongs!" /></a>
                         </div>
                     </div>
                 </div>
-                @*<!-- band plan  -->*@  
+                @*<!-- band plan  -->*@
                 <div class="row display-wide">
                     <div class="col-sm-12">
                         <h2 class="main-title text-center"><i class="fa fa-volume-up" aria-hidden="true"></i>&nbsp;&nbsp;WRAA720 UHF Band Plan</h2>
