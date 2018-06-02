@@ -15,9 +15,16 @@ namespace Homepage.Areas.HelpPage
 
         public override void RegisterArea(AreaRegistrationContext context)
         {
+            //mfcallahan.com/ApiDocumentation
             context.MapRoute(
                 "HelpPage_Default",
-                "Help/{action}/{apiId}",
+                "ApiDocumentation/{action}/{apiId}",
+                new { controller = "Help", action = "Index", apiId = UrlParameter.Optional });
+
+            //mfcallahan.com/api
+            context.MapRoute(
+                "api",
+                "api",
                 new { controller = "Help", action = "Index", apiId = UrlParameter.Optional });
 
             HelpPageConfig.Register(GlobalConfiguration.Configuration);
