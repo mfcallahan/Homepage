@@ -314,7 +314,6 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Content\docs\KI7SJQ-Authorization.pdf" />
-    <Content Include="Content\docs\Matthew_Callahan_resume.pdf" />
     <Content Include="Content\docs\spectrum-allocations-poster.pdf" />
     <Content Include="Content\docs\WRAA720-Authorization.pdf" />
     <Content Include="Content\docs\WRAA720-band-plan.csv" />
