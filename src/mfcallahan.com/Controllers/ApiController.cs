@@ -146,20 +146,11 @@ namespace Homepage.Controllers
         /// </example>
         [HttpGet]
         [Route("api/GetDelayedResponse")]
-        public HttpResponseMessage GetDelayedResponse(int s)
+        public string GetDelayedResponse(int s)
         {
+            string message = "The server waited for " + s + " seconds.";
             Thread.Sleep(s * 1000);
 
-            var apiResponse = new ApiResponse
-            {
-                Status = "OK",
-                Message = "Server waited for " + s + " seconds."
-            };
-
-            HttpResponseMessage httpResponseMsg = Request.CreateResponse(HttpStatusCode.OK);
-            Tools.SerializeApiResponse(ref httpResponseMsg, ref apiResponse);
-
-            return httpResponseMsg;
-        }
+            return message;
     }
 }
