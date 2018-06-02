@@ -56,7 +56,7 @@ namespace Homepage.Controllers
             Tools.SerializeApiResponse(ref httpResponseMsg, ref apiResponse);
 
             return httpResponseMsg;
-        }        
+        }
 
         /// <summary>
         /// Returns a string of random charcaters 
@@ -152,5 +152,6 @@ namespace Homepage.Controllers
             Thread.Sleep(s * 1000);
 
             return message;
+        }
     }
 }
