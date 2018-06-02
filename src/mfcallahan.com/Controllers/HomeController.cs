@@ -8,23 +8,34 @@ namespace Homepage.Controllers
 {
     public class HomeController : Controller
     {
+        // mfcallahan.com 
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
+        // mfcallahan.com/gallery 
+        public ActionResult Gallery()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        // mfcallahan.com/camping 
+        public ActionResult Camping()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
+        }
+
+        // mfcallahan.com/radio 
+        public ActionResult Radio()
+        {
+            return View();
+        }
+
+        // mfcallahan.com/blog 
+        public ActionResult Blog()
+        {
+            return Redirect("https://seesharpdotnet.wordpress.com/");
         }
     }
 }
