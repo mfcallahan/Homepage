@@ -16,6 +16,10 @@ namespace Homepage.Controllers
         /// <summary>
         /// Returns information about the author of this website.
         /// </summary>
+        /// <hello>
+        ///  Hi! If you're looking through my code right now, you obviously have the same 
+        ///  passion for software development as I do.  Cool.  Hit me up: matthew.callahan@outlook.com
+        /// </hello>
         /// <returns>
         /// This API method returns a JSON object containing contact and other information about the author of this website.
         /// </returns> 
@@ -84,10 +88,6 @@ namespace Homepage.Controllers
         /// Locates a single input address, returning coordinates of the address as
         /// well as information about the accuracy of the output location.
         /// </summary>
-        /// <yo>
-        ///  Hi! If you're looking through my code right now, you obviously have the same 
-        ///  passion for software development as I do.  Cool.  Hit me up: matthew.callahan@outlook.com
-        /// </yo>
         /// <param name="address">The input address, ex: 703 E Johnson St</param>
         /// <param name="city">The input city, ex: Madison</param>
         /// <param name="stateProv">The input city, ex: Wisconsin</param>
@@ -136,7 +136,7 @@ namespace Homepage.Controllers
         /// Returns a delayed response from the server, pausing for s seconds
         /// </summary>
         /// <returns>
-        /// This API method returns null
+        /// This API method returns a message indicating the server waited to respond
         /// </returns>
         /// <value>
         /// value msg here.
@@ -146,12 +146,11 @@ namespace Homepage.Controllers
         /// </example>
         [HttpGet]
         [Route("api/GetDelayedResponse")]
-        public string GetDelayedResponse(int s)
+        public string GetDelayedResponse(int waitSeconds)
         {
-            string message = "The server waited for " + s + " seconds.";
-            Thread.Sleep(s * 1000);
+            Thread.Sleep(waitSeconds * 1000);
 
-            return message;
+            return "The server waited for " + waitSeconds + " seconds.";
         }
     }
 }
