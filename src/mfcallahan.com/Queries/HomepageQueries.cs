@@ -47,29 +47,30 @@ namespace Homepage.Queries
             if (string.IsNullOrEmpty(ip))            
                 return null;
             
-            var url = "http://ip-api.com/json/" + ip;
-            var client = new WebClient();
-            dynamic result = JsonConvert.DeserializeObject(client.DownloadString(url));
-
-            if (result.status == "success")
+            using (var client = new WebClient())
             {
-                return new IpLocation
-                {
-                    Name = result.@as,
-                    IpAddress = ip,
-                    Isp = result.isp,
-                    City = result.city,
-                    Country = result.country,
-                    Lat = result.lat,
-                    Lon = result.lon,
-                    Region = result.region,
-                    Status = result.status,
-                    TimeZone = result.timezone,
-                    PostalCode = result.zip
-                };
-            } 
+                dynamic result = JsonConvert.DeserializeObject(client.DownloadString("http://ip-api.com/json/" + ip));
 
-            return null;
+                if (result.status == "success")
+                {
+                    return new IpLocation
+                    {
+                        Name = result.@as,
+                        IpAddress = ip,
+                        Isp = result.isp,
+                        City = result.city,
+                        Country = result.country,
+                        Lat = result.lat,
+                        Lon = result.lon,
+                        Region = result.region,
+                        Status = result.status,
+                        TimeZone = result.timezone,
+                        PostalCode = result.zip
+                    };
+                }
+
+                return null;
+            }            
         }
     }
 }

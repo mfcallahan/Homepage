@@ -240,6 +240,7 @@
     <Content Include="Content\images\me.png" />
     <Content Include="Content\images\me2.png" />
     <Content Include="Content\images\min-hand.png" />
+    <Content Include="Content\images\ms-mta.png" />
     <Content Include="Content\images\mta.png" />
     <Content Include="Content\images\PHX_550_map_dark.png" />
     <Content Include="Content\images\pro71.png" />

@@ -307,10 +307,10 @@
                     </div>
                     <div class="item">
                         <p>
-                            <span class="project-title"><a href="@Url.Content("~/ApiDocumentation")" target="_blank" rel="noopener">API</a>&nbsp;&nbsp;</span>
+                            <span class="project-title"><a href="@Url.Content("~/api")" target="_blank" rel="noopener">API</a>&nbsp;&nbsp;</span>
                             <span class="project-tagline">
                                 This site includes a demo HTTP service created with ASP.NET Web API 2. Click
-                                <a href="@Url.Content("~/ApiDocumentation")" target="_blank" rel="noopener">here</a> for the API documentation.  Example:
+                                <a href="@Url.Content("~/api")" target="_blank" rel="noopener">here</a> for the API documentation.  Example:
                                 <a href="@Url.Content("~/api/Hello")" target="_blank" rel="noopener">mfcallahan.com/api/Hello</a>
                             </span>
                         </p>
@@ -325,13 +325,15 @@
     "Status": "200",
     "Message": "Hello. The API at mfcallahan.com is responding.",
     "Methods": [
-        "mfcallahan.com/api/About",
-        "mfcallahan.com/api/Hello",
-        "mfcallahan.com/api/IpInfo?ipAdr={}",
-        "mfcallahan.com/api/RandomString?length={}&useNums={}",
-        "mfcallahan.com/api/Geocode?address={}&city={}&stateProv={}&postalCode={}&country={}"
+        "/api/About",
+        "/api/Hello",
+        "/api/Geocode?address={}&city={}&stateProv={}&postalCode={}&country={}",
+        "/api/GetDelayedResponse?waitSeconds={}",
+        "/api/IpInfo?ip={}",
+        "/api/RandomString?length={}&useNums={}"
     ]
-}</code></pre>
+}
+</code></pre>
                             </p>
                         </div>
                     </div>

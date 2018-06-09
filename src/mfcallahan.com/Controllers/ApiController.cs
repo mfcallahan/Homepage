@@ -8,6 +8,7 @@ using Homepage.Queries;
 using System;
 using System.Threading;
 using Homepage.Models;
+using Newtonsoft.Json;
 
 namespace Homepage.Controllers
 {
@@ -18,48 +19,23 @@ namespace Homepage.Controllers
         /// </summary>
         /// <hello>
         ///  Hi! If you're looking through my code right now, you obviously have the same 
-        ///  passion for software development as I do.  Cool.  Hit me up: matthew.callahan@outlook.com
+        ///  passion for software development as I do.  Cool, hit me up: matthew.callahan@outlook.com
         /// </hello>
-        /// <returns>
-        /// This API method returns a JSON object containing contact and other information about the author of this website.
-        /// </returns> 
         [HttpGet]
         [Route("api/About")]
-        public HttpResponseMessage About()
+        public ApiResponseBusinessCard About()
         {
-            HttpResponseMessage httpResponseMsg = Request.CreateResponse();
-            httpResponseMsg.StatusCode = HttpStatusCode.OK;
-
-            ApiResponseBusinessCard apiResponse = new ApiResponseBusinessCard();
-            Tools.SerializeApiResponse(ref httpResponseMsg, ref apiResponse);
-
-            return httpResponseMsg;
+            return new ApiResponseBusinessCard();
         }
 
         /// <summary>
         /// Returns a message verifing the API is up and responding.
         /// </summary>
-        /// <returns>
-        /// This API method returns a string with message verifing the API is up and responding. Messgae: "Hello. The API at mfcallahan.com is responding."
-        /// </returns>
-        /// <value>
-        /// value msg here.
-        /// </value>
-        /// <example>
-        /// example msg here.
-        /// </example>
         [HttpGet]
         [Route("api/Hello")]
-        public HttpResponseMessage Hello()
+        public ApiResponseHello Hello()
         {
-            StringBuilder msg = new StringBuilder();
-            msg.Append("Hello. The API at mfcallahan.com is responding.");
-
-            ApiResponseHello apiResponse = new ApiResponseHello("200", msg.ToString());
-            HttpResponseMessage httpResponseMsg = Request.CreateResponse(HttpStatusCode.OK);
-            Tools.SerializeApiResponse(ref httpResponseMsg, ref apiResponse);
-
-            return httpResponseMsg;
+            return new ApiResponseHello("200", "Hello. The API at mfcallahan.com is responding.");
         }
 
         /// <summary>
@@ -67,20 +43,17 @@ namespace Homepage.Controllers
         /// </summary>
         /// <param name="length">The desired length of the random string</param>
         /// <param name="useNums">Use numerical chars in the random string</param>
-        /// <returns>
-        /// This API method returns a string of random charcaters with length equal to supplied parameter
-        /// </returns> 
         [HttpGet]
         [Route("api/RandomString")]
-        public HttpResponseMessage RandomString(int length, bool useNums = true)
+        public string RandomString(int length, bool useNums = true)
         {
-            HttpResponseMessage httpResponseMsg = Request.CreateResponse();
-            httpResponseMsg.StatusCode = HttpStatusCode.OK;
+            if (length < 0)
+                length = 0;
 
-            var rnd = new { value = Tools.GenerateRandonString(length, useNums) };
-            Tools.SerializeApiResponse(ref httpResponseMsg, ref rnd);
+            if (length > 100)
+                length = 100;
 
-            return httpResponseMsg;
+            return Tools.RandomString(length, useNums);
         }
 
 
@@ -103,7 +76,7 @@ namespace Homepage.Controllers
             bing.GeocodeAddress(inputAdr);
 
             HttpResponseMessage httpResponseMsg = Request.CreateResponse(HttpStatusCode.OK);
-            Tools.SerializeApiResponse(ref httpResponseMsg, ref inputAdr);
+            httpResponseMsg.Content = SerializeApiResponse(inputAdr);
 
             return httpResponseMsg;
         }
@@ -111,46 +84,36 @@ namespace Homepage.Controllers
         /// <summary>
         /// Returns information about an IP address
         /// </summary>
-        /// <returns>
-        /// This API method returns information about an IP address.
-        /// </returns>
-        /// <value>
-        /// value msg here.
-        /// </value>
-        /// <example>
-        /// example msg here.
-        /// </example>
+        /// <param name="ipAdr">The input IP address</param>
         [HttpGet]
         [Route("api/IpInfo")]
-        public HttpResponseMessage IpInfo(string ipAdr)
+        public IpLocation IpInfo(string ipAdr)
         {
-            IpLocation loc = HomepageQueries.GetIpInfo(ipAdr);
-            HttpResponseMessage httpResponseMsg = Request.CreateResponse(HttpStatusCode.OK);
-
-            Tools.SerializeApiResponse(ref httpResponseMsg, ref loc);
-
-            return httpResponseMsg;
+            return HomepageQueries.GetIpInfo(ipAdr);
         }
 
         /// <summary>
-        /// Returns a delayed response from the server, pausing for s seconds
+        /// Returns a delayed string response from the server, pausing for waitSeconds
         /// </summary>
-        /// <returns>
-        /// This API method returns a message indicating the server waited to respond
-        /// </returns>
-        /// <value>
-        /// value msg here.
-        /// </value>
-        /// <example>
-        /// example msg here.
-        /// </example>
+        /// /// <param name="waitSeconds">The number seconds the server will wait before responding. (min 0, max 10)</param>
         [HttpGet]
         [Route("api/GetDelayedResponse")]
         public string GetDelayedResponse(int waitSeconds)
         {
+            if (waitSeconds < 0)
+                waitSeconds = 0;
+
+            if (waitSeconds > 10)
+                waitSeconds = 10;
+
             Thread.Sleep(waitSeconds * 1000);
 
             return "The server waited for " + waitSeconds + " seconds.";
+        }
+
+        static StringContent SerializeApiResponse<T>(T obj)
+        {
+            return new StringContent(JsonConvert.SerializeObject(obj), Encoding.UTF8, "application/json");
         }
     }
 }

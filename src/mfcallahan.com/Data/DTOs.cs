@@ -213,10 +213,14 @@ namespace Homepage.Dtos
     #endregion
 
     #region API
-    public class ApiResponseHello
+    public class ApiResponse
     {
         public string Status { get; set; }
         public string Message { get; set; }
+    }
+
+    public class ApiResponseHello : ApiResponse
+    {
         public IList<string> Methods { get; set; } 
 
         public ApiResponseHello(string status, string message)
@@ -226,11 +230,12 @@ namespace Homepage.Dtos
 
             Methods = new List<string>
             {
-                "mfcallahan.com/api/About",
-                "mfcallahan.com/api/Hello",
-                "mfcallahan.com/api/IpInfo?ip={}",
-                "mfcallahan.com/api/RandomString?length={}&useNums={}",
-                "mfcallahan.com/api/Geocode?address={}&city={}&stateProv={}&postalCode={}&country={}"
+                "/api/About",
+                "/api/Hello",
+                "/api/Geocode?address={}&city={}&stateProv={}&postalCode={}&country={}",
+                "/api/GetDelayedResponse?waitSeconds={}",
+                "/api/IpInfo?ip={}",
+                "/api/RandomString?length={}&useNums={}"
             };
         }
     }

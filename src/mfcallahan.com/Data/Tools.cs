@@ -1,32 +1,20 @@
-﻿using Newtonsoft.Json;
-using System.Net.Http;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 
 namespace Homepage.Data
 {
-    public class Tools
-    {
-        public static void SerializeApiResponse<T>(ref HttpResponseMessage response, ref T apiResponse)
-        {
-            response.Content = new StringContent(JsonConvert.SerializeObject(apiResponse), Encoding.UTF8, "application/json");
-        }
-
+    public static class Tools
+    {       
         // generate a cryptographically secure random string
-        public static string GenerateRandonString(int len, bool useNums)
+        public static string RandomString(int len, bool useNums)
         {
-            if (len < 0)
-                len = 0;
-            if (len > 1000)
-                len = 1000;
-
             byte[] data = new byte[1];
             char[] chars = null;
 
             if (useNums)
             {
                 chars = new char[62];
-                chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890".ToCharArray();
+                chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".ToCharArray();
             }
             else
             {
