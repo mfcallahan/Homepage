@@ -158,14 +158,12 @@
     <Content Include="Content\images\truck1.png" />
     <Content Include="Content\images\truck1.thumb.png" />
     <Content Include="Content\images\uw.png" />
-    <Content Include="Content\leaflet.css" />
-    <Content Include="Content\map.css" />
     <Content Include="Content\radio.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\site.css" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
