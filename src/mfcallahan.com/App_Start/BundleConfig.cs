@@ -16,10 +16,8 @@ namespace Homepage
 
             // site scripts
             bundles.Add(new ScriptBundle("~/bundles/scripts-site").Include(
-                "~/Scripts/jquery-{version}.js",
-                "~/Scripts/jquery.validate*",
+                "~/Scripts/jquery-3.2.1.slim.min.js",
                 "~/Scripts/bootstrap.min.js",
-                "~/Scripts/respond.js",
                 "~/Scripts/featherlight.min.js",
                 "~/Scripts/featherlight.gallery.min.js",
                 "~/Scripts/site.js"));
@@ -41,29 +39,6 @@ namespace Homepage
             // radio homepage styles
             bundles.Add(new StyleBundle("~/Content/style-radio").Include(
                 "~/Content/radio.css"));
-
-            // radio homepage scripts
-            bundles.Add(new ScriptBundle("~/bundles/scripts-radio").Include(
-                "~/Scripts/radio.js"));
-
-            // map styles
-            bundles.Add(new StyleBundle("~/Content/style-map").Include(
-                "~/Content/leaflet.css",
-                "~/Content/map.css"));
-
-            // map scripts
-            bundles.Add(new ScriptBundle("~/bundles/scripts-map").Include(
-                "~/Scripts/leaflet.js"));
-
-            // gmrs map scripts
-            bundles.Add(new ScriptBundle("~/bundles/scripts-gmrs").Include(
-                "~/Scripts/map-gmrs.js"));            
-
-            // ArcGIS Online
-            //bundles.Add(new ScriptBundle("~/bundles/scripts-arcgis", "https://js.arcgis.com/4.6/init.js").Include(
-            //    "~/Scripts/init.js"));
-            //bundles.Add(new StyleBundle("~/bundles/style-arcgis", "https://js.arcgis.com/4.6/esri/css/main.css").Include(
-            //    "~/Content/esri.css"));
         }
     }
 }
