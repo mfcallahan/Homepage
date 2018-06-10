@@ -124,7 +124,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\featherlight.gallery.min.css" />
     <Content Include="Content\featherlight.min.css" />
-    <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\home.css" />
     <Content Include="Content\images\agrc-sm.png" />
@@ -135,7 +134,6 @@
     <Content Include="Content\images\homer-radio.png" />
     <Content Include="Content\images\me.png" />
     <Content Include="Content\images\me2.png" />
-    <Content Include="Content\images\ms-mta.png" />
     <Content Include="Content\images\mta.png" />
     <Content Include="Content\images\pro71.png" />
     <Content Include="Content\images\qbasic.png" />
