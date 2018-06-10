@@ -10,18 +10,6 @@ namespace Homepage.Controllers
             return View();
         }
 
-        // mfcallahan.com/gallery 
-        public ActionResult Gallery()
-        {
-            return View();
-        }
-
-        // mfcallahan.com/camping 
-        public ActionResult Camping()
-        {
-            return View();
-        }
-
         // mfcallahan.com/radio 
         public ActionResult Radio()
         {
