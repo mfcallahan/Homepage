@@ -7,7 +7,7 @@ namespace Homepage
         public static void RegisterBundles(BundleCollection bundles)
         {
             // site styles
-            bundles.Add(new StyleBundle("~/Content/style-site").Include(
+            bundles.Add(new StyleBundle("~/Content/styles-site").Include(
                 "~/Content/bootstrap.min.css",
                 "~/Content/font-awesome.min.css",
                 "~/Content/featherlight.min.css",
@@ -25,7 +25,7 @@ namespace Homepage
             // highlight.pack.js, {style}.css - custom package from https://highlightjs.org/download/
 
             // homepage styles
-            bundles.Add(new StyleBundle("~/Content/style-home").Include(
+            bundles.Add(new StyleBundle("~/Content/styles-home").Include(
                 "~/Content/home.css",
                 "~/Content/atelier-forest-dark.css"
             ));
@@ -37,7 +37,7 @@ namespace Homepage
             ));
 
             // radio homepage styles
-            bundles.Add(new StyleBundle("~/Content/style-radio").Include(
+            bundles.Add(new StyleBundle("~/Content/styles-radio").Include(
                 "~/Content/radio.css"));
         }
     }
