@@ -27,14 +27,12 @@ namespace Homepage
             // homepage styles
             bundles.Add(new StyleBundle("~/Content/styles-home").Include(
                 "~/Content/home.css",
-                "~/Content/atelier-forest-dark.css"
-            ));
+                "~/Content/atelier-forest-dark.css"));
 
             // homepage scripts
             bundles.Add(new ScriptBundle("~/bundles/scripts-home").Include(
                 "~/Scripts/home.js",
-                "~/Scripts/highlight.pack.js"
-            ));
+                "~/Scripts/highlight.pack.js"));
 
             // radio homepage styles
             bundles.Add(new StyleBundle("~/Content/styles-radio").Include(
