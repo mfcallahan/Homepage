@@ -16,7 +16,7 @@ namespace Homepage
 
             // site scripts
             bundles.Add(new ScriptBundle("~/bundles/scripts-site").Include(
-                "~/Scripts/jquery-3.2.1.slim.min.js",
+                "~/Scripts/jquery-3.2.1.min.js",
                 "~/Scripts/bootstrap.min.js",
                 "~/Scripts/featherlight.min.js",
                 "~/Scripts/featherlight.gallery.min.js",
