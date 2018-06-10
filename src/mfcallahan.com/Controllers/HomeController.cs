@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace Homepage.Controllers
 {
@@ -10,18 +6,6 @@ namespace Homepage.Controllers
     {
         // mfcallahan.com 
         public ActionResult Index()
-        {
-            return View();
-        }
-
-        // mfcallahan.com/gallery 
-        public ActionResult Gallery()
-        {
-            return View();
-        }
-
-        // mfcallahan.com/camping 
-        public ActionResult Camping()
         {
             return View();
         }

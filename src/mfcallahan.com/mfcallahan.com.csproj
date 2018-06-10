@@ -47,30 +47,17 @@
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="RestSharp, Version=106.2.1.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
-      <HintPath>..\packages\RestSharp.106.2.1\lib\net452\RestSharp.dll</HintPath>
+    <Reference Include="RestSharp, Version=106.3.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.3.0\lib\net452\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http.Formatting, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.4\lib\net45\System.Net.Http.Formatting.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ValueTuple">
-      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net47\System.ValueTuple.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -78,28 +65,22 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.Helpers.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Http, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.4\lib\net45\System.Web.Http.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Http.WebHost, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.4\lib\net45\System.Web.Http.WebHost.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Mvc, Version=5.2.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
+    <Reference Include="System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.6\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.4\lib\net45\System.Web.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.6\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
@@ -129,52 +110,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
-    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
-    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
-    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
-    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
-    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
-    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
-    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
-    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\ApiController.cs" />
-    <Compile Include="Controllers\GmrsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Data\Bing.cs" />
-    <Compile Include="Data\DTOs.cs" />
-    <Compile Include="Data\Esri.cs" />
-    <Compile Include="Data\Tools.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Visitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Queries\HomepageQueries.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\XmlDocument.xml" />
-    <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\atelier-forest-dark.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -186,66 +128,18 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\home.css" />
     <Content Include="Content\images\agrc-sm.png" />
-    <Content Include="Content\images\antenna-icon-black-sm.png" />
-    <Content Include="Content\images\antenna-icon-black.png" />
-    <Content Include="Content\images\antenna-icon-blue-sm.png" />
-    <Content Include="Content\images\antenna-icon-blue.png" />
-    <Content Include="Content\images\antenna-icon-gray.png" />
-    <Content Include="Content\images\antenna-icon-green.png" />
-    <Content Include="Content\images\antenna-icon-red.png" />
-    <Content Include="Content\images\antenna-icon-yellow.png" />
-    <Content Include="Content\images\api.png" />
-    <Content Include="Content\images\cat1.png" />
-    <Content Include="Content\images\cat1.thumb.png" />
-    <Content Include="Content\images\cat2.png" />
-    <Content Include="Content\images\cat2.thumb.png" />
-    <Content Include="Content\images\cat3.png" />
-    <Content Include="Content\images\cat3.thumb.png" />
-    <Content Include="Content\images\cat4.png" />
-    <Content Include="Content\images\cat4.thumb.png" />
-    <Content Include="Content\images\cat5.png" />
-    <Content Include="Content\images\cat5.thumb.png" />
-    <Content Include="Content\images\cat6.png" />
-    <Content Include="Content\images\cat6.thumb.png" />
-    <Content Include="Content\images\cat7.png" />
-    <Content Include="Content\images\cat7.thumb.png" />
     <Content Include="Content\images\cell-coverage.png" />
-    <Content Include="Content\images\clock.png" />
     <Content Include="Content\images\fcc.png" />
     <Content Include="Content\images\git-banner-sm.png" />
     <Content Include="Content\images\git-banner.png" />
     <Content Include="Content\images\homer-radio.png" />
-    <Content Include="Content\images\hour-hand.png" />
-    <Content Include="Content\images\layers-2x.png" />
-    <Content Include="Content\images\layers.png" />
-    <Content Include="Content\images\marker-icon-2x.png" />
-    <Content Include="Content\images\marker-icon.png" />
-    <Content Include="Content\images\marker-shadow.png" />
-    <Content Include="Content\images\matt1.png" />
-    <Content Include="Content\images\matt1.thumb.png" />
-    <Content Include="Content\images\matt2.png" />
-    <Content Include="Content\images\matt2.thumb.png" />
-    <Content Include="Content\images\matt3.png" />
-    <Content Include="Content\images\matt3.thumb.png" />
-    <Content Include="Content\images\matt4.png" />
-    <Content Include="Content\images\matt4.thumb.png" />
-    <Content Include="Content\images\matt5.png" />
-    <Content Include="Content\images\matt5.thumb.png" />
-    <Content Include="Content\images\matt6.png" />
-    <Content Include="Content\images\matt6.thumb.png" />
-    <Content Include="Content\images\matt7.png" />
-    <Content Include="Content\images\matt7.thumb.png" />
-    <Content Include="Content\images\matt8.png" />
-    <Content Include="Content\images\matt8.thumb.png" />
     <Content Include="Content\images\me.png" />
     <Content Include="Content\images\me2.png" />
-    <Content Include="Content\images\min-hand.png" />
+    <Content Include="Content\images\ms-mta.png" />
     <Content Include="Content\images\mta.png" />
-    <Content Include="Content\images\PHX_550_map_dark.png" />
     <Content Include="Content\images\pro71.png" />
     <Content Include="Content\images\qbasic.png" />
     <Content Include="Content\images\scanner-homepage.png" />
-    <Content Include="Content\images\sec-hand.png" />
     <Content Include="Content\images\shack1.png" />
     <Content Include="Content\images\shack1.thumb.png" />
     <Content Include="Content\images\shack2.png" />
@@ -260,39 +154,16 @@
     <Content Include="Content\images\shack6.thumb.png" />
     <Content Include="Content\images\shack7.png" />
     <Content Include="Content\images\shack7.thumb.png" />
-    <Content Include="Content\images\skinner-hamradio.png" />
     <Content Include="Content\images\ti83.png" />
     <Content Include="Content\images\truck1.png" />
     <Content Include="Content\images\truck1.thumb.png" />
-    <Content Include="Content\images\truck10.png" />
-    <Content Include="Content\images\truck10.thumb.png" />
-    <Content Include="Content\images\truck11.png" />
-    <Content Include="Content\images\truck11.thumb.png" />
-    <Content Include="Content\images\truck2.png" />
-    <Content Include="Content\images\truck2.thumb.png" />
-    <Content Include="Content\images\truck3.png" />
-    <Content Include="Content\images\truck3.thumb.png" />
-    <Content Include="Content\images\truck4.png" />
-    <Content Include="Content\images\truck4.thumb.png" />
-    <Content Include="Content\images\truck5.png" />
-    <Content Include="Content\images\truck5.thumb.png" />
-    <Content Include="Content\images\truck6.png" />
-    <Content Include="Content\images\truck6.thumb.png" />
-    <Content Include="Content\images\truck7.png" />
-    <Content Include="Content\images\truck7.thumb.png" />
-    <Content Include="Content\images\truck8.png" />
-    <Content Include="Content\images\truck8.thumb.png" />
-    <Content Include="Content\images\truck9.png" />
-    <Content Include="Content\images\truck9.thumb.png" />
     <Content Include="Content\images\uw.png" />
-    <Content Include="Content\leaflet.css" />
-    <Content Include="Content\map.css" />
     <Content Include="Content\radio.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\site.css" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -307,37 +178,12 @@
     <Content Include="robots.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Web.config" />
-    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
-    <Content Include="Content\docs\KI7SJQ-Authorization.pdf" />
-    <Content Include="Content\docs\spectrum-allocations-poster.pdf" />
-    <Content Include="Content\docs\WRAA720-Authorization.pdf" />
     <Content Include="Content\docs\WRAA720-band-plan.csv" />
-    <Content Include="Content\docs\WRAA720-BF888S.img" />
-    <Content Include="Content\docs\WRAA720-GMRS-V1.img" />
-    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
-    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <None Include="Properties\PublishProfiles\mfcallahan-homepage-prod - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\featherlight.gallery.min.js" />
@@ -355,14 +201,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\leaflet-src.js" />
-    <Content Include="Scripts\leaflet.js" />
-    <Content Include="Scripts\map-gmrs.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\respond.js" />
-    <Content Include="Scripts\respond.matchmedia.addListener.js" />
-    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
-    <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\site.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -377,15 +216,11 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Blog.cshtml" />
-    <Content Include="Views\Home\Camping.cshtml" />
-    <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\Radio.cshtml" />
-    <Content Include="Views\Gmrs\Index.cshtml" />
-    <Content Include="Scripts\leaflet-src.js.map" />
-    <Content Include="Scripts\leaflet.js.map" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
