@@ -6,6 +6,8 @@ namespace Homepage
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
+            BundleTable.EnableOptimizations = true;
+
             // site styles
             bundles.Add(new StyleBundle("~/Content/styles-site").Include(
                 "~/Content/bootstrap.min.css",

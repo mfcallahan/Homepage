@@ -138,39 +138,3 @@ pre {
         font-size: 18px;
         position: relative;
     }
-
-#clock {
-    background-image: url("/Content/images/clock.png");
-    height: 200px;
-    position: relative;
-    width: 200px
-}
-
-    #clock div {
-        position: absolute;
-        left: 50%
-    }
-
-    #clock img[src*="clockSec"] {
-        transition: transform 600000s linear 0s;
-    }
-
-    #clock:target img[src*="clockSec"] {
-        transform: rotate(3600000deg);
-    }
-
-    #clock img[src*="clockMin"] {
-        transition: transform 360000s linear 0s;
-    }
-
-    #clock:target img[src*="clockMin"] {
-        transform: rotate(36000deg);
-    }
-
-    #clock img[src*="clockHr"] {
-        transition: transform 216000s linear 0s;
-    }
-
-    #clock:target img[src*="clockHr"] {
-        transform: rotate(360deg);
-    }
