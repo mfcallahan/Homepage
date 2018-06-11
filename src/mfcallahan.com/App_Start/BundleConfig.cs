@@ -24,7 +24,7 @@ namespace Homepage
                 "~/Scripts/featherlight.gallery.min.js",
                 "~/Scripts/site.js"));
 
-            // highlight.pack.js, {style}.css - custom package from https://highlightjs.org/download/
+            // highlight.pack.js, atelier-forest-dark.css.css - custom package from https://highlightjs.org/download/
 
             // homepage styles
             bundles.Add(new StyleBundle("~/Content/styles-home").Include(
