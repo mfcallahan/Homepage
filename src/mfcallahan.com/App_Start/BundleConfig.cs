@@ -18,13 +18,13 @@ namespace Homepage
 
             // site scripts
             bundles.Add(new ScriptBundle("~/bundles/scripts-site").Include(
-                "~/Scripts/jquery-3.2.1.min.js",
+                "~/Scripts/jquery-3.3.1.min.js",
                 "~/Scripts/bootstrap.min.js",
                 "~/Scripts/featherlight.min.js",
                 "~/Scripts/featherlight.gallery.min.js",
                 "~/Scripts/site.js"));
 
-            // highlight.pack.js, {style}.css - custom package from https://highlightjs.org/download/
+            // highlight.pack.js, atelier-forest-dark.css.css - custom package from https://highlightjs.org/download/
 
             // homepage styles
             bundles.Add(new StyleBundle("~/Content/styles-home").Include(
@@ -33,7 +33,6 @@ namespace Homepage
 
             // homepage scripts
             bundles.Add(new ScriptBundle("~/bundles/scripts-home").Include(
-                "~/Scripts/home.js",
                 "~/Scripts/highlight.pack.js"));
 
             // radio homepage styles
