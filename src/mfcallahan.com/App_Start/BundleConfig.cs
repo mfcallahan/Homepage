@@ -33,7 +33,6 @@ namespace Homepage
 
             // homepage scripts
             bundles.Add(new ScriptBundle("~/bundles/scripts-home").Include(
-                "~/Scripts/home.js",
                 "~/Scripts/highlight.pack.js"));
 
             // radio homepage styles
