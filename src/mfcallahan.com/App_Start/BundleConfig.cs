@@ -6,7 +6,7 @@ namespace Homepage
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            BundleTable.EnableOptimizations = true;
+            //BundleTable.EnableOptimizations = true;
 
             // site styles
             bundles.Add(new StyleBundle("~/Content/styles-site").Include(
@@ -22,7 +22,7 @@ namespace Homepage
                 "~/Scripts/bootstrap.min.js",
                 "~/Scripts/featherlight.min.js",
                 "~/Scripts/featherlight.gallery.min.js",
-                "~/Scripts/site.js"));
+                "~/Scripts/layout.js"));
 
             // highlight.pack.js, atelier-forest-dark.css.css - custom package from https://highlightjs.org/download/
 
