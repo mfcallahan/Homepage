@@ -129,6 +129,7 @@
     <Content Include="Content\images\me.png" />
     <Content Include="Content\images\me2.png" />
     <Content Include="Content\images\mta.png" />
+    <Content Include="Content\images\notepad.png" />
     <Content Include="Content\images\pro71.png" />
     <Content Include="Content\images\qbasic.png" />
     <Content Include="Content\images\scanner-homepage.png" />
