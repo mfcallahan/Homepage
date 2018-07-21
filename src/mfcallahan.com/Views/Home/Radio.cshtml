@@ -248,7 +248,11 @@
                     <div class="col-sm-6">
                         @*<!-- scanner pic  -->*@
                         <a href="https://www.mygmrs.com/view?id=1793" target="_blank" rel="noopener">
-                            <img class="img-responsive center-block" src="@Url.Content("~/Content/images/scanner-homepage.png")" />
+                            @{
+                                Random r = new Random();
+                                int i = r.Next(1, 3);
+                                <img class="img-responsive center-block" src="@Url.Content("~/Content/images/scanner-homepage-" + @i + ".png")" />
+                            }
                         </a>
                     </div>
                 </div>
@@ -491,3 +495,5 @@
         </div>
     </div>
 </div>
+
+<scriptr
