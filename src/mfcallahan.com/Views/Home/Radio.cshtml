@@ -55,12 +55,7 @@
                                     </span>
                                 </li>
                                 <li>
-                                    <span class="display-wide">
-                                        <a href="https://www.radioreference.com/apps/user/call_sign_null/bio" target="_blank" rel="noopener">radioreference.com - K7MFC/call_sign_null</a>
-                                    </span>
-                                    <span class="display-narrow">
-                                        <a href="https://www.radioreference.com/apps/user/call_sign_null/bio" target="_blank" rel="noopener">RadioReference.com Profile</a>
-                                    </span>
+                                    <a href="https://www.radioreference.com/apps/user/call_sign_null/bio" target="_blank" rel="noopener">radioreference.com - call_sign_null</a>
                                 </li>
                                 <li>
                                     <a href="https://www.mygmrs.com/users?username=mcallahan" target="_blank" rel="noopener">mygmrs.com - mcallahan</a>
@@ -253,7 +248,11 @@
                     <div class="col-sm-6">
                         @*<!-- scanner pic  -->*@
                         <a href="https://www.mygmrs.com/view?id=1793" target="_blank" rel="noopener">
-                            <img class="img-responsive center-block" src="@Url.Content("~/Content/images/scanner-homepage.png")" />
+                            @{
+                                Random r = new Random();
+                                int i = r.Next(1, 3);
+                                <img class="img-responsive center-block" src="@Url.Content("~/Content/images/scanner-homepage-" + @i + ".png")" />
+                            }
                         </a>
                     </div>
                 </div>
@@ -290,6 +289,9 @@
                         <h2 class="main-title"><i class="fa fa-wordpress" aria-hidden="true"></i>&nbsp;&nbsp;Blog</h2>
                         <div class="summary">
                             <ul class="list-unstyled contact-list condensed">
+                                <li>
+                                    <h5><a href="https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/" target="_blank" rel="noopener">Field Report: Four Peaks, AZ</a></h5>
+                                </li>
                                 <li>
                                     <h5><a href="https://seesharpdotnet.wordpress.com/2018/07/01/k7mfc-mobile-shack-2013-f-150-lariat-4x4/" target="_blank" rel="noopener">K7MFC mobile shack installation</a></h5>
                                 </li>
@@ -414,10 +416,10 @@
                                     <td>GMRS 15/PHX 550 T</td>
                                 </tr>
                                 <tr style="background-color: #CBC6C4; color: #0D0D0D">
-                                    <td class="text-center">8</td>
+                                    <td class="text-center">9</td>
                                     <td>Ch 9 Simplex</td>
                                     <td>462.5750 MHz</td>
-                                    <td>141.3 Hz</td>
+                                    <td>69.3 Hz</td>
                                     <td class="text-center">N</td>
                                     <td class="text-center">High</td>
                                     <td>GMRS 16</td>
@@ -426,7 +428,7 @@
                                     <td class="text-center">10</td>
                                     <td>Ch 10 Simplex</td>
                                     <td>462.6000 MHz</td>
-                                    <td>71.9 Hz</td>
+                                    <td>69.3 Hz</td>
                                     <td class="text-center">N</td>
                                     <td class="text-center">High</td>
                                     <td>GMRS 17</td>
@@ -435,7 +437,7 @@
                                     <td class="text-center">11</td>
                                     <td>Ch 11 Simplex</td>
                                     <td>462.6250 MHz</td>
-                                    <td>D072N</td>
+                                    <td>69.3 Hz</td>
                                     <td class="text-center">N</td>
                                     <td class="text-center">High</td>
                                     <td>GMRS 18</td>
@@ -444,7 +446,7 @@
                                     <td class="text-center">12</td>
                                     <td>Ch 12 Simplex</td>
                                     <td>462.6500 MHz</td>
-                                    <td>141.3 Hz</td>
+                                    <td>69.3 Hz</td>
                                     <td class="text-center">N</td>
                                     <td class="text-center">High</td>
                                     <td>GMRS 19/Nat'l Simplex</td>
@@ -462,7 +464,7 @@
                                     <td class="text-center">14</td>
                                     <td>Ch 14 Simplex</td>
                                     <td>462.7000 MHz</td>
-                                    <td>D423N</td>
+                                    <td>141.3 Hz</td>
                                     <td class="text-center">N</td>
                                     <td class="text-center">High</td>
                                     <td>GMRS 21/<b>Camping Alpha</b></td>
@@ -471,7 +473,7 @@
                                     <td class="text-center">15</td>
                                     <td>Ch 15 Simplex</td>
                                     <td>462.7250 MHz</td>
-                                    <td>199.5 Hz</td>
+                                    <td>69.3 Hz</td>
                                     <td class="text-center">N</td>
                                     <td class="text-center">High</td>
                                     <td>GMRS 22/<b>Camping Bravo</b></td>
@@ -480,7 +482,7 @@
                                     <td class="text-center">16</td>
                                     <td>Ch 16 Simplex</td>
                                     <td>462.5750 MHz</td>
-                                    <td>141.3 Hz</td>
+                                    <td>69.3 Hz</td>
                                     <td class="text-center">N</td>
                                     <td class="text-center">High</td>
                                     <td>GMRS 16/<b>4x4 Off-Road Channel</b></td>
@@ -493,3 +495,5 @@
         </div>
     </div>
 </div>
+
+<scriptr
