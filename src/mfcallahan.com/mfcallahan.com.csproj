@@ -171,6 +171,7 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Content\docs\WRAA720-band-plan.csv" />
+    <Content Include="Content\docs\WRAA720-band-plan.xlsx" />
     <None Include="Properties\PublishProfiles\mfcallahan-homepage-prod - Web Deploy.pubxml" />
     <Content Include="Scripts\featherlight.gallery.min.js" />
     <Content Include="Scripts\featherlight.min.js" />
