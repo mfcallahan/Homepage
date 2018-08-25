@@ -172,6 +172,7 @@
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Content\docs\WRAA720-band-plan.csv" />
     <Content Include="Content\docs\WRAA720-band-plan.xlsx" />
+    <Content Include="Content\docs\Matthew_Callahan_resume.pdf" />
     <None Include="Properties\PublishProfiles\mfcallahan-homepage-prod - Web Deploy.pubxml" />
     <Content Include="Scripts\featherlight.gallery.min.js" />
     <Content Include="Scripts\featherlight.min.js" />
