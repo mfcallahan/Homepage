@@ -11,16 +11,13 @@
         @*<!-- left col (blue)  -->*@
         <div class="col-md-4 no-padding sidebar-col">
             <div class="sidebar-wrapper-radio">
-                @*<!-- homer  -->*@
+                @*<!-- profile pic  -->*@
                 <div class="profile-container">
-                    <a href="http://www.simpsonsworld.com/video/317662275581" target="_blank" rel="noopener">
+                    @*<a href="http://www.simpsonsworld.com/video/317662275581" target="_blank" rel="noopener">
                         <img class="profile" src="@Url.Content("~/Content/images/homer-radio.png")" alt="" />
-                    </a>
-
-                    <h1 class="name font-monospace">
-                        <span class="display-wide">K7MFC | WRAA720</span>
-                        <span class="display-narrow">K7MFC</span>
-                    </h1>
+                    </a>*@
+                    <img class="profile" src="@Url.Content("~/Content/images/bandit.png")" alt="" />
+                    <h1 class="name font-monospace">K7MFC&nbsp;|&nbsp;WRAA720</h1>
                     <h3 class="tagline">Phoenix, AZ</h3>
                 </div>
                 <div class="contact-container container-block last-item">
@@ -48,14 +45,14 @@
                                 </li>
                                 <li>
                                     <span class="display-wide">
-                                        <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="@Url.Action("Index", "Home")" target="_blank" rel="noopener">mfcallahan.com homepage</a>
+                                        <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="@Url.Action("Index", "Home")">mfcallahan.com homepage</a>
                                     </span>
                                     <span class="display-narrow">
-                                        <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="@Url.Action("Index", "Home")" target="_blank" rel="noopener">mfcallahan.com</a>
+                                        <i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;<a href="@Url.Action("Index", "Home")">mfcallahan.com</a>
                                     </span>
                                 </li>
                                 <li>
-                                    <a href="https://www.radioreference.com/apps/user/call_sign_null/bio" target="_blank" rel="noopener">radioreference.com - call_sign_null</a>
+                                    <a href="https://www.radioreference.com/apps/user/K7MFC/bio" target="_blank" rel="noopener">radioreference.com - K7MFC</a>
                                 </li>
                                 <li>
                                     <a href="https://www.mygmrs.com/users?username=mcallahan" target="_blank" rel="noopener">mygmrs.com - mcallahan</a>
@@ -71,13 +68,13 @@
                     <h2 class="container-block-title text-center">Clubs</h2>
                     <div class="row vertical-align">
                         <div class="col-sm-3 display-wide">
-                            <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">
+                            <a href="http://azgmrs.org/" target="_blank" rel="noopener">
                                 <img class="img-responsive center-block" src="@Url.Content("~/Content/images/agrc-sm.png")" alt="" />
                             </a>
                         </div>
                         <div class="col-sm-9">
                             <h4 class="moreinfo">
-                                <a href="https://www.gmrs1900.net/" target="_blank" rel="noopener">Arizona GMRS Repeater Club</a>
+                                <a href="http://azgmrs.org//" target="_blank" rel="noopener">Arizona GMRS Repeater Club</a>
                             </h4>
                         </div>
                     </div>
@@ -85,7 +82,10 @@
                     <h2 class="container-block-title text-center">Get Licensed!</h2>
                         <div class="row vertical-align">
                             <div class="col-sm-12">
-                                <ul class="list-unstyled contact-list condensed">
+                                <ul class="list-unstyled contact-list condensed">                                    
+                                    <li>
+                                        <a href="https://seesharpdotnet.wordpress.com/2018/08/11/how-to-get-a-gmrs-license/" target="_blank" rel="noopener">How to get a GMRS license</a>
+                                    </li>
                                     <li>
                                         <a href="https://hamstudy.org/" target="_blank" rel="noopener">hamstudy.org - My favorite ham radio exam preparation resource</a>
                                     </li>
@@ -213,6 +213,9 @@
                                 <li>
                                     <a href="@Url.Content("~/Content/docs/WRAA720-band-plan.csv")" target="_blank" rel="noopener">WRAA720-band-plan.csv</a>
                                 </li>
+                                <li>
+                                    <a href="@Url.Content("~/Content/docs/WRAA720-band-plan.xlsx")" target="_blank" rel="noopener">WRAA720-band-plan.xlsx</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -237,23 +240,21 @@
                                 and I am currently a <a href="https://www.gmrs1900.net/about-us/our-team" target="_blank" rel="noopener">board member</a> at Arizona GMRS Repeater Club.
                             </p>
                             <p>
-                                But why radio?! We have cell phones in @DateTime.Now.Year, right? We do, but they
+                                But why radios?! We have cell phones in @DateTime.Now.Year, right? We do, but they
                                 <a href="@Url.Content("~/Content/images/cell-coverage.png")" data-featherlight="image">don't work everywhere in Arizona</a>.
                                 Radio is most useful to me when I'm camping and exploring the Arizona back country, miles away from cell phone service.
-                                I monitor state and US Forest Service radio communications during wildfire season, and I rely on VHF and UHF two-way radios for
+                                I monitor state and federal radio communications during wildfire season, and I rely on VHF and UHF two-way radios for
                                 off-road mobile communications.
                             </p>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         @*<!-- scanner pic  -->*@
-                        <a href="https://www.mygmrs.com/view?id=1793" target="_blank" rel="noopener">
-                            @{
-                                Random r = new Random();
-                                int i = r.Next(1, 3);
-                                <img class="img-responsive center-block" src="@Url.Content("~/Content/images/scanner-homepage-" + @i + ".png")" />
-                            }
-                        </a>
+                        @{
+                            Random r = new Random();
+                            int i = r.Next(1, 3);
+                            <img class="img-responsive center-block" src="@Url.Content("~/Content/images/scanner-homepage-" + @i + ".png")" />
+                        }
                     </div>
                 </div>
                 @*<!-- maps/blog  -->*@
@@ -290,13 +291,19 @@
                         <div class="summary">
                             <ul class="list-unstyled contact-list condensed">
                                 <li>
+                                    <h5><a href="https://seesharpdotnet.wordpress.com/2018/08/25/refurbished-radio-shack-pro-2021/" target="_blank" rel="noopener">Refurbished Radio Shack Pro-2021</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href="https://seesharpdotnet.wordpress.com/2018/08/11/how-to-get-a-gmrs-license/" target="_blank" rel="noopener">How to get a GMRS license</a></h5>
+                                </li>
+                                <li>
+                                    <h5><a href="https://seesharpdotnet.wordpress.com/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/" target="_blank" rel="noopener">The history behind 462.675 MHz and the travel tone</a></h5>
+                                </li>
+                                <li>
                                     <h5><a href="https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/" target="_blank" rel="noopener">Field Report: Four Peaks, AZ</a></h5>
                                 </li>
                                 <li>
                                     <h5><a href="https://seesharpdotnet.wordpress.com/2018/07/01/k7mfc-mobile-shack-2013-f-150-lariat-4x4/" target="_blank" rel="noopener">K7MFC mobile shack installation</a></h5>
-                                </li>
-                                <li>
-                                    <h5><a href="https://seesharpdotnet.wordpress.com/2017/11/30/worldwide-spectrums-allocation-poster/" target="_blank" rel="noopener">Worldwide Spectrums Allocation Poster</a></h5>
                                 </li>
                                 <li>
                                     <h5><a href="https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/" target="_blank" rel="noopener">BTECH GMRS-V1 Review</a></h5>
@@ -311,7 +318,7 @@
                         <h2 class="main-title text-center"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;&nbsp;Shack Photos</h2>
                         <div class="text-center" data-featherlight-gallery data-featherlight-filter="a">
                             <a href="@Url.Content("~/Content/images/truck1.png")"><img src="@Url.Content("~/Content/images/truck1.thumb.png")" alt="The mobile shack: 2013 Ford F-150 4x4, 3.5 EcoBoost.  Photo taken near Knoll Lake, AZ" /></a>
-                            <a href="@Url.Content("~/Content/images/shack1.png")"><img src="@Url.Content("~/Content/images/shack1.thumb.png")" alt="Inside my F-150: Uniden BCD996P2, Kenwood TK-8180 (GMRS), Kenwood TM-281A (2m)" /></a>
+                            <a href="@Url.Content("~/Content/images/shack1.png")"><img src="@Url.Content("~/Content/images/shack1.thumb.png")" alt="F-150 mobile shack: Uniden BCD996P2, Kenwood TK-8180 (GMRS), Kenwood TM-281A (2m), Ford SYNC/Sirius XM ( 2.3 GHz S band)" /></a>
                             <a href="@Url.Content("~/Content/images/shack2.png")"><img src="@Url.Content("~/Content/images/shack2.thumb.png")" alt="Some of my handhelds, a BTECH GMRS-V1 and a Uniden BC125AT" /></a>
                             <a href="@Url.Content("~/Content/images/shack3.png")"><img src="@Url.Content("~/Content/images/shack3.thumb.png")" alt="My old truck - 1999 GMC Sierra; Uniden BC355N" /></a>
                             <a href="@Url.Content("~/Content/images/shack4.png")"><img src="@Url.Content("~/Content/images/shack4.thumb.png")" alt="My old truck - 2011 Nissan Frontier; Uniden BC355N + Midland 75-822 CB" /></a>
@@ -449,7 +456,7 @@
                                     <td>69.3 Hz</td>
                                     <td class="text-center">N</td>
                                     <td class="text-center">High</td>
-                                    <td>GMRS 19/Nat'l Simplex</td>
+                                    <td>GMRS 19</td>
                                 </tr>
                                 <tr style="background-color: #CBC6C4; color: #0D0D0D">
                                     <td class="text-center">13</td>
@@ -458,7 +465,7 @@
                                     <td>141.3 Hz</td>
                                     <td class="text-center">N</td>
                                     <td class="text-center">High</td>
-                                    <td>GMRS 20</td>
+                                    <td>GMRS 20/Nat'l Simplex</td>
                                 </tr>
                                 <tr style="background-color: #989391; color: #0D0D0D">
                                     <td class="text-center">14</td>
@@ -482,7 +489,7 @@
                                     <td class="text-center">16</td>
                                     <td>Ch 16 Simplex</td>
                                     <td>462.5750 MHz</td>
-                                    <td>69.3 Hz</td>
+                                    <td></td>
                                     <td class="text-center">N</td>
                                     <td class="text-center">High</td>
                                     <td>GMRS 16/<b>4x4 Off-Road Channel</b></td>
