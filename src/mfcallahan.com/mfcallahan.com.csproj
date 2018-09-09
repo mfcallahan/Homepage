@@ -121,6 +121,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\home.css" />
     <Content Include="Content\images\agrc-sm.png" />
+    <Content Include="Content\images\bandit.png" />
     <Content Include="Content\images\cell-coverage.png" />
     <Content Include="Content\images\fcc.png" />
     <Content Include="Content\images\git-banner-sm.png" />
