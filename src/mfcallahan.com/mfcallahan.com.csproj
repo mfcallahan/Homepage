@@ -118,7 +118,6 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\featherlight.gallery.min.css" />
     <Content Include="Content\featherlight.min.css" />
-    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\home.css" />
     <Content Include="Content\images\agrc-sm.png" />
     <Content Include="Content\images\bandit.png" />
@@ -155,7 +154,6 @@
     <Content Include="Content\images\uw.png" />
     <Content Include="Content\radio.css" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\site.css" />
@@ -166,11 +164,6 @@
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="fonts\FontAwesome.otf" />
-    <Content Include="fonts\fontawesome-webfont.woff2" />
-    <Content Include="fonts\fontawesome-webfont.woff" />
-    <Content Include="fonts\fontawesome-webfont.ttf" />
-    <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="Content\docs\WRAA720-band-plan.csv" />
     <Content Include="Content\docs\WRAA720-band-plan.xlsx" />
     <Content Include="Content\docs\Matthew_Callahan_resume.pdf" />

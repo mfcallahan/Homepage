@@ -103,11 +103,11 @@
         max-height: 100%;
     }
 
-    /*.sidebar-wrapper-radio .contact-list .fa {
+    .sidebar-wrapper-radio .contact-list .fa {
         margin-right: 5px;
         font-size: 18px;
         vertical-align: middle;
-    }*/
+    }
 
     .sidebar-wrapper-radio .contact-list li {
         margin-bottom: 10px;
