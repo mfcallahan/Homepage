@@ -98,11 +98,6 @@ a {
     background-color: #606060;
 }
 
-.last-item {
-    margin-bottom: 30px;
-}
-
-
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -149,9 +144,9 @@ a {
         margin-bottom: 40px;
     }
 
-    .main-wrapper .section:last-of-type {
+    /*.main-wrapper .section:last-of-type {
         margin-bottom: 0px;
-    }
+    }*/
 
     .main-wrapper .experiences-section .item {
         margin-bottom: 30px;
@@ -167,7 +162,6 @@ a {
     .main-wrapper .projects-section .intro {
         margin-bottom: 30px;
     }
-
 
 /*Gallery*/
 .gallery-wrapper {
