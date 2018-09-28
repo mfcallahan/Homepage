@@ -75,7 +75,7 @@ pre {
 
     .sidebar-wrapper .contact-list .fa {
         margin-right: 5px;
-        font-size: 18px;
+        font-size: 16px;
         vertical-align: middle;
     }
 
@@ -119,8 +119,8 @@ pre {
     }
 
     .main-wrapper .section-title .fa {
-        width: 30px;
-        height: 30px;
+        width: 38px;
+        height: 38px;
         margin-right: 8px;
         display: inline-block;
         color: #E6E6E6;
@@ -134,7 +134,7 @@ pre {
         background-clip: padding-box;
         background: #2c3e50;
         text-align: center;
-        padding-top: 6px;
+        padding-top: 9px;
         font-size: 18px;
         position: relative;
     }

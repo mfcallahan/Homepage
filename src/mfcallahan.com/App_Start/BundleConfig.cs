@@ -11,7 +11,6 @@ namespace Homepage
             // site styles
             bundles.Add(new StyleBundle("~/Content/styles-site").Include(
                 "~/Content/bootstrap.min.css",
-                "~/Content/font-awesome.min.css",
                 "~/Content/featherlight.min.css",
                 "~/Content/featherlight.gallery.min.css",
                 "~/Content/site.css"));
@@ -25,7 +24,6 @@ namespace Homepage
                 "~/Scripts/layout.js"));
 
             // highlight.pack.js, atelier-forest-dark.css.css - custom package from https://highlightjs.org/download/
-
             // homepage styles
             bundles.Add(new StyleBundle("~/Content/styles-home").Include(
                 "~/Content/home.css",
