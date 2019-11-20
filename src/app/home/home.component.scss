@@ -2,6 +2,22 @@
   background-color: #4285f4;
 }
 
+::ng-deep .left-column a {
+  color: #e6e6e6;
+}
+
 .right-column {
   background-color: #606060;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+::ng-deep .right-column a {
+  color: #4ddbff;
+}
+
+::ng-deep p {
+  line-height: 1.5 !important;
 }
