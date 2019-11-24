@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './education-cert-links.component.html',
   styleUrls: ['./education-cert-links.component.scss']
 })
-export class EducationCertLinksComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class EducationCertLinksComponent {
+  constructor() {}
 }

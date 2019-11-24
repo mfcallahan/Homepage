@@ -12,7 +12,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
   templateUrl: './contact-links.component.html',
   styleUrls: ['./contact-links.component.scss']
 })
-export class ContactLinksComponent implements OnInit {
+export class ContactLinksComponent {
   faEnvelope = faEnvelope;
   faGlobe = faGlobe;
   faBroadcastTower = faBroadcastTower;
@@ -22,6 +22,4 @@ export class ContactLinksComponent implements OnInit {
   faLinkedin = faLinkedin;
 
   constructor() {}
-
-  ngOnInit() {}
 }

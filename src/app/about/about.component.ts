@@ -8,12 +8,10 @@ import { faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
   faUser = faUser;
   faCode = faCode;
   faBroadcastTower = faBroadcastTower;
 
   constructor() {}
-
-  ngOnInit() {}
 }
