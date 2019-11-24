@@ -1,0 +1,11 @@
+mfcallahan.com GitHub pages deploy steps:
+
+1) ng build --prod --base-href "https://mfcallahan.github.io/Homepage/"
+2) angular-cli-ghpages
+
+Reference:
+
+https://help.github.com/en/github/working-with-github-pages
+https://alligator.io/angular/deploying-angular-app-github-pages/
+https://medium.com/@swarnakishore/deploying-angular-cli-project-to-github-pages-db49246598a1
+https://github.com/angular-schule/angular-cli-ghpages/issues/37
