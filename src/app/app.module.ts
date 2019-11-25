@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LightboxModule } from 'ngx-lightbox';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,7 +23,7 @@ import { RadioComponent } from './homepage-radio/radio/radio.component';
     AboutComponent,
     RadioComponent
   ],
-  imports: [BrowserModule, FontAwesomeModule, NgbModule, AppRoutingModule],
+  imports: [BrowserModule, FontAwesomeModule, NgbModule, LightboxModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
