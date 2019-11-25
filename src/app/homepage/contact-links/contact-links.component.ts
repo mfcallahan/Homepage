@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
-import { faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
-import { faFile } from '@fortawesome/free-solid-svg-icons';
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { faWordpressSimple } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe, faBroadcastTower, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faGithubSquare, faWordpressSimple, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-contact-links',
