@@ -6,9 +6,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./profile-pic.component.scss']
 })
 export class ProfilePicComponent {
-  @Input() pic: string;
-  @Input() name: string;
-  @Input() tagLine: string;
+  @Input()
+  pic: string;
+  @Input()
+  name: string;
+  @Input()
+  tagLine: string;
 
   constructor() {}
 }

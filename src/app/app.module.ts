@@ -12,6 +12,7 @@ import { ContactLinksComponent } from './homepage/contact-links/contact-links.co
 import { EducationCertsComponent } from './homepage/education-certs/education-certs.component';
 import { AboutComponent } from './homepage/about/about.component';
 import { RadioComponent } from './homepage-radio/radio/radio.component';
+import { SidebarLinksComponent } from './sidebar-links/sidebar-links.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RadioComponent } from './homepage-radio/radio/radio.component';
     ContactLinksComponent,
     EducationCertsComponent,
     AboutComponent,
-    RadioComponent
+    RadioComponent,
+    SidebarLinksComponent
   ],
   imports: [BrowserModule, FontAwesomeModule, NgbModule, LightboxModule, AppRoutingModule],
   providers: [],
