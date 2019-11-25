@@ -1,7 +1,15 @@
-div {
+.wrapper {
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 30px;
+  padding-top: 20px;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
 }
 
 .title {
@@ -12,10 +20,8 @@ div {
   font-family: Verdana, Tahoma, Geneva, sans-serif;
 }
 
-span {
-  font-size: 20px;
-  font-weight: 600;
+.moreinfo {
+  font-size: 14px;
   margin-top: 0;
-  margin-bottom: 10px;
-  font-family: Verdana, Tahoma, Geneva, sans-serif;
+  margin-bottom: 5px;
 }

@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './homepage/home/home.component';
 import { ProfilePicComponent } from './profile-pic/profile-pic.component';
 import { ContactLinksComponent } from './homepage/contact-links/contact-links.component';
-import { EducationCertLinksComponent } from './homepage/education-cert-links/education-cert-links.component';
+import { EducationCertsComponent } from './homepage/education-certs/education-certs.component';
 import { AboutComponent } from './homepage/about/about.component';
 import { RadioComponent } from './homepage-radio/radio/radio.component';
 
@@ -19,7 +19,7 @@ import { RadioComponent } from './homepage-radio/radio/radio.component';
     HomeComponent,
     ProfilePicComponent,
     ContactLinksComponent,
-    EducationCertLinksComponent,
+    EducationCertsComponent,
     AboutComponent,
     RadioComponent
   ],
