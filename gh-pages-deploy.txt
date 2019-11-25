@@ -1,4 +1,4 @@
-mfcallahan.com GitHub pages deploy steps:
+GitHub pages deploy steps:
 
 1) ng build --prod --base-href "https://mfcallahan.github.io/Homepage/"
 2) angular-cli-ghpages
