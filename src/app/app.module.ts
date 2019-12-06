@@ -13,6 +13,8 @@ import { EducationCertsComponent } from './homepage/education-certs/education-ce
 import { AboutComponent } from './homepage/about/about.component';
 import { RadioComponent } from './homepage-radio/radio/radio.component';
 import { SidebarLinksComponent } from './sidebar-links/sidebar-links.component';
+import { UrlSerializer } from '@angular/router';
+import { LowerCaseUrlSerializer } from './lower-case-url-serializer';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,12 @@ import { SidebarLinksComponent } from './sidebar-links/sidebar-links.component';
     SidebarLinksComponent
   ],
   imports: [BrowserModule, FontAwesomeModule, NgbModule, LightboxModule, AppRoutingModule],
-  providers: [],
+  providers: [
+    {
+      provide: UrlSerializer,
+      useClass: LowerCaseUrlSerializer
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
