@@ -6,12 +6,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  educationLinks: Array<any>;
+  certLinks: Array<any>;
   blogLinks: Array<any>;
   devLinks: Array<any>;
 
   constructor() {}
 
   ngOnInit() {
+    this.educationLinks = [
+      {
+        title: 'University of Wisconsin-Madison (BS Geography/GIS)',
+        url: 'https://www.wisc.edu',
+        imgUrl: '/assets/images/uw.png',
+        imgAlt: 'UW Logo'
+      }
+    ];
+
+    this.certLinks = [
+      {
+        title: 'Microsoft Technology Associate: Developer',
+        url: 'https://www.youracclaim.com/badges/637f3b5b-ff54-4815-901a-34081bf83e79/',
+        imgUrl: '/assets/images/mta.png',
+        imgAlt: 'MTA Logo'
+      },
+      {
+        title: 'Amateur Radio License: Technician Class',
+        url: 'https://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3987237',
+        imgUrl: '/assets/images/fcc.png',
+        imgAlt: 'FCC Logo'
+      }
+    ];
+
     this.blogLinks = [
       {
         title: 'A really simple C# async example',
@@ -33,11 +59,15 @@ export class HomeComponent implements OnInit {
         title: 'K7MFC Field Report: Four Peaks, AZ',
         url: 'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/'
       },
-      { title: 'Cool Microsoft Backgrounds', url: 'https://seesharpdotnet.wordpress.com/2018/02/22/cool-windows-backgrounds/' },
+      {
+        title: 'Cool Microsoft Backgrounds',
+        url: 'https://seesharpdotnet.wordpress.com/2018/02/22/cool-windows-backgrounds/'
+      },
       { title: 'BTECH GMRS-V1 Review', url: 'https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/' },
       {
         title: 'Which programming language is used in the computer of a car?',
-        url: 'https://seesharpdotnet.wordpress.com/2017/08/08/which-programming-language-is-used-in-the-computer-of-a-car/'
+        url:
+          'https://seesharpdotnet.wordpress.com/2017/08/08/which-programming-language-is-used-in-the-computer-of-a-car/'
       }
     ];
 

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./radio.component.scss']
 })
 export class RadioComponent implements OnInit {
+  clubLinks: Array<any>;
   licenseLinks: Array<any>;
   radioLinks: Array<any>;
   downloadLinks: Array<any>;
@@ -13,6 +14,21 @@ export class RadioComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    this.clubLinks = [
+      {
+        title: 'Arizona GMRS Repeater Club',
+        url: 'https://www.azgmrs.org/welcome.php',
+        imgUrl: '/assets/images/agrc.png',
+        imgAlt: 'AGRC Logo'
+      },
+      {
+        title: 'Arizona Repeater Association',
+        url: 'http://w7ara.org/',
+        imgUrl: '/assets/images/ara.png',
+        imgAlt: 'ARA Logo'
+      }
+    ];
+
     this.licenseLinks = [
       { title: 'How to get a GMRS license', url: 'https://www.azgmrs.org/how-to-get-a-gmrs-license.php' },
       { title: 'hamstudy.org - My favorite ham radio exam preparation resource', url: 'https://hamstudy.org/' },

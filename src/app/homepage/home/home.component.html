@@ -2,13 +2,20 @@
   <div class="row no-gutters">
     <div class="col-md-4 left-column">
       <div class="row no-gutters">
-        <app-profile-pic [pic]="'me.png'" [name]="'Matt Callahan'" [tagLine]="'Software Developer in Phoenix, AZ'"></app-profile-pic>
+        <app-profile-pic
+          [pic]="'me.png'"
+          [name]="'Matt Callahan'"
+          [tagLine]="'Software Developer in Phoenix, AZ'"
+        ></app-profile-pic>
       </div>
       <div class="row no-gutters">
         <app-contact-links></app-contact-links>
       </div>
       <div class="row no-gutters">
-        <app-education-certs></app-education-certs>
+        <app-sidebar-img-links [title]="'Education'" [links]="educationLinks"></app-sidebar-img-links>
+      </div>
+      <div class="row no-gutters">
+        <app-sidebar-img-links [title]="'Certifications & Licenses'" [links]="certLinks"></app-sidebar-img-links>
       </div>
       <div class="row no-gutters">
         <app-sidebar-links [title]="'Recent Blog Posts'" [links]="blogLinks"></app-sidebar-links>

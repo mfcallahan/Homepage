@@ -9,12 +9,12 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './homepage/home/home.component';
 import { ProfilePicComponent } from './profile-pic/profile-pic.component';
 import { ContactLinksComponent } from './homepage/contact-links/contact-links.component';
-import { EducationCertsComponent } from './homepage/education-certs/education-certs.component';
 import { AboutComponent } from './homepage/about/about.component';
 import { RadioComponent } from './homepage-radio/radio/radio.component';
 import { SidebarLinksComponent } from './sidebar-links/sidebar-links.component';
 import { UrlSerializer } from '@angular/router';
 import { LowerCaseUrlSerializer } from './lower-case-url-serializer';
+import { SidebarImgLinksComponent } from './sidebar-img-links/sidebar-img-links.component';
 
 @NgModule({
   declarations: [
@@ -22,10 +22,10 @@ import { LowerCaseUrlSerializer } from './lower-case-url-serializer';
     HomeComponent,
     ProfilePicComponent,
     ContactLinksComponent,
-    EducationCertsComponent,
     AboutComponent,
     RadioComponent,
-    SidebarLinksComponent
+    SidebarLinksComponent,
+    SidebarImgLinksComponent
   ],
   imports: [BrowserModule, FontAwesomeModule, NgbModule, LightboxModule, AppRoutingModule],
   providers: [

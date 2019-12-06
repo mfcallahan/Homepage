@@ -5,13 +5,11 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './sidebar-links.component.html',
   styleUrls: ['./sidebar-links.component.scss']
 })
-export class SidebarLinksComponent implements OnInit {
+export class SidebarLinksComponent {
   @Input()
   title: string;
   @Input()
   links: Array<string>;
 
   constructor() {}
-
-  ngOnInit() {}
 }
