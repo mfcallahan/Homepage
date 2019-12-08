@@ -19,13 +19,13 @@ export class RadioComponent implements OnInit {
       {
         title: 'Arizona GMRS Repeater Club',
         url: 'https://www.azgmrs.org/welcome.php',
-        imgUrl: '/assets/images/agrc.png',
+        imgUrl: 'assets/images/agrc.png',
         imgAlt: 'AGRC Logo'
       },
       {
         title: 'Arizona Repeater Association',
         url: 'http://w7ara.org/',
-        imgUrl: '/assets/images/ara.png',
+        imgUrl: 'assets/images/ara.png',
         imgAlt: 'ARA Logo'
       }
     ];
