@@ -14,7 +14,7 @@ import { HomepageRadioComponent } from './homepage-radio/homepage-radio.componen
 import { LinkListComponent } from './link-list/link-list.component';
 import { UrlSerializer } from '@angular/router';
 import { LowerCaseUrlSerializer } from './lower-case-url-serializer';
-import { SidebarImgLinksComponent } from './sidebar-img-links/sidebar-img-links.component';
+import { LinkImgListComponent } from './link-img-list/link-img-list.component';
 import { IntroComponent } from './homepage-radio/intro/intro.component';
 
 @NgModule({
@@ -26,7 +26,7 @@ import { IntroComponent } from './homepage-radio/intro/intro.component';
     AboutComponent,
     HomepageRadioComponent,
     LinkListComponent,
-    SidebarImgLinksComponent,
+    LinkImgListComponent,
     IntroComponent
   ],
   imports: [BrowserModule, FontAwesomeModule, NgbModule, LightboxModule, AppRoutingModule],
