@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-intro',
-  templateUrl: './intro.component.html',
-  styleUrls: ['./intro.component.scss']
+  templateUrl: './intro.component.html'
 })
 export class IntroComponent implements OnInit {
   currentYear: string;

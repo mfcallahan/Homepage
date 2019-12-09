@@ -11,7 +11,9 @@ export class ProfilePicComponent {
   @Input()
   name: string;
   @Input()
-  tagLine: string;
+  occupation: string;
+  @Input()
+  location: string;
 
   constructor() {}
 }

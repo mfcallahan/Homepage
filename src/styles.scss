@@ -1,11 +1,56 @@
+@import 'src/styles-vars.scss';
 @import '~bootstrap/dist/css/bootstrap.css';
 
 body {
   font-family: 'Century Gothic', 'Apple Gothic', AppleGothic, 'Avant Garde', Futura, sans-serif !important;
-  background-color: #1e1e1e !important;
-  color: #e6e6e6 !important;
+  background-color: $app-dark-background !important;
+  color: $app-white !important;
   font-size: 14px !important;
   padding: 30px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.title {
+  font-family: Verdana, Tahoma, Segoe, Geneva, sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  color: $app-white;
+}
+
+.title-small {
+  font-family: Verdana, Tahoma, Segoe, Geneva, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: $app-white;
+}
+
+.sub-title {
+  font-family: Verdana, Tahoma, Segoe, Geneva, sans-serif;
+  font-size: 18px;
+  color: $app-white;
+}
+
+h2 {
+  font-family: Verdana, Tahoma, Segoe, Geneva, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: $app-white;
+}
+
+h3 {
+  font-family: Verdana, Tahoma, Segoe, Geneva, sans-serif;
+  font-size: 16px;
+  color: $app-white;
+}
+
+.wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
 }
 
 .lightbox-link {
