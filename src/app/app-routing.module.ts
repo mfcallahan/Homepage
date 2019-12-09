@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './homepage/home/home.component';
-import { RadioComponent } from './homepage-radio/radio/radio.component';
+import { RadioComponent } from './homepage-radio/homepage-radio.component';
 
 const routes: Routes = [
   {
