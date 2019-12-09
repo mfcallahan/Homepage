@@ -15,6 +15,7 @@ import { SidebarLinksComponent } from './sidebar-links/sidebar-links.component';
 import { UrlSerializer } from '@angular/router';
 import { LowerCaseUrlSerializer } from './lower-case-url-serializer';
 import { SidebarImgLinksComponent } from './sidebar-img-links/sidebar-img-links.component';
+import { IntroComponent } from './homepage-radio/intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { SidebarImgLinksComponent } from './sidebar-img-links/sidebar-img-links.
     AboutComponent,
     RadioComponent,
     SidebarLinksComponent,
-    SidebarImgLinksComponent
+    SidebarImgLinksComponent,
+    IntroComponent
   ],
   imports: [BrowserModule, FontAwesomeModule, NgbModule, LightboxModule, AppRoutingModule],
   providers: [
