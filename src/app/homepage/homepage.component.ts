@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomepageComponent implements OnInit {
   educationLinks: Array<any>;
   certLinks: Array<any>;
   blogLinks: Array<any>;

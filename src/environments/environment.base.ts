@@ -85,5 +85,35 @@ export const baseConfigs = {
       title: 'WRAA720-band-plan.xlsx',
       url: '/assets/docs/WRAA720-band-plan.xlsx'
     }
+  ],
+  radioMapLinks: [
+    { title: 'AGRC Repeater Map', url: 'https://www.azgmrs.org/club-repeaters.php' },
+    { title: 'MyGMRS.com Repeater Map', url: 'https://www.mygmrs.com/map/' },
+    { title: 'NOAA Weather Radio Coverage Map', url: 'http://www.nws.noaa.gov/nwr/Maps/PHP/AZ.php' },
+    { title: 'Arizona Repeaters Association Repeater Map', url: 'http://new.w7ara.org/map/Arizona1.Aspx' },
+    { title: 'US Call Sign Areas & Zones', url: 'http://hamwaves.com/map.us/en/index.html' }
+  ],
+  radioBlogLinks: [
+    {
+      title: 'Refurbished Radio Shack Pro-2021',
+      url: 'https://seesharpdotnet.wordpress.com/2018/08/25/refurbished-radio-shack-pro-2021/'
+    },
+    {
+      title: 'How to get a GMRS License',
+      url: 'https://seesharpdotnet.wordpress.com/2018/08/11/how-to-get-a-gmrs-license/'
+    },
+    {
+      title: 'The history behind 462.675 MHz and the travel tone',
+      url: 'https://seesharpdotnet.wordpress.com/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/'
+    },
+    {
+      title: 'K7MFC mobile shack: 2013 F-150 Lariat 4×4',
+      url: 'https://seesharpdotnet.wordpress.com/2018/07/01/k7mfc-mobile-shack-2013-f-150-lariat-4x4/'
+    },
+    {
+      title: 'K7MFC Field Report: Four Peaks, AZ',
+      url: 'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/'
+    },
+    { title: 'BTECH GMRS-V1 Review', url: 'https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/' }
   ]
 };

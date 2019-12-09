@@ -6,11 +6,13 @@ import { environment } from 'src/environments/environment';
   templateUrl: './homepage-radio.component.html',
   styleUrls: ['./homepage-radio.component.scss']
 })
-export class RadioComponent implements OnInit {
+export class HomepageRadioComponent implements OnInit {
   clubLinks: Array<any>;
   licenseLinks: Array<any>;
   radioLinks: Array<any>;
   downloadLinks: Array<any>;
+  radioMapLinks: Array<any>;
+  radioBlogLinks: Array<any>;
 
   constructor() {}
 
@@ -33,5 +35,7 @@ export class RadioComponent implements OnInit {
     this.licenseLinks = environment.baseConfigs.licenseLinks;
     this.radioLinks = environment.baseConfigs.radioLinks;
     this.downloadLinks = environment.baseConfigs.downloadLinks;
+    this.radioMapLinks = environment.baseConfigs.radioMapLinks;
+    this.radioBlogLinks = environment.baseConfigs.radioBlogLinks;
   }
 }

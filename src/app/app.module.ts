@@ -6,30 +6,28 @@ import { LightboxModule } from 'ngx-lightbox';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './homepage/homepage.component';
+import { HomepageComponent } from './homepage/homepage.component';
 import { ProfilePicComponent } from './profile-pic/profile-pic.component';
 import { ContactLinksComponent } from './homepage/contact-links/contact-links.component';
 import { AboutComponent } from './homepage/about/about.component';
-import { RadioComponent } from './homepage-radio/homepage-radio.component';
-import { SidebarLinksComponent } from './sidebar-links/sidebar-links.component';
+import { HomepageRadioComponent } from './homepage-radio/homepage-radio.component';
+import { LinkListComponent } from './link-list/link-list.component';
 import { UrlSerializer } from '@angular/router';
 import { LowerCaseUrlSerializer } from './lower-case-url-serializer';
 import { SidebarImgLinksComponent } from './sidebar-img-links/sidebar-img-links.component';
 import { IntroComponent } from './homepage-radio/intro/intro.component';
-import { FeaturedLinksComponent } from './homepage-radio/featured-links/featured-links.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    HomepageComponent,
     ProfilePicComponent,
     ContactLinksComponent,
     AboutComponent,
-    RadioComponent,
-    SidebarLinksComponent,
+    HomepageRadioComponent,
+    LinkListComponent,
     SidebarImgLinksComponent,
-    IntroComponent,
-    FeaturedLinksComponent
+    IntroComponent
   ],
   imports: [BrowserModule, FontAwesomeModule, NgbModule, LightboxModule, AppRoutingModule],
   providers: [

@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './homepage/homepage.component';
-import { RadioComponent } from './homepage-radio/homepage-radio.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { HomepageRadioComponent } from './homepage-radio/homepage-radio.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomepageComponent
   },
   {
     path: 'radio',
-    component: RadioComponent
+    component: HomepageRadioComponent
   }
 ];
 

@@ -8,13 +8,13 @@
         <app-sidebar-img-links [title]="'Clubs'" [links]="clubLinks"></app-sidebar-img-links>
       </div>
       <div class="row no-gutters">
-        <app-sidebar-links [title]="'Get Licensed!'" [links]="licenseLinks"></app-sidebar-links>
+        <app-link-list [title]="'Get Licensed!'" [links]="licenseLinks"></app-link-list>
       </div>
       <div class="row no-gutters">
-        <app-sidebar-links [title]="'Links'" [links]="radioLinks"></app-sidebar-links>
+        <app-link-list [title]="'Links'" [links]="radioLinks"></app-link-list>
       </div>
       <div class="row no-gutters">
-        <app-sidebar-links [title]="'Downloads'" [links]="downloadLinks"></app-sidebar-links>
+        <app-link-list [title]="'Downloads'" [links]="downloadLinks"></app-link-list>
       </div>
     </div>
     <div class="col-md-8 right-column">
@@ -22,7 +22,12 @@
         <app-intro></app-intro>
       </div>
       <div class="row no-gutters">
-        <app-featured-links></app-featured-links>
+        <div class="col-sm-6">
+          <app-link-list [links]="radioMapLinks"></app-link-list>
+        </div>
+        <div class="col-sm-6">
+          <app-link-list [links]="radioBlogLinks"></app-link-list>
+        </div>
       </div>
     </div>
   </div>
