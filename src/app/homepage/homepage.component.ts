@@ -39,7 +39,7 @@ export class HomepageComponent implements OnInit {
       }
     ];
 
-    this.blogLinks = environment.baseConfigs.blogLinks;
-    this.devLinks = environment.baseConfigs.devLinks;
+    this.blogLinks = environment.baseConfigs.home.blogLinks;
+    this.devLinks = environment.baseConfigs.home.devLinks;
   }
 }

@@ -32,10 +32,10 @@ export class HomepageRadioComponent implements OnInit {
       }
     ];
 
-    this.licenseLinks = environment.baseConfigs.licenseLinks;
-    this.radioLinks = environment.baseConfigs.radioLinks;
-    this.downloadLinks = environment.baseConfigs.downloadLinks;
-    this.radioMapLinks = environment.baseConfigs.radioMapLinks;
-    this.radioBlogLinks = environment.baseConfigs.radioBlogLinks;
+    this.licenseLinks = environment.baseConfigs.radio.licenseLinks;
+    this.radioLinks = environment.baseConfigs.radio.radioLinks;
+    this.downloadLinks = environment.baseConfigs.radio.downloadLinks;
+    this.radioMapLinks = environment.baseConfigs.radio.mapLinks;
+    this.radioBlogLinks = environment.baseConfigs.radio.blogLinks;
   }
 }
