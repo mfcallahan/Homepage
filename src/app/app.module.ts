@@ -6,7 +6,7 @@ import { LightboxModule } from 'ngx-lightbox';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './homepage/home/home.component';
+import { HomeComponent } from './homepage/homepage.component';
 import { ProfilePicComponent } from './profile-pic/profile-pic.component';
 import { ContactLinksComponent } from './homepage/contact-links/contact-links.component';
 import { AboutComponent } from './homepage/about/about.component';
