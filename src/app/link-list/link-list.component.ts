@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-link-list',
@@ -10,6 +10,6 @@ export class LinkListComponent {
   title: string;
   @Input()
   links: Array<string>;
-
-  constructor() {}
+  @Input()
+  divWrapper = false;
 }
