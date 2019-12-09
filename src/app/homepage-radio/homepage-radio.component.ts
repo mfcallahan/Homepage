@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: 'app-radio',
-  templateUrl: './radio.component.html',
-  styleUrls: ['./radio.component.scss']
+  selector: 'app-homepage-radio',
+  templateUrl: './homepage-radio.component.html',
+  styleUrls: ['./homepage-radio.component.scss']
 })
 export class RadioComponent implements OnInit {
   clubLinks: Array<any>;
