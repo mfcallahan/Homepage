@@ -118,6 +118,48 @@ export const baseConfigs = {
         url: 'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/'
       },
       { title: 'BTECH GMRS-V1 Review', url: 'https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/' }
+    ],
+    galleryImages: [
+      {
+        small: 'assets/images/truck1.thumb.png',
+        medium: 'assets/images/truck1.png',
+        big: 'assets/images/truck1.png'
+      },
+      {
+        small: 'assets/images/shack1.thumb.png',
+        medium: 'assets/images/shack1.png',
+        big: 'assets/images/shack1.png'
+      },
+      {
+        small: 'assets/images/shack2.thumb.png',
+        medium: 'assets/images/shack2.png',
+        big: 'assets/images/shack2.png'
+      },
+      {
+        small: 'assets/images/shack3.thumb.png',
+        medium: 'assets/images/shack3.png',
+        big: 'assets/images/shack3.png'
+      },
+      {
+        small: 'assets/images/shack4.thumb.png',
+        medium: 'assets/images/shack4.png',
+        big: 'assets/images/shack4.png'
+      },
+      {
+        small: 'assets/images/shack5.thumb.png',
+        medium: 'assets/images/shack5.png',
+        big: 'assets/images/shack5.png'
+      },
+      {
+        small: 'assets/images/shack6.thumb.png',
+        medium: 'assets/images/shack6.png',
+        big: 'assets/images/shack6.png'
+      },
+      {
+        small: 'assets/images/shack7.thumb.png',
+        medium: 'assets/images/shack7.png',
+        big: 'assets/images/shack7.png'
+      }
     ]
   }
 };

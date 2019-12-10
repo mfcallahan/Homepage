@@ -1,8 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LightboxModule } from 'ngx-lightbox';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,9 +14,11 @@ import { AboutComponent } from './homepage/about/about.component';
 import { HomepageRadioComponent } from './homepage-radio/homepage-radio.component';
 import { LinkListComponent } from './link-list/link-list.component';
 import { UrlSerializer } from '@angular/router';
-import { LowerCaseUrlSerializer } from './lower-case-url-serializer';
+import { LowerCaseUrlSerializer } from './lowerCaseUrlSerializer';
 import { LinkImgListComponent } from './link-img-list/link-img-list.component';
 import { IntroComponent } from './homepage-radio/intro/intro.component';
+import { GalleryComponent } from './homepage-radio/gallery/gallery.component';
+import { CustomHammerConfig } from './hammerGestureConfig';
 
 @NgModule({
   declarations: [
@@ -27,13 +30,18 @@ import { IntroComponent } from './homepage-radio/intro/intro.component';
     HomepageRadioComponent,
     LinkListComponent,
     LinkImgListComponent,
-    IntroComponent
+    IntroComponent,
+    GalleryComponent
   ],
-  imports: [BrowserModule, FontAwesomeModule, NgbModule, LightboxModule, AppRoutingModule],
+  imports: [BrowserModule, FontAwesomeModule, NgbModule, LightboxModule, NgxGalleryModule, AppRoutingModule],
   providers: [
     {
       provide: UrlSerializer,
       useClass: LowerCaseUrlSerializer
+    },
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: CustomHammerConfig
     }
   ],
   bootstrap: [AppComponent]
