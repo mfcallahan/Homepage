@@ -3,7 +3,7 @@
 
 body {
   font-family: 'Century Gothic', 'Apple Gothic', AppleGothic, 'Avant Garde', Futura, sans-serif !important;
-  background-color: $app-dark-background !important;
+  background-color: $app-black !important;
   color: $app-white !important;
   font-size: 14px !important;
   padding: 30px;
@@ -54,7 +54,7 @@ h3 {
 }
 
 .lightbox-link {
-  color: #4ddbff;
+  color: $app-dark-turquoise;
   cursor: pointer;
 }
 
