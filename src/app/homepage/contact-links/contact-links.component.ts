@@ -4,7 +4,7 @@ import { faGlobe, faBroadcastTower, faFile } from '@fortawesome/free-solid-svg-i
 import { faGithubSquare, faWordpressSimple, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
-  selector: 'app-contact-links',
+  selector: 'app-homepage-contact-links',
   templateUrl: './contact-links.component.html',
   styleUrls: ['./contact-links.component.scss']
 })

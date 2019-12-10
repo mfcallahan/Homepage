@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-intro',
+  selector: 'app-homepage-radio-intro',
   templateUrl: './intro.component.html'
 })
 export class IntroComponent implements OnInit {

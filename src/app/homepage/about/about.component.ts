@@ -3,7 +3,7 @@ import { Lightbox, LightboxConfig } from 'ngx-lightbox';
 import { faUser, faCode, faCodeBranch, faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-homepage-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
