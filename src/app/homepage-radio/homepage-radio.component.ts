@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import { faWordpressSimple } from '@fortawesome/free-brands-svg-icons';
+import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-homepage-radio',
@@ -13,6 +15,8 @@ export class HomepageRadioComponent implements OnInit {
   downloadLinks: Array<any>;
   radioMapLinks: Array<any>;
   radioBlogLinks: Array<any>;
+  faWordpressSimple = faWordpressSimple;
+  faMapMarker = faMapMarker;
 
   constructor() {}
 
