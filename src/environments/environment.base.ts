@@ -82,11 +82,11 @@ export const baseConfigs = {
     downloadLinks: [
       {
         title: 'WRAA720-band-plan.csv',
-        url: '/assets/docs/WRAA720-band-plan.csv'
+        url: 'assets/docs/WRAA720-band-plan.csv'
       },
       {
         title: 'WRAA720-band-plan.xlsx',
-        url: '/assets/docs/WRAA720-band-plan.xlsx'
+        url: 'assets/docs/WRAA720-band-plan.xlsx'
       }
     ],
     mapLinks: [

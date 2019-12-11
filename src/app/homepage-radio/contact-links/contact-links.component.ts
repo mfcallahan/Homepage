@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faHome, faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,15 +7,10 @@ import { faHome, faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
   templateUrl: './contact-links.component.html',
   styleUrls: ['../../contact-links/contact-links.scss']
 })
-export class ContactLinksComponent implements OnInit {
+export class ContactLinksComponent {
   faEnvelope = faEnvelope;
   faHome = faHome;
   faBroadcastTower = faBroadcastTower;
-  homeUrl: string;
 
   constructor() {}
-
-  ngOnInit(): void {
-    this.homeUrl = location.origin;
-  }
 }

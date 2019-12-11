@@ -1,6 +1,6 @@
 GitHub pages deploy steps:
 
-1) ng build --prod --base-href "https://mfcallahan.github.io/Homepage/"
+1) ng build --prod --base-href /Homepage/
 2) angular-cli-ghpages
 
 Reference:
