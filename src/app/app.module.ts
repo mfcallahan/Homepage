@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ProfilePicComponent } from './profile-pic/profile-pic.component';
 import { ContactLinksComponent } from './homepage/contact-links/contact-links.component';
+import { ContactLinksComponent as RadioContactLinksComponent } from './homepage-radio/contact-links/contact-links.component';
 import { AboutComponent } from './homepage/about/about.component';
 import { HomepageRadioComponent } from './homepage-radio/homepage-radio.component';
 import { LinkListComponent } from './link-list/link-list.component';
@@ -27,6 +28,7 @@ import { BandplanComponent } from './homepage-radio/bandplan/bandplan.component'
     HomepageComponent,
     ProfilePicComponent,
     ContactLinksComponent,
+    RadioContactLinksComponent,
     AboutComponent,
     HomepageRadioComponent,
     LinkListComponent,

@@ -6,7 +6,7 @@ import { faGithubSquare, faWordpressSimple, faLinkedin } from '@fortawesome/free
 @Component({
   selector: 'app-homepage-contact-links',
   templateUrl: './contact-links.component.html',
-  styleUrls: ['./contact-links.component.scss']
+  styleUrls: ['../../contact-links/contact-links.scss']
 })
 export class ContactLinksComponent {
   faEnvelope = faEnvelope;
