@@ -1,0 +1,38 @@
+@import 'src/styles-vars.scss';
+
+.title {
+  margin-bottom: 15px;
+}
+
+fa-icon {
+  margin-right: 10px;
+}
+
+// .table {
+//   border: 0.5px solid #0d0d0d;
+// }
+
+thead {
+  background-color: $app-black;
+  color: $app-white;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 0.5px solid $app-black;
+}
+
+tbody > tr {
+  color: $app-black;
+}
+
+.tabe-row-light {
+  background-color: $app-light-gray;
+}
+.tabe-row-dark {
+  background-color: $app-med-gray;
+}

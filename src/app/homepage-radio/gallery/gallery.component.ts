@@ -19,7 +19,9 @@ export class GalleryComponent implements OnInit {
 
   ngOnInit() {
     this.options = [
-      { image: false, height: '100px', fullWidth: true }
+      {},
+      { breakpoint: 500, width: '300px', height: '300px', thumbnailsColumns: 3 },
+      { breakpoint: 300, width: '100%', height: '200px', thumbnailsColumns: 2 }
 
       // orig:
       // {
