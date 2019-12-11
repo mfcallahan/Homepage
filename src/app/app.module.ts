@@ -19,6 +19,7 @@ import { LinkImgListComponent } from './link-img-list/link-img-list.component';
 import { IntroComponent } from './homepage-radio/intro/intro.component';
 import { GalleryComponent } from './homepage-radio/gallery/gallery.component';
 import { CustomHammerConfig } from './hammerGestureConfig';
+import { BandplanComponent } from './homepage-radio/bandplan/bandplan.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CustomHammerConfig } from './hammerGestureConfig';
     LinkListComponent,
     LinkImgListComponent,
     IntroComponent,
-    GalleryComponent
+    GalleryComponent,
+    BandplanComponent
   ],
   imports: [BrowserModule, FontAwesomeModule, NgbModule, LightboxModule, NgxGalleryModule, AppRoutingModule],
   providers: [
