@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGlobe, faBroadcastTower, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faBroadcastTower, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare, faWordpressSimple, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -10,7 +10,6 @@ import { faGithubSquare, faWordpressSimple, faLinkedin } from '@fortawesome/free
 })
 export class ContactLinksComponent {
   faEnvelope = faEnvelope;
-  faGlobe = faGlobe;
   faBroadcastTower = faBroadcastTower;
   faFile = faFile;
   faGithubSquare = faGithubSquare;
