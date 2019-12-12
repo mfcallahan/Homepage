@@ -1,0 +1,17 @@
+@import 'src/styles-vars.scss';
+
+:host {
+  width: 100%;
+}
+
+.wrapper {
+  text-align: center;
+  background-color: $app-med-blue;
+  padding-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 10px;
+}

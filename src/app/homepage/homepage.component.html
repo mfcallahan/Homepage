@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row no-gutters">
+    <div class="col-md-4 left-column">
+      <div class="row no-gutters">
+        <app-profile-pic
+          [pic]="'me.png'"
+          [name]="'Matthew Callahan'"
+          [subTitle]="'Software Developer'"
+          [location]="'Phoenix, AZ'"
+        ></app-profile-pic>
+      </div>
+      <div class="row no-gutters">
+        <app-homepage-contact-links></app-homepage-contact-links>
+      </div>
+      <div class="row no-gutters">
+        <app-link-img-list [title]="'Education'" [links]="educationLinks"></app-link-img-list>
+      </div>
+      <div class="row no-gutters">
+        <app-link-img-list [title]="'Certifications & Licenses'" [links]="certLinks"></app-link-img-list>
+      </div>
+      <div class="row no-gutters">
+        <app-link-list [title]="'Recent Blog Posts'" [links]="blogLinks" [divWrapper]="true"></app-link-list>
+      </div>
+      <div class="row no-gutters">
+        <app-link-list [title]="'My Favorite Dev Tools'" [links]="devLinks" [divWrapper]="true"></app-link-list>
+      </div>
+    </div>
+    <div class="col-md-8 right-column">
+      <div class="row no-gutters">
+        <app-homepage-about></app-homepage-about>
+      </div>
+      <div class="footer">
+        <a href="http://www.notepad.org/" target="_blank" rel="noopener">
+          <img src="assets/images/notepad.png" alt="Built with Notepad" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

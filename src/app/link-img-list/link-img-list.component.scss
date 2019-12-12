@@ -1,0 +1,25 @@
+@import 'src/styles.scss';
+
+:host {
+  width: 100%;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+li {
+  font-size: 15px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+img {
+  width: 100%;
+}
+
+.link-text {
+  font-size: 15px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}

@@ -1,0 +1,21 @@
+<div class="wrapper">
+  <div class="row no-gutters title-small">
+    {{ title }}
+  </div>
+  <ul class="list-unstyled condensed">
+    <li *ngFor="let link of links">
+      <div class="row no-gutters">
+        <div class="col-3 align-self-center text-center">
+          <a href="{{ link.url }}" target="_blank" rel="noopener">
+            <img class="img-responsive" src="{{ link.imgUrl }}" alt="{{ link.imgAlt }}" />
+          </a>
+        </div>
+        <div class="col-9 align-self-center text-center">
+          <p class="link-text">
+            <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.title }}</a>
+          </p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
