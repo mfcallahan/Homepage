@@ -1,4 +1,9 @@
 @import 'src/styles-vars.scss';
+@media (max-width: $col-ms-breakpoint) {
+  :host {
+    display: none;
+  }
+}
 
 .title {
   margin-bottom: 15px;
