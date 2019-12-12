@@ -9,6 +9,18 @@ body {
   padding: 30px;
 }
 
+@media (max-width: $col-ms-breakpoint) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
 p {
   line-height: 1.5;
   font-size: 15px;
