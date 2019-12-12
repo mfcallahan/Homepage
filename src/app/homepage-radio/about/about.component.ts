@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-homepage-radio-intro',
-  templateUrl: './intro.component.html',
-  styleUrls: ['./intro.component.scss']
+  selector: 'app-homepage-radio-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss']
 })
 export class IntroComponent implements OnInit {
   currentYear: string;
