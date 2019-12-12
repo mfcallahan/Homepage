@@ -40,6 +40,10 @@ export const baseConfigs = {
       { title: 'Visual Studio Code', url: 'https://code.visualstudio.com/' },
       { title: 'GitKraken', url: 'https://www.gitkraken.com/' },
       { title: 'Postman', url: 'https://www.getpostman.com/' }
+    ],
+    lightboxAlbum: [
+      { src: 'assets/images/qbasic.png', alt: 'QBASIC' },
+      { src: 'assets/images/ti83.png', alt: 'TI-83' }
     ]
   },
   radio: {
@@ -118,6 +122,10 @@ export const baseConfigs = {
         url: 'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/'
       },
       { title: 'BTECH GMRS-V1 Review', url: 'https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/' }
+    ],
+    lightboxAlbum: [
+      { src: 'assets/images/pro71.png', alt: 'Pro-71' },
+      { src: 'assets/images/cell-coverage.png', alt: 'Cell Coverage Map' }
     ],
     galleryImages: [
       {
@@ -246,7 +254,7 @@ export const baseConfigs = {
       {
         channel: '10',
         name: 'Ch 10 Simplex',
-        frequency: '462.600 MHz',
+        frequency: '462.6000 MHz',
         tone: '69.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
@@ -264,7 +272,7 @@ export const baseConfigs = {
       {
         channel: '12',
         name: 'Ch 12 Simplex',
-        frequency: '462.650 MHz',
+        frequency: '462.6500 MHz',
         tone: '69.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
@@ -273,7 +281,7 @@ export const baseConfigs = {
       {
         channel: '13',
         name: 'Ch 13 Simplex',
-        frequency: '462.675 MHz',
+        frequency: '462.6750 MHz',
         tone: '141.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
@@ -282,7 +290,7 @@ export const baseConfigs = {
       {
         channel: '14',
         name: 'Ch 14 Simplex',
-        frequency: '462.700 MHz',
+        frequency: '462.7000 MHz',
         tone: '141.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
@@ -291,7 +299,7 @@ export const baseConfigs = {
       {
         channel: '15',
         name: 'Ch 15 Simplex',
-        frequency: '462.725 MHz',
+        frequency: '462.7250 MHz',
         tone: '69.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
@@ -300,7 +308,7 @@ export const baseConfigs = {
       {
         channel: '16',
         name: 'Ch 16 Simplex',
-        frequency: '462.575 MHz',
+        frequency: '462.5750 MHz',
         tone: '',
         bandwidth: 'Narrow',
         power: 'High',

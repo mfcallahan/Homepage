@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
 import { faUser, faCode, faCodeBranch, faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-homepage-about',
@@ -12,20 +13,18 @@ export class AboutComponent implements OnInit {
   faCode = faCode;
   faCodeBranch = faCodeBranch;
   faBroadcastTower = faBroadcastTower;
-  albumAboutMe: Array<any>;
+  album: Array<any>;
 
   constructor(private lightbox: Lightbox, private lightboxConfig: LightboxConfig) {}
 
   ngOnInit() {
     this.lightboxConfig.centerVertically = true;
     this.lightboxConfig.disableKeyboardNav = true;
-
-    const images = [{ src: 'assets/images/qbasic.png' }, { src: 'assets/images/ti83.png' }];
-    this.albumAboutMe = images;
+    this.album = environment.baseConfigs.home.lightboxAlbum;
   }
 
   open(index: number): void {
-    this.lightbox.open(this.albumAboutMe, index);
+    this.lightbox.open(this.album, index);
   }
 
   close(): void {
