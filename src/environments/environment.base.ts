@@ -2,6 +2,10 @@ export const baseConfigs = {
   home: {
     blogLinks: [
       {
+        title: 'K7MFC mobile shack: 2019 Ford F-150 XLT',
+        url: 'https://seesharpdotnet.wordpress.com/2020/02/17/k7mfc-mobile-shack-2019-ford-f-150-xlt/'
+      },
+      {
         title: 'A really simple C# async example',
         url: 'https://seesharpdotnet.wordpress.com/2018/10/17/a-really-simple-c-async-example/'
       },
@@ -101,6 +105,10 @@ export const baseConfigs = {
       { title: 'US Call Sign Areas & Zones', url: 'http://hamwaves.com/map.us/en/index.html' }
     ],
     blogLinks: [
+      {
+        title: 'K7MFC mobile shack: 2019 Ford F-150 XLT',
+        url: 'https://seesharpdotnet.wordpress.com/2020/02/17/k7mfc-mobile-shack-2019-ford-f-150-xlt/'
+      },
       {
         title: 'Refurbished Radio Shack Pro-2021',
         url: 'https://seesharpdotnet.wordpress.com/2018/08/25/refurbished-radio-shack-pro-2021/'
