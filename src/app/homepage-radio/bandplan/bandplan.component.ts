@@ -5,7 +5,7 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-homepage-radio-bandplan',
   templateUrl: './bandplan.component.html',
-  styleUrls: ['./bandplan.component.scss']
+  styleUrls: ['./bandplan.component.scss'],
 })
 export class BandplanComponent implements OnInit {
   faBroadcastTower = faBroadcastTower;

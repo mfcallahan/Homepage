@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faBroadcastTower, faFile } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faBroadcastTower, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGithubSquare, faWordpressSimple, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-homepage-contact-links',
   templateUrl: './contact-links.component.html',
-  styleUrls: ['../../contact-links/contact-links.scss']
+  styleUrls: ['../../contact-links/contact-links.scss'],
 })
 export class ContactLinksComponent {
   faEnvelope = faEnvelope;

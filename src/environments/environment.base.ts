@@ -1,40 +1,62 @@
 export const baseConfigs = {
   home: {
+    educationLinks: [
+      {
+        title: 'University of Wisconsin-Madison (BS Geography/GIS)',
+        url: 'https://www.wisc.edu',
+        imgUrl: 'assets/images/uw.png',
+        imgAlt: 'UW Logo',
+      },
+    ],
+    certLinks: [
+      {
+        title: 'Microsoft Technology Associate: Developer',
+        url: 'https://www.youracclaim.com/badges/637f3b5b-ff54-4815-901a-34081bf83e79/',
+        imgUrl: 'assets/images/mta.png',
+        imgAlt: 'MTA Logo',
+      },
+      {
+        title: 'Amateur Radio License: Technician Class',
+        url: 'https://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3987237',
+        imgUrl: 'assets/images/fcc.png',
+        imgAlt: 'FCC Logo',
+      },
+    ],
     blogLinks: [
       {
         title: 'K7MFC mobile shack: 2019 Ford F-150 XLT',
-        url: 'https://seesharpdotnet.wordpress.com/2020/02/17/k7mfc-mobile-shack-2019-ford-f-150-xlt/'
+        url: 'https://seesharpdotnet.wordpress.com/2020/02/17/k7mfc-mobile-shack-2019-ford-f-150-xlt/',
       },
       {
         title: 'A really simple C# async example',
-        url: 'https://seesharpdotnet.wordpress.com/2018/10/17/a-really-simple-c-async-example/'
+        url: 'https://seesharpdotnet.wordpress.com/2018/10/17/a-really-simple-c-async-example/',
       },
       {
         title: 'Refurbished Radio Shack Pro-2021',
-        url: 'https://seesharpdotnet.wordpress.com/2018/08/25/refurbished-radio-shack-pro-2021/'
+        url: 'https://seesharpdotnet.wordpress.com/2018/08/25/refurbished-radio-shack-pro-2021/',
       },
       {
         title: 'The history behind 462.675 MHz and the travel tone',
-        url: 'https://seesharpdotnet.wordpress.com/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/'
+        url: 'https://seesharpdotnet.wordpress.com/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/',
       },
       {
         title: 'K7MFC mobile shack: 2013 F-150 Lariat 4×4',
-        url: 'https://seesharpdotnet.wordpress.com/2018/07/01/k7mfc-mobile-shack-2013-f-150-lariat-4x4/'
+        url: 'https://seesharpdotnet.wordpress.com/2018/07/01/k7mfc-mobile-shack-2013-f-150-lariat-4x4/',
       },
       {
         title: 'K7MFC Field Report: Four Peaks, AZ',
-        url: 'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/'
+        url: 'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/',
       },
       {
         title: 'Cool Microsoft Backgrounds',
-        url: 'https://seesharpdotnet.wordpress.com/2018/02/22/cool-windows-backgrounds/'
+        url: 'https://seesharpdotnet.wordpress.com/2018/02/22/cool-windows-backgrounds/',
       },
       { title: 'BTECH GMRS-V1 Review', url: 'https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/' },
       {
         title: 'Which programming language is used in the computer of a car?',
         url:
-          'https://seesharpdotnet.wordpress.com/2017/08/08/which-programming-language-is-used-in-the-computer-of-a-car/'
-      }
+          'https://seesharpdotnet.wordpress.com/2017/08/08/which-programming-language-is-used-in-the-computer-of-a-car/',
+      },
     ],
     devLinks: [
       { title: 'C#', url: 'https://docs.microsoft.com/en-us/dotnet/csharp/' },
@@ -43,22 +65,36 @@ export const baseConfigs = {
       { title: 'Visual Studio', url: 'https://visualstudio.microsoft.com/' },
       { title: 'Visual Studio Code', url: 'https://code.visualstudio.com/' },
       { title: 'GitKraken', url: 'https://www.gitkraken.com/' },
-      { title: 'Postman', url: 'https://www.getpostman.com/' }
+      { title: 'Postman', url: 'https://www.getpostman.com/' },
     ],
     lightboxAlbum: [
       { src: 'assets/images/qbasic.png', alt: 'QBASIC' },
-      { src: 'assets/images/ti83.png', alt: 'TI-83' }
-    ]
+      { src: 'assets/images/ti83.png', alt: 'TI-83' },
+    ],
   },
   radio: {
+    clubLinks: [
+      {
+        title: 'Arizona GMRS Repeater Club',
+        url: 'https://www.azgmrs.org/welcome.php',
+        imgUrl: 'assets/images/agrc.png',
+        imgAlt: 'AGRC Logo',
+      },
+      {
+        title: 'Arizona Repeater Association',
+        url: 'http://w7ara.org/',
+        imgUrl: 'assets/images/ara.png',
+        imgAlt: 'ARA Logo',
+      },
+    ],
     licenseLinks: [
       { title: 'How to get a GMRS license', url: 'https://www.azgmrs.org/how-to-get-a-gmrs-license.php' },
       { title: 'hamstudy.org - My favorite ham radio exam preparation resource', url: 'https://hamstudy.org/' },
       {
         title: 'ARRL - Find an amateur radio exam session',
-        url: 'http://www.arrl.org/find-an-amateur-radio-license-exam-session'
+        url: 'http://www.arrl.org/find-an-amateur-radio-license-exam-session',
       },
-      { title: 'FCC Universal Licensing System', url: 'https://wireless2.fcc.gov/UlsEntry/licManager/login.jsp' }
+      { title: 'FCC Universal Licensing System', url: 'https://wireless2.fcc.gov/UlsEntry/licManager/login.jsp' },
     ],
     radioLinks: [
       { title: 'Arizona Repeaters Directory', url: 'http://www.azrepeaters.net/' },
@@ -66,116 +102,116 @@ export const baseConfigs = {
       { title: 'RadioReference.com - AZ Database', url: 'https://www.radioreference.com/apps/db/?stid=4' },
       {
         title: 'RadioReference.com - AZ Discussion Forum',
-        url: 'https://forums.radioreference.com/forums/arizona-radio-discussion-forum.36/'
+        url: 'https://forums.radioreference.com/forums/arizona-radio-discussion-forum.36/',
       },
       { title: 'US Amateur Radio Frequency Allocations', url: 'http://www.arrl.org/frequency-allocations' },
       { title: 'US Nationwide Amateur Frequencies', url: 'https://www.radioreference.com/apps/db/?aid=7771' },
       {
         title: 'FRS/GMRS combined channel chart',
-        url: 'https://wiki.radioreference.com/index.php/FRS/GMRS_combined_channel_chart'
+        url: 'https://wiki.radioreference.com/index.php/FRS/GMRS_combined_channel_chart',
       },
       { title: 'FCC License/Call Sign Search', url: 'https://wireless2.fcc.gov/UlsApp/UlsSearch/searchAdvanced.jsp' },
       {
         title: 'The Antenna Farm: Antenna Tutorial',
-        url: 'https://www.theantennafarm.com/catalog/index.php?main_page=antenna_tutorial_page'
+        url: 'https://www.theantennafarm.com/catalog/index.php?main_page=antenna_tutorial_page',
       },
       { title: 'KD4SAI VHF/UHF Line of Sight Calculator', url: 'https://www.qsl.net/kd4sai/distance.html' },
       {
         title: 'CHIRP - open source radio programming software',
-        url: 'https://chirp.danplanet.com/projects/chirp/wiki/Home'
+        url: 'https://chirp.danplanet.com/projects/chirp/wiki/Home',
       },
       { title: 'miklor.com - Radio Information & Support Site', url: 'http://www.miklor.com/' },
-      { title: 'ScannerMaster.com - The scanner experts!', url: 'https://www.scannermaster.com/' }
+      { title: 'ScannerMaster.com - The scanner experts!', url: 'https://www.scannermaster.com/' },
     ],
     downloadLinks: [
       {
         title: 'WRAA720-band-plan.csv',
-        url: 'assets/docs/WRAA720-band-plan.csv'
+        url: 'assets/docs/WRAA720-band-plan.csv',
       },
       {
         title: 'WRAA720-band-plan.xlsx',
-        url: 'assets/docs/WRAA720-band-plan.xlsx'
-      }
+        url: 'assets/docs/WRAA720-band-plan.xlsx',
+      },
     ],
     mapLinks: [
       { title: 'AGRC Repeater Map', url: 'https://www.azgmrs.org/club-repeaters.php' },
       { title: 'MyGMRS.com Repeater Map', url: 'https://www.mygmrs.com/map/' },
       { title: 'NOAA Weather Radio Coverage Map', url: 'http://www.nws.noaa.gov/nwr/Maps/PHP/AZ.php' },
       { title: 'Arizona Repeaters Association Repeater Map', url: 'http://new.w7ara.org/map/Arizona1.Aspx' },
-      { title: 'US Call Sign Areas & Zones', url: 'http://hamwaves.com/map.us/en/index.html' }
+      { title: 'US Call Sign Areas & Zones', url: 'http://hamwaves.com/map.us/en/index.html' },
     ],
     blogLinks: [
       {
         title: 'K7MFC mobile shack: 2019 Ford F-150 XLT',
-        url: 'https://seesharpdotnet.wordpress.com/2020/02/17/k7mfc-mobile-shack-2019-ford-f-150-xlt/'
+        url: 'https://seesharpdotnet.wordpress.com/2020/02/17/k7mfc-mobile-shack-2019-ford-f-150-xlt/',
       },
       {
         title: 'Refurbished Radio Shack Pro-2021',
-        url: 'https://seesharpdotnet.wordpress.com/2018/08/25/refurbished-radio-shack-pro-2021/'
+        url: 'https://seesharpdotnet.wordpress.com/2018/08/25/refurbished-radio-shack-pro-2021/',
       },
       {
         title: 'How to get a GMRS License',
-        url: 'https://seesharpdotnet.wordpress.com/2018/08/11/how-to-get-a-gmrs-license/'
+        url: 'https://seesharpdotnet.wordpress.com/2018/08/11/how-to-get-a-gmrs-license/',
       },
       {
         title: 'The history behind 462.675 MHz and the travel tone',
-        url: 'https://seesharpdotnet.wordpress.com/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/'
+        url: 'https://seesharpdotnet.wordpress.com/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/',
       },
       {
         title: 'K7MFC mobile shack: 2013 F-150 Lariat 4×4',
-        url: 'https://seesharpdotnet.wordpress.com/2018/07/01/k7mfc-mobile-shack-2013-f-150-lariat-4x4/'
+        url: 'https://seesharpdotnet.wordpress.com/2018/07/01/k7mfc-mobile-shack-2013-f-150-lariat-4x4/',
       },
       {
         title: 'K7MFC Field Report: Four Peaks, AZ',
-        url: 'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/'
+        url: 'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/',
       },
-      { title: 'BTECH GMRS-V1 Review', url: 'https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/' }
+      { title: 'BTECH GMRS-V1 Review', url: 'https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/' },
     ],
     lightboxAlbum: [
       { src: 'assets/images/pro71.png', alt: 'Pro-71' },
-      { src: 'assets/images/cell-coverage.png', alt: 'Cell Coverage Map' }
+      { src: 'assets/images/cell-coverage.png', alt: 'Cell Coverage Map' },
     ],
     galleryImages: [
       {
         small: 'assets/images/truck1.thumb.png',
         medium: 'assets/images/truck1.png',
-        big: 'assets/images/truck1.png'
+        big: 'assets/images/truck1.png',
       },
       {
         small: 'assets/images/shack1.thumb.png',
         medium: 'assets/images/shack1.png',
-        big: 'assets/images/shack1.png'
+        big: 'assets/images/shack1.png',
       },
       {
         small: 'assets/images/shack2.thumb.png',
         medium: 'assets/images/shack2.png',
-        big: 'assets/images/shack2.png'
+        big: 'assets/images/shack2.png',
       },
       {
         small: 'assets/images/shack3.thumb.png',
         medium: 'assets/images/shack3.png',
-        big: 'assets/images/shack3.png'
+        big: 'assets/images/shack3.png',
       },
       {
         small: 'assets/images/shack4.thumb.png',
         medium: 'assets/images/shack4.png',
-        big: 'assets/images/shack4.png'
+        big: 'assets/images/shack4.png',
       },
       {
         small: 'assets/images/shack5.thumb.png',
         medium: 'assets/images/shack5.png',
-        big: 'assets/images/shack5.png'
+        big: 'assets/images/shack5.png',
       },
       {
         small: 'assets/images/shack6.thumb.png',
         medium: 'assets/images/shack6.png',
-        big: 'assets/images/shack6.png'
+        big: 'assets/images/shack6.png',
       },
       {
         small: 'assets/images/shack7.thumb.png',
         medium: 'assets/images/shack7.png',
-        big: 'assets/images/shack7.png'
-      }
+        big: 'assets/images/shack7.png',
+      },
     ],
     bandPlan: [
       {
@@ -185,7 +221,7 @@ export const baseConfigs = {
         tone: '',
         bandwidth: 'Narrow',
         power: 'Low',
-        notes: 'FRS 1/Natl Simplex'
+        notes: 'FRS 1/Natl Simplex',
       },
       {
         channel: '2',
@@ -194,7 +230,7 @@ export const baseConfigs = {
         tone: '',
         bandwidth: 'Narrow',
         power: 'Low',
-        notes: 'FRS 2'
+        notes: 'FRS 2',
       },
       {
         channel: '3',
@@ -203,7 +239,7 @@ export const baseConfigs = {
         tone: '',
         bandwidth: 'Narrow',
         power: 'Low',
-        notes: 'FRS 3'
+        notes: 'FRS 3',
       },
       {
         channel: '4',
@@ -212,7 +248,7 @@ export const baseConfigs = {
         tone: '',
         bandwidth: 'Narrow',
         power: 'Low',
-        notes: 'FRS 4'
+        notes: 'FRS 4',
       },
       {
         channel: '5',
@@ -221,7 +257,7 @@ export const baseConfigs = {
         tone: '',
         bandwidth: 'Narrow',
         power: 'Low',
-        notes: 'FRS 5'
+        notes: 'FRS 5',
       },
       {
         channel: '6',
@@ -230,7 +266,7 @@ export const baseConfigs = {
         tone: '',
         bandwidth: 'Narrow',
         power: 'Low',
-        notes: 'FRS 6'
+        notes: 'FRS 6',
       },
       {
         channel: '7',
@@ -239,7 +275,7 @@ export const baseConfigs = {
         tone: '',
         bandwidth: 'Narrow',
         power: 'Low',
-        notes: 'FRS 7'
+        notes: 'FRS 7',
       },
       {
         channel: '8',
@@ -248,7 +284,7 @@ export const baseConfigs = {
         tone: '141.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
-        notes: 'GMRS 15/PHX 550 T'
+        notes: 'GMRS 15/PHX 550 T',
       },
       {
         channel: '9',
@@ -257,7 +293,7 @@ export const baseConfigs = {
         tone: '69.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
-        notes: 'GMRS 16'
+        notes: 'GMRS 16',
       },
       {
         channel: '10',
@@ -266,7 +302,7 @@ export const baseConfigs = {
         tone: '69.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
-        notes: 'GMRS 17'
+        notes: 'GMRS 17',
       },
       {
         channel: '11',
@@ -275,7 +311,7 @@ export const baseConfigs = {
         tone: '69.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
-        notes: 'GMRS 18'
+        notes: 'GMRS 18',
       },
       {
         channel: '12',
@@ -284,7 +320,7 @@ export const baseConfigs = {
         tone: '69.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
-        notes: 'GMRS 19'
+        notes: 'GMRS 19',
       },
       {
         channel: '13',
@@ -293,7 +329,7 @@ export const baseConfigs = {
         tone: '141.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
-        notes: 'GMRS 20/Natl Simplex'
+        notes: 'GMRS 20/Natl Simplex',
       },
       {
         channel: '14',
@@ -302,7 +338,7 @@ export const baseConfigs = {
         tone: '141.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
-        notes: 'GMRS 21/Camping Alpha'
+        notes: 'GMRS 21/Camping Alpha',
       },
       {
         channel: '15',
@@ -311,7 +347,7 @@ export const baseConfigs = {
         tone: '69.3 Hz',
         bandwidth: 'Narrow',
         power: 'High',
-        notes: 'GMRS 22/Camping Bravo'
+        notes: 'GMRS 22/Camping Bravo',
       },
       {
         channel: '16',
@@ -320,8 +356,8 @@ export const baseConfigs = {
         tone: '',
         bandwidth: 'Narrow',
         power: 'High',
-        notes: 'GMRS 16/4x4 Off-Road Channel'
-      }
-    ]
-  }
+        notes: 'GMRS 16/4x4 Off-Road Channel',
+      },
+    ],
+  },
 };
