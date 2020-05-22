@@ -4,7 +4,7 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.scss']
+  styleUrls: ['./homepage.component.scss'],
 })
 export class HomepageComponent implements OnInit {
   educationLinks: Array<any>;
@@ -15,30 +15,8 @@ export class HomepageComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.educationLinks = [
-      {
-        title: 'University of Wisconsin-Madison (BS Geography/GIS)',
-        url: 'https://www.wisc.edu',
-        imgUrl: 'assets/images/uw.png',
-        imgAlt: 'UW Logo'
-      }
-    ];
-
-    this.certLinks = [
-      {
-        title: 'Microsoft Technology Associate: Developer',
-        url: 'https://www.youracclaim.com/badges/637f3b5b-ff54-4815-901a-34081bf83e79/',
-        imgUrl: 'assets/images/mta.png',
-        imgAlt: 'MTA Logo'
-      },
-      {
-        title: 'Amateur Radio License: Technician Class',
-        url: 'https://wireless2.fcc.gov/UlsApp/UlsSearch/license.jsp?licKey=3987237',
-        imgUrl: 'assets/images/fcc.png',
-        imgAlt: 'FCC Logo'
-      }
-    ];
-
+    this.educationLinks = environment.baseConfigs.home.educationLinks;
+    this.certLinks = environment.baseConfigs.home.certLinks;
     this.blogLinks = environment.baseConfigs.home.blogLinks;
     this.devLinks = environment.baseConfigs.home.devLinks;
   }

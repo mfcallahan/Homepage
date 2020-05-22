@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-homepage-radio-gallery',
   templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.scss']
+  styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent implements OnInit {
   @Input()
@@ -21,7 +21,7 @@ export class GalleryComponent implements OnInit {
     this.options = [
       {},
       { breakpoint: 500, width: '300px', height: '300px', thumbnailsColumns: 3 },
-      { breakpoint: 300, width: '100%', height: '200px', thumbnailsColumns: 2 }
+      { breakpoint: 300, width: '100%', height: '200px', thumbnailsColumns: 2 },
 
       // orig:
       // {

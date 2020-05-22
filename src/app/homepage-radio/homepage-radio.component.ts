@@ -6,7 +6,7 @@ import { faMapMarker, faBroadcastTower } from '@fortawesome/free-solid-svg-icons
 @Component({
   selector: 'app-homepage-radio',
   templateUrl: './homepage-radio.component.html',
-  styleUrls: ['./homepage-radio.component.scss']
+  styleUrls: ['./homepage-radio.component.scss'],
 })
 export class HomepageRadioComponent implements OnInit {
   clubLinks: Array<any>;
@@ -22,21 +22,7 @@ export class HomepageRadioComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.clubLinks = [
-      {
-        title: 'Arizona GMRS Repeater Club',
-        url: 'https://www.azgmrs.org/welcome.php',
-        imgUrl: 'assets/images/agrc.png',
-        imgAlt: 'AGRC Logo'
-      },
-      {
-        title: 'Arizona Repeater Association',
-        url: 'http://w7ara.org/',
-        imgUrl: 'assets/images/ara.png',
-        imgAlt: 'ARA Logo'
-      }
-    ];
-
+    this.clubLinks = environment.baseConfigs.radio.clubLinks;
     this.licenseLinks = environment.baseConfigs.radio.licenseLinks;
     this.radioLinks = environment.baseConfigs.radio.radioLinks;
     this.downloadLinks = environment.baseConfigs.radio.downloadLinks;
