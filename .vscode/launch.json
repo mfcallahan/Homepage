@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch app",
+      "name": "Launch app: Chrome",
       "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",
@@ -11,7 +11,7 @@
       "runtimeArgs": ["--disable-web-security"]
     },
     {
-      "name": "Launch app (production)",
+      "name": "Launch app (production): Chrome",
       "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: start-production",
