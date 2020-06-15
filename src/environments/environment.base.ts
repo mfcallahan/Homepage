@@ -24,6 +24,10 @@ export const baseConfigs = {
     ],
     blogLinks: [
       {
+        title: 'Booting a virtual machine from a physical Windows disk partition',
+        url: 'https://seesharpdotnet.wordpress.com/2020/06/15/booting-a-virtual-machine-from-a-physical-windows-disk-partition/',
+      },
+      {
         title: 'K7MFC mobile shack: 2019 Ford F-150 XLT',
         url: 'https://seesharpdotnet.wordpress.com/2020/02/17/k7mfc-mobile-shack-2019-ford-f-150-xlt/',
       },
