@@ -44,10 +44,6 @@ export const baseConfigs = {
         url: 'https://seesharpdotnet.wordpress.com/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/',
       },
       {
-        title: 'K7MFC mobile shack: 2013 F-150 Lariat 4×4',
-        url: 'https://seesharpdotnet.wordpress.com/2018/07/01/k7mfc-mobile-shack-2013-f-150-lariat-4x4/',
-      },
-      {
         title: 'K7MFC Field Report: Four Peaks, AZ',
         url: 'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/',
       },
@@ -55,7 +51,6 @@ export const baseConfigs = {
         title: 'Cool Microsoft Backgrounds',
         url: 'https://seesharpdotnet.wordpress.com/2018/02/22/cool-windows-backgrounds/',
       },
-      { title: 'BTECH GMRS-V1 Review', url: 'https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/' },
       {
         title: 'Which programming language is used in the computer of a car?',
         url:
