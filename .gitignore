@@ -28,6 +28,7 @@ yarn-error.log
 testem.log
 typings/
 App_Data/
+remote-profile/
 
 # System Files
 .DS_Store

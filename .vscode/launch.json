@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch app",
+      "name": "Launch app: Chrome",
       "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",
@@ -11,13 +11,29 @@
       "runtimeArgs": ["--disable-web-security"]
     },
     {
-      "name": "Launch app (production)",
+      "name": "Launch app: Firefox",
+      "type": "firefox",
+      "request": "launch",
+      "preLaunchTask": "npm: start",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Launch app (production): Chrome",
       "type": "chrome",
       "request": "launch",
       "preLaunchTask": "npm: start-production",
       "url": "http://localhost:4200",
       "webRoot": "${workspaceFolder}",
       "runtimeArgs": ["--disable-web-security"]
+    },
+    {
+      "name": "Launch app (production): Firefox",
+      "type": "firefox",
+      "request": "launch",
+      "preLaunchTask": "npm: start",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}"
     },
     {
       "name": "Debug tests: Chrome",
