@@ -3,10 +3,10 @@ import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.scss'],
+  templateUrl: './homepage-main.component.html',
+  styleUrls: ['./homepage-main.component.scss'],
 })
-export class HomepageComponent implements OnInit {
+export class HomepageMainComponent implements OnInit {
   educationLinks: Array<any>;
   certLinks: Array<any>;
   blogLinks: Array<any>;
