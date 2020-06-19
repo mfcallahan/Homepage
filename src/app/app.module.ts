@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LightboxModule } from 'ngx-lightbox';
-import { NgxGalleryModule } from 'ngx-gallery';
+import { NgxGalleryModule } from 'ngx-gallery-9';
 
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { AppComponent } from 'src/app/app.component';
