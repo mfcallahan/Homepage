@@ -1,5 +1,5 @@
 @import 'src/styles-vars.scss';
-@import '~bootstrap/dist/css/bootstrap.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 body {
   font-family: $century-gothic !important;
@@ -74,10 +74,11 @@ h3 {
   text-decoration: underline;
 }
 
-a {
-  // transition: all 0.4s ease-in-out;
-  // -webkit-transition: all 0.4s ease-in-out;
-  // -moz-transition: all 0.4s ease-in-out;
-  // -ms-transition: all 0.4s ease-in-out;
-  // -o-transition: all 0.4s ease-in-out;
-}
+// TODO: this is not working
+// a {
+//   transition: all 0.4s ease-in-out;
+//   -webkit-transition: all 0.4s ease-in-out;
+//   -moz-transition: all 0.4s ease-in-out;
+//   -ms-transition: all 0.4s ease-in-out;
+//   -o-transition: all 0.4s ease-in-out;
+// }
