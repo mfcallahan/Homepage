@@ -1,6 +1,6 @@
 GitHub pages production deploy:
 
-- `ng deploy --cname=mfcallahan.com --message="prod deploy"`
+- `ng deploy -c production --cname=mfcallahan.com --message="prod deploy"`
 
 Reference:
 
