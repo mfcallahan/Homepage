@@ -5,27 +5,27 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LightboxModule } from 'ngx-lightbox';
 import { NgxGalleryModule } from 'ngx-gallery';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HomepageComponent } from './homepage/homepage.component';
-import { ProfilePicComponent } from './profile-pic/profile-pic.component';
-import { ContactLinksComponent } from './homepage/contact-links/contact-links.component';
-import { ContactLinksComponent as RadioContactLinksComponent } from './homepage-radio/contact-links/contact-links.component';
-import { AboutComponent } from './homepage/about/about.component';
-import { HomepageRadioComponent } from './homepage-radio/homepage-radio.component';
-import { LinkListComponent } from './link-list/link-list.component';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { AppComponent } from 'src/app/app.component';
+import { HomepageMainComponent } from 'src/app/homepage/homepage-main/homepage-main.component';
+import { ProfilePicComponent } from 'src/app/homepage/profile-pic/profile-pic.component';
+import { ContactLinksComponent } from 'src/app/homepage/homepage-main/contact-links/contact-links.component';
+import { ContactLinksComponent as RadioContactLinksComponent } from 'src/app/homepage/homepage-radio/contact-links/contact-links.component';
+import { AboutComponent } from 'src/app/homepage/homepage-main/about/about.component';
+import { HomepageRadioComponent } from 'src/app/homepage/homepage-radio/homepage-radio.component';
+import { LinkListComponent } from 'src/app/homepage/link-list/link-list.component';
 import { UrlSerializer } from '@angular/router';
-import { LowerCaseUrlSerializer } from './lowerCaseUrlSerializer';
-import { LinkImgListComponent } from './link-img-list/link-img-list.component';
-import { IntroComponent } from './homepage-radio/about/about.component';
-import { GalleryComponent } from './homepage-radio/gallery/gallery.component';
-import { CustomHammerConfig } from './hammerGestureConfig';
-import { BandplanComponent } from './homepage-radio/bandplan/bandplan.component';
+import { LowerCaseUrlSerializer } from 'src/app/lowerCaseUrlSerializer';
+import { LinkImgListComponent } from 'src/app/homepage/link-img-list/link-img-list.component';
+import { IntroComponent } from 'src/app/homepage/homepage-radio/about/about.component';
+import { GalleryComponent } from 'src/app/homepage/homepage-radio/gallery/gallery.component';
+import { CustomHammerConfig } from 'src/app/hammerGestureConfig';
+import { BandplanComponent } from 'src/app/homepage/homepage-radio/bandplan/bandplan.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent,
+    HomepageMainComponent,
     ProfilePicComponent,
     ContactLinksComponent,
     RadioContactLinksComponent,
