@@ -2,7 +2,7 @@
 // https://github.com/lukasz-galka/ngx-gallery/issues/242#issuecomment-517998231
 
 import { HammerGestureConfig } from '@angular/platform-browser';
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 
 @Injectable()
 export class CustomHammerConfig extends HammerGestureConfig {
