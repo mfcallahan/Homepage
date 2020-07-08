@@ -1,33 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
 import { faUser, faCode, faCodeBranch, faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
-import { environment } from 'src/environments/environment';
+import { LightboxBase } from 'src/app/lightboxBase';
 
 @Component({
   selector: 'app-homepage-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
 })
-export class AboutComponent implements OnInit {
-  faUser = faUser;
-  faCode = faCode;
-  faCodeBranch = faCodeBranch;
-  faBroadcastTower = faBroadcastTower;
-  album: Array<any>;
+export class AboutComponent extends LightboxBase implements OnInit {
+  public faUser = faUser;
+  public faCode = faCode;
+  public faCodeBranch = faCodeBranch;
+  public faBroadcastTower = faBroadcastTower;
 
-  constructor(private lightbox: Lightbox, private lightboxConfig: LightboxConfig) {}
+  constructor(public lightbox: Lightbox, public lightboxConfig: LightboxConfig) {
+    super(lightbox, lightboxConfig);
+  }
 
   ngOnInit() {
-    this.lightboxConfig.centerVertically = true;
-    this.lightboxConfig.disableKeyboardNav = true;
-    this.album = environment.baseConfigs.home.lightboxAlbum;
-  }
-
-  open(index: number): void {
-    this.lightbox.open(this.album, index);
-  }
-
-  close(): void {
-    this.lightbox.close();
+    this.album = [
+      { src: 'assets/images/qbasic.png', alt: 'QBASIC' },
+      { src: 'assets/images/ti83.png', alt: 'TI-83' },
+    ];
   }
 }

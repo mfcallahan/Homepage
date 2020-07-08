@@ -1,30 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
-import { environment } from 'src/environments/environment';
+import { LightboxBase } from 'src/app/lightboxBase';
 
 @Component({
   selector: 'app-homepage-radio-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
 })
-export class IntroComponent implements OnInit {
-  currentYear: string;
-  album: Array<any>;
+export class IntroComponent extends LightboxBase implements OnInit {
+  public currentYear: string;
 
-  constructor(private lightbox: Lightbox, private lightboxConfig: LightboxConfig) {}
+  constructor(public lightbox: Lightbox, public lightboxConfig: LightboxConfig) {
+    super(lightbox, lightboxConfig);
+  }
 
   ngOnInit() {
     this.currentYear = new Date().getFullYear().toString();
-    this.lightboxConfig.centerVertically = true;
-    this.lightboxConfig.disableKeyboardNav = true;
-    this.album = environment.baseConfigs.radio.lightboxAlbum;
-  }
-
-  open(index: number): void {
-    this.lightbox.open(this.album, index);
-  }
-
-  close(): void {
-    this.lightbox.close();
+    this.album = [
+      { src: 'assets/images/pro71.png', alt: 'Pro-71' },
+      { src: 'assets/images/cell-coverage.png', alt: 'Cell Coverage Map' },
+    ];
   }
 }
