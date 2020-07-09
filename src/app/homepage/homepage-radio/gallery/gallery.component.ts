@@ -9,25 +9,28 @@ import { NgxGalleryOptions, NgxGalleryImage } from 'ngx-gallery-9';
 })
 export class GalleryComponent implements OnInit {
   @Input()
-  options: NgxGalleryOptions[];
+  galleryOptions: NgxGalleryOptions[];
   @Input()
-  images: NgxGalleryImage[];
+  galleryImages: NgxGalleryImage[];
   faCamera = faCamera;
 
   constructor() {}
 
   ngOnInit() {
-    this.options = [
+    this.setGalleryOptions();
+    this.setGalleryImages();
+  }
+
+  private setGalleryOptions() {
+    this.galleryOptions = [
       {},
       { breakpoint: 500, width: '300px', height: '300px', thumbnailsColumns: 3 },
       { breakpoint: 300, width: '100%', height: '200px', thumbnailsColumns: 2 },
     ];
-
-    this.setGalleryImages();
   }
 
   private setGalleryImages() {
-    this.images = [
+    this.galleryImages = [
       {
         small: 'assets/images/truck1.thumb.png',
         medium: 'assets/images/truck1.png',
