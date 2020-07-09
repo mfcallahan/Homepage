@@ -29,7 +29,7 @@ export class HomepageRadioComponent implements OnInit {
     this.setRadioBlogLinks();
   }
 
-  private setClubLinks() {
+  private setClubLinks(): void {
     this.clubLinks = [
       {
         title: 'Arizona GMRS Repeater Club',
@@ -46,7 +46,7 @@ export class HomepageRadioComponent implements OnInit {
     ];
   }
 
-  private setLicenseLinks() {
+  private setLicenseLinks(): void {
     this.licenseLinks = [
       { title: 'How to get a GMRS license', url: 'https://www.azgmrs.org/how-to-get-a-gmrs-license.php' },
       { title: 'hamstudy.org - My favorite ham radio exam preparation resource', url: 'https://hamstudy.org/' },
@@ -58,7 +58,7 @@ export class HomepageRadioComponent implements OnInit {
     ];
   }
 
-  private setRadioLinks() {
+  private setRadioLinks(): void {
     this.radioLinks = [
       { title: 'Arizona Repeaters Directory', url: 'http://www.azrepeaters.net/' },
       { title: 'Arizona Repeater Association', url: 'https://www.w7ara.org/' },
@@ -88,7 +88,7 @@ export class HomepageRadioComponent implements OnInit {
     ];
   }
 
-  private setDownloadLinks() {
+  private setDownloadLinks(): void {
     this.downloadLinks = [
       {
         title: 'WRAA720-band-plan.csv',
@@ -101,7 +101,7 @@ export class HomepageRadioComponent implements OnInit {
     ];
   }
 
-  private setRadioMapLinks() {
+  private setRadioMapLinks(): void {
     this.radioMapLinks = [
       { title: 'AGRC Repeater Map', url: 'https://www.azgmrs.org/club-repeaters.php' },
       { title: 'MyGMRS.com Repeater Map', url: 'https://www.mygmrs.com/map/' },
@@ -111,7 +111,7 @@ export class HomepageRadioComponent implements OnInit {
     ];
   }
 
-  private setRadioBlogLinks() {
+  private setRadioBlogLinks(): void {
     this.radioBlogLinks = [
       {
         title: 'K7MFC mobile shack: 2019 Ford F-150 XLT',

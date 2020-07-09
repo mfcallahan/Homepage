@@ -21,7 +21,7 @@ export class GalleryComponent implements OnInit {
     this.setGalleryImages();
   }
 
-  private setGalleryOptions() {
+  private setGalleryOptions(): void {
     this.galleryOptions = [
       {},
       { breakpoint: 500, width: '300px', height: '300px', thumbnailsColumns: 3 },
@@ -29,7 +29,7 @@ export class GalleryComponent implements OnInit {
     ];
   }
 
-  private setGalleryImages() {
+  private setGalleryImages(): void {
     this.galleryImages = [
       {
         small: 'assets/images/truck1.thumb.png',

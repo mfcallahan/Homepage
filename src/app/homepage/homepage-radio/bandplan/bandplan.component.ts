@@ -16,7 +16,7 @@ export class BandplanComponent implements OnInit {
     this.setBandPlan();
   }
 
-  private setBandPlan() {
+  private setBandPlan(): void {
     this.tableRows = [
       {
         channel: '1',

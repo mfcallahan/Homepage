@@ -20,7 +20,7 @@ export class HomepageMainComponent implements OnInit {
     this.setDevLinks();
   }
 
-  private setEducationLinks() {
+  private setEducationLinks(): void {
     this.educationLinks = [
       {
         title: 'University of Wisconsin-Madison (BS Geography/GIS)',
@@ -31,7 +31,7 @@ export class HomepageMainComponent implements OnInit {
     ];
   }
 
-  private setCertLinks() {
+  private setCertLinks(): void {
     this.certLinks = [
       {
         title: 'Microsoft Technology Associate: Developer',
@@ -48,7 +48,7 @@ export class HomepageMainComponent implements OnInit {
     ];
   }
 
-  private setBlogLinks() {
+  private setBlogLinks(): void {
     this.blogLinks = [
       {
         title: 'Booting a virtual machine from a physical Windows disk partition',
@@ -87,7 +87,7 @@ export class HomepageMainComponent implements OnInit {
     ];
   }
 
-  private setDevLinks() {
+  private setDevLinks(): void {
     this.devLinks = [
       { title: 'C#', url: 'https://docs.microsoft.com/en-us/dotnet/csharp/' },
       { title: 'Python', url: 'https://www.python.org/' },
