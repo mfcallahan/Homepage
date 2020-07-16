@@ -97,6 +97,7 @@ export class HomepageMainComponent implements OnInit {
       { title: 'Linux Mint', url: 'https://linuxmint.com/' },
       { title: 'GitKraken', url: 'https://www.gitkraken.com/' },
       { title: 'Postman', url: 'https://www.getpostman.com/' },
+      { title: 'Notepad', url: 'http://www.notepad.org/' },
     ];
   }
 }
