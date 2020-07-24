@@ -5,7 +5,7 @@ import { faHome, faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-homepage-radio-contact-links',
   templateUrl: './contact-links.component.html',
-  styleUrls: ['../../contact-links/contact-links.scss']
+  styleUrls: ['../../contact-links/contact-links.component.scss'],
 })
 export class ContactLinksComponent {
   faEnvelope = faEnvelope;
