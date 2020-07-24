@@ -91,6 +91,8 @@ export class HomepageMainComponent implements OnInit {
     this.devLinks = [
       { title: 'C#', url: 'https://docs.microsoft.com/en-us/dotnet/csharp/' },
       { title: 'Python', url: 'https://www.python.org/' },
+      { title: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+      { title: '.NET Core', url: 'https://docs.microsoft.com/en-us/dotnet/core/' },
       { title: 'Angular', url: 'https://angular.io/' },
       { title: 'Visual Studio', url: 'https://visualstudio.microsoft.com/' },
       { title: 'Visual Studio Code', url: 'https://code.visualstudio.com/' },
