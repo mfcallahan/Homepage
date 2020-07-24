@@ -11,13 +11,13 @@
         <app-link-img-list [title]="'Clubs'" [links]="clubLinks"></app-link-img-list>
       </div>
       <div class="row no-gutters hide-mobile">
-        <app-link-list [title]="'Get Licensed!'" [links]="licenseLinks" [divWrapper]="true"></app-link-list>
+        <app-link-list [title]="'Get Licensed!'" [links]="licenseLinks"></app-link-list>
       </div>
       <div class="row no-gutters hide-mobile">
-        <app-link-list [title]="'Links'" [links]="radioLinks" [divWrapper]="true"></app-link-list>
+        <app-link-list [title]="'Links'" [links]="radioLinks"></app-link-list>
       </div>
       <div class="row no-gutters">
-        <app-link-list [title]="'Downloads'" [links]="downloadLinks" [divWrapper]="true"></app-link-list>
+        <app-link-list [title]="'Downloads'" [links]="downloadLinks"></app-link-list>
       </div>
     </div>
     <div class="col-md-8 right-column">
@@ -26,11 +26,11 @@
       </div>
       <div class="row no-gutters">
         <div class="col-sm-6">
-          <div class="title"><fa-icon [icon]="faMapMarker"></fa-icon>Maps</div>
+          <div class="heading heading-large"><fa-icon [icon]="faMapMarker"></fa-icon>Maps</div>
           <app-link-list [links]="radioMapLinks"></app-link-list>
         </div>
         <div class="col-sm-6">
-          <div class="title"><fa-icon [icon]="faWordpressSimple"></fa-icon>Blog</div>
+          <div class="heading heading-large"><fa-icon [icon]="faWordpressSimple"></fa-icon>Blog</div>
           <app-link-list [links]="radioBlogLinks"></app-link-list>
         </div>
       </div>
