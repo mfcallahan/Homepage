@@ -23,6 +23,7 @@ export class HomepageRadioComponent implements OnInit {
   ngOnInit() {
     this.setClubLinks();
     this.setClubLinks();
+    this.setLicenseLinks();
     this.setRadioLinks();
     this.setDownloadLinks();
     this.setRadioMapLinks();
