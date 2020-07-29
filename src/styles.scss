@@ -19,6 +19,23 @@ body {
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  .right-column {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: $col-ms-breakpoint + 1) {
+  .hide-non-mobile {
+    display: none !important;
+  }
 }
 
 p {

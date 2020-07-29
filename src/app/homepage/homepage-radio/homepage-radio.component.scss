@@ -16,18 +16,18 @@
   padding-right: 60px;
 }
 
-@media (max-width: $col-ms-breakpoint) {
-  .right-column {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+// @media (max-width: $col-ms-breakpoint) {
+//   .right-column {
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+//     padding-left: 30px;
+//     padding-right: 30px;
+//   }
 
-  .hide-mobile {
-    display: none;
-  }
-}
+//   .hide-mobile {
+//     display: none;
+//   }
+// }
 
 ::ng-deep .right-column a {
   color: $app-dark-turquoise !important;

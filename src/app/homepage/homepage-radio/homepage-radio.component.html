@@ -1,8 +1,11 @@
 <div class="container">
   <div class="row no-gutters">
     <div class="col-md-4 left-column">
-      <div class="row no-gutters">
+      <div class="row no-gutters hide-mobile">
         <app-profile-pic [pic]="'bandit.png'" [name]="'K7MFC | WRAA720'" [location]="'Phoenix, AZ'"></app-profile-pic>
+      </div>
+      <div class="row no-gutters hide-non-mobile">
+        <app-profile-pic [pic]="'bandit.png'" [name]="'K7MFC'" [location]="'Phoenix, AZ'"></app-profile-pic>
       </div>
       <div class="row no-gutters">
         <app-homepage-radio-contact-links></app-homepage-radio-contact-links>
