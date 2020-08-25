@@ -94,6 +94,7 @@ export class HomepageMainComponent implements OnInit {
       { title: 'TypeScript', url: 'https://www.typescriptlang.org/' },
       { title: '.NET Core', url: 'https://docs.microsoft.com/en-us/dotnet/core/' },
       { title: 'Angular', url: 'https://angular.io/' },
+      { title: 'Rider', url: 'https://www.jetbrains.com/rider/' },
       { title: 'Visual Studio', url: 'https://visualstudio.microsoft.com/' },
       { title: 'Visual Studio Code', url: 'https://code.visualstudio.com/' },
       { title: 'Linux Mint', url: 'https://linuxmint.com/' },
