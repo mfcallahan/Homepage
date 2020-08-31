@@ -16,14 +16,12 @@
   padding-right: 60px;
 }
 
-// @media (max-width: $col-ms-breakpoint) {
-//   .right-column {
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-//     padding-left: 30px;
-//     padding-right: 30px;
-//   }
-// }
+@media (max-width: $col-ms-breakpoint) {
+  .right-column {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 ::ng-deep .right-column a {
   color: $app-dark-turquoise !important;
