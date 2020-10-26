@@ -1,7 +1,7 @@
 @import 'src/styles-vars.scss';
 
-.heading {
-  margin-bottom: 15px;
+p span {
+  display: block;
 }
 
 fa-icon {
@@ -15,6 +15,10 @@ fa-icon {
   display: inline-block;
 }
 
+.heading {
+  margin-bottom: 15px;
+}
+
 .banner-img {
   width: 100%;
   margin-bottom: 1rem;
@@ -22,5 +26,8 @@ fa-icon {
 
 .project-title {
   font-size: 18px;
-  margin-right: 10px;
+}
+
+.construction-image {
+  margin-left: 15px;
 }
