@@ -108,7 +108,7 @@ export class HomepageMainComponent implements OnInit {
         imgAlt: ' Logo',
       },
       {
-        title: '.NET Core',
+        title: '.NET Framework',
         url: 'https://docs.microsoft.com/en-us/dotnet/core/',
         imgUrl: 'assets/images/dotnet-logo.png',
         imgAlt: '.NET Core Logo',
