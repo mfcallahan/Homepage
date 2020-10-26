@@ -89,18 +89,78 @@ export class HomepageMainComponent implements OnInit {
 
   private setDevLinks(): void {
     this.devLinks = [
-      { title: 'C#', url: 'https://docs.microsoft.com/en-us/dotnet/csharp/' },
-      { title: 'Python', url: 'https://www.python.org/' },
-      { title: 'TypeScript', url: 'https://www.typescriptlang.org/' },
-      { title: '.NET Core', url: 'https://docs.microsoft.com/en-us/dotnet/core/' },
-      { title: 'Angular', url: 'https://angular.io/' },
-      { title: 'Rider', url: 'https://www.jetbrains.com/rider/' },
-      { title: 'Visual Studio', url: 'https://visualstudio.microsoft.com/' },
-      { title: 'Visual Studio Code', url: 'https://code.visualstudio.com/' },
-      { title: 'Linux Mint', url: 'https://linuxmint.com/' },
-      { title: 'GitKraken', url: 'https://www.gitkraken.com/' },
-      { title: 'Postman', url: 'https://www.getpostman.com/' },
-      { title: 'Notepad', url: 'http://www.notepad.org/' },
+      {
+        title: 'C#',
+        url: 'https://docs.microsoft.com/en-us/dotnet/csharp/',
+        imgUrl: 'assets/images/csharp-logo.png',
+        imgAlt: 'CSharp Logo',
+      },
+      {
+        title: 'Python',
+        url: 'https://www.python.org/',
+        imgUrl: 'assets/images/python-logo.png',
+        imgAlt: 'Python Logo',
+      },
+      {
+        title: 'TypeScript',
+        url: 'https://www.typescriptlang.org/',
+        imgUrl: 'assets/images/typescript-logo.png',
+        imgAlt: ' Logo',
+      },
+      {
+        title: '.NET Core',
+        url: 'https://docs.microsoft.com/en-us/dotnet/core/',
+        imgUrl: 'assets/images/dotnet-core-logo.png',
+        imgAlt: '.NET Core Logo',
+      },
+      {
+        title: 'Angular',
+        url: 'https://angular.io/',
+        imgUrl: 'assets/images/angular-logo.png',
+        imgAlt: 'Angular Logo',
+      },
+      {
+        title: 'Rider',
+        url: 'https://www.jetbrains.com/rider/',
+        imgUrl: 'assets/images/rider-logo.png',
+        imgAlt: 'Rider Logo',
+      },
+      {
+        title: 'Visual Studio',
+        url: 'https://visualstudio.microsoft.com/',
+        imgUrl: 'assets/images/visual-studio-logo.png',
+        imgAlt: 'VS Logo',
+      },
+      {
+        title: 'Visual Studio Code',
+        url: 'https://code.visualstudio.com/',
+        imgUrl: 'assets/images/visual-studio-code-logo.png',
+        imgAlt: 'VS Code Logo',
+      },
+      {
+        title: 'Linux Mint',
+        url: 'https://linuxmint.com/',
+        imgUrl: 'assets/images/linux-mint-logo.png',
+        imgAlt: 'Linux Mint Logo',
+      },
+      {
+        title: 'GitKraken',
+        url: 'https://www.gitkraken.com/',
+        imgUrl: 'assets/images/gitkraken-logo.png',
+        imgAlt: 'GitKraken Logo',
+      },
+      {
+        title: 'Postman',
+        url: 'https://www.getpostman.com/',
+        imgUrl: 'assets/images/postman-logo.png',
+        imgAlt: 'Postman Logo',
+      },
+      {
+        title: 'Notepad',
+        url: 'http://www.notepad.org/',
+        imgUrl: 'assets/images/notepad-logo.png',
+        imgAlt: 'Notepad Logo',
+      },
     ];
   }
 }
