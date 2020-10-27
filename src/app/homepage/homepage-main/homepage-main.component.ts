@@ -23,7 +23,7 @@ export class HomepageMainComponent implements OnInit {
   private setEducationLinks(): void {
     this.educationLinks = [
       {
-        title: 'University of Wisconsin-Madison (BS Geography/GIS)',
+        title: 'University of Wisconsin-Madison (BS, Geographic Information Systems)',
         url: 'https://www.wisc.edu',
         imgUrl: 'assets/images/uw.png',
         imgAlt: 'UW Logo',
@@ -108,9 +108,9 @@ export class HomepageMainComponent implements OnInit {
         imgAlt: ' Logo',
       },
       {
-        title: '.NET Core',
+        title: '.NET Framework',
         url: 'https://docs.microsoft.com/en-us/dotnet/core/',
-        imgUrl: 'assets/images/dotnet-core-logo.png',
+        imgUrl: 'assets/images/dotnet-logo.png',
         imgAlt: '.NET Core Logo',
       },
       {
@@ -144,6 +144,12 @@ export class HomepageMainComponent implements OnInit {
         imgAlt: 'Linux Mint Logo',
       },
       {
+        title: 'Git',
+        url: 'https://git-scm.com/',
+        imgUrl: 'assets/images/git-logo.png',
+        imgAlt: 'Git Logo',
+      },
+      {
         title: 'GitKraken',
         url: 'https://www.gitkraken.com/',
         imgUrl: 'assets/images/gitkraken-logo.png',
@@ -153,6 +159,12 @@ export class HomepageMainComponent implements OnInit {
         title: 'Postman',
         url: 'https://www.getpostman.com/',
         imgUrl: 'assets/images/postman-logo.png',
+        imgAlt: 'Postman Logo',
+      },
+      {
+        title: 'Meld',
+        url: 'https://meldmerge.org/',
+        imgUrl: 'assets/images/meld-logo.png',
         imgAlt: 'Postman Logo',
       },
       {

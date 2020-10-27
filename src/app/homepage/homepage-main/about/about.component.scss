@@ -1,9 +1,5 @@
 @import 'src/styles-vars.scss';
 
-p span {
-  display: block;
-}
-
 fa-icon {
   border-radius: 50%;
   background: $app-dark-blue;
@@ -13,6 +9,10 @@ fa-icon {
   margin-right: 10px;
   text-align: center;
   display: inline-block;
+}
+
+p.project span {
+  display: block;
 }
 
 .heading {
