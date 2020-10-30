@@ -16,7 +16,7 @@ import { HomepageRadioComponent } from 'src/app/homepage/homepage-radio/homepage
 import { LinkListComponent } from 'src/app/homepage/link-list/link-list.component';
 import { UrlSerializer } from '@angular/router';
 import { LowerCaseUrlSerializer } from 'src/app/lowerCaseUrlSerializer';
-import { LinkImgListComponent } from 'src/app/homepage/link-img-list/link-img-list.component';
+import { LinkImgListComponent } from 'src/app/homepage/link-list/link-img-list/link-img-list.component';
 import { IntroComponent } from 'src/app/homepage/homepage-radio/about/about.component';
 import { GalleryComponent } from 'src/app/homepage/homepage-radio/gallery/gallery.component';
 import { CustomHammerConfig } from 'src/app/hammerGestureConfig';
