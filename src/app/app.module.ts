@@ -21,7 +21,7 @@ import { IntroComponent } from 'src/app/homepage/homepage-radio/about/about.comp
 import { GalleryComponent } from 'src/app/homepage/homepage-radio/gallery/gallery.component';
 import { CustomHammerConfig } from 'src/app/hammerGestureConfig';
 import { BandplanComponent } from 'src/app/homepage/homepage-radio/bandplan/bandplan.component';
-import { UrlRedirector } from './urlRediretor';
+import { UrlRedirector } from './urlRedirector';
 
 @NgModule({
   declarations: [
