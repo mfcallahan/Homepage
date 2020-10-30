@@ -39,7 +39,8 @@
       "name": "Debug tests: Chrome",
       "type": "chrome",
       "request": "attach",
-      "port": 9222,
+      "address": "localhost",
+      "port": 9333,
       "sourceMaps": true,
       "webRoot": "${workspaceRoot}"
     },
