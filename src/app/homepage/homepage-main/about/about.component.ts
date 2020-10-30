@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
 import { faUser, faCode, faCodeBranch, faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
-import { LightboxBase } from 'src/app/homepage/lightboxBase';
+import { LightboxBase } from 'src/app/lightboxBase';
 
 @Component({
   selector: 'app-homepage-about',

@@ -21,6 +21,7 @@ import { IntroComponent } from 'src/app/homepage/homepage-radio/about/about.comp
 import { GalleryComponent } from 'src/app/homepage/homepage-radio/gallery/gallery.component';
 import { CustomHammerConfig } from 'src/app/hammerGestureConfig';
 import { BandplanComponent } from 'src/app/homepage/homepage-radio/bandplan/bandplan.component';
+import { UrlRedirector } from './urlRediretor';
 
 @NgModule({
   declarations: [
@@ -35,19 +36,20 @@ import { BandplanComponent } from 'src/app/homepage/homepage-radio/bandplan/band
     LinkImgListComponent,
     IntroComponent,
     GalleryComponent,
-    BandplanComponent
+    BandplanComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule, NgbModule, LightboxModule, NgxGalleryModule, AppRoutingModule],
   providers: [
+    UrlRedirector,
     {
       provide: UrlSerializer,
-      useClass: LowerCaseUrlSerializer
+      useClass: LowerCaseUrlSerializer,
     },
     {
       provide: HAMMER_GESTURE_CONFIG,
-      useClass: CustomHammerConfig
-    }
+      useClass: CustomHammerConfig,
+    },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

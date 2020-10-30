@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
-import { LightboxBase } from 'src/app/homepage/lightboxBase';
+import { LightboxBase } from 'src/app/lightboxBase';
 
 @Component({
   selector: 'app-homepage-radio-about',
