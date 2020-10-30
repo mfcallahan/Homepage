@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomepageMainComponent } from 'src/app/homepage/homepage-main/homepage-main.component';
 import { HomepageRadioComponent } from 'src/app/homepage/homepage-radio/homepage-radio.component';
-import { UrlRedirector } from 'src/app/urlRediretor';
+import { UrlRedirector } from 'src/app/urlRedirector';
 
 const routes: Routes = [
   {
