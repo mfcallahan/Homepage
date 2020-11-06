@@ -51,6 +51,11 @@ export class HomepageMainComponent implements OnInit {
   private setBlogLinks(): void {
     this.blogLinks = [
       {
+        title: 'How to implement SignalR in a .NET Core 3.1 + Angular 10 web application',
+        url:
+          'https://seesharpdotnet.wordpress.com/2020/11/05/how-to-implement-signalr-in-a-net-core-angular-web-application/',
+      },
+      {
         title: 'Booting a virtual machine from a physical Windows disk partition',
         url:
           'https://seesharpdotnet.wordpress.com/2020/06/15/booting-a-virtual-machine-from-a-physical-windows-disk-partition/',
