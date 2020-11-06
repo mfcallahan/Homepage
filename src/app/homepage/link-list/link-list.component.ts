@@ -10,4 +10,6 @@ export class LinkListComponent {
   title: string;
   @Input()
   links: Array<string>;
+
+  constructor() {}
 }
