@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { faWordpressSimple } from '@fortawesome/free-brands-svg-icons';
 import { faMapMarker, faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
+import { ImageLink } from 'src/app/models/imageLink';
+import { Link } from 'src/app/models/link';
 
 @Component({
   selector: 'app-homepage-radio',
@@ -8,12 +10,12 @@ import { faMapMarker, faBroadcastTower } from '@fortawesome/free-solid-svg-icons
   styleUrls: ['./homepage-radio.component.scss'],
 })
 export class HomepageRadioComponent implements OnInit {
-  clubLinks: Array<any>;
-  licenseLinks: Array<any>;
-  radioLinks: Array<any>;
-  downloadLinks: Array<any>;
-  radioMapLinks: Array<any>;
-  radioBlogLinks: Array<any>;
+  clubLinks: ImageLink[];
+  licenseLinks: Link[];
+  radioLinks: Link[];
+  downloadLinks: Link[];
+  radioMapLinks: Link[];
+  radioBlogLinks: Link[];
   faWordpressSimple = faWordpressSimple;
   faMapMarker = faMapMarker;
   faBroadcastTower = faBroadcastTower;
@@ -21,124 +23,112 @@ export class HomepageRadioComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    this.setClubLinks();
-    this.setClubLinks();
-    this.setLicenseLinks();
-    this.setRadioLinks();
-    this.setDownloadLinks();
-    this.setRadioMapLinks();
-    this.setRadioBlogLinks();
+    this.clubLinks = this.getClubLinks();
+    this.licenseLinks = this.getLicenseLinks();
+    this.radioLinks = this.getRadioLinks();
+    this.downloadLinks = this.getDownloadLinks();
+    this.radioMapLinks = this.getRadioMapLinks();
+    this.radioBlogLinks = this.getRadioBlogLinks();
   }
 
-  private setClubLinks(): void {
-    this.clubLinks = [
-      {
-        title: 'Arizona GMRS Repeater Club',
-        url: 'https://www.azgmrs.org/welcome.php',
-        imgUrl: 'assets/images/agrc.png',
-        imgAlt: 'AGRC Logo',
-      },
-      {
-        title: 'Arizona Repeater Association',
-        url: 'http://w7ara.org/',
-        imgUrl: 'assets/images/ara.png',
-        imgAlt: 'ARA Logo',
-      },
+  private getClubLinks(): ImageLink[] {
+    return [
+      new ImageLink(
+        'Arizona GMRS Repeater Club',
+        'https://www.azgmrs.org/welcome.php',
+        'assets/images/agrc.png',
+        'AGRC Logo'
+      ),
+      new ImageLink('Arizona Repeater Association', 'http://w7ara.org/', 'assets/images/ara.png', 'ARA Logo'),
     ];
   }
 
-  private setLicenseLinks(): void {
-    this.licenseLinks = [
-      { title: 'How to get a GMRS license', url: 'https://www.azgmrs.org/how-to-get-a-gmrs-license.php' },
-      { title: 'hamstudy.org - My favorite ham radio exam preparation resource', url: 'https://hamstudy.org/' },
-      {
-        title: 'ARRL - Find an amateur radio exam session',
-        url: 'http://www.arrl.org/find-an-amateur-radio-license-exam-session',
-      },
-      { title: 'FCC Universal Licensing System', url: 'https://wireless2.fcc.gov/UlsEntry/licManager/login.jsp' },
+  private getLicenseLinks(): Link[] {
+    return [
+      new Link('How to get a GMRS license', 'https://www.azgmrs.org/how-to-get-a-gmrs-license.php'),
+      new Link('hamstudy.org - My favorite ham radio exam preparation resource', 'https://hamstudy.org/'),
+      new Link(
+        'ARRL - Find an amateur radio exam session',
+        'http://www.arrl.org/find-an-amateur-radio-license-exam-session'
+      ),
+      new Link('FCC Universal Licensing System', 'https://wireless2.fcc.gov/UlsEntry/licManager/login.jsp'),
     ];
   }
 
-  private setRadioLinks(): void {
-    this.radioLinks = [
-      { title: 'Arizona Repeaters Directory', url: 'http://www.azrepeaters.net/' },
-      { title: 'Arizona Repeater Association', url: 'https://www.w7ara.org/' },
-      { title: 'RadioReference.com - AZ Database', url: 'https://www.radioreference.com/apps/db/?stid=4' },
-      {
-        title: 'RadioReference.com - AZ Discussion Forum',
-        url: 'https://forums.radioreference.com/forums/arizona-radio-discussion-forum.36/',
-      },
-      { title: 'US Amateur Radio Frequency Allocations', url: 'http://www.arrl.org/frequency-allocations' },
-      { title: 'US Nationwide Amateur Frequencies', url: 'https://www.radioreference.com/apps/db/?aid=7771' },
-      {
-        title: 'FRS/GMRS combined channel chart',
-        url: 'https://wiki.radioreference.com/index.php/FRS/GMRS_combined_channel_chart',
-      },
-      { title: 'FCC License/Call Sign Search', url: 'https://wireless2.fcc.gov/UlsApp/UlsSearch/searchAdvanced.jsp' },
-      {
-        title: 'The Antenna Farm: Antenna Tutorial',
-        url: 'https://www.theantennafarm.com/catalog/index.php?main_page=antenna_tutorial_page',
-      },
-      { title: 'KD4SAI VHF/UHF Line of Sight Calculator', url: 'https://www.qsl.net/kd4sai/distance.html' },
-      {
-        title: 'CHIRP - open source radio programming software',
-        url: 'https://chirp.danplanet.com/projects/chirp/wiki/Home',
-      },
-      { title: 'miklor.com - Radio Information & Support Site', url: 'http://www.miklor.com/' },
-      { title: 'ScannerMaster.com - The scanner experts!', url: 'https://www.scannermaster.com/' },
+  private getRadioLinks(): Link[] {
+    return [
+      new Link('Arizona Repeaters Directory', 'http://www.azrepeaters.net/'),
+      new Link('Arizona Repeater Association', 'https://www.w7ara.org/'),
+      new Link('RadioReference.com - AZ Database', 'https://www.radioreference.com/apps/db/?stid=4'),
+      new Link(
+        'RadioReference.com - AZ Discussion Forum',
+        'https://forums.radioreference.com/forums/arizona-radio-discussion-forum.36/'
+      ),
+      new Link('US Amateur Radio Frequency Allocations', 'http://www.arrl.org/frequency-allocations'),
+      new Link('US Nationwide Amateur Frequencies', 'https://www.radioreference.com/apps/db/?aid=7771'),
+      new Link(
+        'FRS/GMRS combined channel chart',
+        'https://wiki.radioreference.com/index.php/FRS/GMRS_combined_channel_chart'
+      ),
+      new Link('FCC License/Call Sign Search', 'https://wireless2.fcc.gov/UlsApp/UlsSearch/searchAdvanced.jsp'),
+      new Link(
+        'The Antenna Farm: Antenna Tutorial',
+        'https://www.theantennafarm.com/catalog/index.php?main_page=antenna_tutorial_page'
+      ),
+      new Link('KD4SAI VHF/UHF Line of Sight Calculator', 'https://www.qsl.net/kd4sai/distance.html'),
+      new Link(
+        'CHIRP - open source radio programming software',
+        'https://chirp.danplanet.com/projects/chirp/wiki/Home'
+      ),
+      new Link('miklor.com - Radio Information & Support Site', 'http://www.miklor.com/'),
+      new Link('ScannerMaster.com - The scanner experts!', 'https://www.scannermaster.com/'),
     ];
   }
 
-  private setDownloadLinks(): void {
-    this.downloadLinks = [
-      {
-        title: 'WRAA720-band-plan.csv',
-        url: 'assets/docs/WRAA720-band-plan.csv',
-      },
-      {
-        title: 'WRAA720-band-plan.xlsx',
-        url: 'assets/docs/WRAA720-band-plan.xlsx',
-      },
+  private getDownloadLinks(): Link[] {
+    return [
+      new Link('WRAA720-band-plan.csv', 'assets/docs/WRAA720-band-plan.csv'),
+      new Link('WRAA720-band-plan.xlsx', 'assets/docs/WRAA720-band-plan.xlsx'),
     ];
   }
 
-  private setRadioMapLinks(): void {
-    this.radioMapLinks = [
-      { title: 'AGRC Repeater Map', url: 'https://www.azgmrs.org/club-repeaters.php' },
-      { title: 'MyGMRS.com Repeater Map', url: 'https://www.mygmrs.com/map/' },
-      { title: 'NOAA Weather Radio Coverage Map', url: 'http://www.nws.noaa.gov/nwr/Maps/PHP/AZ.php' },
-      { title: 'Arizona Repeaters Association Repeater Map', url: 'http://new.w7ara.org/map/Arizona1.Aspx' },
-      { title: 'US Call Sign Areas & Zones', url: 'http://hamwaves.com/map.us/en/index.html' },
+  private getRadioMapLinks(): Link[] {
+    return [
+      new Link('AGRC Repeater Map', 'https://www.azgmrs.org/club-repeaters.php'),
+      new Link('MyGMRS.com Repeater Map', 'https://www.mygmrs.com/map/'),
+      new Link('NOAA Weather Radio Coverage Map', 'http://www.nws.noaa.gov/nwr/Maps/PHP/AZ.php'),
+      new Link('Arizona Repeaters Association Repeater Map', 'http://new.w7ara.org/map/Arizona1.Aspx'),
+      new Link('US Call Sign Areas & Zones', 'http://hamwaves.com/map.us/en/index.html'),
     ];
   }
 
-  private setRadioBlogLinks(): void {
-    this.radioBlogLinks = [
-      {
-        title: 'K7MFC mobile shack: 2019 Ford F-150 XLT',
-        url: 'https://seesharpdotnet.wordpress.com/2020/02/17/k7mfc-mobile-shack-2019-ford-f-150-xlt/',
-      },
-      {
-        title: 'Refurbished Radio Shack Pro-2021',
-        url: 'https://seesharpdotnet.wordpress.com/2018/08/25/refurbished-radio-shack-pro-2021/',
-      },
-      {
-        title: 'How to get a GMRS License',
-        url: 'https://seesharpdotnet.wordpress.com/2018/08/11/how-to-get-a-gmrs-license/',
-      },
-      {
-        title: 'The history behind 462.675 MHz and the travel tone',
-        url: 'https://seesharpdotnet.wordpress.com/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/',
-      },
-      {
-        title: 'K7MFC mobile shack: 2013 F-150 Lariat 4×4',
-        url: 'https://seesharpdotnet.wordpress.com/2018/07/01/k7mfc-mobile-shack-2013-f-150-lariat-4x4/',
-      },
-      {
-        title: 'K7MFC Field Report: Four Peaks, AZ',
-        url: 'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/',
-      },
-      { title: 'BTECH GMRS-V1 Review', url: 'https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/' },
+  private getRadioBlogLinks(): Link[] {
+    return [
+      new Link(
+        'K7MFC mobile shack: 2019 Ford F-150 XLT',
+        'https://seesharpdotnet.wordpress.com/2020/02/17/k7mfc-mobile-shack-2019-ford-f-150-xlt/'
+      ),
+      new Link(
+        'Refurbished Radio Shack Pro-2021',
+        'https://seesharpdotnet.wordpress.com/2018/08/25/refurbished-radio-shack-pro-2021/'
+      ),
+      new Link(
+        'How to get a GMRS License',
+        'https://seesharpdotnet.wordpress.com/2018/08/11/how-to-get-a-gmrs-license/'
+      ),
+      new Link(
+        'The history behind 462.675 MHz and the travel tone',
+        'https://seesharpdotnet.wordpress.com/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/'
+      ),
+      new Link(
+        'K7MFC mobile shack: 2013 F-150 Lariat 4×4',
+        'https://seesharpdotnet.wordpress.com/2018/07/01/k7mfc-mobile-shack-2013-f-150-lariat-4x4/'
+      ),
+      new Link(
+        'K7MFC Field Report: Four Peaks, AZ',
+        'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/'
+      ),
+      new Link('BTECH GMRS-V1 Review', 'https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/'),
     ];
   }
 }

@@ -1,14 +1,16 @@
 @import 'src/styles-vars.scss';
 
 fa-icon {
-  border-radius: 50%;
-  background: $app-dark-blue;
-  line-height: 2em;
-  width: 2em;
-  height: 2em;
   margin-right: 10px;
   text-align: center;
   display: inline-block;
+}
+
+div fa-icon {
+  border-radius: 50%;
+  background: $app-dark-blue;
+  line-height: 1.9em;
+  width: 1.9em;
 }
 
 p.project span {
