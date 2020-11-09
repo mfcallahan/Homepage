@@ -53,6 +53,10 @@ export class HomepageMainComponent implements OnInit {
   private getBlogLinks(): Link[] {
     return [
       new Link(
+        'How to publish an ASP.NET web application to an Azure App Service from JetBrains Rider',
+        'https://seesharpdotnet.wordpress.com/2020/11/09/how-to-publish-an-asp-dot-net-web-application-to-an-azure-app-service-from-jetbrains-rider/'
+      ),
+      new Link(
         'How to implement SignalR in a .NET Core 3.1 + Angular 10 web application',
         'https://seesharpdotnet.wordpress.com/2020/11/05/how-to-implement-signalr-in-a-net-core-angular-web-application/'
       ),
@@ -67,26 +71,6 @@ export class HomepageMainComponent implements OnInit {
       new Link(
         'A really simple C# async example',
         'https://seesharpdotnet.wordpress.com/2018/10/17/a-really-simple-c-async-example/'
-      ),
-      new Link(
-        'Refurbished Radio Shack Pro-2021',
-        'https://seesharpdotnet.wordpress.com/2018/08/25/refurbished-radio-shack-pro-2021/'
-      ),
-      new Link(
-        'The history behind 462.675 MHz and the travel tone',
-        'https://seesharpdotnet.wordpress.com/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/'
-      ),
-      new Link(
-        'K7MFC Field Report: Four Peaks, AZ',
-        'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/'
-      ),
-      new Link(
-        'Cool Microsoft Backgrounds',
-        'https://seesharpdotnet.wordpress.com/2018/02/22/cool-windows-backgrounds/'
-      ),
-      new Link(
-        'Which programming language is used in the computer of a car?',
-        'https://seesharpdotnet.wordpress.com/2017/08/08/which-programming-language-is-used-in-the-computer-of-a-car/'
       ),
     ];
   }
