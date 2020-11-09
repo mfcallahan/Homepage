@@ -117,7 +117,7 @@ export class HomepageMainComponent implements OnInit {
       new ImageLink(
         'Visual Studio',
         'https://visualstudio.microsoft.com/',
-        'assets/images/rider-logo.png',
+        'assets/images/visual-studio-logo.png',
         'Rider Logo'
       ),
       new ImageLink(
