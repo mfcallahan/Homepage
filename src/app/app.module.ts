@@ -1,5 +1,6 @@
 import { BrowserModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LightboxModule } from 'ngx-lightbox';
@@ -38,7 +39,15 @@ import { UrlRedirector } from './urlRedirector';
     GalleryComponent,
     BandplanComponent,
   ],
-  imports: [BrowserModule, FontAwesomeModule, NgbModule, LightboxModule, NgxGalleryModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    FontAwesomeModule,
+    NgbModule,
+    LightboxModule,
+    NgxGalleryModule,
+    AppRoutingModule,
+  ],
   providers: [
     UrlRedirector,
     {

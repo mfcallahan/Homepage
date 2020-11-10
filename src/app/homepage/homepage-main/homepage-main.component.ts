@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Link } from 'src/app/models/link';
 import { ImageLink } from 'src/app/models/imageLink';
+import { ApiService } from 'src/app/services/api.service';
+import { HttpParams } from '@angular/common/http';
+import { EnvironmentService } from 'src/app/services/environment.service';
 
 @Component({
   selector: 'app-homepage',
@@ -13,12 +16,12 @@ export class HomepageMainComponent implements OnInit {
   blogLinks: Link[];
   devLinks: ImageLink[];
 
-  constructor() {}
+  constructor(private readonly environment: EnvironmentService, private readonly apiService: ApiService) {}
 
   ngOnInit() {
+    this.setBlogLinks();
     this.educationLinks = this.getEducationLinks();
     this.certLinks = this.getCertLinks();
-    this.blogLinks = this.getBlogLinks();
     this.devLinks = this.getDevLinks();
   }
 
@@ -50,29 +53,15 @@ export class HomepageMainComponent implements OnInit {
     ];
   }
 
-  private getBlogLinks(): Link[] {
-    return [
-      new Link(
-        'How to publish an ASP.NET web application to an Azure App Service from JetBrains Rider',
-        'https://seesharpdotnet.wordpress.com/2020/11/09/how-to-publish-an-asp-dot-net-web-application-to-an-azure-app-service-from-jetbrains-rider/'
-      ),
-      new Link(
-        'How to implement SignalR in a .NET Core 3.1 + Angular 10 web application',
-        'https://seesharpdotnet.wordpress.com/2020/11/05/how-to-implement-signalr-in-a-net-core-angular-web-application/'
-      ),
-      new Link(
-        'Booting a virtual machine from a physical Windows disk partition',
-        'https://seesharpdotnet.wordpress.com/2020/06/15/booting-a-virtual-machine-from-a-physical-windows-disk-partition/'
-      ),
-      new Link(
-        'K7MFC mobile shack: 2019 Ford F-150 XLT',
-        'https://seesharpdotnet.wordpress.com/2020/02/17/k7mfc-mobile-shack-2019-ford-f-150-xlt/'
-      ),
-      new Link(
-        'A really simple C# async example',
-        'https://seesharpdotnet.wordpress.com/2018/10/17/a-really-simple-c-async-example/'
-      ),
-    ];
+  private setBlogLinks(): void {
+    this.blogLinks = [];
+    const params = new HttpParams().set('number', '5').set('fields', 'title,URL');
+
+    this.apiService.get(this.environment.baseConfigs.wordPressApi.posts, params).subscribe((response: any) => {
+      response.posts.forEach((post) => {
+        this.blogLinks.push(new Link(post.title, post.URL));
+      });
+    });
   }
 
   private getDevLinks(): ImageLink[] {
