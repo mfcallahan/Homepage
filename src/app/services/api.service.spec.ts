@@ -44,12 +44,13 @@ describe('ApiService', () => {
         expect(response).toBe(mockResponse);
       });
 
-      // Expect the mock HttpClient client to call testUrl with testParams
+      // create a request using the mock HttpClient client, calling the testUrl with testParams
       const req = httpMock.expectOne([testUrl, testParams.toString()].join('?'));
-      // Expect the mock HttpClient client to make a GET request
+
+      // Expect the request made by the mock HttpClient client to be a GET request
       expect(req.request.method).toEqual('GET');
 
-      // Set the fake data to be returned by the mock httpClient
+      // Set mockResponse to be returned by the request
       req.flush(mockResponse);
     }
   ));
