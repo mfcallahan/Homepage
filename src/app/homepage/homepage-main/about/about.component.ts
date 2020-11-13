@@ -7,7 +7,6 @@ import {
   faCodeBranch,
   faBroadcastTower,
   faLink,
-  faHome,
   faTh,
   faCog,
 } from '@fortawesome/free-solid-svg-icons';
@@ -27,7 +26,6 @@ export class AboutComponent extends LightboxBase implements OnInit {
   public faCodeBranch = faCodeBranch;
   public faBroadcastTower = faBroadcastTower;
   public faLink = faLink;
-  public faHome = faHome;
   public faTh = faTh;
   public faCog = faCog;
 
