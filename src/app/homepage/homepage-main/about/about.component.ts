@@ -9,6 +9,7 @@ import {
   faLink,
   faTh,
   faCog,
+  faExternalLinkAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import { LightboxBase } from 'src/app/lightboxBase';
 import { Album } from 'src/app/models/album';
@@ -28,6 +29,7 @@ export class AboutComponent extends LightboxBase implements OnInit {
   public faLink = faLink;
   public faTh = faTh;
   public faCog = faCog;
+  public faExternalLinkAlt = faExternalLinkAlt;
 
   constructor(public lightbox: Lightbox, public lightboxConfig: LightboxConfig) {
     super(lightbox, lightboxConfig);

@@ -6,7 +6,7 @@ fa-icon {
   display: inline-block;
 }
 
-div fa-icon {
+.heading fa-icon {
   border-radius: 50%;
   background: $app-dark-blue;
   line-height: 1.9em;
@@ -28,8 +28,17 @@ p.project span {
 
 .project-title {
   font-size: 18px;
+  font-weight: 600;
 }
 
 .construction-image {
   margin-left: 15px;
+}
+
+// .container .row [class^="col-"] {
+//   padding-left: 0px;
+// }
+
+.container {
+  padding-bottom: 20px;
 }
