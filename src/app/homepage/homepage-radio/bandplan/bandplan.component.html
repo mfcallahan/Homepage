@@ -1,7 +1,7 @@
 <div class="heading heading-large text-center"><fa-icon [icon]="faBroadcastTower"></fa-icon>WRAA720 UHF Band Plan</div>
 <p>
   This is my personal band plan for UHF two way radio, used primarily for outdoor recreational activities - 4x4
-  exploration, camping, fishing, etc. This plan allows for compatability with bubble-pack FRS radios and unlicensed
+  exploration, camping, fishing, etc. This plan allows for compatibility with bubble-pack FRS radios and unlicensed
   users for short range communications, as well as full power operation on GMRS channels for use with family and other
   licensed GMRS stations.
 </p>
@@ -18,7 +18,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let row of tableRows; let i = index" [ngClass]="i % 2 === 0 ? 'tabe-row-light' : 'tabe-row-dark'">
+    <tr *ngFor="let row of tableRows; let i = index" [ngClass]="i % 2 === 0 ? 'table-row-light' : 'table-row-dark'">
       <td class="text-center">{{ row.channel }}</td>
       <td>{{ row.name }}</td>
       <td>{{ row.frequency }}</td>
