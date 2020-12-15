@@ -10,6 +10,14 @@ const routes: Routes = [
     component: HomepageMainComponent,
   },
   {
+    path: '**',
+    canActivate: [UrlRedirector],
+    component: UrlRedirector,
+    data: {
+      externalUrl: '',
+    },
+  },
+  {
     path: 'radio',
     component: HomepageRadioComponent,
   },

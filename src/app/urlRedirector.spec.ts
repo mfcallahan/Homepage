@@ -16,6 +16,5 @@ describe('UrlRedirector', () => {
     // Assert
     // expect(window.location.href).toBe(activatedRouteSnapshot.data.route);
     // expect(result).toBe(true);
-    expect(1).toBe(1);
   });
 });
