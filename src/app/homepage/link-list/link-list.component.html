@@ -4,6 +4,7 @@
   </div>
   <ul class="list-unstyled condensed">
     <li *ngFor="let link of links">
+      <fa-icon [icon]="faExternalLinkSquareAlt"></fa-icon>
       <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.title }}</a>
     </li>
   </ul>
