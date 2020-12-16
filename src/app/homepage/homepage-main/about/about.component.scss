@@ -1,5 +1,10 @@
 @import 'src/styles-vars.scss';
 
+.heading {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 fa-icon {
   margin-right: 10px;
   text-align: center;
@@ -13,14 +18,6 @@ fa-icon {
   width: 1.9em;
 }
 
-p.project span {
-  display: block;
-}
-
-.heading {
-  margin-bottom: 15px;
-}
-
 .banner-img {
   width: 100%;
   margin-bottom: 1rem;
@@ -29,16 +26,27 @@ p.project span {
 .project-title {
   font-size: 18px;
   font-weight: 600;
+  padding-bottom: 10px;
 }
 
 .construction-image {
   margin-left: 15px;
 }
 
-// .container .row [class^="col-"] {
-//   padding-left: 0px;
-// }
-
-.container {
+.project {
+  padding-left: 0px;
+  padding-right: 0px;
   padding-bottom: 20px;
+}
+
+.project .row {
+  margin: 0px;
+}
+
+.project .row [class^="col-"] {
+  padding: 0px;
+}
+
+.project .row .col-md-3 {
+  padding-right: 10px;
 }

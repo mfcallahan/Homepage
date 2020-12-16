@@ -1,16 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Lightbox, LightboxConfig } from 'ngx-lightbox';
-import {
-  faUser,
-  faCode,
-  faFileCode,
-  faCodeBranch,
-  faBroadcastTower,
-  faLink,
-  faTh,
-  faCog,
-  faExternalLinkAlt,
-} from '@fortawesome/free-solid-svg-icons';
+import { faUser, faCode, faCodeBranch, faFileCode, faBroadcastTower } from '@fortawesome/free-solid-svg-icons';
 import { LightboxBase } from 'src/app/lightboxBase';
 import { Album } from 'src/app/models/album';
 
@@ -23,13 +13,10 @@ export class AboutComponent extends LightboxBase implements OnInit {
   public projects: any;
   public faUser = faUser;
   public faCode = faCode;
-  public faFileCode = faFileCode;
   public faCodeBranch = faCodeBranch;
+  public faFileCode = faFileCode;
+
   public faBroadcastTower = faBroadcastTower;
-  public faLink = faLink;
-  public faTh = faTh;
-  public faCog = faCog;
-  public faExternalLinkAlt = faExternalLinkAlt;
 
   constructor(public lightbox: Lightbox, public lightboxConfig: LightboxConfig) {
     super(lightbox, lightboxConfig);
