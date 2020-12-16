@@ -214,8 +214,8 @@
       When using the <a href="https://github.com/Esri/esri-loader/" target="_blank" rel="noopener">esri-loader</a> and
       the
       <a href="https://developers.arcgis.com/javascript/" target="_blank" rel="noopener">ArcGIS API for JavaScript</a>
-      inside an Angular application, I ran into an issue when writing unit tests: the API modules are lazy loaded at run
-      time and HTTP requests are made to fetch the resources, but I needed to mock this behavior in tests. This app
+      inside an Angular application, I ran into an issue writing unit tests: the API modules are lazy loaded at run time
+      and HTTP requests are made to fetch the resources, but I needed to mock this behavior in tests. This app
       demonstrates an approach for testing code which has a dependency on the esri-loader. Using dependency injection
       and the Facade pattern, an abstraction for the methods which load the API modules can be created. This allows the
       esri-loader dependency to be more easily mocked, and eliminates actual HTTP requests being made in a unit test.
