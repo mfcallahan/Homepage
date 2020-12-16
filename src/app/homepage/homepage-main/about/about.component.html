@@ -59,115 +59,181 @@
 </p>
 <div class="heading heading-large"><fa-icon [icon]="faCode"></fa-icon>Projects</div>
 <p>
-  Here are some sample projects that demonstrate the types of software development I enjoy. All my public code
-  repositories can be viewed
+  Below are some projects that demonstrate the types of software development I enjoy. I have included links to the
+  source code for each, as well as links to the deployed app and blog posts which detail how the code works. All my
+  public code repositories can be viewed
   <a href="https://github.com/mfcallahan?tab=repositories" target="_blank" rel="noopener">here</a>.
 </p>
-<p class="project">
-  <span>
-    <fa-icon [icon]="faCodeBranch"></fa-icon>
-    <a class="project-title" href="https://github.com/mfcallahan/Homepage/" target="_blank" rel="noopener"
-      >mfcallahan.com</a
-    >
-  </span>
-  <span>
-    My homepage is built with TypeScript and Angular 9, and hosted on GitHub Pages. View the source code at the link
-    above, and feel free to use any or all of it to help build your own Angular application.
-  </span>
-</p>
-<p class="project">
-  <span>
-    <fa-icon [icon]="faCog"></fa-icon>
-    <a class="project-title" href="https://mfcallahan-homepage-dev.azurewebsites.net/" target="_blank" rel="noopener"
-      >mfcallahan API</a
-    >
-  </span>
-  <span>
-    This is a sample REST API, built with C# and .NET Core 3.1, and hosted on Azure as an App Service. This project is
-    intended to demonstrate the patterns and best practices I like to leverage in the back end software I develop,
-    including dependency injection, unit testing, and clean code organization. This application also includes
-    interactive documentation, built with Swagger/Swashbuckle, which can be used to test the API in a browser. The
-    source code can be viewed
-    <a href="https://github.com/mfcallahan/mfcallahan-api" target="_blank" rel="noopener">here</a>.
-  </span>
-</p>
-<p class="project">
-  <span>
-    <fa-icon [icon]="faTh"></fa-icon>
-    <a class="project-title" href="https://tetriz.xyz" target="_blank" rel="noopener">Tetriz<sup>xyz</sup> </a>
-    <img src="assets/images/under-construction.png" height="23" class="construction-image" alt="Under Construction" />
-  </span>
-  <span>
-    This is a Tetris clone built for my own education and enjoyment. It is built with TypeScript and Angular 9, and
-    hosted on GitHub Pages. This project demonstrates the patterns and best practices I like to leverage when developing
-    Angular applications. Tetriz is currently a work in progress and the game is incomplete as of now. The source code
-    can be viewed
-    <a href="https://github.com/mfcallahan/tetriz-xyz/" target="_blank" rel="noopener">here</a>.
-  </span>
-</p>
-<p class="project">
-  <span>
-    <fa-icon [icon]="faCodeBranch"></fa-icon>
-    <a class="project-title" href="https://github.com/mfcallahan/AsyncDemo" target="_blank" rel="noopener"
-      >C# Async Demo</a
-    >
-  </span>
-  <span>
-    As a Software Engineer, I like to mentor team members and help others understand programming concepts. This mini
-    project was created to provide a basic, practical demonstration of an asynchronous programming pattern in C# and
-    highlight the performance gains that can be achieved. I also wrote a
-    <a
-      href="https://seesharpdotnet.wordpress.com/2018/10/17/a-really-simple-c-async-example/"
-      target="_blank"
-      rel="noopener"
-      >blog post</a
-    >
-    that provides an in-depth walk through of this code and the
-    <a
-      href="https://docs.microsoft.com/en-us/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap/"
-      target="_blank"
-      rel="noopener"
-      >task-based asynchronous pattern</a
-    >
-    in .NET.
-  </span>
-</p>
-<p class="project">
-  <span>
-    <fa-icon [icon]="faCodeBranch"></fa-icon>
-    <a class="project-title" href="https://github.com/mfcallahan/angular-signalr-demo/" target="_blank" rel="noopener"
-      >SignalR Demo</a
-    >
-  </span>
-  <span
-    >This repository contains another mini project which is intended demonstrate the capabilities of
-    <a href="https://dotnet.microsoft.com/apps/aspnet/signalr" target="_blank" rel="noopener">SignalR</a>, and provide
-    guidance on how to implement it in a web application built with .NET Core 3.1 and Angular 10. I use SignalR in
-    applications I have developed for work in order to provide real-time communication between the client and server,
-    but I found the documentation to be a little bit lacking. I was also having some difficulty finding thorough
-    examples of how to use SignalR, so I wrote my own
-    <a
-      href="https://seesharpdotnet.wordpress.com/2020/11/05/how-to-implement-signalr-in-a-net-core-angular-web-application/"
-      target="_blank"
-      rel="noopener"
-      >tutorial</a
-    >
-    with a simple implementation of SignalR to share with other developers. A working example of an application which
-    uses SignalR to update a progress bar on the client
-    <a href="https://mfcallahan.github.io/angular-signalr-demo/" target="_blank" rel="noopener">here</a>.
-  </span>
-</p>
-<p class="project">
-  <span>
-    <fa-icon [icon]="faCodeBranch"></fa-icon>
-    <a class="project-title" href="https://github.com/mfcallahan/MB_Utils" target="_blank" rel="noopener">MB Utils</a>
-  </span>
-  <span>
-    This project is a
-    <a href="https://en.wikipedia.org/wiki/MapBasic" target="_blank" rel="noopener">MapBasic</a> module and .NET library
-    that extended MapInfo programming functionality by exposing .NET and Win32 API calls as easy to use MapBasic
-    functions and subs. This was the first library I ever wrote and was a great learning experience in how to document,
-    release, and support an open source software project, albeit on a small scale. I have long since ended work on this
-    project, but I'm sharing it here to show how my career and code quality has progressed.
-  </span>
-</p>
+<div class="container project">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-unstyled">
+        <li class="project-title">Homepage</li>
+        <li>
+          <a href="https://github.com/mfcallahan/Homepage/" target="_blank" rel="noopener">Source code</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      My homepage is built with TypeScript and Angular 11, and hosted on GitHub Pages. Browse the source code and feel
+      free to use any or all of it to help build your own homepage with Angular.
+    </div>
+  </div>
+</div>
+<div class="container project">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-unstyled">
+        <li class="project-title">mfcallahan API</li>
+        <li>
+          <a href="https://mfcallahan-homepage-dev.azurewebsites.net/" target="_blank" rel="noopener">Link</a>
+        </li>
+        <li>
+          <a href="https://github.com/mfcallahan/Homepage/" target="_blank" rel="noopener">Source code</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      This is a sample REST API, built with .NET Core 3.1 and hosted on Azure as an App Service. This project is
+      intended to demonstrate the patterns and best practices I like to leverage in the back end software I develop,
+      including dependency injection, unit testing, and clean code organization. This application also includes
+      interactive documentation, automatically generated with Swagger/Swashbuckle, which can be used to test the API in
+      a browser.
+    </div>
+  </div>
+</div>
+<div class="container project">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-unstyled">
+        <li class="project-title">Tetriz<sup>xyz</sup></li>
+        <li>
+          <a href="https://tetriz.xyz/" target="_blank" rel="noopener">Link</a>
+        </li>
+        <li>
+          <a href="https://github.com/mfcallahan/tetriz-xyz/" target="_blank" rel="noopener">Source code</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      This is a Tetris clone built for my own education and enjoyment. It is built with TypeScript and Angular 9, and
+      hosted on GitHub Pages. This project demonstrates the patterns and best practices I like to leverage when
+      developing Angular applications. Tetriz<sup>xyz</sup> is currently a work in progress and the game is incomplete
+      as of now.
+    </div>
+  </div>
+</div>
+<div class="container project">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-unstyled">
+        <li class="project-title">C# Async Demo</li>
+        <li>
+          <a
+            href="https://seesharpdotnet.wordpress.com/2018/10/17/a-really-simple-c-async-example/"
+            target="_blank"
+            rel="noopener"
+            >Blog post</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/mfcallahan/AsyncDemo/" target="_blank" rel="noopener">Source code</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      As a Software Engineer, I like to mentor team members and help other developers understand programming concepts.
+      This is a C# console app which demonstrates a basic implementation of the task-based asynchronous pattern in C#,
+      and highlights the performance gains that can be achieved. The associated blog post provides an introduction to
+      asynchronous programming in C#, using this app as an example.
+    </div>
+  </div>
+</div>
+<div class="container project">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-unstyled">
+        <li class="project-title">SignalR Demo</li>
+        <li>
+          <a href="https://mfcallahan.github.io/angular-signalr-demo/" target="_blank" rel="noopener">Link</a>
+        </li>
+        <li>
+          <a
+            href="https://seesharpdotnet.wordpress.com/2020/11/05/how-to-implement-signalr-in-a-net-core-angular-web-application/"
+            target="_blank"
+            rel="noopener"
+            >Blog Post</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/mfcallahan/angular-signalr-demo/" target="_blank" rel="noopener">Source code</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      This app demonstrates how to implement
+      <a href="https://dotnet.microsoft.com/apps/aspnet/signalr/" target="_blank" rel="noopener">SignalR</a>, and
+      highlights the benefits of real-time communication between the client and server that it provides. I was having
+      some difficulty finding thorough examples of how to use SignalR, so I wrote a tutorial in a blog post
+      demonstrating how to build a .NET Core 3.1 and Angular 10 app which uses SignalR to update a progress bar on the
+      client from the server.
+    </div>
+  </div>
+</div>
+<div class="container project">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-unstyled">
+        <li class="project-title">ArcGIS API Unit Test Demo</li>
+        <li>
+          <a href="https://mfcallahan.github.io/angular-cli-esri-map-unit-testing/" target="_blank" rel="noopener"
+            >Link</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://seesharpdotnet.wordpress.com/2020/12/03/angular-and-arcgis-api-for-javascript-a-unit-testing-strategy-using-dependency-injection-and-the-facade-pattern/"
+            target="_blank"
+            rel="noopener"
+            >Blog Post</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/mfcallahan/angular-cli-esri-map-unit-testing/" target="_blank" rel="noopener"
+            >Source code</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      When using the <a href="https://github.com/Esri/esri-loader/" target="_blank" rel="noopener">esri-loader</a> to
+      lazy load the
+      <a href="https://developers.arcgis.com/javascript/" target="_blank" rel="noopener">ArcGIS API for JavaScript</a>
+      inside an Angular application, I ran into an issue when writing unit tests: the API modules are lazy loaded at run
+      time and HTTP requests are made to fetch the resources, but I needed to mock this behavior in tests. This app
+      demonstrates an approach for testing code which has a dependency on the esri-loader. Using dependency injection
+      and the Facade pattern, an abstraction for the methods which load the API modules can be created. This allows the
+      esri-loader dependency to be more easily mocked, and eliminates actual HTTP requests being made in a unit test.
+    </div>
+  </div>
+</div>
+<div class="container project">
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-unstyled">
+        <li class="project-title">MB Utils</li>
+        <li>
+          <a href="https://github.com/mfcallahan/MB_Utils/" target="_blank" rel="noopener">Source code</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-9">
+      This project is a
+      <a href="https://en.wikipedia.org/wiki/MapBasic" target="_blank" rel="noopener">MapBasic</a> module and .NET
+      library that extends MapInfo programming functionality by exposing .NET and Win32 API calls as MapBasic functions
+      and subs. This was the first library I ever wrote and was a great learning experience in how to document, release,
+      and support an open source software project, albeit on a small scale. I have long since ended work on this
+      project, but I keep the repository public to show how my career and code quality has progressed.
+    </div>
+  </div>
+</div>

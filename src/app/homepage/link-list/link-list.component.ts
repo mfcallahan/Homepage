@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { faExternalLinkSquareAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-link-list',
@@ -10,6 +11,7 @@ export class LinkListComponent {
   title: string;
   @Input()
   links: Array<string>;
+  faExternalLinkSquareAlt = faExternalLinkSquareAlt;
 
   constructor() {}
 }
