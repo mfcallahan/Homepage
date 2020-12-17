@@ -10,14 +10,6 @@ const routes: Routes = [
     component: HomepageMainComponent,
   },
   {
-    path: '**',
-    canActivate: [UrlRedirector],
-    component: UrlRedirector,
-    data: {
-      externalUrl: '',
-    },
-  },
-  {
     path: 'radio',
     component: HomepageRadioComponent,
   },
@@ -51,6 +43,14 @@ const routes: Routes = [
     component: UrlRedirector,
     data: {
       externalUrl: 'https://www.linkedin.com/in/mfcallahan1/',
+    },
+  },
+  {
+    path: '**',
+    canActivate: [UrlRedirector],
+    component: UrlRedirector,
+    data: {
+      externalUrl: '',
     },
   },
 ];
