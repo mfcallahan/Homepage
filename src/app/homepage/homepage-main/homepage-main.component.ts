@@ -103,7 +103,12 @@ export class HomepageMainComponent implements OnInit {
       new ImageLink('Git', 'https://git-scm.com/', 'assets/images/git-logo.png', 'Git Logo'),
       new ImageLink('GitKraken', 'https://www.gitkraken.com/', 'assets/images/gitkraken-logo.png', 'GitKraken Logo'),
       new ImageLink('Postman', 'https://www.getpostman.com/', 'assets/images/postman-logo.png', 'Postman Logo'),
-      new ImageLink('Meld', 'https://meldmerge.org/', 'assets/images/meld-logo.png', 'Meld Logo'),
+      new ImageLink(
+        'Beyond Compare',
+        'https://scootersoftware.com/',
+        'assets/images/beyondcompare-logo.png',
+        'Beyond Compare Logo'
+      ),
       new ImageLink('Notepad', 'http://www.notepad.org/', 'assets/images/notepad-logo.png', 'Notepad Logo'),
     ];
   }
