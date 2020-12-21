@@ -68,8 +68,10 @@ p {
 .lightbox-link {
   color: $app-dark-turquoise;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .lightbox-link:hover {
-  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+  color: #002966;
 }
