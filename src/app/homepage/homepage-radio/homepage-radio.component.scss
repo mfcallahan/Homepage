@@ -1,19 +1,39 @@
 @import 'src/styles-vars.scss';
 
+fa-icon {
+  margin-right: 10px;
+}
+
+::ng-deep a,
+::ng-deep .lightbox-link {
+  transition: all 0.3s ease-in-out;
+}
+
+::ng-deep .left-column a {
+  color: $app-white;
+  text-decoration: none;
+}
+
+::ng-deep .right-column a,
+::ng-deep .right-column .lightbox-link {
+  color: $app-dark-turquoise ;
+  text-decoration: none;
+}
+
+::ng-deep .left-column a:hover,
+::ng-deep .left-column .lightbox-link:hover,
+::ng-deep .right-column a:hover,
+::ng-deep .right-column .lightbox-link:hover {
+    color: #002966;
+}
+
 .left-column {
   background-color: $app-light-blue;
 }
 
-::ng-deep .left-column a {
-  color: $app-white !important;
-}
-
 .right-column {
   background-color: $app-gray;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 30px;
 }
 
 @media (max-width: $col-ms-breakpoint) {
@@ -21,10 +41,6 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-
-::ng-deep .right-column a {
-  color: $app-dark-turquoise !important;
 }
 
 .footer {
