@@ -226,10 +226,15 @@
       </ul>
     </div>
     <div class="col-md-9">
-      This repository contains an Angular app with an Esri map, built using the new ArcGIS API for JavaScript
+      Beginning with version 4.18 of the API, Esri has begun offering the ArcGIS API for JavaScript via standard
       <a href="https://developers.arcgis.com/javascript/latest/guide/es-modules/" target="_blank" rel="noopener"
         >ES Modules</a
-      >.
+      >
+      which can be directly imported into classes, no longer necessitating the use of the
+      <a href="https://github.com/Esri/esri-loader/" target="_blank" rel="noopener">esri-loader</a> or the
+      <a href="https://github.com/Esri/arcgis-webpack-plugin/" target="_blank" rel="noopener">arcgis-webpack-plugin</a>
+      to load the Dojo-based API modules. This repository contains an Angular app to experiment with the new ArcGIS ES
+      modules in preparation for migrating applications away from the esri-loader.
     </div>
   </div>
 </div>
