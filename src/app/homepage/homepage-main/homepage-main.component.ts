@@ -58,8 +58,12 @@ export class HomepageMainComponent implements OnInit {
     const params = new HttpParams().set('number', '5').set('fields', 'title,URL');
 
     this.apiService.get(this.environment.baseConfigs.wordPressApi.posts, params).subscribe((response: any) => {
-      response.posts.forEach((post) => {
-        this.blogLinks.push(new Link(post.title, post.URL));
+      response.posts.forEach((post: any) => {
+        // temp hack fix for HTML entities not decoding correctly
+        let title = post.title.replace('&#8230;', '')
+        title = title.replace('&#8211;', '');
+
+        this.blogLinks.push(new Link(title, post.URL));
       });
     });
   }
