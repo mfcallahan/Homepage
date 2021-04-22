@@ -26,7 +26,7 @@ const routes: Routes = [
     canActivate: [UrlRedirector],
     component: UrlRedirector,
     data: {
-      externalUrl: 'https://seesharpdotnet.wordpress.com/',
+      externalUrl: 'https://mfcallahan.blog/',
     },
   },
   {

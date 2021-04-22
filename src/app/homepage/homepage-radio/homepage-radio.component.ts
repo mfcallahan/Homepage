@@ -106,29 +106,29 @@ export class HomepageRadioComponent implements OnInit {
     return [
       new Link(
         'K7MFC mobile shack: 2019 Ford F-150 XLT',
-        'https://seesharpdotnet.wordpress.com/2020/02/17/k7mfc-mobile-shack-2019-ford-f-150-xlt/'
+        'https://mfcallahan.blog/2020/02/17/k7mfc-mobile-shack-2019-ford-f-150-xlt/'
       ),
       new Link(
         'Refurbished Radio Shack Pro-2021',
-        'https://seesharpdotnet.wordpress.com/2018/08/25/refurbished-radio-shack-pro-2021/'
+        'https://mfcallahan.blog/2018/08/25/refurbished-radio-shack-pro-2021/'
       ),
       new Link(
         'How to get a GMRS License',
-        'https://seesharpdotnet.wordpress.com/2018/08/11/how-to-get-a-gmrs-license/'
+        'https://mfcallahan.blog/2018/08/11/how-to-get-a-gmrs-license/'
       ),
       new Link(
         'The history behind 462.675 MHz and the travel tone',
-        'https://seesharpdotnet.wordpress.com/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/'
+        'https://mfcallahan.blog/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/'
       ),
       new Link(
         'K7MFC mobile shack: 2013 F-150 Lariat 4×4',
-        'https://seesharpdotnet.wordpress.com/2018/07/01/k7mfc-mobile-shack-2013-f-150-lariat-4x4/'
+        'https://mfcallahan.blog/2018/07/01/k7mfc-mobile-shack-2013-f-150-lariat-4x4/'
       ),
       new Link(
         'K7MFC Field Report: Four Peaks, AZ',
-        'https://seesharpdotnet.wordpress.com/2018/07/15/k7mfc-field-report-four-peaks-az/'
+        'https://mfcallahan.blog/2018/07/15/k7mfc-field-report-four-peaks-az/'
       ),
-      new Link('BTECH GMRS-V1 Review', 'https://seesharpdotnet.wordpress.com/2017/11/14/btech-gmrs-v1-review/'),
+      new Link('BTECH GMRS-V1 Review', 'https://mfcallahan.blog/2017/11/14/btech-gmrs-v1-review/'),
     ];
   }
 }
