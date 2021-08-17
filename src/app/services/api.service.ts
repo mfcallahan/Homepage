@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 export class ApiService {
   constructor(private httpClient: HttpClient) {}
 
-  get(url: string, params?: HttpParams, headers?: HttpHeaders) {
+  get(url: string, params?: HttpParams) {
     return this.httpClient.get(url, { params });
   }
 }
