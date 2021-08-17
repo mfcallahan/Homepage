@@ -1,5 +1,7 @@
 {
   "editor.wordWrapColumn": 120,
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "vscode.configuration-editing"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 120
 }
