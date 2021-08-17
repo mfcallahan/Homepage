@@ -112,10 +112,7 @@ export class HomepageRadioComponent implements OnInit {
         'Refurbished Radio Shack Pro-2021',
         'https://mfcallahan.blog/2018/08/25/refurbished-radio-shack-pro-2021/'
       ),
-      new Link(
-        'How to get a GMRS License',
-        'https://mfcallahan.blog/2018/08/11/how-to-get-a-gmrs-license/'
-      ),
+      new Link('How to get a GMRS License', 'https://mfcallahan.blog/2018/08/11/how-to-get-a-gmrs-license/'),
       new Link(
         'The history behind 462.675 MHz and the travel tone',
         'https://mfcallahan.blog/2018/07/29/the-history-behind-462-675-mhz-and-the-travel-tone/'

@@ -2,7 +2,7 @@ import { TestBed, inject } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 import { ApiService } from './api.service';
-import { HttpHeaders, HttpParams } from '@angular/common/http';
+import { HttpParams } from '@angular/common/http';
 
 describe('ApiService', () => {
   const testUrl = 'https://foo.bar/baz';
@@ -24,7 +24,6 @@ describe('ApiService', () => {
     [HttpTestingController, ApiService],
     (httpMock: HttpTestingController, apiService: ApiService) => {
       const testParams = new HttpParams().set('foo', 'bar').set('baz', 'qux');
-      const testHeaders = new HttpHeaders().set('x-foo-bar', 'baz');
       const mockResponse = {
         foo: 'bar',
         baz: 100,
@@ -40,7 +39,7 @@ describe('ApiService', () => {
         ],
       };
 
-      apiService.get(testUrl, testParams, testHeaders).subscribe((response) => {
+      apiService.get(testUrl, testParams).subscribe((response) => {
         expect(response).toBe(mockResponse);
       });
 
