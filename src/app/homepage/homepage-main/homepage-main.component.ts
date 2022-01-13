@@ -76,6 +76,12 @@ export class HomepageMainComponent implements OnInit {
         'assets/images/csharp-logo.png',
         'CSharp Logo'
       ),
+      new ImageLink(
+        '.NET Framework',
+        'https://docs.microsoft.com/en-us/dotnet/core/',
+        'assets/images/dotnet-logo.png',
+        '.NET Core Logo'
+      ),
       new ImageLink('Python', 'https://www.python.org/', 'assets/images/python-logo.png', 'Python Logo'),
       new ImageLink(
         'TypeScript',
@@ -84,13 +90,15 @@ export class HomepageMainComponent implements OnInit {
         'TypeScript Logo'
       ),
       new ImageLink(
-        '.NET Framework',
-        'https://docs.microsoft.com/en-us/dotnet/core/',
-        'assets/images/dotnet-logo.png',
-        '.NET Core Logo'
+        'JavaScript',
+        'https://www.ecma-international.org/publications-and-standards/standards/ecma-262/',
+        'assets/images/javascript-logo.png',
+        'JavaScript Logo'
       ),
       new ImageLink('Angular', 'https://angular.io/', 'assets/images/angular-logo.png', 'Angular Logo'),
-      new ImageLink('Rider', 'https://www.jetbrains.com/rider/', 'assets/images/rider-logo.png', ' Logo'),
+      new ImageLink('Vue.js', 'https://vuejs.org/', 'assets/images/vue-logo.png', 'Vue Logo'),
+      new ImageLink('WebStorm', 'https://www.jetbrains.com/webstorm/', 'assets/images/webstorm-logo.png', 'WebStorm Logo'),
+      new ImageLink('Rider', 'https://www.jetbrains.com/rider/', 'assets/images/rider-logo.png', 'Rider Logo'),
       new ImageLink(
         'Visual Studio',
         'https://visualstudio.microsoft.com/',
@@ -103,7 +111,7 @@ export class HomepageMainComponent implements OnInit {
         'assets/images/visual-studio-code-logo.png',
         'VS Code Logo'
       ),
-      new ImageLink('Linux Mint', 'https://linuxmint.com/', 'assets/images/linux-mint-logo.png', 'Linux Mint Logo'),
+      new ImageLink('Pop!_OS', 'https://pop.system76.com/', 'assets/images/popos-logo.png', 'Pop!_OS Logo'),
       new ImageLink('Git', 'https://git-scm.com/', 'assets/images/git-logo.png', 'Git Logo'),
       new ImageLink('GitKraken', 'https://www.gitkraken.com/', 'assets/images/gitkraken-logo.png', 'GitKraken Logo'),
       new ImageLink('Postman', 'https://www.getpostman.com/', 'assets/images/postman-logo.png', 'Postman Logo'),
@@ -113,6 +121,7 @@ export class HomepageMainComponent implements OnInit {
         'assets/images/beyondcompare-logo.png',
         'Beyond Compare Logo'
       ),
+      new ImageLink('ArcGIS', 'https://developers.arcgis.com/', 'assets/images/esri-logo.png', 'ArcGIS Logo'),
       new ImageLink('Notepad', 'http://www.notepad.org/', 'assets/images/notepad-logo.png', 'Notepad Logo'),
     ];
   }
