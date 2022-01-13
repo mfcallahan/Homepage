@@ -70,6 +70,7 @@ export class HomepageMainComponent implements OnInit {
 
   private getDevLinks(): ImageLink[] {
     return [
+      new ImageLink('Pop!_OS', 'https://pop.system76.com/', 'assets/images/popos-logo.png', 'Pop!_OS Logo'),
       new ImageLink(
         'C#',
         'https://docs.microsoft.com/en-us/dotnet/csharp/',
@@ -111,7 +112,6 @@ export class HomepageMainComponent implements OnInit {
         'assets/images/visual-studio-code-logo.png',
         'VS Code Logo'
       ),
-      new ImageLink('Pop!_OS', 'https://pop.system76.com/', 'assets/images/popos-logo.png', 'Pop!_OS Logo'),
       new ImageLink('Git', 'https://git-scm.com/', 'assets/images/git-logo.png', 'Git Logo'),
       new ImageLink('GitKraken', 'https://www.gitkraken.com/', 'assets/images/gitkraken-logo.png', 'GitKraken Logo'),
       new ImageLink('Postman', 'https://www.getpostman.com/', 'assets/images/postman-logo.png', 'Postman Logo'),
