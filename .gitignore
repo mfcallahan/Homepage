@@ -6,11 +6,6 @@
 !.vscode/extensions.json
 .history/*
 
-# compiled output
-/dist
-/tmp
-/out-tsc
-
 # Node.js dependencies
 node_modules/
 
@@ -32,4 +27,4 @@ remote-profile/
 
 # System Files
 .DS_Store
-Thumbs.db
+Thumbs
